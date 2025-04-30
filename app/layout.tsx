@@ -54,6 +54,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          id="vtag-ai-js"
+          async
+          src="https://r2.leadsy.ai/tag.js"
+          data-pid="1jlkaeom8Av6xi5Eq"
+          data-version="062024"
+        ></script>
+        {/* Google Analytics */}
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
+  ></script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GY6QBLTKD5');
+      `,
+    }}
+  />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
