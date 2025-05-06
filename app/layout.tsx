@@ -21,18 +21,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Web Design & SEO in Denver, CO - Latino Web Studio",
-  description:
-    "Latino Web Studio provides expert web design, SEO, and full-stack tech support for businesses in Denver and nationwide. From DNS and hosting to email marketing and custom design, we handle the tech so you can focus on growth.",
+  title: "Lawyers - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
+    description:
+      "We help expert witnesses get more cases and get found by lawyers. Web design and SEO to grow your expert witness business practice. Do not get eaten alive at deposition.",
   metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
   alternates: {
     canonical: "https://latinowebstudio.com", // ✅ correct canonical
   },
 
   openGraph: {
-    title: "Web Design & SEO in Denver, CO - Latino Web Studio",
+    title: "Lawyers - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
-      "Latino Web Studio provides expert web design, SEO, and full-stack tech support for businesses in Denver and nationwide. From DNS and hosting to email marketing and custom design, we handle the tech so you can focus on growth.",
+      "We help expert witnesses get more cases and get found by lawyers. Web design and SEO to grow your expert witness business practice. Do not get eaten alive at deposition.",
     url: "https://latinowebstudio.com",
     siteName: "Latino Web Studio",
     images: [
