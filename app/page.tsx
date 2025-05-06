@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import CalendlyWidget from "./components/calendly";
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
 import HeadshotIcons from "./components/headshot-icons";
 import Main from "./js/main";
 import "./styles/body.scss";
@@ -44,16 +44,13 @@ export default function Home() {
               <div className="lg:w-7/12 w-full px-4">
                 <div className="lg:w-7/12 w-full">
                   <h1 className="text-secondary animated-heading">
-                    Web Design &amp; SEO
+                    Get More Cases - Get Found by Lawyers
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 <div className="lg:w-9/12 w-1/9">
                   <p>
-                    If you are an engineering firm, mortgage lender, print
-                    screening and embroidery or a blue collar company we allow
-                    you to focus on growing your company without having to
-                    stress about technical problems with web development or SEO.
+                    Get a free white paper tailored to your areas of expertise. We can also explain how the white paper gets lawyers contacting for cases specifically to your areas of expertise. Learn the exact strategy we&apos;ve used to help other expert witnesses.
                   </p>
                   {/* <Login /> */}
                 </div>
@@ -148,9 +145,10 @@ export default function Home() {
                   and working on his practice full-time.
                 </p>
               </div>
+              
               <div className="md:w-1/2 w-full px-4">
                 <Image
-                  src="/photos/SEO-Results-01.jpg"
+                  src="/photos/SEO-Results-02-copy.jpg"
                   alt="Clarify Your Message"
                   width={2013}
                   height={1194}
@@ -159,7 +157,7 @@ export default function Home() {
               </div>
               <div className="md:w-1/2 w-full px-4">
                 <Image
-                  src="/photos/SEO-Results-02-copy.jpg"
+                  src="/photos/SEO-Results-01.jpg"
                   alt="Clarify Your Message"
                   width={2013}
                   height={1194}
@@ -278,12 +276,7 @@ export default function Home() {
               <div className="lg:w-1/2 w-11/12 lg:pt-8 pb-8 px-4">
                 <h2>What Makes Latino Web Studio Different?</h2>
                 <p>
-                  Unlike typical tech support, we offer comprehensive, proactive
-                  website and tech management, ensuring nothing gets in the way
-                  of your business growth. With years of experience and a
-                  commitment to reliability, how often do you find tech support
-                  that genuinely understands business needs? Contact us to find
-                  out how we can help.
+                  We help expert witnesses get more cases and get found by lawyers. You won&apos;t have to worry about being eaten alive in deposition because of something on your website. Every piece of content is unbiased and fact based. Learn what&apos;s stopping you from growing your expert witness practice and getting found by lawyers nationwide.
                 </p>
                 <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
@@ -371,7 +364,7 @@ export default function Home() {
                   >
                     3.
                   </span>
-                  <span>Optimize Your Business</span>
+                  <span>Get More Cases</span>
                 </h2>
               </div>
             </div>
@@ -411,7 +404,6 @@ export default function Home() {
           </p>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
