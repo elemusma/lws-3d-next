@@ -72,17 +72,17 @@ export default function Home() {
             <div className="flex flex-wrap justify-between -mx-4">
               <div className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white">
                 <h2 className="h3" style={{}}>
-                  Comprehensive technical support.
+                  Lawyers Find You
                 </h2>
               </div>
               <div
                 className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white"
                 style={{ backgroundColor: "var(--accent-quaternary)" }}
               >
-                <h2 className="h3">Streamlined digital operations.</h2>
+                <h2 className="h3">Receive a Retainer</h2>
               </div>
               <div className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white">
-                <h2 className="h3">Reliable, immediate service.</h2>
+                <h2 className="h3">Bill Monthly</h2>
               </div>
             </div>
           </div>
@@ -96,18 +96,18 @@ export default function Home() {
               </div>
               <div className="lg:w-1/2 w-full px-4">
                 <ul style={{ textShadow: "0px 0px 3px white" }}>
-                  <li>Struggling with SEO and online visibility?</li>
-                  <li>Concerned about website security and updates?</li>
-                  <li>Does your website not work properly?</li>
-                  <li>Looking for reliable tech and design support?</li>
+                  <li><strong>Struggling with SEO and online visibility?</strong></li>
+                  <li><strong>Concerned about website security and updates?</strong></li>
+                  <li><strong>Does your website not work properly?</strong></li>
+                  <li><strong>Looking for reliable tech and design support?</strong></li>
                 </ul>
               </div>
               <div className="lg:w-1/2 w-full px-4">
                 <ul style={{ textShadow: "0px 0px 3px white" }}>
-                  <li>Wasting time with non-responsive tech support?</li>
-                  <li>Unsure how to handle tech stack updates?</li>
-                  <li>Are you attending a convention soon?</li>
-                  <li>Do you want to look good for investors?</li>
+                  <li><strong>Wasting time with non-responsive tech support?</strong></li>
+                  <li><strong>Unsure how to handle tech stack updates?</strong></li>
+                  <li><strong>Are you attending a convention soon?</strong></li>
+                  <li><strong>Do you want to look good for investors?</strong></li>
                 </ul>
               </div>
               <div className="w-full pb-8 px-4 text-center">
@@ -137,25 +137,24 @@ export default function Home() {
 
           {/* Content Wrapper */}
           <div className="w-full px-4 sm:px-6 lg:px-8 pb-[150px]">
-            <div className="flex flex-wrap items-center">
-              <div className="w-full text-center pb-4">
-                <h2>Get SEO Results Like This</h2>
+            <div className="flex flex-wrap justify-center items-center">
+              <div className="lg:w-3/4 md:w-full text-center pb-4">
+                <h2>Get Lawyers Contacting You on a Monthly Basis</h2>
                 <p>
-                  Mark had zero traffic and no leads coming in. Now he is busy
-                  and working on his practice full-time.
+                  Mark had zero traffic to his website and no lawyers finding him. Now he has lawyers contacting him on a monthly basis and is working on his expert witness business full-time.
                 </p>
               </div>
               
-              <div className="md:w-1/2 w-full px-4">
+              <div className="md:w-full w-full px-4">
                 <Image
-                  src="/photos/SEO-Results-02-copy.jpg"
+                  src="/photos/SEO-Results.png"
                   alt="Clarify Your Message"
                   width={2013}
                   height={1194}
                   className="object-contain"
                 />
               </div>
-              <div className="md:w-1/2 w-full px-4">
+              {/* <div className="md:w-1/2 w-full px-4">
                 <Image
                   src="/photos/SEO-Results-01.jpg"
                   alt="Clarify Your Message"
@@ -163,7 +162,7 @@ export default function Home() {
                   height={1194}
                   className="object-contain"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="relative z-10 container mx-auto px-6">
@@ -380,9 +379,9 @@ export default function Home() {
               <div className="px-4 text-center lg:w-1/2">
                 <h2>How to Get Started</h2>
                 <p>
-                  Schedule a time below to discuss ideas to help you save time
-                  while growing your business.
+                  Schedule a time below to discuss the strategy that can help you grow your expert witness business.
                 </p>
+                <small>It&apos;s not by attending the SEAK conference every year, although it is recommended.</small>
               </div>
               <div className="px-4 text-center w-full" id="calendar">
                 {/* <!-- Calendly inline widget begin --> */}
