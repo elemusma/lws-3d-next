@@ -92,22 +92,24 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full pb-8 px-4 text-center">
-                <h2>Are you overwhelmed by website maintenance?</h2>
+                <h2>Are you unsure how to write content that won&apos;t be used against you in court?</h2>
+                <p>Don&apos;t get eaten alive at deposition.</p>
               </div>
               <div className="lg:w-1/2 w-full px-4">
-                <ul style={{ textShadow: "0px 0px 3px white" }}>
-                  <li><strong>Struggling with SEO and online visibility?</strong></li>
-                  <li><strong>Concerned about website security and updates?</strong></li>
-                  <li><strong>Does your website not work properly?</strong></li>
-                  <li><strong>Looking for reliable tech and design support?</strong></li>
+                <ul style={{ textShadow: "0px 0px 3px white",WebkitTextStroke: "0.5px black" }}>
+                  <li><strong>Are you struggling to attract enough cases to be selective with your work?</strong></li>
+                  <li><strong>Are you struggling to get found by lawyers seeking expert witnesses?</strong></li>
+                  <li><strong>Is your current SEO strategy failing to attract high-value legal cases?</strong></li>
+                  <li><strong>Are inconsistent content updates costing you potential expert witness opportunities?</strong></li>
+                  
                 </ul>
               </div>
               <div className="lg:w-1/2 w-full px-4">
-                <ul style={{ textShadow: "0px 0px 3px white" }}>
-                  <li><strong>Wasting time with non-responsive tech support?</strong></li>
-                  <li><strong>Unsure how to handle tech stack updates?</strong></li>
-                  <li><strong>Are you attending a convention soon?</strong></li>
-                  <li><strong>Do you want to look good for investors?</strong></li>
+              <ul style={{ textShadow: "0px 0px 3px white",WebkitTextStroke: "0.5px black" }}>
+                <li><strong>Are you struggling to produce enough content to consistently showcase your expertise?</strong></li>
+                  <li><strong>Are outdated website practices keeping you invisible to lawyers and insurers?</strong></li>
+                  <li><strong>Is the complexity of expert witness work preventing you from marketing yourself effectively?</strong></li>
+                  <li><strong>Is a lack of targeted messaging preventing you from positioning yourself as the go-to expert?</strong></li>
                 </ul>
               </div>
               <div className="w-full pb-8 px-4 text-center">
@@ -170,56 +172,51 @@ export default function Home() {
               {/* Card 1 */}
               <div className="flex flex-col items-center">
                 <Image
-                  src="/assets/End-to-End-Technical-Management.png"
+                  src="/photos/Expert-Witness-Target-Fact-Based.png"
                   alt="Clarify Your Message"
                   width={2013}
                   height={1194}
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                  End-to-End Technical Management:
+                Targeted, Fact-Based Expert Witness Content Strategy
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                  Don&apos;t worry about technical problems. Programming, theme
-                  / software updates, ads, SEO, emails, DNS, hosting. We&apos;ll
-                  take care of it.
+                Positions you as a trusted expert witness while not getting eaten alive at deposition.
                 </p>
               </div>
 
               {/* Card 2 */}
               <div className="flex flex-col items-center">
                 <Image
-                  src="/assets/Design-Programming.png"
+                  src="/photos/Expert-Witness-White-Papers.png"
                   alt="Built To Sell"
                   width={1169}
                   height={1237}
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                  Graphics, Design, Landing Pages, Funnels &amp; More:
+                SEO-Optimized Expert Witness Articles &amp; White Papers
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                  Graphic design for landing pages, funnels, business cards,
-                  logo, websites, and more. We&apos;ll create a custom design
-                  for your needs.
+                Increases visibility to attract higher-value cases and establish authority.
                 </p>
               </div>
 
               {/* Card 3 */}
               <div className="flex flex-col items-center">
                 <Image
-                  src="/assets/Responsive-Real-Customer-Support.png"
+                  src="/photos/Expert-Witness-Content-Strategy.png"
                   alt="Build For The Modern Times"
                   width={1446}
                   height={1173}
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                  Responsive &amp; Real Customer Support:
+                Consistent Expert Witness Content Production Plan
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                  Are you tired of waiting hours for support? Give us a call, a
-                  real person will talk to you and take care of everything.
+                Ensures regular, relevant updates that keep your expertise top-of-mind for potential clients.
                 </p>
               </div>
             </div>
@@ -317,7 +314,7 @@ export default function Home() {
                   >
                     1.
                   </span>
-                  <span className="text-white">Schedule Free Consultation</span>
+                  <span className="text-white">Schedule a Call</span>
                 </h2>
               </div>
               <div
@@ -340,7 +337,7 @@ export default function Home() {
                   >
                     2.
                   </span>
-                  <span>Onboarding in Minutes</span>
+                  <span>Tell Us Your Expertise</span>
                 </h2>
               </div>
               <div
@@ -377,9 +374,9 @@ export default function Home() {
               style={{ flexWrap: "wrap" }}
             >
               <div className="px-4 text-center lg:w-1/2">
-                <h2>How to Get Started</h2>
+                <h2>Get More Cases and Get Found by Lawyers</h2>
                 <p>
-                  Schedule a time below to discuss the strategy that can help you grow your expert witness business.
+                  Schedule a time below to learn how we can help you get more cases and get found by more lawyers as an expert witness.
                 </p>
                 <small>It&apos;s not by attending the SEAK conference every year, although it is recommended.</small>
               </div>
