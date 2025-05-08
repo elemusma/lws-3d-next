@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lawyers - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
-      "We help expert witnesses get more cases and get found by lawyers. Web design and SEO to grow your expert witness business practice. Do not get eaten alive at deposition.",
+      "We help expert witnesses get more cases and get found by lawyers. Are you unsure how to write content that won't be used against you in court? Don\'t get eaten alive at deposition.",
   metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
   alternates: {
     canonical: "https://latinowebstudio.com", // ✅ correct canonical
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lawyers - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
-      "We help expert witnesses get more cases and get found by lawyers. Web design and SEO to grow your expert witness business practice. Do not get eaten alive at deposition.",
+      "We help expert witnesses get more cases and get found by lawyers. Are you unsure how to write content that won't be used against you in court? Don\'t get eaten alive at deposition.",
     url: "https://latinowebstudio.com",
     siteName: "Latino Web Studio",
     images: [
       {
-        url: "/assets/Web-Design-SEO.jpg", // Make sure this path is valid!
+        url: "/photos/Get-More-Cases-Get-Found-By-Lawyers.jpg", // Make sure this path is valid!
         width: 1200,
         height: 630,
-        alt: "Web Design and SEO",
+        alt: "Lawyers - Retainers - Cases - Helping Expert Witnesses",
       },
     ],
     type: "website",

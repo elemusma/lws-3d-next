@@ -5,7 +5,7 @@ export default function HeadshotIcons() {
     <div className="w-full relative">
       <Image
         src="/assets/Design-Development-Tools.png"
-        alt="headshot icons"
+        alt="Tadeo (Ted) Martinez - Helping Expert Witnesses"
         // style={{ width: "100%" }}
         className="w-full h-auto rotate-animation"
         width={500}
@@ -17,7 +17,7 @@ export default function HeadshotIcons() {
       >
         <Image
           src="/assets/Headshot_1.png"
-          alt="headshot icons"
+          alt="Tadeo (Ted) Martinez - Helping Expert Witnesses"
           fill
           className="" // Add any Tailwind or custom classes
         />

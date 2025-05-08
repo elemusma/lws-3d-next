@@ -150,7 +150,7 @@ export default function Home() {
               <div className="md:w-full w-full px-4">
                 <Image
                   src="/photos/SEO-Results.png"
-                  alt="Clarify Your Message"
+                  alt="Get Lawyers Contacting You on a Monthly Basis"
                   width={2013}
                   height={1194}
                   className="object-contain"
@@ -173,7 +173,7 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <Image
                   src="/photos/Expert-Witness-Target-Fact-Based.png"
-                  alt="Clarify Your Message"
+                  alt="Targeted, Fact-Based Expert Witness Content Strategy"
                   width={2013}
                   height={1194}
                   className="h-24 w-auto object-contain"
@@ -190,7 +190,7 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <Image
                   src="/photos/Expert-Witness-White-Papers.png"
-                  alt="Built To Sell"
+                  alt="SEO-Optimized Expert Witness Articles &amp; White Papers"
                   width={1169}
                   height={1237}
                   className="h-24 w-auto object-contain"
@@ -207,7 +207,7 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <Image
                   src="/photos/Expert-Witness-Content-Strategy.png"
-                  alt="Build For The Modern Times"
+                  alt="Consistent Expert Witness Content Production Plan"
                   width={1446}
                   height={1173}
                   className="h-24 w-auto object-contain"

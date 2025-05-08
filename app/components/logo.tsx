@@ -30,7 +30,7 @@ function Logo() {
         >
           <Image
             src="/assets/logo-bg.png"
-            alt="Logo"
+            alt="Logo - Latino Web Studio - Lawyers - Retainers - Cases - Helping Expert Witnesses"
             width={75}
             height={75}
             className="absolute logo-bg"
@@ -42,7 +42,7 @@ function Logo() {
           />
           <Image
             src="/assets/logo-bird.png"
-            alt="Logo"
+            alt="Logo - Latino Web Studio - Lawyers - Retainers - Cases - Helping Expert Witnesses"
             width={40}
             height={40}
             className="relative logo-bird"
