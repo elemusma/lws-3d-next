@@ -25,8 +25,8 @@ export default function Home() {
       <main>
         <section className="hero" style={{}}>
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap md:flex-row-reverse justify-start mx-4">
-              <div className="lg:w-5/12 w-full px-4 lg:pb-0 pb-8">
+            <div className="flex flex-wrap md:flex-row-reverse justify-center mx-4">
+              {/* <div className="lg:w-5/12 w-full px-4 lg:pb-0 pb-8">
                 <iframe
                   className="video-container"
                   width="100%"
@@ -38,22 +38,20 @@ export default function Home() {
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
-
-                {/* <HeadshotIcons /> */}
-              </div>
-              <div className="lg:w-7/12 w-full px-4">
-                <div className="lg:w-7/12 w-full">
+              </div> */}
+              <div className="lg:w-3/4 w-full px-4 text-center">
+                <div className="lg:w-full w-full">
                   <h1 className="text-secondary animated-heading">
                     Get More Cases - Get Found by Lawyers
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
-                <div className="lg:w-9/12 w-1/9">
-                  <p>
-                    Get a free white paper tailored to your areas of expertise. We can also explain how the white paper gets lawyers contacting for cases specifically to your areas of expertise. Learn the exact strategy we&apos;ve used to help other expert witnesses.
+                {/* <div className="lg:w-9/12 w-1/9"> */}
+                  <p style={{marginTop: 15, marginBottom: 15}}>
+                  We help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against them in deposition.
                   </p>
                   {/* <Login /> */}
-                </div>
+                {/* </div> */}
                 <div>
                   <a href="#schedule" className="btn-main">
                     Schedule a Call
@@ -88,7 +86,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ paddingTop: 200, paddingBottom: 100 }}>
+        <section style={{ paddingTop: 100, paddingBottom: 100 }}>
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full pb-8 px-4 text-center">
@@ -182,7 +180,7 @@ export default function Home() {
                 Targeted, Fact-Based Expert Witness Content Strategy
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                Positions you as a trusted expert witness while not getting eaten alive at deposition.
+                Be a trusted expert while preventing content from being used against you in deposition.
                 </p>
               </div>
 
@@ -190,13 +188,13 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <Image
                   src="/photos/Expert-Witness-White-Papers.png"
-                  alt="SEO-Optimized Expert Witness Articles &amp; White Papers"
+                  alt="Optimized Expert Witness Articles &amp; White Papers"
                   width={1169}
                   height={1237}
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                SEO-Optimized Expert Witness Articles &amp; White Papers
+                Optimized Expert Witness Articles &amp; White Papers
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
                 Increases visibility to attract higher-value cases and establish authority.
