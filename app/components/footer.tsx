@@ -4,7 +4,7 @@ import Logo from "./logo";
 import SocialIcons from "./social-icons";
 
 function Footer() {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   return (
     <>
       <footer
