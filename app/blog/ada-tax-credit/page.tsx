@@ -3,6 +3,7 @@ import "@/app/styles/blog.scss";
 import Image from "next/image";
 import { Website } from "@/app/components/globals";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -32,16 +33,18 @@ export default function AdaTaxCredit() {
     <>
       {/* Hero Section */}
       <ContentBlock
-        sectionClassName="bg-white text-black pt-[150px] pb-8"
+        sectionClassName="bg-white text-black pt-[150px] pb-8 blog"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="lg:w-3/4 w-full px-4"
       >
         <h1 className="text-3xl font-bold mb-6 text-gray-800">ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms</h1>
-
+<a href="/contact" className="btn-main">
+                    Speak with an SEO Expert
+                  </a>
   <h2 className="text-3xl font-bold mb-4 text-gray-700">Leveraging ADA Compliance for Increased Visibility and Tax Benefits</h2>
   <p className="mb-4 text-gray-600">
-    For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it’s a strategic advantage. ADA compliance not only opens doors to federal tax credits but also positions your firm as a trusted, accessible resource in the eyes of potential clients. In this blueprint, we explore three key strategies that integrate ADA compliance with targeted SEO practices to increase online visibility and enhance lead generation.
+    For legal and consulting firms, aligning website accessibility with <Link href="/">search engine optimization (SEO)</Link> is more than a compliance requirement — it’s a strategic advantage. ADA compliance not only opens doors to federal tax credits but also positions your firm as a trusted, accessible resource in the eyes of potential clients. In this blueprint, we explore three key strategies that integrate ADA compliance with targeted SEO practices to increase online visibility and enhance lead generation.
   </p>
   <h3 className="text-2xl font-semibold mb-3 text-gray-700">Where Accessibility Meets Online Visibility</h3>
 
