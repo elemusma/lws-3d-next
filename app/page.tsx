@@ -48,7 +48,7 @@ export default function Home() {
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 {/* <div className="lg:w-9/12 w-1/9"> */}
                   <p style={{marginTop: 15, marginBottom: 15}}>
-                  We help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against them in deposition.
+                  We help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against you in deposition.
                   </p>
                   {/* <Login /> */}
                 {/* </div> */}

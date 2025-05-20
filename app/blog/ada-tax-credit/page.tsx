@@ -1,12 +1,35 @@
 import ContentBlock from "@/app/components/content-block";
-
 import "@/app/styles/blog.scss";
-import Link from "next/link";
+import Image from "next/image";
+import { Website } from "@/app/components/globals";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
+  description:
+    "For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it’s a strategic advantage.",
+  openGraph: {
+    title:
+      "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
+    description:
+      "For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it’s a strategic advantage.",
+    url: `${Website}/blog/ada-tax-credit`, // Replace with actual URL
+    type: "website",
+    images: [
+      {
+        url: `${Website}/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-01.png`, // Replace with the actual image path
+        width: 1200, // Standard OG image width
+        height: 630, // Standard OG image height
+        alt: "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
+      },
+    ],
+  },
+};
 
 export default function AdaTaxCredit() {
   return (
     <>
-      {/* <div className="bg-gray-100 text-black"> */}
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-white text-black pt-[150px] pb-8"
@@ -14,200 +37,87 @@ export default function AdaTaxCredit() {
         rowClassName="flex flex-col items-center"
         columnClassName="lg:w-3/4 w-full px-4"
       >
-        <h1 className="text-3xl font-bold">
-          Unlock $5,000 in Tax Credits by Making Your Business Accessible
-        </h1>
-        <p className="text-lg text-gray-700 mt-4">
-          Learn how small businesses can leverage the ADA Tax Credit to improve
-          accessibility while saving money.
-        </p>
+        <h1 className="text-3xl font-bold mb-6 text-gray-800">ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms</h1>
 
-        {/* Understanding the ADA Tax Credit */}
+  <h2 className="text-3xl font-bold mb-4 text-gray-700">Leveraging ADA Compliance for Increased Visibility and Tax Benefits</h2>
+  <p className="mb-4 text-gray-600">
+    For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it’s a strategic advantage. ADA compliance not only opens doors to federal tax credits but also positions your firm as a trusted, accessible resource in the eyes of potential clients. In this blueprint, we explore three key strategies that integrate ADA compliance with targeted SEO practices to increase online visibility and enhance lead generation.
+  </p>
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Where Accessibility Meets Online Visibility</h3>
 
-        <h2 className="text-2xl font-semibold">
-          Understanding the ADA Tax Credit: A Hidden Financial Opportunity
-        </h2>
-        <p>
-          The{" "}
-          <a
-            href="https://www.irs.gov/newsroom/tax-benefits-of-making-a-business-accessible-to-workers-and-customers-with-disabilities"
-            target="_blank"
-          >
-            ADA Tax Credit
-          </a>
-          , found under <strong>Section 44 of the IRS code</strong>, is a
-          powerful incentive designed to encourage businesses to invest in
-          accessibility.
-        </p>
+  <Image 
+          src="/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-01.png"
+          width={2000}
+          height={2000} alt={"Where Accessibility Meets Online Visibility"}  
+          />
 
-        {/* Eligibility Criteria */}
+  <h2 className="text-3xl font-bold mb-4 text-gray-700">Implementing LocalBusiness Schema Markup for ADA Services</h2>
+  <p className="mb-4 text-gray-600">
+    LocalBusiness schema markup is a powerful tool for law firms and consulting services looking to increase local search visibility. By defining key business information such as address, contact details, and service offerings using structured data, firms can significantly enhance their search engine presence.
+  </p>
 
-        <h2 className="text-2xl font-semibold">
-          Eligibility Criteria: Who Qualifies?
-        </h2>
-        <p>To be eligible, your business must meet specific requirements:</p>
-        <ul className="list-disc ml-6">
-          <li>
-            <strong>Employ 30 or fewer full-time employees</strong>
-          </li>
-          <li>
-            <strong>Generate less than $1 million in annual revenue</strong>
-          </li>
-        </ul>
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Understanding LocalBusiness Schema Markup</h3>
+  <p className="mb-4 text-gray-600">
+    LocalBusiness schema is a specific subtype of the Organization schema, tailored to businesses with a physical location. For firms providing ADA compliance consultations, using schema markup helps communicate service offerings to search engines more effectively, resulting in rich snippets and knowledge panel features.
+  </p>
 
-        {/* Financial Benefits */}
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Required and Recommended Properties</h3>
+  <p className="mb-4 text-gray-600">
+    Key schema properties include:
+  </p>
+  <ul className="list-disc ml-6 mb-4 text-gray-600">
+    <li><span className="font-semibold">Address:</span> Clearly define the physical address, ensuring accuracy in formatting and consistency across platforms.</li>
+    <li><span className="font-semibold">Geo-coordinates:</span> Include latitude and longitude for enhanced local search relevance.</li>
+    <li><span className="font-semibold">Business Hours:</span> Specify opening hours, especially for firms offering ADA consultations by appointment.</li>
+    <li><span className="font-semibold">Service Area:</span> Define specific service areas to capture local search queries effectively.</li>
+  </ul>
 
-        <h2 className="text-2xl font-semibold">
-          How the Tax Credit Works: Breaking Down the Financial Benefits
-        </h2>
-        <p>
-          The tax credit covers{" "}
-          <strong>50% of your accessibility-related expenditures</strong>, with
-          a maximum credit of
-          <strong> $5,000</strong>. The first <strong>$250</strong> of expenses
-          is not covered, meaning your business can claim a credit on up to{" "}
-          <strong>$10,250</strong> in accessibility improvements.
-        </p>
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Implementation Example</h3>
+  <p className="mb-4 text-gray-600">
+    JSON-LD schema markup for ADA consultation services can include fields such as “@type”: “LegalService,” “name”: “ADA Compliance Consulting,” and “priceRange”: “$$.” Structuring this data properly enables search engines to generate rich results, attracting potential clients actively seeking ADA compliance guidance.
+  </p>
 
-        {/* What Improvements Qualify? */}
+  <h2 className="text-3xl font-bold mb-4 text-gray-700">Conducting ADA Compliance Audits for Enhanced SEO</h2>
+  <p className="mb-4 text-gray-600">
+    ADA compliance audits not only prevent potential legal liabilities but also serve as an opportunity to optimize the website for SEO. By identifying and addressing accessibility barriers, firms can enhance user experience, reduce bounce rates, and increase search visibility.
+  </p>
 
-        <h2 className="text-2xl font-semibold">What Improvements Qualify?</h2>
-        <p>
-          Accessibility improvements can include a wide range of modifications:
-        </p>
-        <ul className="list-disc ml-6">
-          <li>
-            <strong>Physical infrastructure upgrades</strong> (like wheelchair
-            ramps)
-          </li>
-          <li>
-            <strong>Website accessibility solutions</strong>
-          </li>
-          <li>
-            <strong>Digital technology adaptations</strong>
-          </li>
-          <li>
-            <strong>Consulting services for accessibility compliance</strong>
-          </li>
-          <li>
-            <strong>Assistive technologies</strong> for customers and employees
-          </li>
-        </ul>
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Key Areas of ADA Compliance</h3>
+  <p className="mb-4 text-gray-600">
+    The ADA Checklist for Existing Facilities outlines four primary areas of focus:
+  </p>
+  <ul className="list-disc ml-6 mb-4 text-gray-600">
+    <li><span className="font-semibold">Accessible Approach and Entrance:</span> Ensure that entryways are accessible, with ramps, handrails, and clear signage.</li>
+    <li><span className="font-semibold">Access to Goods and Services:</span> Confirm that client-facing areas, including reception and consultation rooms, are barrier-free.</li>
+    <li><span className="font-semibold">Public Restroom Access:</span> Verify that restrooms comply with ADA specifications for space, layout, and fixture placement.</li>
+    <li><span className="font-semibold">Accessible Signage:</span> Install ADA-compliant signage with clear, readable fonts and braille text.</li>
+  </ul>
 
-        {/* Accessibility Checklist */}
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Content Strategy for ADA Compliance</h3>
+  <p className="mb-4 text-gray-600">
+    Content that educates potential clients about ADA compliance and tax credit eligibility can position your firm as an authoritative resource. Develop blog posts and guides such as:
+  </p>
+  <ul className="list-disc ml-6 mb-4 text-gray-600">
+    <li>“Top 5 ADA Compliance Improvements Eligible for Tax Credits”</li>
+    <li>“How ADA Compliance Can Enhance Your Business Accessibility and Profitability”</li>
+  </ul>
+  <h3 className="text-2xl font-semibold mb-3 text-gray-700">Enhancing SEO Through ADA Compliance</h3>
 
-        <h2 className="text-2xl font-semibold">
-          Navigating Compliance: A Strategic Approach
-        </h2>
-        <h3 className="text-xl font-medium mt-4">Accessibility Checklist</h3>
-        <ul className="list-disc ml-6">
-          <li>✅ Wheelchair-accessible entrances</li>
-          <li>✅ Clear and appropriate signage</li>
-          <li>✅ Accessible restroom facilities</li>
-          <li>✅ Inclusive digital platforms</li>
-          <li>✅ Parking lot compliance</li>
-        </ul>
+  <Image 
+          src="/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-02.png"
+          width={2000}
+          height={2000} alt={"Enhancing SEO Through ADA Compliance"}  
+          />
 
-        {/* Claiming Your Tax Credit */}
+  <h2 className="text-3xl font-bold mb-4 text-gray-700">Strategic Takeaways for ADA Tax Credit Visibility</h2>
+  <p className="mb-4 text-gray-600">
+    Implementing LocalBusiness schema markup, conducting comprehensive ADA compliance audits, and optimizing Google Business Profiles are powerful strategies for legal and consulting firms looking to increase visibility and client acquisition through ADA compliance services. By aligning SEO efforts with ADA guidelines, firms can not only mitigate legal risks but also effectively market their expertise in helping businesses leverage tax credits for accessibility improvements.
+  </p>
 
-        <h2 className="text-2xl font-semibold">
-          Claiming Your Tax Credit: Step-by-Step Process
-        </h2>
-        <ol className="list-decimal ml-6">
-          <li>
-            <strong>Document</strong> your accessibility expenditures
-          </li>
-          <li>
-            <strong>Complete</strong>
-            <Link
-              href="https://www.irs.gov/forms-pubs/about-form-8826"
-              target="_blank"
-              className="text-blue-600"
-            >
-              Form 8826
-            </Link>{" "}
-            from the IRS
-          </li>
-          <li>
-            <strong>Attach</strong> the form to your annual tax return
-          </li>
-          <li>
-            <strong>Consult</strong> with a tax professional
-          </li>
-        </ol>
-
-        {/* Broader Impact */}
-
-        <h2 className="text-2xl font-semibold">
-          Beyond Financial Savings: The Broader Impact
-        </h2>
-        <h3 className="text-xl font-medium mt-4">
-          Legal Protection and Risk Mitigation
-        </h3>
-        <p>Proactively addressing accessibility helps:</p>
-        <ul className="list-disc ml-6">
-          <li>
-            Avoid potential <strong>lawsuits</strong>
-          </li>
-          <li>
-            Demonstrate <strong>corporate social responsibility</strong>
-          </li>
-          <li>
-            Reduce <strong>legal risks</strong>
-          </li>
-        </ul>
-
-        <h3 className="text-xl font-medium mt-4">
-          Expanding Your Customer Base
-        </h3>
-        <ul className="list-disc ml-6">
-          <li>✅ Welcome a broader range of customers</li>
-          <li>✅ Show commitment to inclusivity</li>
-          <li>✅ Differentiate your business</li>
-        </ul>
-
-        {/* Next Steps */}
-
-        <h2 className="text-2xl font-semibold">Next Steps</h2>
-        <ul className="list-disc ml-6">
-          <li>
-            🔍 <strong>Conduct an accessibility audit</strong>
-          </li>
-          <li>
-            🛠 <strong>Consult with an ADA compliance expert</strong>
-          </li>
-          <li>
-            📈 <strong>Explore potential improvements</strong>
-          </li>
-          <li>
-            📝{" "}
-            <strong>Work with your tax professional to claim the credit</strong>
-          </li>
-        </ul>
-
-        {/* Conclusion */}
-
-        <h2 className="text-2xl font-semibold">
-          Your Accessibility Journey Starts Now
-        </h2>
-        <p>
-          <strong>
-            Accessibility is an investment in your business&apos;s future.
-          </strong>{" "}
-          The <strong>ADA Tax Credit</strong> makes this investment more
-          affordable, helping small businesses create environments that welcome
-          everyone.
-        </p>
-        <p className="mt-4">
-          <strong>Don&apos;t wait</strong> for a lawsuit or missed opportunity—take
-          proactive steps to make your business more inclusive today.
-        </p>
-        <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4">
-          &quot;Every step towards accessibility is a step towards growth,
-          innovation, and social responsibility.&quot;
-        </blockquote>
+  <p className="mb-4 text-gray-600">
+    Ultimately, the intersection of accessibility and SEO provides a dual benefit: fostering inclusivity while strategically positioning the firm to capture a broader audience seeking ADA compliance guidance and related services.
+  </p>
       </ContentBlock>
-      {/* </div> */}
     </>
   );
 }
