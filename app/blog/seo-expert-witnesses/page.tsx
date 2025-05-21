@@ -1,6 +1,6 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
-// import Image from "next/image";
+import Image from "next/image";
 import { Website } from "@/app/components/globals";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
@@ -49,7 +49,14 @@ export default function AdaTaxCredit() {
   <p className="text-base text-gray-700 mb-6">
     Attorneys searching for expert witnesses online are not casual users. They are decision-makers with high-intent legal queries, often under time pressure and seeking highly credible, case-relevant expertise. To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture, trust-building content, and technical markup that communicates expertise to both humans and search engines.
   </p>
-
+<h3 className="text-xl font-medium text-gray-800 mb-2">
+    Converting Lawyer Traffic into Case Inquiries
+  </h3>
+  <Image 
+          src="/blog/seo-expert-witnesses/SEO-Expert-Witnesses-03.png"
+          width={2000}
+          height={2000} alt={"Converting Lawyer Traffic into Case Inquiries"}  
+          />
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
     Aligning Website Content with E-E-A-T Principles
   </h2>
@@ -95,7 +102,14 @@ export default function AdaTaxCredit() {
   <p className="text-base text-gray-700 mb-4">
     Each silo should include multiple types of content—such as expert Q&A articles, case summaries, deposition readiness checklists, and jurisdictional considerations. Cross-linking these pieces within a silo keeps users engaged and signals thematic depth to search engines. Avoid mixing unrelated services in the same silo to maintain topic clarity.
   </p>
-
+<h3 className="text-xl font-medium text-gray-800 mb-2">
+    Understanding content organization strategies: physical vs. virtual silos
+  </h3>
+  <Image 
+          src="/blog/seo-expert-witnesses/SEO-Expert-Witnesses-02.png"
+          width={2000}
+          height={2000} alt={"Understanding content organization strategies: physical vs. virtual silos"}  
+          />
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
     Enhancing Legal Service Visibility Through Schema Markup
   </h2>
@@ -123,7 +137,14 @@ export default function AdaTaxCredit() {
   <p className="text-base text-gray-700 mb-4">
     Schema should be implemented in JSON-LD format and inserted in the page&apos;s head or body. Using a schema markup generator designed for legal services can streamline this process. All structured data must be accurate and match visible content to avoid penalties or disqualification from enhanced listings.
   </p>
-
+    <h3 className="text-xl font-medium text-gray-800 mb-2">
+    Expert Witness Schema Hierarchy
+  </h3>
+  <Image 
+          src="/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png"
+          width={2000}
+          height={2000} alt={"Enhancing SEO Through ADA Compliance"}  
+          />
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
     Integrating Case-Centric SEO for Sustainable Lead Generation
   </h2>
