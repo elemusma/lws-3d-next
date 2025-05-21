@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type:"website",
     images: [
       {
-        url: `${Website}/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-01.png`, // Replace with the actual image path
+        url: `${Website}/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
@@ -53,7 +53,7 @@ export default function AdaTaxCredit() {
     Converting Lawyer Traffic into Case Inquiries
   </h3>
   <Image 
-          src="/blog/seo-expert-witnesses/SEO-Expert-Witnesses-03.png"
+          src="/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png"
           width={2000}
           height={2000} alt={"Converting Lawyer Traffic into Case Inquiries"}  
           />
