@@ -1,29 +1,29 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
-import Image from "next/image";
+// import Image from "next/image";
 import { Website } from "@/app/components/globals";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
-import Link from "next/link";
+// import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
+   "Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
   description:
-    "For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it&apos;s a strategic advantage.",
+   "To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture",
   openGraph: {
     title:
-      "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
+     "Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
     description:
-      "For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it&apos;s a strategic advantage.",
-    url: `${Website}/blog/ada-tax-credit`, // Replace with actual URL
-    type: "website",
+     "To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture",
+    url: `${Website}/blog/seo-expert-witnesses`, // Replace with actual URL
+    type:"website",
     images: [
       {
         url: `${Website}/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
-        alt: "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
+        alt:"Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
       },
     ],
   },
@@ -47,7 +47,7 @@ export default function AdaTaxCredit() {
     Why Legal Professionals Demand Case-Relevant Expertise Online
   </h2>
   <p className="text-base text-gray-700 mb-6">
-    Attorneys searching for expert witnesses online are not casual users. They are decision-makers with high-intent legal queries, often under time pressure and seeking highly credible, case-relevant expertise. To convert that traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture, trust-building content, and technical markup that communicates expertise to both humans and search engines.
+    Attorneys searching for expert witnesses online are not casual users. They are decision-makers with high-intent legal queries, often under time pressure and seeking highly credible, case-relevant expertise. To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture, trust-building content, and technical markup that communicates expertise to both humans and search engines.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -68,7 +68,7 @@ export default function AdaTaxCredit() {
     Establishing expertise begins with clear attribution. Each expert should have a dedicated bio page that outlines their credentials, board certifications, court admissibility, publication history, and testimonial experience. Including a high-resolution professional photo, downloadable CV, and recent case involvement summary enhances the bio&apos;s authority.
   </p>
   <p className="text-base text-gray-700 mb-4">
-    Trustworthiness is strengthened through secure website protocols, visible contact information, affiliations with professional societies, and links to verifiable third-party sources. Updating key pages regularly ensures accuracy, which supports Google's preference for current, factual content. Including multiple viewpoints in technical blogs or articles—such as comparing methodological standards across jurisdictions—can also signal comprehensive understanding.
+    Trustworthiness is strengthened through secure website protocols, visible contact information, affiliations with professional societies, and links to verifiable third-party sources. Updating key pages regularly ensures accuracy, which supports Google&apos;s preference for current, factual content. Including multiple viewpoints in technical blogs or articles—such as comparing methodological standards across jurisdictions—can also signal comprehensive understanding.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -86,7 +86,7 @@ export default function AdaTaxCredit() {
     Physical and Virtual Silos in Legal Contexts
   </h3>
   <p className="text-base text-gray-700 mb-4">
-    Physical silos use directory structures (e.g., `/personal-injury/accident-reports`) to group content, while virtual silos rely on internal linking and navigation. Both strategies reinforce topical alignment. For instance, an orthopedic IME expert might build a silo around "Trauma Case Studies," featuring subpages for spine injuries, shoulder evaluations, and long-term impairment assessments.
+    Physical silos use directory structures (e.g., `/personal-injury/accident-reports`) to group content, while virtual silos rely on internal linking and navigation. Both strategies reinforce topical alignment. For instance, an orthopedic IME expert might build a silo around&quot;Trauma Case Studies,&quot;featuring subpages for spine injuries, shoulder evaluations, and long-term impairment assessments.
   </p>
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">
@@ -114,7 +114,7 @@ export default function AdaTaxCredit() {
     The `Person` schema can be used to annotate each expert with details like credentials, job title, image, and affiliated organizations. The `LegalService` schema defines services offered, including jurisdiction, practice area, and method of consultation. Additional markup, such as `Review`, `sameAs`, and `knowsAbout`, can enhance credibility and help map the expert to specific legal topics.
   </p>
   <p className="text-base text-gray-700 mb-4">
-    For example, an expert in construction defect analysis might use `knowsAbout` to specify terms like "building code violations" or "structural failure analysis," improving discoverability for attorneys searching by case type. Jurisdictional tags help clarify where the expert is qualified to testify, an important detail for state-level inquiries.
+    For example, an expert in construction defect analysis might use `knowsAbout` to specify terms like&quot;building code violations&quot;or&quot;structural failure analysis,&quot;improving discoverability for attorneys searching by case type. Jurisdictional tags help clarify where the expert is qualified to testify, an important detail for state-level inquiries.
   </p>
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">
