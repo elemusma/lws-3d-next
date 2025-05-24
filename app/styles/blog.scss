@@ -6,3 +6,15 @@ h2 {
     color: var(--accent-secondary);
     text-decoration: underline;
 }
+
+.single-post a, .single-post #previous a, .single-post #next a {
+	color:var(--accent-secondary);
+	padding: 0px 5px;
+	box-shadow: inset 0 -5px 0 0 var(--accent-primary);
+    transition: all .25s ease-in-out;
+  text-decoration:none;
+}
+
+.single-post a:hover, .single-post #previous a:hover, .single-post #next a:hover {
+	box-shadow: inset 0 -55px 0 0 var(--accent-primary);
+}
