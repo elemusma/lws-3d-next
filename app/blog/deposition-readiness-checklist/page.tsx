@@ -18,20 +18,20 @@ export const metadata: Metadata = {
      "Deposition Preparation Content to Drive Legal Leads for Expert Witnesses - Latino Web Studio",
     description:
      "As an expert witness you operate in a highly specialized market, where visibility and credibility directly impact case acquisition.",
-    url: `${Website}/blog/seo-expert-witnesses`, // Replace with actual URL
+    url: `${Website}/blog/deposition-readiness-checklist`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png`, // Replace with the actual image path
+        url: `${Website}/blog/Deposition-Readiness-Checklists-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
-        alt:"Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
+        alt:"Checklist to Casebook: How Expert Witnesses Can Use Deposition Preparation Content to Drive Legal Leads - Latino Web Studio",
       },
     ],
   },
 };
 
-export default function AdaTaxCredit() {
+export default function DepositionReadinessChecklist() {
   return (
     <>
       {/* Hero Section */}
@@ -110,7 +110,7 @@ export default function AdaTaxCredit() {
 <Image 
           src="/blog/Deposition-Readiness-Checklists-02.png"
           width={2000}
-          height={2000} alt={"Attorney Engagement Funnel"}  
+          height={2000} alt={"Turn Lawyers Into Leads with Lead Magnets"}  
           />
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">Bringing the Strategy Together: From Content to Cases</h2>
   <p className="mb-4 text-gray-700">
