@@ -82,7 +82,7 @@ export default function AdaTaxCredit() {
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">Eligibility and Proper Implementation</h3>
   <p className="mb-4 text-gray-700">
-    Only FAQ content that is visibly rendered on the page and not user-generated qualifies for structured data. Each question and answer must be complete, relevant, and non-promotional. Using JSON-LD format to mark up deposition FAQs, then validate the markup using Google's Rich Results Test.
+    Only FAQ content that is visibly rendered on the page and not user-generated qualifies for structured data. Each question and answer must be complete, relevant, and non-promotional. Using JSON-LD format to mark up deposition FAQs, then validate the markup using Google&apos;s Rich Results Test.
   </p>
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">SEO Benefits of Enhanced Search Listings</h3>
@@ -94,12 +94,12 @@ export default function AdaTaxCredit() {
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">Checklist Downloads Backed by Practical Examples</h3>
   <p className="mb-4 text-gray-700">
-    The core utility of deposition checklists lies in your practical guidance. Using outlines and procedural breakdowns from legal practice publications, expert witnesses can craft downloadable resources that mirror real-world needs. A lead magnet such as “How to Choose the Right Expert Witness" becomes significantly more compelling when paired with a brief success story.
+    The core utility of deposition checklists lies in your practical guidance. Using outlines and procedural breakdowns from legal practice publications, expert witnesses can craft downloadable resources that mirror real-world needs. A lead magnet such as &quot;How to Choose the Right Expert Witness&quot; becomes significantly more compelling when paired with a brief success story.
   </p>
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">Using Case Context to Build Trust</h3>
   <p className="mb-4 text-gray-700">
-    For example, one checklist might include a section titled “Review opposing expert&apos;s credentials” — paired with a story where missing this step led to a motion to exclude. Pulling directly from practical deposition advice, such as tips for expert CV review or controlling deposition settings, helps turn the abstract into actionable proof.
+    For example, one checklist might include a section titled &quot;Review opposing expert&apos;s credentials&quot; — paired with a story where missing this step led to a motion to exclude. Pulling directly from practical deposition advice, such as tips for expert CV review or controlling deposition settings, helps turn the abstract into actionable proof.
   </p>
 
   <h3 className="text-xl font-medium text-gray-800 mb-2">Gated Content for Attorney Lead Capture</h3>
