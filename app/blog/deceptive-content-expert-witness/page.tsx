@@ -49,7 +49,7 @@ export default function DeceptiveContent() {
     How to Protect Your Reputation and Avoid Costly Mistakes
   </h2>
   <p className="text-base text-gray-600 mb-4">
-    In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters. Deceptive content—be it misleading claims, unverifiable testimonials, or inflated credentials—poses severe threats not only to an expert witness' reputation but also to the integrity of legal proceedings. For those operating within high-stakes environments such as litigation support, the implications extend beyond SEO metrics; they touch on trust, admissibility, and professional viability.
+    In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters. Deceptive content—be it misleading claims, unverifiable testimonials, or inflated credentials—poses severe threats not only to an expert witness&apos; reputation but also to the integrity of legal proceedings. For those operating within high-stakes environments such as litigation support, the implications extend beyond SEO metrics; they touch on trust, admissibility, and professional viability.
   </p>
     <h3 className="text-xl font-semibold text-gray-800 mb-2">Threats to Expert Witness Credibility</h3>
   <Image 
@@ -75,13 +75,13 @@ export default function DeceptiveContent() {
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
-    E-E-A-T Optimization: Aligning Content With Google's Trust Framework
+    E-E-A-T Optimization: Aligning Content With Google&apos;s Trust Framework
   </h2>
   <p className="text-base text-gray-600 mb-4">
-    <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">Google's E-E-A-T guidelines—Experience, Expertise, Authoritativeness, and Trust—play</Link> a central role in how content is evaluated for quality and relevance, particularly within legal and financial sectors classified as YMYL (Your Money or Your Life). For expert witnesses, aligning content with E-E-A-T principles is not optional; it is foundational.
+    <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">Google&apos;s E-E-A-T guidelines—Experience, Expertise, Authoritativeness, and Trust—play</Link> a central role in how content is evaluated for quality and relevance, particularly within legal and financial sectors classified as YMYL (Your Money or Your Life). For expert witnesses, aligning content with E-E-A-T principles is not optional; it is foundational.
   </p>
   <p className="text-base text-gray-600 mb-4">
-    Demonstrating “Experience” involves referencing first-hand casework, types of trials attended, or jurisdictions served. “Expertise” is signaled through academic credentials, published works, and practice-specific insights. “Authoritativeness” grows from citations in reputable directories, participation in legal panels, or cross-linking from court decisions or legal institutions. Lastly, “Trust” is established by ensuring accurate, honest, and safe content that avoids hyperbole or unverifiable claims.
+    Demonstrating &quot;Experience&quot; involves referencing first-hand casework, types of trials attended, or jurisdictions served. &quot;Expertise&quot; is signaled through academic credentials, published works, and practice-specific insights. &quot;Authoritativeness&quot; grows from citations in reputable directories, participation in legal panels, or cross-linking from court decisions or legal institutions. Lastly, &quot;Trust&quot; is established by ensuring accurate, honest, and safe content that avoids hyperbole or unverifiable claims.
   </p>
   <p className="text-base text-gray-600 mb-4">
     A well-structured professional bio should reflect all four E-E-A-T pillars. This includes clearly articulated qualifications, named case types, jurisdictional scope, and references to recognized bodies of expertise. Aligning with E-E-A-T not only increases visibility but serves as an ethical defense against potential mischaracterization or reputational damage.
@@ -96,13 +96,13 @@ export default function DeceptiveContent() {
     Keyword Strategy: Matching Attorney Search Intent with Precise Content
   </h2>
   <p className="text-base text-gray-600 mb-4">
-    Attorneys use highly specific language when searching for expert witnesses. Understanding this behavior through the lens of search intent—informational, transactional, navigational, or commercial—is critical for content alignment. Generic terms like “expert witness” offer low value compared to intent-driven phrases such as “<a href="https://discoveryengineering.net/" target="_blank">expert witness for arc flash fire accident</a>” or “<a href="https://snowsportsexpert.com/" target="_blank">expert witness for snowsports related injuries</a>.”
+    Attorneys use highly specific language when searching for expert witnesses. Understanding this behavior through the lens of search intent—informational, transactional, navigational, or commercial—is critical for content alignment. Generic terms like &quot;expert witness&quot; offer low value compared to intent-driven phrases such as &quot;<a href="https://discoveryengineering.net/" target="_blank">expert witness for arc flash fire accident</a>&quot; or &quot;<a href="https://snowsportsexpert.com/" target="_blank">expert witness for snowsports related injuries</a>.&quot;
   </p>
   <p className="text-base text-gray-600 mb-4">
-    <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">Expert witness' SEO keyword strategies</Link> should therefore focus on transactional and commercial terms that indicate a readiness to engage. Tools like <a href="https://ahrefs.com/" target="_blank">Ahrefs</a>, <a href="https://www.semrush.com/" target="_blank">SEMrush</a>, and <a href="https://search.google.com/search-console/about" target="_blank">Google Search Console</a> help refine these clusters, revealing keyword difficulty, volume, and contextual variations.
+    <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">Expert witness&apos; SEO keyword strategies</Link> should therefore focus on transactional and commercial terms that indicate a readiness to engage. Tools like <a href="https://ahrefs.com/" target="_blank">Ahrefs</a>, <a href="https://www.semrush.com/" target="_blank">SEMrush</a>, and <a href="https://search.google.com/search-console/about" target="_blank">Google Search Console</a> help refine these clusters, revealing keyword difficulty, volume, and contextual variations.
   </p>
   <p className="text-base text-gray-600 mb-4">
-    By grouping keywords into thematic clusters—such as “deceptive claims,” “false advertising law,” or “FTC litigation expert”—content can be siloed into coherent, crawlable sections. This boosts topical authority, improves internal linking, and ensures higher relevance scores for litigation lawyers-intent queries.
+    By grouping keywords into thematic clusters—such as &quot;deceptive claims,&quot; &quot;false advertising law,&quot; or &quot;FTC litigation expert&quot;—content can be siloed into coherent, crawlable sections. This boosts topical authority, improves internal linking, and ensures higher relevance scores for litigation lawyers-intent queries.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
