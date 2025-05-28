@@ -18,14 +18,14 @@ export const metadata: Metadata = {
      "How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online - Latino Web Studio",
     description:
      "Schema markup, a type of structured data vocabulary, plays a crucial role in how websites communicate with search engines.",
-    url: `${Website}/blog/peer-reviewed-expert-witness`, // Replace with actual URL
+    url: `${Website}/blog/schema-markup-expert-witnesses`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Peer-Review-Expert-Witness-01.png`, // Replace with the actual image path
+        url: `${Website}/blog/Expert-Witnesses-Schema-Markup-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
-        alt:"From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses - Latino Web Studio",
+        alt:"How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online - Latino Web Studio",
       },
     ],
   },
