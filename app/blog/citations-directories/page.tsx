@@ -49,7 +49,7 @@ export default function CitationsDirectories() {
     Why Expert Witness Visibility Hinges on Directory Optimization
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    In today&apos;s digital-first legal landscape, <Link href="https://latinowebstudio.com">expert witnesses are often discovered not through word-of-mouth referrals, but through online directories and search results</Link>. These platforms serve as trusted intermediaries between legal professionals and technical consultants. As such, optimizing your presence across high-authority directories is not just a visibility strategy—it&apos;s a credibility imperative.
+    In today&apos;s digital-first legal landscape, <Link href="https://latinowebstudio.com">expert witnesses are often discovered not through word-of-mouth referrals, but through online directories and search results</Link>. These platforms serve as trusted intermediaries between legal professionals and expert witnesses. As such, optimizing your presence across high-authority directories is not just a visibility strategy—it&apos;s a credibility imperative.
   </p>
     <h3 className="text-xl font-semibold text-gray-800 mb-2">Expert Witness Credibility Pyramid</h3>
   <Image 
@@ -65,7 +65,7 @@ export default function CitationsDirectories() {
     The SEO Power of High-Authority Directories
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    High-authority directories act as digital citations, each one contributing to the strength of your professional identity across the web. Google treats these mentions—called citations—as trust signals. When citations contain consistent Name, Address, and Phone Number (NAP) data, they enhance local SEO and improve your chances of ranking in legal-specific search queries.
+    High-authority directories act as digital citations, each one contributing to the strength of your professional identity across the web. Google treats these mentions—called citations—as trust signals. When citations contain consistent Name, Address, and Phone Number (NAP) data, they enhance local SEO and improve your chances of ranking in expert witness search queries.
   </p>
   <p className="text-base text-gray-700 mb-4">
     Quality trumps quantity. Citations on respected platforms—especially those in niche legal or forensic verticals—carry more weight than bulk listings on unrelated directories. Overuse of low-value citations may dilute your online authority and reduce the SEO lift they can provide.
@@ -75,7 +75,7 @@ export default function CitationsDirectories() {
     Technical Foundations: NAP Consistency and Schema Markup
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    Consistency in NAP information across all online platforms is foundational to <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">SEO success as an expert witness</Link>. Variations, even minor ones, can confuse search engines and disrupt ranking signals. Conducting a citation audit to identify and correct inconsistencies is a critical first step.
+    Consistency in NAP information across all online platforms is foundational to your <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">SEO success as an expert witness</Link>. Variations, even minor ones, can confuse search engines and disrupt ranking signals. Conducting a citation audit to identify and correct inconsistencies is a critical first step.
   </p>
   <p className="text-base text-gray-700 mb-4">
     To further support structured understanding, <Link href="https://latinowebstudio.com/blog/schema-markup-expert-witness">schema markup for expert witness</Link>, particularly the <code className="bg-gray-100 px-1 rounded">LocalBusiness</code> schema—should be used to wrap key data fields. This allows search engines to parse and index your business attributes in a more accurate, context-aware way.
