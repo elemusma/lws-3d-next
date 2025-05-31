@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import ContentBlock from "../components/content-block";
 import { Website } from "../components/globals";
-import SocialIcons from "@/app/components/social-icons";
+// import SocialIcons from "@/app/components/social-icons";
 
 // Define metadata specific to this page
 export const metadata: Metadata = {
