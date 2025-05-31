@@ -50,12 +50,15 @@ export default function NewsPage() {
         columnClassName="flex flex-wrap"
       >
         <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
-          {/* start of news blog post */}
+        {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/blog/ai-ranking-expert-witness" className="flex flex-wrap">
+            <Link href="/blog/marketing-strategies-expert-witnesses-2025" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 31, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
-                  AI Ranking for Expert Witnesses
+                  Marketing Strategies for Expert Witnesses in 2025
                 </h2>
                 <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
@@ -66,8 +69,29 @@ export default function NewsPage() {
           {/* end of news blog post */}
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link href="/blog/ai-ranking-expert-witness" className="flex flex-wrap">
+              <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 30, 2025
+                </p>
+                <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
+                  AI Ranking for Expert Witnesses
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          {/* end of news blog post */}
+          
+          {/* start of news blog post */}
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/seo-expert-witnesses" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 29, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   SEO for Expert Witnesses: Convert Lawyer Traffic
                 </h2>
@@ -84,16 +108,10 @@ export default function NewsPage() {
               href="/blog/deposition-readiness-checklist"
               className="flex flex-wrap items-stretch"
             >
-              {/* <div className="md:w-1/4 w-full">
-                <Image
-                  src="/news/Blastcraft-Rodney-Barnes-Tadeo.jpg"
-                  alt="Wallpaper"
-                  className="h-[225px] w-full object-cover"
-                  width={1000}
-                  height={1000}
-                />
-              </div> */}
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 28, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   Deposition Safe Content in Your Expert Witness Website
                 </h2>
@@ -108,6 +126,9 @@ export default function NewsPage() {
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 27, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   Expertise, Experience, Authoritativeness, and Trustworthiness (E-E-A-T)
                 </h2>
@@ -122,6 +143,9 @@ export default function NewsPage() {
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/deceptive-content-expert-witnesses" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 26, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   Deceptive Content in Expert Witness Marketing: Protect Your Reputation
                 </h2>
@@ -139,6 +163,9 @@ export default function NewsPage() {
               className="flex flex-wrap"
             >
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 25, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   Schema Markup to Get Found by Lawyers
                 </h2>
@@ -157,6 +184,9 @@ export default function NewsPage() {
             >
               
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 24, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   The Expert Witness&apos;s Guide to High-Authority Directories
                 </h2>
@@ -171,6 +201,9 @@ export default function NewsPage() {
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group">
             <Link href="/blog/what-how-expert-witness" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  May 23, 2025
+                </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
                   What is an expert witness and how to become one?
                 </h2>
