@@ -40,7 +40,7 @@ export default function Home() {
                   allowFullScreen
                 />
               </div> */}
-              <div className="lg:w-3/4 w-full px-4 text-center">
+              <div className="w-full px-4 text-center">
                 <div className="lg:w-full w-full">
                   <h1 className="text-secondary animated-heading">
                     Get More Cases - Get Found by Lawyers

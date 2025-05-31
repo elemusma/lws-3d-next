@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Mail, Phone } from 'lucide-react';
+import CTA from "@/app/components/reusable/cta";
 
 export const metadata: Metadata = {
   title: 'Fulfillment Policy | Latino Web Studio',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 const policyData = {
   title: 'Fulfillment Policy',
-  companyName: 'Latino Web Studio, DBA The Designer Developer, LLC',
+  companyName: 'The Designer Developer, LLC, DBA Latino Web Studio',
   description: 'We are dedicated to providing high-quality web and software services tailored to meet your specific needs. This Fulfillment Policy outlines how we deliver our services, including timelines, responsibilities, and a 14-day money-back guarantee.',
   sections: [
     {
@@ -83,13 +84,14 @@ const policyData = {
   ],
   contactInfo: {
     email: 'info@latinowebstudio.com',
-    phone: '(303) 335-0487'
+    phone: '(303) 927-8228'
   }
 };
 
 export default function FulfillmentPolicyPage() {
   return (
-    <section className="pt-[100px] pb-[100px]">
+    <>
+    <section className="pt-[100px] pb-[100px] bg-[#f7f7f7]">
       <div className="">
         <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="mb-12">
@@ -147,5 +149,7 @@ export default function FulfillmentPolicyPage() {
         </div>
       </div>
     </section>
+    <CTA />
+    </>
   );
 }
