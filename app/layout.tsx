@@ -21,18 +21,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lawyers - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
+  title: "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
-      "We help expert witnesses get more cases and get found by lawyers. Are you unsure how to write content that won't be used against you in court? Don\'t get eaten alive at deposition.",
+      "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
   metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
   alternates: {
     canonical: "https://latinowebstudio.com", // ✅ correct canonical
   },
 
   openGraph: {
-    title: "Lawyers - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
+    title: "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
-      "We help expert witnesses get more cases and get found by lawyers. Are you unsure how to write content that won't be used against you in court? Don\'t get eaten alive at deposition.",
+      "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
     url: "https://latinowebstudio.com",
     siteName: "Latino Web Studio",
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: "/photos/Get-More-Cases-Get-Found-By-Lawyers.jpg", // Make sure this path is valid!
         width: 1200,
         height: 630,
-        alt: "Lawyers - Retainers - Cases - Helping Expert Witnesses",
+        alt: "Attorneys - Retainers - Cases - Helping Expert Witnesses",
       },
     ],
     type: "website",

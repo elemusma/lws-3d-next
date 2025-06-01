@@ -24,7 +24,7 @@ const Nav = () => {
                 href="#schedule"
                 className="p-1 flex items-center btn-main btn-nav justify-center"
                 style={{
-                  height: 83,
+                  height: 63,
                   width: 200,
                   borderRadius: 45,
                   display: "flex",
@@ -32,7 +32,7 @@ const Nav = () => {
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
-                Schedule a Call
+                Get More Cases
               </a>
             </div>
           </div>

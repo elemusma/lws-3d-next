@@ -43,7 +43,7 @@ export default function Home() {
               <div className="w-full px-4 text-center">
                 <div className="lg:w-full w-full">
                   <h1 className="text-secondary animated-heading">
-                    Get More Cases - Get Found by Lawyers
+                    Get More Cases - Get Found by Attorneys
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}

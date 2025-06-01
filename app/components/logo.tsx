@@ -26,13 +26,13 @@ function Logo() {
       >
         <div
           className="relative flex items-center justify-center logo-container"
-          style={{ width: 75, height: 75 }}
+          style={{ width: 55, height: 55 }}
         >
           <Image
             src="/assets/logo-bg.png"
-            alt="Logo - Latino Web Studio - Lawyers - Retainers - Cases - Helping Expert Witnesses"
-            width={75}
-            height={75}
+            alt="Logo - Latino Web Studio - Attorneys - Retainers - Cases - Helping Expert Witnesses"
+            width={55}
+            height={55}
             className="absolute logo-bg"
             style={{
               top: "0%",
@@ -42,7 +42,7 @@ function Logo() {
           />
           <Image
             src="/assets/logo-bird.png"
-            alt="Logo - Latino Web Studio - Lawyers - Retainers - Cases - Helping Expert Witnesses"
+            alt="Logo - Latino Web Studio - Attorneys - Retainers - Cases - Helping Expert Witnesses"
             width={40}
             height={40}
             className="relative logo-bird"
@@ -51,7 +51,7 @@ function Logo() {
         <div style={{ paddingLeft: 10, paddingRight: 10, marginTop: -5 }}>
           <span
             className="text-accent d-block text-shadow logo-text"
-            style={{ fontSize: "1.5rem", margin: 0, lineHeight: 1 }}
+            style={{ fontSize: "1.2rem", margin: 0, lineHeight: 1 }}
           >
             Latino Web Studio
           </span>
@@ -60,9 +60,9 @@ function Logo() {
             style={{ margin: 0, fontSize: "70%", lineHeight: 1 }}
           >
             {isDesktop ? (
-              <em>Lawyers - Retainers - Cases</em>
+              <em>Attorneys - Retainers - Cases</em>
             ) : (
-              <em>Lawyers - Retainers - Cases</em>
+              <em>Attorneys - Retainers - Cases</em>
             )}
           </p>
         </div>
