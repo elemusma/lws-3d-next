@@ -77,10 +77,10 @@ export default function WhyCourtExperienceNotGettingCases() {
     The Disconnect: Attorneys Search Differently
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    Attorneys don&apos;t search for experts based on vague accolades. They use precise terms tied to case type, jurisdiction, and specialty. A litigator handling a medical negligence claim might search for "vascular surgery expert witness California"—not "highly experienced physician with 20 years in court."
+    Attorneys don&apos;t search for experts based on vague accolades. They use precise terms tied to case type, jurisdiction, and specialty. A litigator handling a medical negligence claim might search for &quot;vascular surgery expert witness California&quot;—not &quot;highly experienced physician with 20 years in court.&quot;
   </p>
   <p className="text-base text-gray-700 mb-4">
-    If your website, directory profiles, or LinkedIn pages aren't optimized for these legal search behaviors, you may not even appear in the search results. Courtroom excellence has no effect if your name doesn&apos;t surface in the attorney&apos;s research process.
+    If your website, directory profiles, or LinkedIn pages aren&apos;t optimized for these legal search behaviors, you may not even appear in the search results. Courtroom excellence has no effect if your name doesn&apos;t surface in the attorney&apos;s research process.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
