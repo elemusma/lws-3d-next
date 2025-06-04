@@ -52,6 +52,7 @@ export default function ExpertWitnessDirectories() {
             src="/blog/Expert-Witness-Directories-01.png"
             width={2000}
             height={2000} alt={"Navigating the Expert Witness Landscape"}  
+            className="mb-4"
             />
   <p className="text-base text-gray-600 mb-4">
     Legal platforms such as <a href="https://www.lexisnexis.com/experts-on-demand" target="_blank">Lexis</a> and <a href="https://www.law360.com/" target="_blank">Law360</a> enable attorneys to perform refined searches using terms tied to professional roles and specialties. Whether the need is for a cybersecurity analyst, <a href="https://discoveryengineering.net/" target="_blank">electrical engineer</a>, or <a href="https://snowsportsexpert.com/" target="_blank">snowsports expert</a>, these platforms allow for proximity-based queries that narrow down suitable candidates. The names and affiliations of experts often emerge from reviews of case documents, CVs, and published articles, making directories a foundational step in expert witness research.
