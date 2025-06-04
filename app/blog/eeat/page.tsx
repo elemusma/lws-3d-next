@@ -18,7 +18,7 @@ export const metadata: Metadata = {
      "From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses - Latino Web Studio",
     description:
      "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
-    url: `${Website}/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t`, // Replace with actual URL
+    url: `${Website}/blog/eeat`, // Replace with actual URL
     type:"website",
     images: [
       {

@@ -103,7 +103,7 @@ export default function AIRankingExpertWitness() {
     Strategy 3: Building Legal E-E-A-T Signals
   </h2>
   <p className="text-base text-gray-600 mb-4">
-    <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">E-E-A-T—Experience, Expertise, Authoritativeness, and Trustworthiness</Link>—is a critical framework used by Google to assess the quality of content, particularly in high-stakes fields such as law. For expert witnesses, establishing these signals can determine whether their content appears in AI-generated summaries or is overlooked.
+    <Link href="https://latinowebstudio.com/blog/eeat">E-E-A-T—Experience, Expertise, Authoritativeness, and Trustworthiness</Link>—is a critical framework used by Google to assess the quality of content, particularly in high-stakes fields such as law. For expert witnesses, establishing these signals can determine whether their content appears in AI-generated summaries or is overlooked.
   </p>
   <p className="text-base text-gray-600 mb-4">
     Experience refers to demonstrated, first-hand involvement in relevant litigation contexts. Case studies, court appearances, and real-world consultations should be highlighted. Expertise is reinforced through detailed professional biographies, academic credentials, and certifications.

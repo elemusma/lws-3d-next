@@ -85,7 +85,7 @@ export default function CitationsDirectories() {
     Aligning with Google&apos;s E-E-A-T: Building Trust Through Experience and Authority
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    Google evaluates web content based on <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T)</Link>. For expert witnesses, this means demonstrating verifiable credentials, hands-on case experience, and a consistent body of work that reflects professional maturity.
+    Google evaluates web content based on <Link href="https://latinowebstudio.com/blog/eeat">Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T)</Link>. For expert witnesses, this means demonstrating verifiable credentials, hands-on case experience, and a consistent body of work that reflects professional maturity.
   </p>
   <p className="text-base text-gray-700 mb-4">
     Directory profiles should not merely list degrees and certifications. They should convey depth—case types handled, jurisdictions served, publications authored, and peer-reviewed work. Whenever possible, incorporate structured author bios and links to off-site corroborative material to boost E-E-A-T signals.

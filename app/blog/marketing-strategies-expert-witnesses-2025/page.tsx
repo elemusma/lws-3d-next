@@ -120,7 +120,7 @@ export default function MarketingStrategiesExpertWitnesses2025() {
   <p className="mb-4 text-base text-gray-600">
     Calls-to-action should be specific to legal audiences, using phrases like “Request CV and case list” or “Schedule
     expert consultation.” Avoid generic buttons. Highlight your court experience, admissibility track record, and
-    expert credentials prominently to <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">build immediate trust</Link>. Design elements should support clarity, not distract from
+    expert credentials prominently to <Link href="https://latinowebstudio.com/blog/eeat">build immediate trust</Link>. Design elements should support clarity, not distract from
     your value.
   </p>
 

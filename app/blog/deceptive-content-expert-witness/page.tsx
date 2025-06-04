@@ -78,7 +78,7 @@ export default function DeceptiveContent() {
     E-E-A-T Optimization: Aligning Content With Google&apos;s Trust Framework
   </h2>
   <p className="text-base text-gray-600 mb-4">
-    <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">Google&apos;s E-E-A-T guidelines—Experience, Expertise, Authoritativeness, and Trust—play</Link> a central role in how content is evaluated for quality and relevance, particularly within legal and financial sectors classified as YMYL (Your Money or Your Life). For expert witnesses, aligning content with E-E-A-T principles is not optional; it is foundational.
+    <Link href="https://latinowebstudio.com/blog/eeat">Google&apos;s E-E-A-T guidelines—Experience, Expertise, Authoritativeness, and Trust—play</Link> a central role in how content is evaluated for quality and relevance, particularly within legal and financial sectors classified as YMYL (Your Money or Your Life). For expert witnesses, aligning content with E-E-A-T principles is not optional; it is foundational.
   </p>
   <p className="text-base text-gray-600 mb-4">
     Demonstrating &quot;Experience&quot; involves referencing first-hand casework, types of trials attended, or jurisdictions served. &quot;Expertise&quot; is signaled through academic credentials, published works, and practice-specific insights. &quot;Authoritativeness&quot; grows from citations in reputable directories, participation in legal panels, or cross-linking from court decisions or legal institutions. Lastly, &quot;Trust&quot; is established by ensuring accurate, honest, and safe content that avoids hyperbole or unverifiable claims.

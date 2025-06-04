@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Latino Web Studio",
     images: [
       {
-        url: "/photos/Get-More-Cases-Get-Found-By-Lawyers.jpg", // Make sure this path is valid!
+        url: "/photos/Helping-Expert-Witnesses.jpg", // Make sure this path is valid!
         width: 1200,
         height: 630,
         alt: "Attorneys - Retainers - Cases - Helping Expert Witnesses",

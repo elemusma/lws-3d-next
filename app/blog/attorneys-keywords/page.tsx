@@ -91,7 +91,7 @@ export default function LawyersHighIntent() {
     Benefits for Expert Witnesses
   </h3>
   <p className="mb-4 text-base text-gray-700">
-    Topic clusters help search engines prioritize your content, especially for complex legal terms and scenarios. This setup reduces keyword cannibalization and boosts the visibility of your pillar content for broader queries. Over time, this <Link href="https://latinowebstudio.com/blog/expertise-experience-authoritativeness-trustworthiness-e-e-a-t">builds your authority</Link> and increases the likelihood of attracting higher-intent visitors—namely, attorneys actively seeking expert partners.
+    Topic clusters help search engines prioritize your content, especially for complex legal terms and scenarios. This setup reduces keyword cannibalization and boosts the visibility of your pillar content for broader queries. Over time, this <Link href="https://latinowebstudio.com/blog/eeat">builds your authority</Link> and increases the likelihood of attracting higher-intent visitors—namely, attorneys actively seeking expert partners.
   </p>
 
   <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">

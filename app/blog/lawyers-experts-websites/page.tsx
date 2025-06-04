@@ -17,7 +17,7 @@ export const metadata: Metadata = {
      "What Lawyers Want to See on Your Website Before They Call You - Latino Web Studio",
     description:
      "For many attorneys, an expert witness's website is their first impression. This digital footprint is no longer optional—it's a core part of how legal professionals vet and contact experts.",
-    url: `${Website}/blog/what-lawyers-want-on-expert-witness-websites`, // Replace with actual URL
+    url: `${Website}/bloglawyers-experts-websites`, // Replace with actual URL
     type:"website",
     images: [
       {
