@@ -67,7 +67,7 @@ export default function WhyCourtExperienceNotGettingCases() {
     The Cross-Examination Factor in Expert Marketing
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    One of the unique challenges in <Link href="https://latinowebstudio.com/blog/marketing-strategies-expert-witnesses-2025">expert witness marketing</Link> is the potential for cross-examination on promotional activities. Unlike other professional services, an expert&apos;s public-facing materials can be scrutinized in court. This leads many to adopt a conservative or minimal approach to marketing, resulting in low online visibility and missed opportunities.
+    One of the unique challenges in <Link href="https://latinowebstudio.com/blog/marketing-strategies">expert witness marketing</Link> is the potential for cross-examination on promotional activities. Unlike other professional services, an expert&apos;s public-facing materials can be scrutinized in court. This leads many to adopt a conservative or minimal approach to marketing, resulting in low online visibility and missed opportunities.
   </p>
   <p className="text-base text-gray-700 mb-4">
     Overly promotional tactics—such as coupons, &quot;sales language,&quot; or unprofessional directory listings—can damage credibility. As such, the expert witness community must balance visibility with professionalism. Yet a lack of outreach or strategy often leaves even highly qualified experts undiscovered.

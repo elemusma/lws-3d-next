@@ -78,7 +78,7 @@ export default function CitationsDirectories() {
     Consistency in NAP information across all online platforms is foundational to your <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">SEO success as an expert witness</Link>. Variations, even minor ones, can confuse search engines and disrupt ranking signals. Conducting a citation audit to identify and correct inconsistencies is a critical first step.
   </p>
   <p className="text-base text-gray-700 mb-4">
-    To further support structured understanding, <Link href="https://latinowebstudio.com/blog/schema-markup-expert-witness">schema markup for expert witness</Link>, particularly the <code className="bg-gray-100 px-1 rounded">LocalBusiness</code> schema—should be used to wrap key data fields. This allows search engines to parse and index your business attributes in a more accurate, context-aware way.
+    To further support structured understanding, <Link href="https://latinowebstudio.com/blog/schema-markup">schema markup for expert witness</Link>, particularly the <code className="bg-gray-100 px-1 rounded">LocalBusiness</code> schema—should be used to wrap key data fields. This allows search engines to parse and index your business attributes in a more accurate, context-aware way.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">

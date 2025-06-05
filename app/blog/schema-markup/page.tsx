@@ -18,7 +18,7 @@ export const metadata: Metadata = {
      "How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online - Latino Web Studio",
     description:
      "Schema markup, a type of structured data vocabulary, plays a crucial role in how websites communicate with search engines.",
-    url: `${Website}/blog/schema-markup-expert-witnesses`, // Replace with actual URL
+    url: `${Website}/blog/schema-markupes`, // Replace with actual URL
     type:"website",
     images: [
       {

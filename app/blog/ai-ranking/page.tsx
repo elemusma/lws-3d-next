@@ -18,7 +18,7 @@ export const metadata: Metadata = {
      "AI-Search Domination for Expert Witnesses - Get Shown in AI Search Results When Attorneys Search for Expert Witnesses - Latino Web Studio",
     description:
      "The landscape of online search is evolving rapidly with the rise of AI-powered search engines like Google's Search Generative Experience.",
-    url: `${Website}/blog/ai-ranking-expert-witness`, // Replace with actual URL
+    url: `${Website}/blog/ai-ranking`, // Replace with actual URL
     type:"website",
     images: [
       {
@@ -78,7 +78,7 @@ export default function AIRankingExpertWitness() {
     Strategy 2: Enhancing Discoverability with Schema Markup
   </h2>
   <p className="text-base text-gray-600 mb-4">
-    <Link href="https://latinowebstudio.com/blog/schema-markup-expert-witness">Schema markup enables expert witness websites</Link> to define the context of their content in a structured format readable by machines. For expert witnesses, schema can differentiate professional credentials, specializations, and affiliations in a way that AI engines interpret as indicators of authority and relevance.
+    <Link href="https://latinowebstudio.com/blog/schema-markup">Schema markup enables expert witness websites</Link> to define the context of their content in a structured format readable by machines. For expert witnesses, schema can differentiate professional credentials, specializations, and affiliations in a way that AI engines interpret as indicators of authority and relevance.
   </p>
   <p className="text-base text-gray-600 mb-4">
     The `Person` schema should be used to tag credentials such as degrees, licenses, and professional memberships. `Organization` and `LocalBusiness` schema can define the operational scope, including jurisdictions served and office locations. `LegalService` and `FAQPage` schema can enhance individual service pages and help content appear in featured snippets.

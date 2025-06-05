@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Marketing Strategies for Expert Witnesses in 2025 - Latino Web Studio",
     description:
      "The digital landscape for expert witnesses is increasingly competitive, especially in legal search environments where only a few listings dominate first-page visibility.",
-    url: `${Website}/blog/marketing-strategies-expert-witnesses-2025`, // Replace with actual URL
+    url: `${Website}/blog/marketing-strategies`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Marketing-Strategies-Expert-Witnesses-2025-01.png`, // Replace with the actual image path
+        url: `${Website}/blog/marketing-strategies-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Marketing Strategies for Expert Witnesses in 2025 - Latino Web Studio",
@@ -52,7 +52,7 @@ export default function MarketingStrategiesExpertWitnesses2025() {
   </p>
     <h3 className="text-xl font-semibold text-gray-800 mb-2">Expert Witness Marketing Pyramid</h3>
 <Image 
-          src="/blog/Marketing-Strategies-Expert-Witnesses-2025-01.png"
+          src="/blog/marketing-strategies-01.png"
           width={2000}
           height={2000} alt={"Expert Witness Marketing Pyramid"}  
           />
@@ -70,7 +70,7 @@ export default function MarketingStrategiesExpertWitnesses2025() {
   <p className="mb-4 text-base text-gray-600">
     A flat, hierarchical structure with clearly segmented URLs allows search engines to crawl and understand your
     website efficiently. Each core service page should have a focused H1 heading, optimized meta tags, and a structured
-    layout that includes rich snippets, <Link href="https://latinowebstudio.com/blog/schema-markup-expert-witness">schema markup</Link>, and internal linking to related case studies or publications.
+    layout that includes rich snippets, <Link href="https://latinowebstudio.com/blog/schema-markup">schema markup</Link>, and internal linking to related case studies or publications.
     These elements improve both visibility and user trust during legal research queries.
   </p>
 
@@ -94,7 +94,7 @@ export default function MarketingStrategiesExpertWitnesses2025() {
   <h3 className="text-lg font-medium mb-2 text-gray-700">Niche Specialization for Search Authority</h3>
   <p className="mb-4 text-base text-gray-600">
     Focusing on a narrow specialization, such as “neurological injury assessment” or “environmental regulatory
-    compliance,” reduces competition and makes it easier to <Link href="https://latinowebstudio.com/blog/ai-ranking-expert-witness">rank for highly targeted legal queries</Link>. This approach also
+    compliance,” reduces competition and makes it easier to <Link href="https://latinowebstudio.com/blog/ai-ranking">rank for highly targeted legal queries</Link>. This approach also
     clarifies your value proposition to attorneys who are searching for specific expertise rather than generalists.
   </p>
 

@@ -40,11 +40,11 @@ export default function AdaTaxCredit() {
         columnClassName="lg:w-3/4 w-full px-4"
       >
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
-    Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries
+    SEO Strategies for Expert Witness
   </h1>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-    Why Legal Professionals Demand Case-Relevant Expertise Online
+    Convert Legal Search Traffic into Attorney Inquiries
   </h2>
   <p className="text-base text-gray-700 mb-6">
     Attorneys searching for expert witnesses online are not casual users. They are decision-makers with high-intent legal queries, often under time pressure and seeking highly credible, case-relevant expertise. To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture, trust-building content, and technical markup that communicates expertise to both humans and search engines.

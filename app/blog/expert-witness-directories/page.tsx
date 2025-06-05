@@ -68,7 +68,7 @@ export default function ExpertWitnessDirectories() {
 
   <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">Why Expert Witness Directories Offer Strategic Marketing Value</h2>
   <p className="text-base text-gray-600 mb-4">
-    Beyond facilitating discovery, expert witness directories function as a <Link href="https://latinowebstudio.com/blog/marketing-strategies-expert-witnesses-2025">marketing channel</Link>. For many professionals, these directories serve as their first point of contact with potential clients. Listings are a form of passive advertising that, when executed effectively, yield a significant return on investment.
+    Beyond facilitating discovery, expert witness directories function as a <Link href="https://latinowebstudio.com/blog/marketing-strategies">marketing channel</Link>. For many professionals, these directories serve as their first point of contact with potential clients. Listings are a form of passive advertising that, when executed effectively, yield a significant return on investment.
   </p>
   <p className="text-base text-gray-600 mb-4">
     Several directories operate on a paid membership basis, which tends to attract professionals who are serious about expanding their consulting footprint. This paid model also acts as a form of quality control, ensuring that the database includes individuals committed to maintaining professional standards. Moreover, attorneys often revisit the same directories for future needs, increasing the likelihood of repeated exposure and client acquisition.

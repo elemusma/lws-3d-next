@@ -77,7 +77,7 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
     Feature #2: Organized, Clear Content That Builds Trust
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    Attorneys want to understand what you do and whether you&apos;re a credible fit—fast. That means each section of your <Link href="https://latinowebstudio.com/blog/ai-ranking-expert-witness">website should be purpose-driven</Link>. List the services you offer, distinguishing between testifying and consulting roles. Provide examples of relevant case types, industries served, or specific issues you&apos;ve addressed.
+    Attorneys want to understand what you do and whether you&apos;re a credible fit—fast. That means each section of your <Link href="https://latinowebstudio.com/blog/ai-ranking">website should be purpose-driven</Link>. List the services you offer, distinguishing between testifying and consulting roles. Provide examples of relevant case types, industries served, or specific issues you&apos;ve addressed.
   </p>
   <p className="text-base text-gray-700 mb-4">
     Clarity also extends to how you present technical information. While your peers may appreciate academic language, legal professionals prefer concise, jargon-free explanations. The more clearly you can connect your expertise to legal applications, the more likely you are to earn a follow-up inquiry.
@@ -145,7 +145,7 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
     Your Website as a Professional Asset
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    Think of your website as an ongoing professional asset—not a static brochure. It should reflect the depth of your experience and make it easy for attorneys to trust, understand, and contact you. Investing in quality design and content is not just about <Link href="https://latinowebstudio.com/blog/marketing-strategies-expert-witnesses-2025">marketing</Link>—it&apos;s about aligning with the expectations of legal professionals who rely on clarity and credibility.
+    Think of your website as an ongoing professional asset—not a static brochure. It should reflect the depth of your experience and make it easy for attorneys to trust, understand, and contact you. Investing in quality design and content is not just about <Link href="https://latinowebstudio.com/blog/marketing-strategies">marketing</Link>—it&apos;s about aligning with the expectations of legal professionals who rely on clarity and credibility.
   </p>
   <p className="text-base text-gray-700 mb-4">
     When your website presents the right information in the right format, it works around the clock to help you build trust, demonstrate competence, and secure new opportunities as an expert witness. By focusing on what attorneys actually need to see, you position yourself not just as a qualified expert—but as a reliable partner in litigation.

@@ -10,12 +10,12 @@ import "@/app/styles/blog.scss";
 
 export const metadata: Metadata = {
   title:
-   "From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses - Latino Web Studio",
+   "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers - Latino Web Studio",
   description:
    "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
   openGraph: {
     title:
-     "From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses - Latino Web Studio",
+     "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers - Latino Web Studio",
     description:
      "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
     url: `${Website}/blog/eeat`, // Replace with actual URL
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: `${Website}/blog/EEAT-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
-        alt:"From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses - Latino Web Studio",
+        alt:"How Expert Witnesses Can Build Trust Online and Get Found by Lawyers - Latino Web Studio",
       },
     ],
   },
@@ -42,7 +42,7 @@ export default function EEAT() {
         columnClassName="lg:w-3/4 w-full px-4"
       >
         <h1 className="text-3xl font-bold text-gray-900 mb-6">
-    From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses
+    How Expert Witnesses Can Build Trust Online and Get Found by Lawyers
   </h1>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">Establishing Trust Through E-E-A-T for Legal-Expert Sites</h2>
