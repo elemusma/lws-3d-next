@@ -8,12 +8,12 @@ import CTA from "@/app/components/reusable/cta";
 
 export const metadata: Metadata = {
   title:
-   "Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
+   "SEO Strategies for Expert Witness - Latino Web Studio",
   description:
    "To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture",
   openGraph: {
     title:
-     "Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
+     "SEO Strategies for Expert Witness - Latino Web Studio",
     description:
      "To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture",
     url: `${Website}/blog/seo-expert-witnesses`, // Replace with actual URL
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: `${Website}/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
-        alt:"Case-Centric SEO: How Expert Witnesses Can Convert Legal Search Traffic into Attorney Inquiries - Latino Web Studio",
+        alt:"SEO Strategies for Expert Witness - Latino Web Studio",
       },
     ],
   },

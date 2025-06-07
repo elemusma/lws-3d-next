@@ -59,14 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
-    <Script
-  id="vtag-ai-js"
-  src="https://r2.leadsy.ai/tag.js"
-  data-pid="1jlkaeom8Av6xi5Eq"
-  data-version="062024"
-  strategy="afterInteractive"
-  async
-/>
+
         {/* Google Analytics script */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
