@@ -52,6 +52,23 @@ export default function NewsPage() {
         <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
         {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link href="/blog/keyword-stuffing" className="flex flex-wrap">
+              <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  June 06, 2025
+                </p>
+                <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
+                  Keyword Stuffing in Content and URLs: Does It Still Work in 2025?
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          {/* end of news blog post */}
+        {/* start of news blog post */}
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/more-cases" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
@@ -86,7 +103,7 @@ export default function NewsPage() {
           {/* end of news blog post */}
         {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/blog/why-court-experience-not-getting-cases" className="flex flex-wrap">
+            <Link href="/blog/court-experience-no-cases" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 03, 2025
@@ -226,7 +243,7 @@ export default function NewsPage() {
           {/* end of news blog post */}
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/blog/deceptive-content-expert-witnesses" className="flex flex-wrap">
+            <Link href="/blog/deceptive-contentes" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 26, 2025

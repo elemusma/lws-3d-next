@@ -61,7 +61,7 @@ export default function SchemaMarkup() {
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">The SEO Benefits of Schema for Expert Witnesses</h2>
   <p className="mb-4 text-gray-700">
-    Schema markup enhances search engine comprehension of <Link href="https://latinowebstudio.com/blog/deceptive-content-expert-witness">web content</Link>, increasing the likelihood of appearing in higher-ranking positions with rich result features. These features—such as name, professional role, certifications, and areas of specialization—help build immediate credibility in
+    Schema markup enhances search engine comprehension of <Link href="https://latinowebstudio.com/blog/deceptive-content">web content</Link>, increasing the likelihood of appearing in higher-ranking positions with rich result features. These features—such as name, professional role, certifications, and areas of specialization—help build immediate credibility in
     search results. Studies show that pages using schema markup rank significantly higher than those without it, often by several positions.
   </p>
   <p className="mb-4 text-gray-700">

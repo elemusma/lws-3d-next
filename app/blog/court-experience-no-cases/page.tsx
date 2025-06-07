@@ -17,7 +17,7 @@ export const metadata: Metadata = {
      "Why Your Court Experience Isn't Helping You Get More Cases (Yet) - Latino Web Studio",
     description:
      "Despite having testified in numerous trials or depositions, many expert witnesses are finding that their courtroom experience isn't resulting in the volume of inquiries they expect.",
-    url: `${Website}/blog/why-court-experience-not-getting-cases`, // Replace with actual URL
+    url: `${Website}/blog/court-experience-no-cases`, // Replace with actual URL
     type:"website",
     images: [
       {

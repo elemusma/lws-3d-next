@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Deceptive Content - How to Protect Your Reputation as an Expert Witness and Avoid Costly Mistakes - Latino Web Studio",
     description:
      "In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters.",
-    url: `${Website}/blog/deceptive-content-expert-witness`, // Replace with actual URL
+    url: `${Website}/blog/deceptive-content`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Deceptive-Content-Expert-Witness-01.png`, // Replace with the actual image path
+        url: `${Website}/blog/deceptive-content-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Checklist to Casebook: How Expert Witnesses Can Use Deposition Preparation Content to Drive Legal Leads - Latino Web Studio",
@@ -53,7 +53,7 @@ export default function DeceptiveContent() {
   </p>
     <h3 className="text-xl font-semibold text-gray-800 mb-2">Threats to Expert Witness Credibility</h3>
   <Image 
-            src="/blog/Deceptive-Content-Expert-Witness-01.png"
+            src="/blog/deceptive-content-01.png"
             width={2000}
             height={2000} alt={"Threats to Expert Witness Credibility"}  
             />
@@ -88,7 +88,7 @@ export default function DeceptiveContent() {
   </p>
   <h3 className="text-xl font-semibold text-gray-800 mb-2">E-E-A-T Content Evaluation Pyramid</h3>
   <Image 
-            src="/blog/Deceptive-Content-Expert-Witness-02.png"
+            src="/blog/deceptive-content-02.png"
             width={2000}
             height={2000} alt={"E-E-A-T Content Evaluation Pyramid"}  
             />
@@ -119,7 +119,7 @@ export default function DeceptiveContent() {
   </p>
   <h3 className="text-xl font-semibold text-gray-800 mb-2">Integrated SEO Defense Strategy</h3>
   <Image 
-            src="/blog/Deceptive-Content-Expert-Witness-03.png"
+            src="/blog/deceptive-content-03.png"
             width={2000}
             height={2000} alt={"Integrated SEO Defense Strategy"}  
             />
@@ -137,7 +137,7 @@ export default function DeceptiveContent() {
   </p>
   <h3 className="text-xl font-semibold text-gray-800 mb-2">Expert Witness SEO Strategy</h3>
   <Image 
-            src="/blog/Deceptive-Content-Expert-Witness-04.png"
+            src="/blog/deceptive-content-04.png"
             width={2000}
             height={2000} alt={"Expert Witness SEO Strategy"}  
             />

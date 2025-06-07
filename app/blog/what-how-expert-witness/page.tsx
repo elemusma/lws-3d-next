@@ -76,7 +76,7 @@ export default function WhatHowExpertWitnesses() {
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">Step 3: Validate Your Credentials Thoroughly</h2>
   <p className="text-base text-gray-700 mb-4">
-    Verification of credentials is a non-negotiable aspect of becoming an expert witness. Attorneys—and increasingly, judges—expect full transparency. <Link href="https://latinowebstudio.com/blog/deceptive-content-expert-witness">Misrepresenting educational background, licensure, or prior engagements can disqualify an expert witness</Link> and, worse, lead to legal penalties.
+    Verification of credentials is a non-negotiable aspect of becoming an expert witness. Attorneys—and increasingly, judges—expect full transparency. <Link href="https://latinowebstudio.com/blog/deceptive-content">Misrepresenting educational background, licensure, or prior engagements can disqualify an expert witness</Link> and, worse, lead to legal penalties.
   </p>
   <p className="text-base text-gray-700 mb-4">
     Credential validation includes confirming degrees through registrar offices, checking licensure status across jurisdictions, and ensuring <Link href="https://latinowebstudio.com/blog/citations-directories">consistency across resumes, directories</Link>, and court filings. Online tools and licensing databases can assist in compiling and verifying this information efficiently.
