@@ -52,7 +52,7 @@ export default function NewsPage() {
         <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
         {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/blog/user-experience" className="flex flex-wrap">
+            <Link href="/blog/user-experience-ux" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 08, 2025

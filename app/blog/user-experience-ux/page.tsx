@@ -17,7 +17,7 @@ export const metadata: Metadata = {
      "Why Your Website Might Be Costing You Cases—and How UX Can Fix That - Latino Web Studio",
     description:
      "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
-    url: `${Website}/blog/user-experience`, // Replace with actual URL
+    url: `${Website}/blog/user-experience-ux`, // Replace with actual URL
     type:"website",
     images: [
       {
