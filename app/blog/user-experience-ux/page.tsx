@@ -56,6 +56,7 @@ export default function UserExperience() {
     src="/blog/user-experience-01.png"
     width={2000}
     height={2000} alt={"Converting Lawyer Traffic into Case Inquiries"}  
+    priority
     />
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">

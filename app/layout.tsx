@@ -58,7 +58,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
           strategy="beforeInteractive"
         />
@@ -70,9 +73,6 @@ export default function RootLayout({
     gtag('config', 'G-GY6QBLTKD5');
   `}
         </Script>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
         <Nav />
         {children}
         <Footer />
