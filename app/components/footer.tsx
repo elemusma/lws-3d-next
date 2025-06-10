@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import "../styles/footer.scss";
 import Logo from "./logo";
@@ -81,18 +80,6 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div
-          className="absolute w-full"
-          style={{
-            height: "50px",
-            bottom: "0px",
-            left: "0px",
-            backgroundRepeat: "repeat-x",
-            backgroundSize: "contain",
-            backgroundPosition: "center bottom",
-            backgroundImage: 'url("/assets/Footer-Party-Bottom.png")',
-          }}
-        />
       </footer>
     </>
   );

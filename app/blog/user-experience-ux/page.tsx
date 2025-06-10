@@ -34,11 +34,12 @@ export default function UserExperience() {
     <>
       {/* Hero Section */}
       <ContentBlock
-        sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
+        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="lg:w-3/4 w-full px-4"
       >
+        <article>
        <h1 className="text-3xl font-bold text-gray-900 mb-6">
     Why Your Website Might Be Costing You Cases—and How UX Can Fix That
   </h1>
@@ -54,8 +55,8 @@ export default function UserExperience() {
     </h3>
     <Image 
     src="/blog/user-experience-01.png"
-    width={2000}
-    height={2000} alt={"Converting Lawyer Traffic into Case Inquiries"}  
+    width={1272}
+    height={756} alt={"Impact of User Experience (UX) on Attorney Engagement"}  
     priority
     />
 
@@ -109,6 +110,7 @@ export default function UserExperience() {
   <p className="text-base text-gray-700 mb-8">
     Ready to improve your visibility and get found by the right attorneys? Contact Latino Web Studio for a free UX evaluation and learn how we can help you turn your digital presence into a source of ongoing professional authority.
   </p>
+  </article>
       </ContentBlock>
       <CTA />
     </>

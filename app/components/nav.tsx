@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import "../styles/nav.scss";
 import Logo from "./logo";
