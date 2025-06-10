@@ -97,7 +97,7 @@ export default function WhyCourtExperienceNotGettingCases() {
     Common Pitfalls in Expert Witness Website Design
   </h2>
   <p className="text-base text-gray-700 mb-4">
-    Many <Link href="https://latinowebstudio.com/bloglawyers-experts-websites">expert witness websites</Link> fail to address how attorneys search or what they look for. They may be overly general, omit regional targeting, or lack trust-building components. Moreover, outdated content or broken links can undermine credibility—especially when your role depends on appearing detail-oriented and professional.
+    Many <Link href="https://latinowebstudio.com/blog/lawyers-experts-websites">expert witness websites</Link> fail to address how attorneys search or what they look for. They may be overly general, omit regional targeting, or lack trust-building components. Moreover, outdated content or broken links can undermine credibility—especially when your role depends on appearing detail-oriented and professional.
   </p>
   <p className="text-base text-gray-700 mb-4">
     Experts are advised to ensure their websites are conservative, accurate, and polished. It&apos;s essential to avoid unmaintained sites or inconsistencies between different listings, which could be used to challenge credibility in deposition or trial.

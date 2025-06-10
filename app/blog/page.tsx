@@ -136,7 +136,7 @@ export default function NewsPage() {
           {/* end of news blog post */}
         {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/bloglawyers-experts-websites" className="flex flex-wrap">
+            <Link href="/blog/lawyers-experts-websites" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 02, 2025
@@ -259,7 +259,7 @@ export default function NewsPage() {
           {/* end of news blog post */}
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/blog/deceptive-contentes" className="flex flex-wrap">
+            <Link href="/blog/deceptive-content" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 26, 2025
@@ -277,7 +277,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link
-              href="/blog/schema-markupes"
+              href="/blog/schema-markup"
               className="flex flex-wrap"
             >
               <div className="md:w-3/4 w-full px-4 py-10">
