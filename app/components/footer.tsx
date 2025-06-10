@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import "../styles/footer.scss";
 import Logo from "./logo";
