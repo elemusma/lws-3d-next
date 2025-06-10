@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 // import Link from "next/link";
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
      "SEO Strategies for Expert Witness - Latino Web Studio",
     description:
      "To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture",
-    url: `${Website}/blog/seo-expert-witnesses`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/seo-expert-witnesses`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"SEO Strategies for Expert Witness - Latino Web Studio",

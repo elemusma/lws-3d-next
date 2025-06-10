@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "How to Write Articles with Keywords Lawyers Are Looking For - Latino Web Studio",
     description:
      "When attorneys search for expert witnesses online, they aren't just typing generic phrases—they're using highly specific, case-related queries.",
-    url: `${Website}/blog/attorneys-keywords`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/attorneys-keywords`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Attorneys-Keywords-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Attorneys-Keywords-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"How to Write Articles with Keywords Lawyers Are Looking For - Latino Web Studio",

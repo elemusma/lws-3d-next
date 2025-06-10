@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Deceptive Content - How to Protect Your Reputation as an Expert Witness and Avoid Costly Mistakes - Latino Web Studio",
     description:
      "In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters.",
-    url: `${Website}/blog/deceptive-content`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/deceptive-content`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/deceptive-content-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/deceptive-content-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Checklist to Casebook: How Expert Witnesses Can Use Deposition Preparation Content to Drive Legal Leads - Latino Web Studio",

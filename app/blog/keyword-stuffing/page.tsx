@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Keyword Stuffing in Content and URLs: Does It Still Work in 2025? - Latino Web Studio",
     description:
      "Keyword stuffing refers to the practice of overloading a webpage or URL with keywords in an attempt to manipulate search engine rankings.",
-    url: `${Website}/blog/keyword-stuffing`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/keyword-stuffing`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Keyword-Stuffing-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Keyword-Stuffing-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Keyword Stuffing in Content and URLs: Does It Still Work in 2025? - Latino Web Studio",

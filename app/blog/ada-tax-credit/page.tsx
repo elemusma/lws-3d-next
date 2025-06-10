@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
       "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",
     description:
       "For legal and consulting firms, aligning website accessibility with search engine optimization (SEO) is more than a compliance requirement — it’s a strategic advantage.",
-    url: `${Website}/blog/ada-tax-credit`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/ada-tax-credit`, // Replace with actual URL
     type: "website",
     images: [
       {
-        url: `${Website}/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/ada-tax-credit/ADA-Tax-Credit-Visibility-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt: "ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms - Latino Web Studio",

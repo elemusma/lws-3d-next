@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Peer Review in Expert Witness Testimony - Latino Web Studio",
     description:
      "Expert witnesses serve a critical role in legal proceedings by providing specialized knowledge that assists judges and juries in understanding complex issues.",
-    url: `${Website}/blog/peer-reviewed-expert-witness`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/peer-reviewed-expert-witness`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Peer-Review-Expert-Witness-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Peer-Review-Expert-Witness-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"From Search to Retainer: A Precision SEO & UX Framework for Expert Witnesses - Latino Web Studio",

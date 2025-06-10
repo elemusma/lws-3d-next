@@ -2,7 +2,6 @@ import { Metadata } from "next";
 // import Image from "next/image";
 import Link from "next/link";
 import ContentBlock from "../components/content-block";
-import { Website } from "../components/globals";
 // import SocialIcons from "@/app/components/social-icons";
 
 // Define metadata specific to this page
@@ -14,11 +13,11 @@ export const metadata: Metadata = {
     title: "Marketing Tips for Expert Witnesses - Latino Web Studio",
     description:
       "Explore expert marketing strategies for expert witnesses. Learn how to attract more legal clients, improve your online presence, and grow your expert witness business with Latino Web Studio.",
-    url: `${Website}/blog`,
+    url: `https://latinowebstudio.com/blog`,
     type: "article",
     images: [
       {
-        url: `${Website}/blog/Patio-Socials-March-01.jpg`,
+        url: `https://latinowebstudio.com/blog/Patio-Socials-March-01.jpg`,
         width: 1200,
         height: 630,
         alt: "Marketing Tips for Expert Witnesses",

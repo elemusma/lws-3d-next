@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Expert Witness Directories: How They Work and Why Visibility Matters - Latino Web Studio",
     description:
      "Legal professionals rely heavily on expert witness directories to identify, vet, and retain individuals with specialized knowledge relevant to their cases.",
-    url: `${Website}/blog/expert-witness-directories`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/expert-witness-directories`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Expert-Witness-Directories-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Expert-Witness-Directories-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Expert Witness Directories: How They Work and Why Visibility Matters - Latino Web Studio",

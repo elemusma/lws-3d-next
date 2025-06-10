@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
      "What Lawyers Want to See on Your Website Before They Call You - Latino Web Studio",
     description:
      "For many attorneys, an expert witness's website is their first impression. This digital footprint is no longer optional—it's a core part of how legal professionals vet and contact experts.",
-    url: `${Website}/bloglawyers-experts-websites`, // Replace with actual URL
+    url: `https://latinowebstudio.com/bloglawyers-experts-websites`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/What-Lawyers-Want-to-See-on-Your-Website-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/What-Lawyers-Want-to-See-on-Your-Website-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"What Lawyers Want to See on Your Website Before They Call You - Latino Web Studio",

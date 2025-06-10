@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online - Latino Web Studio",
     description:
      "Schema markup, a type of structured data vocabulary, plays a crucial role in how websites communicate with search engines.",
-    url: `${Website}/blog/schema-markupes`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/schema-markupes`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Expert-Witnesses-Schema-Markup-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Expert-Witnesses-Schema-Markup-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online - Latino Web Studio",

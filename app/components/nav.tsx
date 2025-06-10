@@ -5,7 +5,7 @@ import Logo from "./logo";
 const Nav = () => {
   return (
     <>
-      <nav className="fixed inset-x-0 pt-3 pb-3" style={{ zIndex: "100",boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)' }}>
+      <nav className="fixed inset-x-0 pt-3 pb-3 bg-white" style={{ zIndex: "100",boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)' }}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between -mx-4">
             <div className="lg:w-1/3 w-3/4 pl-4 flex items-center">

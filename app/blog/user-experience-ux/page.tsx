@@ -1,7 +1,6 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -17,11 +16,11 @@ export const metadata: Metadata = {
      "Why Your Website Might Be Costing You Cases—and How UX Can Fix That - Latino Web Studio",
     description:
      "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
-    url: `${Website}/blog/user-experience-ux`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/user-experience-ux`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/user-experience-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/user-experience-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Why Your Website Might Be Costing You Cases—and How UX Can Fix That - Latino Web Studio",

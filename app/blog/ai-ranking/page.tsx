@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "AI-Search Domination for Expert Witnesses - Get Shown in AI Search Results When Attorneys Search for Expert Witnesses - Latino Web Studio",
     description:
      "The landscape of online search is evolving rapidly with the rise of AI-powered search engines like Google's Search Generative Experience.",
-    url: `${Website}/blog/ai-ranking`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/ai-ranking`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/AI-Expert-Witnesses-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/AI-Expert-Witnesses-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"AI-Search Domination for Expert Witnesses: A Tactical Blueprint for Earning Top Spots in Attorney-Focused Answer Engines - Latino Web Studio",

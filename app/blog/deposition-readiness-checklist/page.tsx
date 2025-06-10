@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Deposition Preparation Content to Drive Legal Leads for Expert Witnesses - Latino Web Studio",
     description:
      "As an expert witness you operate in a highly specialized market, where visibility and credibility directly impact case acquisition.",
-    url: `${Website}/blog/deposition-readiness-checklist`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/deposition-readiness-checklist`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Deposition-Readiness-Checklists-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Deposition-Readiness-Checklists-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Checklist to Casebook: How Expert Witnesses Can Use Deposition Preparation Content to Drive Legal Leads - Latino Web Studio",

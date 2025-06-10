@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "Want More Cases? Here's How Lawyers Really Search for Experts Online - Latino Web Studio",
     description:
      "If you're an expert witness looking to grow your consulting business, the key to being found by attorneys often starts with understanding how they conduct online searches.",
-    url: `${Website}/blog/more-cases`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/more-cases`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/More-Cases-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/More-Cases-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Want More Cases? Here is How Lawyers Really Search for Experts Online - Latino Web Studio",

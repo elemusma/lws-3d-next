@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
      "Why Your Court Experience Isn't Helping You Get More Cases (Yet) - Latino Web Studio",
     description:
      "Despite having testified in numerous trials or depositions, many expert witnesses are finding that their courtroom experience isn't resulting in the volume of inquiries they expect.",
-    url: `${Website}/blog/court-experience-no-cases`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/court-experience-no-cases`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Court-Experience-More-Cases-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Court-Experience-More-Cases-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"Why Your Court Experience Isn't Helping You Get More Cases (Yet) - Latino Web Studio",

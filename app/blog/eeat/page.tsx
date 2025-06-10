@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers - Latino Web Studio",
     description:
      "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
-    url: `${Website}/blog/eeat`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/eeat`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/EEAT-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/EEAT-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"How Expert Witnesses Can Build Trust Online and Get Found by Lawyers - Latino Web Studio",

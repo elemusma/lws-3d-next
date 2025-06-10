@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
      "What is an Expert Witness and How to Become One - Latino Web Studio",
     description:
      "Expert witnesses are essential contributors to the judicial process and have specialized knowledge in fields such as medicine, engineering, finance, or psychology.",
-    url: `${Website}/blog/what-how-expert-witnesses`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/what-how-expert-witnesses`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/what-how-expert-witnesses-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/what-how-expert-witnesses-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"What is an Expert Witness and How to Become One - Latino Web Studio",

@@ -1,7 +1,7 @@
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
-import { Website } from "@/app/components/globals";
+
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
      "The Expert Witness's Guide to High-Authority Directories - Latino Web Studio",
     description:
      "In today's digital-first legal landscape, expert witnesses are often discovered not through word-of-mouth referrals, but through online directories and search results.",
-    url: `${Website}/blog/citations-directories`, // Replace with actual URL
+    url: `https://latinowebstudio.com/blog/citations-directories`, // Replace with actual URL
     type:"website",
     images: [
       {
-        url: `${Website}/blog/Expert-Witnesss-Directories-01.png`, // Replace with the actual image path
+        url: `https://latinowebstudio.com/blog/Expert-Witnesss-Directories-01.png`, // Replace with the actual image path
         width: 1200, // Standard OG image width
         height: 630, // Standard OG image height
         alt:"The Expert Witness Guide to High-Authority Directories: Boosting Your Visibility and Credibility - Latino Web Studio",
