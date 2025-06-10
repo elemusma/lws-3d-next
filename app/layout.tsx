@@ -58,26 +58,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <head>
-
-        {/* Google Analytics script */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
-        strategy="afterInteractive"
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GY6QBLTKD5');
-          `,
-        }}
-      />
-      </head>
+          src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
+          strategy="beforeInteractive"
+        />
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GY6QBLTKD5');
+  `}
+        </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
