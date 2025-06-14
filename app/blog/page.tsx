@@ -54,10 +54,10 @@ export default function NewsPage() {
             <Link href="/blog/mobile-responsiveness" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  June 13, 2025
+                  June 14, 2025
                 </p>
                 <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
-                  Mobile Responsiveness for Expert Witness Websites in 2025
+                  Mobile Responsiveness for Expert Witness Websites
                 </h2>
                 <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
