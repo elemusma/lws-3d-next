@@ -51,6 +51,23 @@ export default function NewsPage() {
         <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
         {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link href="/blog/mobile-responsiveness" className="flex flex-wrap">
+              <div className="md:w-3/4 w-full px-4 py-10">
+              <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  June 13, 2025
+                </p>
+                <h2 className="text-3xl font-proxima-bold uppercase group-hover:text-white">
+                  Mobile Responsiveness for Expert Witness Websites in 2025
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          {/* end of news blog post */}
+        {/* start of news blog post */}
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/user-experience-ux" className="flex flex-wrap">
               <div className="md:w-3/4 w-full px-4 py-10">
               <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
