@@ -45,8 +45,8 @@ export default function SearchIntent() {
 
       <h2>What Is Search Intent?</h2>
       <p>
-        Search intent (also known as user intent) is the reason behind a person's search query.
-        It's what they <em>actually</em> want to find, learn, or do when they type something into Google.
+        Search intent (also known as user intent) is the reason behind a person&apos;s search query.
+        It&apos;s what they <em>actually</em> want to find, learn, or do when they type something into Google.
         For <Link href="https://latinowebstudio.com/blog/what-how-expert-witness">expert witnesses</Link>, understanding search intent is key to writing content that draws in attorneys looking for specialized expertise.
       </p>
        <h3 className="text-xl font-semibold text-gray-800 mb-2">Search Intent Strategy for Expert Witnesses</h3>
@@ -174,7 +174,7 @@ export default function SearchIntent() {
 
       <h3>2. Higher Conversion Rates</h3>
       <p>
-        When your page delivers exactly what the attorney is looking for, they're more likely to contact you.
+        When your page delivers exactly what the attorney is looking for, they&apos;re more likely to contact you.
       </p>
 
       <h3>3. Authority and Visibility</h3>
@@ -193,7 +193,7 @@ export default function SearchIntent() {
 
       <h3>Mistake #2: Ignoring Search Intent</h3>
       <p>
-        Publishing a blog titled "Latest Developments in Kinematic Modeling" might be brilliant, but if no attorney is searching for that phrase—it won&apos;t get you cases.
+        Publishing a blog titled &quot;Latest Developments in Kinematic Modeling&quot; might be brilliant, but if no attorney is searching for that phrase—it won&apos;t get you cases.
       </p>
 
       <h3>Mistake #3: No Clear Next Step</h3>
@@ -239,7 +239,7 @@ height={646} alt={"How to effectively reach attorneys?"}
 
       <h2>Final Thoughts: Think Like a Lawyer</h2>
       <p>
-        When attorneys search, they're usually in decision-making mode. Your job as an expert witness is to meet them where they are in their journey.
+        When attorneys search, they&apos;re usually in decision-making mode. Your job as an expert witness is to meet them where they are in their journey.
       </p>
       <p>To recap:</p>
       <ul>
