@@ -34,9 +34,10 @@ export const metadata: Metadata = {
 export default function SearchIntent() {
   return (
     <>
+    <div className="single-post">
       {/* Hero Section */}
       <ContentBlock
-        sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
+        sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="lg:w-3/4 w-full px-4"
@@ -254,6 +255,7 @@ height={646} alt={"How to effectively reach attorneys?"}
 
       </ContentBlock>
       <CTA />
+      </div>
     </>
   );
 }

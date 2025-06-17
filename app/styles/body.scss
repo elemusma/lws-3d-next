@@ -5,7 +5,9 @@
         background:var(--accent-secondary);
     }
 }
-
+.grecaptcha-badge {
+    display: none !important;
+}
 // .bg-accent-secondary {
 //     background:var(--accent-secondary);
 // }

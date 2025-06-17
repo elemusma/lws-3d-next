@@ -2,6 +2,8 @@ import { Metadata } from "next";
 // import Image from "next/image";
 import Link from "next/link";
 import ContentBlock from "../components/content-block";
+import Main from "@/app/js/main";
+import CTA from "@/app/components/reusable/cta";
 // import SocialIcons from "@/app/components/social-icons";
 
 // Define metadata specific to this page
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
 export default function NewsPage() {
   return (
     <>
+    <Main />
       <ContentBlock
         sectionClassName="relative pt-[150px]"
         containerClassName="max-w-screen-lg mx-auto"
@@ -404,6 +407,7 @@ export default function NewsPage() {
           </div>
         </div> */}
       </ContentBlock>
+      <CTA />
     </>
   );
 }

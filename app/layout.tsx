@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import "./styles/btn.scss";
 import "./styles/fonts.scss";
 import "./styles/home.scss";
+import "./styles/body.scss";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 // import "./styles/layout.scss";
 
@@ -68,6 +69,11 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <script
+  src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+  async
+  defer
+/>
       </body>
     </html>
   );
