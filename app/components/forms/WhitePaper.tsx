@@ -6,23 +6,23 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "@/app/styles/forms.scss";
-import { formatPhoneNumber } from "./phoneFormatting";
+// import { formatPhoneNumber } from "./phoneFormatting";
 import { getRecaptchaToken } from "./Recaptcha";
 
-const ContactForm: React.FC = () => {
+const WhitePaper: React.FC = () => {
   const router = useRouter(); // Initialize Next.js router
   const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [isDirty, setIsDirty] = useState(false);
-  const [operandA, setOperandA] = useState(0);
-  const [operandB, setOperandB] = useState(0);
+//   const [operandA, setOperandA] = useState(0);
+//   const [operandB, setOperandB] = useState(0);
 
-  useEffect(() => {
-    const a = Math.floor(Math.random() * 5) + 1;
-    const b = Math.floor(Math.random() * 5) + 1;
-    setOperandA(a);
-    setOperandB(b);
-  }, []);
+//   useEffect(() => {
+//     const a = Math.floor(Math.random() * 5) + 1;
+//     const b = Math.floor(Math.random() * 5) + 1;
+//     setOperandA(a);
+//     setOperandB(b);
+//   }, []);
 
   const handleBeforeUnload = useCallback(
     (e: BeforeUnloadEvent) => {
@@ -51,15 +51,8 @@ const ContactForm: React.FC = () => {
     const formData = new FormData(formRef.current);
 
     const data = {
-      user_name: formData.get("user_name") as string,
       user_email: formData.get("user_email") as string,
-      user_phone: formData.get("user_phone") as string,
-      user_subject: formData.get("user_subject") as string,
-      message: formData.get("message") as string,
       job_title: formData.get("job_title") as string,
-      operand_a: formData.get("operand_a") as string,
-      operand_b: formData.get("operand_b") as string,
-      additional_info_1: formData.get("additional_info_1") as string,
       embed_url: window.location.href, // Capture the current page URL
     };
 
@@ -68,7 +61,7 @@ const ContactForm: React.FC = () => {
     try {
       const token = await getRecaptchaToken("submit");
 
-      const response = await fetch("/api/sendEmailForm", {
+      const response = await fetch("/api/WhitePaper", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -83,17 +76,14 @@ const ContactForm: React.FC = () => {
         toast.success("Message sent successfully!");
 
         // 🔽 SUBMIT TO HUBSPOT
-  await fetch("https://api.hsforms.com/submissions/v3/integration/submit/44436548/e010bd69-bab3-418e-8d8e-65b67a2b97ec", {
+  await fetch("https://api.hsforms.com/submissions/v3/integration/submit/44436548/8625caef-c830-46e9-a9c4-1c004aeb8b24", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
       fields: [
-        { name: "firstname", value: data.user_name },
         { name: "email", value: data.user_email },
-        { name: "phone", value: data.user_phone },
-        { name: "message", value: data.message },
         { name: "jobtitle", value: data.job_title }, // custom property in HubSpot
       ],
       context: {
@@ -128,35 +118,12 @@ const ContactForm: React.FC = () => {
           className="space-y-4"
         >
           <div className="flex flex-col md:flex-row gap-4">
-  {/* Name Field */}
-  <div className="relative w-full md:w-1/3">
-    <label htmlFor="user_name" className="block text-sm font-medium">
-      Name <span className="text-red-500">*</span>
-    </label>
-    <div className="relative">
-      <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
-      <Image
-        src="/forms/Form-Name.png"
-        alt="User Icon"
-        width={20}
-        height={20}
-        className="absolute left-2 top-3"
-      />
-      <input
-        type="text"
-        name="user_name"
-        className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
-        placeholder="Name"
-        required
-      />
-    </div>
-  </div>
 
   {/* Email Field */}
-  <div className="relative w-full md:w-1/3">
-    <label htmlFor="user_email" className="block text-sm font-medium">
+  <div className="relative w-full">
+    {/* <label htmlFor="user_email" className="block text-sm font-medium">
       Email Address <span className="text-red-500">*</span>
-    </label>
+    </label> */}
     <div className="relative">
       <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
       <Image
@@ -176,80 +143,7 @@ const ContactForm: React.FC = () => {
     </div>
   </div>
 
-  {/* Phone Field */}
-  <div className="relative w-full md:w-1/3">
-    <label htmlFor="user_phone" className="block text-sm font-medium">
-      Phone <span className="text-red-500">*</span>
-    </label>
-    <div className="relative">
-      <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
-      <Image
-        src="/forms/Form-Phone.png"
-        alt="Phone Icon"
-        width={20}
-        height={20}
-        className="absolute left-2 top-3"
-      />
-      <input
-        type="tel"
-        name="user_phone"
-        className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
-        placeholder="Phone"
-        required
-        maxLength={14}
-        onChange={formatPhoneNumber}
-      />
-    </div>
-  </div>
 </div>
-
-
-         
-
-          
-
-          {/* Message Field */}
-          <div className="relative">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium"
-            >
-              Message <span className="text-red-500">*</span>
-            </label>
-            <div className="relative">
-              <div className="absolute top-0 left-0 w-[35px] h-[95%] rounded-tl-md rounded-bl-md"></div>
-              <Image
-                src="/forms/Form-Message.png"
-                alt="Message Icon"
-                width={20}
-                height={20}
-                className="absolute left-2 top-3"
-              />
-              <textarea
-                name="message"
-                className="w-full p-3 pl-12 bg-white/90 border border-white placeholder-gray rounded-md min-h-[120px]"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-          </div>
-
-          <div className="relative">
-            <label
-              htmlFor="additional_info_1"
-              className="block text-sm font-medium"
-            >
-              What is {operandA} + {operandB}?
-            </label>
-            <input
-              type="number"
-              name="additional_info_1"
-              className="w-full"
-              required
-            />
-            <input type="hidden" name="operand_a" value={operandA} />
-            <input type="hidden" name="operand_b" value={operandB} />
-          </div>
 
           {/* Honeypot field - should remain empty */}
           <div style={{ display: "none" }} aria-hidden="true">
@@ -263,13 +157,13 @@ const ContactForm: React.FC = () => {
           </div>
 
           {/* Submit Button */}
-          <div className="text-center" style={{ }}>
+          <div className="text-center" style={{  }}>
             <button
               type="submit"
               className="btn-main square"
               disabled={loading}
             >
-              {loading ? "Sending..." : "Send us a Message"}
+              {loading ? "Downloading..." : "Download White Paper"}
             </button>
           </div>
         </form>
@@ -278,4 +172,4 @@ const ContactForm: React.FC = () => {
   );
 };
 
-export default ContactForm;
+export default WhitePaper;

@@ -4,6 +4,7 @@ import Link from "next/link";
 import ContentBlock from "../components/content-block";
 import Main from "@/app/js/main";
 import CTA from "@/app/components/reusable/cta";
+import Sidebar from "../components/reusable/Sidebar";
 // import SocialIcons from "@/app/components/social-icons";
 
 // Define metadata specific to this page
@@ -370,6 +371,7 @@ export default function NewsPage() {
           </div>
           {/* end of news blog post */}
         </div>
+        <Sidebar />
         {/* <div className="lg:w-1/4 w-full">
           <div className="bg-[#f7f7f7] p-4 mb-4">
             <p className="text-xl text-gray-700 m-0">Media Contact</p>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,11 +36,12 @@ export default function WhatHowExpertWitnesses() {
     <>
       {/* Hero Section */}
       <ContentBlock
-        sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        sectionClassName="bg-[#f7f7f7] text-black pt-[100px] pb-[100px] blog single-post"
+        containerClassName="max-w-screen-lg mx-auto lg:px-0 p-10"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-wrap"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">What is an Expert Witness and How to Become One</h1>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">The Critical Role of Expert Witnesses in Litigation</h2>
@@ -123,6 +125,8 @@ export default function WhatHowExpertWitnesses() {
   <p className="text-base text-gray-700 mb-4">
     With these strategies, professionals can navigate the path to becoming a reliable and in-demand expert witness, gaining recognition from attorneys who seek both competence and trust.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>
