@@ -96,7 +96,7 @@ const WhitePaper: React.FC = () => {
         formRef.current.reset();
         // Redirect to thank-you page after success
         setIsDirty(false); // ✅ disable the beforeunload warning
-        router.push("/thank-you/");
+        router.push("/thank-you-white-paper/");
       } else {
         toast.error(result.error || "Failed to send message.");
       }
