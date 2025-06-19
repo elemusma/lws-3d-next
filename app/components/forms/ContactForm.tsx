@@ -94,6 +94,7 @@ const ContactForm: React.FC = () => {
         { name: "email", value: data.user_email },
         { name: "phone", value: data.user_phone },
         { name: "message", value: data.message },
+        { name: "submission_url", value: data.embed_url },
         { name: "jobtitle", value: data.job_title }, // custom property in HubSpot
       ],
       context: {
@@ -119,8 +120,8 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center bg-cover bg-center w-full">
-      <div className="relative max-w-screen-lg mx-auto">
+    <div className="relative items-center justify-center bg-cover bg-center w-full">
+      <div className="relative">
         <form
           ref={formRef}
           onSubmit={sendEmail}

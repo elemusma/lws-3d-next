@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -37,12 +38,20 @@ export default function UserExperience() {
         sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <article>
-       <h1 className="text-3xl font-bold text-gray-900 mb-6">
-    Why Your Website Might Be Costing You Cases—and How UX Can Fix That
-  </h1>
+        <div className="lg:w-3/4 w-full lg:pr-8">
+        <article itemScope itemType="http://schema.org/Article">
+        <meta itemProp="author" content="Tadeo Martinez" />
+        <meta itemProp="datePublished" content="2025-06-18" />
+        <meta itemProp="headline" content="Why Your Website Might Be Costing You Cases—and How UX Can Fix That" />
+        <meta itemProp="publisher" content="Latino Web Studio" />
+        <meta itemProp="image" content="https://latinowebstudio.com/blog/user-experience-01.png" />
+
+        <div itemProp="articleBody">
+       <h1 className="text-3xl font-bold text-gray-900 mb-6" itemProp="name">
+          Why Your Website Might Be Costing You Cases—and How UX Can Fix That
+        </h1>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">
     Attorneys Decide Fast—Poor UX Gets You Dismissed
@@ -110,7 +119,10 @@ export default function UserExperience() {
   <p className="text-base text-gray-700 mb-8">
     Ready to improve your visibility and get found by the right attorneys? Contact Latino Web Studio for a free UX evaluation and learn how we can help you turn your digital presence into a source of ongoing professional authority.
   </p>
+  </div>
   </article>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

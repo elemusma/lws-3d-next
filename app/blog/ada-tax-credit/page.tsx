@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Sidebar from "@/app/components/reusable/Sidebar";
 
 export const metadata: Metadata = {
   title:
@@ -33,11 +34,12 @@ export default function AdaTaxCredit() {
     <>
       {/* Hero Section */}
       <ContentBlock
-        sectionClassName="bg-white text-black pt-[150px] pb-8 blog"
+        sectionClassName="bg-white text-black pt-[150px] pb-8 blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-3xl font-bold mb-6 text-gray-800">ADA Tax Credit Visibility: SEO and Accessibility Blueprint for Legal and Consulting Firms</h1>
 <a href="/contact" className="btn-main">
                     Speak with an SEO Expert
@@ -120,6 +122,8 @@ export default function AdaTaxCredit() {
   <p className="mb-4 text-gray-600">
     Ultimately, the intersection of accessibility and SEO provides a dual benefit: fostering inclusivity while strategically positioning the firm to capture a broader audience seeking ADA compliance guidance and related services.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
     </>
   );

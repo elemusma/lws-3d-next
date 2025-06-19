@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function AIRankingExpertWitness() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold mb-6 text-gray-800">
     AI-Search Results Domination for Expert Witnesses
   </h1>
@@ -151,6 +153,8 @@ export default function AIRankingExpertWitness() {
     width={2000}
     height={2000} alt={"Achieving AI Search Dominance for Expert Witnesses"}  
     />
+    </div>
+    <Sidebar />
       </ContentBlock>
       <CTA />
     </>

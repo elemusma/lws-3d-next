@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function DepositionReadinessChecklist() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">Checklist to Casebook: How Expert Witnesses Can Use Deposition Preparation Content to Drive Legal Leads</h1>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">Why Deposition Readiness Content Offers Strategic SEO Potential</h2>
@@ -122,6 +124,8 @@ export default function DepositionReadinessChecklist() {
   <p className="mb-4 text-gray-700">
     With consistent updates, keyword monitoring, and performance reviews, expert witnesses can refine this approach to match evolving attorney search behaviors and maintain a visible, authoritative presence in the digital legal ecosystem.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -38,8 +39,9 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-6">
     What Lawyers Want to See on Your Website Before They Call You
   </h1>
@@ -153,6 +155,8 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
   <p className="text-base text-gray-700 mb-4">
   To improve your chances of being discovered online, it&apos;s important to understand the <Link href="https://latinowebstudio.com/blog/attorneys-keywords">SEO keywords attorneys use when searching for expert witnesses</Link>. Aligning your content with these search terms can significantly boost visibility and engagement.
 </p>
+</div>
+<Sidebar />
       </ContentBlock>
       <CTA />
     </>

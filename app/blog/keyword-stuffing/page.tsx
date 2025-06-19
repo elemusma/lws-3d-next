@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function KeywordStuffing() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+       columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
       <h1 className="text-3xl font-bold text-gray-900 mb-6">Keyword Stuffing in Content and URLs: Does It Still Work in 2025?</h1>
 
   <h2 className="text-2xl font-semibold text-gray-800 mb-4">Understanding Keyword Stuffing in SEO Strategy</h2>
@@ -120,6 +122,8 @@ export default function KeywordStuffing() {
   <p className="mb-4 text-gray-700">
     Latino Web Studio specializes in building SEO-optimized websites for expert witnesses. We help you get found by the right attorneys through strategic design, <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">technical SEO</Link>, and conversion-focused content. If you&apos;re ready to get more cases and get found by attorneys online, connect with us today.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

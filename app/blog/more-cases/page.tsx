@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function MoreCases() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
     Want More Cases? Here&apos;s How Lawyers Really Search for Experts Online
   </h1>
@@ -158,6 +160,8 @@ export default function MoreCases() {
   <p className="text-base text-gray-700 mb-6">
     If you&apos;re serious about improving your digital footprint, attracting more attorney inquiries, and building long-term authority in your field, we can help. Contact Latino Web Studio to discover how a focused SEO strategy can put your expertise in front of the attorneys who need it most.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

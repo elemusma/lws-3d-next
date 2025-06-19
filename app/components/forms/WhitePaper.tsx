@@ -84,6 +84,7 @@ const WhitePaper: React.FC = () => {
     body: JSON.stringify({
       fields: [
         { name: "email", value: data.user_email },
+        { name: "submission_url", value: data.embed_url },
         { name: "jobtitle", value: data.job_title }, // custom property in HubSpot
       ],
       context: {
@@ -109,8 +110,8 @@ const WhitePaper: React.FC = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center bg-cover bg-center w-full">
-      <div className="relative max-w-screen-lg mx-auto">
+    <div className="relative bg-cover bg-center w-full">
+      <div className="relative">
         <form
           ref={formRef}
           onSubmit={sendEmail}

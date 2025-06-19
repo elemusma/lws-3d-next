@@ -5,11 +5,11 @@ import WhitePaper from "../forms/WhitePaper";
 
 export default function Sidebar() {
   return (
-    <div className="lg:w-1/4 w-full">
+    <div className="lg:w-1/4 w-full sticky top-[8rem] lg:px-0 px-4">
 
         <div className="relative">
         <Image 
-        src="/blog/White-Paper.jpg"
+        src="/blog/White-Paper-Cover.jpg"
         width={1000}
         height={1000} alt={"Get More Cases and Get Found by Attorneys Download White Paper"}  
         priority

@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -37,8 +38,9 @@ export default function AdaTaxCredit() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
     SEO Strategies for Expert Witness
   </h1>
@@ -157,6 +159,8 @@ export default function AdaTaxCredit() {
   <p className="text-base text-gray-700 mb-6">
     As search behavior continues to evolve and legal marketing becomes increasingly digital, applying a case-centric SEO framework becomes not just a best practice, but a necessity for expert witnesses who want to remain visible, credible, and competitive in the legal services ecosystem.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

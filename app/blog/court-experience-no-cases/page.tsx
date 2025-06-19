@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -38,8 +39,9 @@ export default function WhyCourtExperienceNotGettingCases() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
     Why Your Court Experience Isn&apos;t Helping You Get More Cases (Yet)
   </h1>
@@ -132,6 +134,8 @@ export default function WhyCourtExperienceNotGettingCases() {
   <p className="text-base text-gray-700 mb-4">
     Building an effective digital footprint requires consistent messaging, legal-search SEO, and a structure that supports both visibility and conversion. By bridging the gap between expertise and access, <Link href="https://latinowebstudio.com/blog/what-how-expert-witness">expert witnesses</Link> can significantly improve their ability to attract and retain new cases.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

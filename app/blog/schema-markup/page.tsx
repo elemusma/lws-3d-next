@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function SchemaMarkup() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
     How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online
   </h1>
@@ -153,6 +155,8 @@ export default function SchemaMarkup() {
   <p className="mb-4 text-gray-700">
     Staying ahead of competitors means being more visible, more trustworthy, and more aligned with what attorneys are searching for. Expert witnesses who integrate schema markup into their websites are not only improving <Link href="https://latinowebstudio.com/blog/seo-expert-witnesses">SEO—they are shaping expert witnesses&apos; presence for the digital legal landscape.</Link>
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function ExpertWitnessDirectories() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
       <h1 className="text-4xl font-bold text-gray-800 mb-6">Expert Witness Directories: How They Work and Why Visibility Matters</h1>
 
   <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">Understanding the Role of Expert Witness Directories in Legal Research</h2>
@@ -114,6 +116,8 @@ export default function ExpertWitnessDirectories() {
   <p className="text-base text-gray-600 mb-4">
     In an environment where legal teams are often under pressure to secure credible expert witnesses quickly, those who are easy to find and verify gain a significant competitive edge. By understanding how directories function and optimizing their profiles accordingly, expert witnesses can increase their visibility and impact in the legal community.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>

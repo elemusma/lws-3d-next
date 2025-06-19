@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
+import Sidebar from "@/app/components/reusable/Sidebar";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export default function PeerReviewedExpertWitness() {
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="lg:w-3/4 w-full px-4"
+        columnClassName="flex flex-col lg:flex-row items-start"
       >
+        <div className="lg:w-3/4 w-full lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Peer Review in Expert Witness Testimony</h1>
 
   <h2 className="text-2xl font-semibold text-gray-700 mb-4">Enhancing Credibility and Courtroom Admissibility</h2>
@@ -135,6 +137,8 @@ export default function PeerReviewedExpertWitness() {
   <p className="text-base text-gray-600 mb-4">
     Courts, expert witnesses, and legal professionals must collaborate to refine the standards that govern admissibility. By doing so, they can uphold both the integrity of the legal process and the credibility of the scientific contributions that support it.
   </p>
+  </div>
+  <Sidebar />
       </ContentBlock>
       <CTA />
     </>
