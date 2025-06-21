@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
+import { getArticleSchema } from "@/app/components/reusable/articleSchema";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -30,9 +32,28 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = getArticleSchema({
+  headline: "Why Your Website Might Be Costing You Cases--and How UX Can Fix That",
+  section: "Web Design and UX for Expert Witnesses",
+  description: "Attorneys reviewing expert witnesses often move fast...",
+  datePublished: "2025-06-18",
+  dateModified: "2025-06-21",
+  image: "https://latinowebstudio.com/blog/user-experience-01.png",
+  keywords: "UX for expert witnesses, legal web design, attorney website evaluation",
+  wordCount: 1240,
+  slug: "user-experience-ux",
+});
+
 export default function UserExperience() {
   return (
     <>
+    <Head>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+  />
+</Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] blog single-post"
@@ -41,15 +62,8 @@ export default function UserExperience() {
         columnClassName="flex flex-col lg:flex-row items-start"
       >
         <div className="lg:w-3/4 w-full lg:pr-8">
-        <article itemScope itemType="http://schema.org/Article">
-        <meta itemProp="author" content="Tadeo Martinez" />
-        <meta itemProp="datePublished" content="2025-06-18" />
-        <meta itemProp="headline" content="Why Your Website Might Be Costing You Cases—and How UX Can Fix That" />
-        <meta itemProp="publisher" content="Latino Web Studio" />
-        <meta itemProp="image" content="https://latinowebstudio.com/blog/user-experience-01.png" />
-
-        <div itemProp="articleBody">
-       <h1 className="text-3xl font-bold text-gray-900 mb-6" itemProp="name">
+        <article>
+       <h1 className="text-3xl font-bold text-gray-900 mb-6">
           Why Your Website Might Be Costing You Cases—and How UX Can Fix That
         </h1>
 
@@ -119,7 +133,7 @@ export default function UserExperience() {
   <p className="text-base text-gray-700 mb-8">
     Ready to improve your visibility and get found by the right attorneys? Contact Latino Web Studio for a free UX evaluation and learn how we can help you turn your digital presence into a source of ongoing professional authority.
   </p>
-  </div>
+
   </article>
   </div>
   <Sidebar />

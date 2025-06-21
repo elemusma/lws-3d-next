@@ -5,7 +5,7 @@ import WhitePaper from "../forms/WhitePaper";
 
 export default function Sidebar() {
   return (
-    <div className="lg:w-1/4 w-full sticky top-[8rem] lg:px-0 px-4">
+    <aside className="lg:w-1/4 w-full sticky top-[8rem] lg:px-0 px-4">
 
         <div className="relative">
         <Image 
@@ -18,6 +18,7 @@ export default function Sidebar() {
         <WhitePaper />
         </div>
         <div className="text-center pt-4">
+        <h2 className="sr-only">About the Author</h2>
         <Image 
         src="/assets/Headshot_1.png"
         className="mx-auto"
@@ -33,6 +34,6 @@ export default function Sidebar() {
           <SocialIcons />
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
