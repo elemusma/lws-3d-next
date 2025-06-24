@@ -7,7 +7,7 @@ export default function CalendarPage() {
     <Main />
     <div className="z-[1] relative text-center px-4 pt-[150px]">
 
-    <h1>Schedule a Call with Ted Below</h1>
+    <h1>Schedule a Call with Tadeo (Ted) Martinez Below</h1>
     </div>
     <CalendlyWidget />
     </>
