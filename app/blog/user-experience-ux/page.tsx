@@ -6,7 +6,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import Sidebar from "@/app/components/reusable/Sidebar";
 import Head from "next/head";
-import { getArticleSchema } from "@/app/components/reusable/articleSchema";
+// import { getArticleSchema } from "@/app/components/reusable/articleSchema";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -32,25 +32,43 @@ export const metadata: Metadata = {
   },
 };
 
-const schema = getArticleSchema({
-  headline: "Why Your Website Might Be Costing You Cases--and How UX Can Fix That",
-  section: "Web Design and UX for Expert Witnesses",
-  description: "Attorneys reviewing expert witnesses often move fast...",
-  datePublished: "2025-06-18",
-  dateModified: "2025-06-21",
-  image: "https://latinowebstudio.com/blog/user-experience-01.png",
-  keywords: "UX for expert witnesses, legal web design, attorney website evaluation",
-  wordCount: 1240,
-  slug: "user-experience-ux",
-});
-
 export default function UserExperience() {
   return (
     <>
     <Head>
   <script
     type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Why Your Website Might Be Costing You Cases--and How UX Can Fix That",
+        "articleSection": "Web Design and UX for Expert Witnesses",
+        "description": "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
+        "dateModified": "2025-06-21",
+        "keywords": "UX for expert witnesses, legal web design, attorney website evaluation",
+        "wordCount": 1240,
+        "image": "https://latinowebstudio.com/blog/user-experience-01.png",
+        "author": {
+          "@type": "Person",
+          "name": "Tadeo Martinez",
+          "url": "https://latinowebstudio.com/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Latino Web Studio",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+          }
+        },
+        "datePublished": "2025-06-18",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://latinowebstudio.com/blog/user-experience-ux"
+        }
+      }),
+    }}
   />
 </Head>
 

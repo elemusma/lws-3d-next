@@ -33,3 +33,16 @@ p, li {
 .text-shadow {
     text-shadow:var(--text-shadow);
 }
+
+
+ a.text-link {
+    color: var(--accent-secondary);
+    padding: 2px 5px;
+    box-shadow: inset 0 -5px 0 0 var(--accent-primary);
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: inset 0 -55px 0 0 var(--accent-primary);
+    }
+  }

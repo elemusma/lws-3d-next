@@ -8,6 +8,7 @@ import CTA from "./components/reusable/cta";
 import HeadshotIcons from "./components/headshot-icons";
 import Main from "./js/main";
 import "./styles/body.scss";
+// import ContentBlock from "./components/content-block";
 
 export default function Home() {
   // const currentYear = new Date().getFullYear();
@@ -55,7 +56,7 @@ export default function Home() {
                 {/* </div> */}
                 <div>
                   <a href="#schedule" className="btn-main">
-                    Schedule a Call
+                    Get More Cases
                   </a>
                 </div>
               </div>
@@ -114,7 +115,7 @@ export default function Home() {
               <div className="w-full pb-8 px-4 text-center">
                 <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
-                    Schedule a Call
+                    Get More Cases
                   </a>
                 </div>
               </div>
@@ -223,34 +224,11 @@ export default function Home() {
             {/* CTA Button */}
             <div className="mt-10 flex justify-center">
               <a href="#schedule" className="btn-main">
-                Schedule a Call
+                Get More Cases
               </a>
             </div>
           </div>
         </section>
-
-        {/* <section className={`light`}>
-          <h2>👩🏽‍🚀 Services Offered</h2>
-          <p>
-            Build apps that seamlessly work on iOS, Android, and Web, saving
-            time and resources. Create systems that grow with your business to
-            ensure future readiness. Automate and simplify workflows, reducing
-            inefficiencies and operational costs.
-          </p>
-
-          <h2>🏆 What Makes Us Different?</h2>
-          <p>
-            Struggling to scale your business and develop robust apps?
-            Specializing in cross-platform solutions, this approach simplifies
-            tech operations and supports your funding goals. Years of experience
-            and a proven track record in scalable, efficient software back these
-            solutions.
-          </p>
-        </section> */}
-
-        {/* <blockquote>
-          <p>The best way out is always through - Robert Frost</p>
-        </blockquote> */}
 
         <section className={``} style={{ paddingTop: 100, paddingBottom: 100 }}>
           <div className="container mx-auto px-4">
@@ -275,7 +253,7 @@ export default function Home() {
                 </p>
                 <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
-                    Schedule a Call
+                    Get More Cases
                   </a>
                 </div>
               </div>
@@ -313,7 +291,7 @@ export default function Home() {
                   >
                     1.
                   </span>
-                  <span className="text-white">Schedule a Call</span>
+                  <span className="text-white">Get More Cases</span>
                 </h2>
               </div>
               <div
@@ -365,8 +343,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+         
         <CTA />
+
+        
 
         <section className="quote-section text-center">
           <p>

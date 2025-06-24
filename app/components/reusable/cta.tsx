@@ -19,7 +19,7 @@ export default function Cta() {
                 </div>
                 {/* <small>It&apos;s not by attending the SEAK conference every year, although it is recommended.</small> */}
               </div>
-              <div className="px-4 text-center w-full" id="calendar">
+              <div className="lg:w-1/2 w-full px-4 text-center w-full" id="calendar">
                 {/* <!-- Calendly inline widget begin --> */}
                 <ContactForm />
                 {/* <CalendlyWidget /> */}
