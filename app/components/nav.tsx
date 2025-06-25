@@ -14,6 +14,9 @@ const Nav = () => {
               </Link>
             </div>
             <div className="lg:w-1/2 w-1/6 px-4 flex justify-end items-center">
+              <Link href="/practice-areas/seo" className="px-4">
+                <span style={{textShadow:'1px 1px 1px white'}}>SEO</span>
+              </Link>
               <Link href="/about" className="px-4">
                 <span style={{textShadow:'1px 1px 1px white'}}>About</span>
               </Link>
