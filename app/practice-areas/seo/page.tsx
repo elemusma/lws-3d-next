@@ -1,4 +1,3 @@
-
 import ContentBlock from "@/app/components/content-block";
 import "@/app/styles/blog.scss";
 import Image from "next/image";
