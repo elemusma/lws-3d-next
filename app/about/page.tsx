@@ -11,23 +11,21 @@ import HeadshotIcons from "../components/headshot-icons";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
-  title:
-   "Why Your Website Might Be Costing You Cases—and How UX Can Fix That - Latino Web Studio",
+  title: "About Tadeo Martinez | Latino Web Studio - SEO & Web Design for Expert Witnesses",
   description:
-   "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
+    "Meet Tadeo Martinez, founder of Latino Web Studio. Learn how we help expert witnesses get found online through SEO, ADA-compliant web design, and strategic content.",
   openGraph: {
-    title:
-     "Why Your Website Might Be Costing You Cases—and How UX Can Fix That - Latino Web Studio",
+    title: "About Tadeo Martinez | Latino Web Studio - SEO & Web Design for Expert Witnesses",
     description:
-     "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
-    url: `https://latinowebstudio.com/blog/user-experience-ux`, // Replace with actual URL
-    type:"website",
+      "Discover the mission behind Latino Web Studio and how Tadeo Martinez helps expert witnesses increase visibility and win more cases.",
+    url: "https://latinowebstudio.com/about",
+    type: "profile",
     images: [
       {
-        url: `https://latinowebstudio.com/blog/user-experience-01.png`, // Replace with the actual image path
-        width: 1200, // Standard OG image width
-        height: 630, // Standard OG image height
-        alt:"Why Your Website Might Be Costing You Cases—and How UX Can Fix That - Latino Web Studio",
+        url: "https://latinowebstudio.com/assets/Mark-Tadeo-Latino-Web-Studio.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tadeo Martinez - Latino Web Studio",
       },
     ],
   },
@@ -42,32 +40,29 @@ export default function AboutPage() {
     dangerouslySetInnerHTML={{
       __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Why Your Website Might Be Costing You Cases--and How UX Can Fix That",
-        "articleSection": "Web Design and UX for Expert Witnesses",
-        "description": "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
-        "dateModified": "2025-06-21",
-        "keywords": "UX for expert witnesses, legal web design, attorney website evaluation",
-        "wordCount": 1240,
-        "image": "https://latinowebstudio.com/blog/user-experience-01.png",
-        "author": {
+        "@type": "AboutPage",
+        "mainEntity": {
           "@type": "Person",
           "name": "Tadeo Martinez",
-          "url": "https://latinowebstudio.com/about"
+          "jobTitle": "Founder",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Latino Web Studio",
+            "url": "https://latinowebstudio.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+            }
+          },
+          "url": "https://latinowebstudio.com/about",
+          "image": "https://latinowebstudio.com/assets/Mark-Tadeo-Latino-Web-Studio.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/ted-martinez-seo/",
+            "https://latinowebstudio.com"
+          ]
         },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Latino Web Studio",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-          }
-        },
-        "datePublished": "2025-06-18",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://latinowebstudio.com/blog/user-experience-ux"
-        }
+        "description": "Learn about Latino Web Studio and founder Tadeo Martinez—experts in SEO and web design for expert witnesses.",
+        "url": "https://latinowebstudio.com/about"
       }),
     }}
   />

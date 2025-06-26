@@ -38,3 +38,4 @@ const ResponsiveYouTube = ({ videoId }: ResponsiveYouTubeProps) => {
 };
 
 export default ResponsiveYouTube;
+{/* <ResponsiveYouTube videoId="otuPxxnH4q0" /> */}

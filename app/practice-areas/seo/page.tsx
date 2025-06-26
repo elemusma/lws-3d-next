@@ -6,7 +6,7 @@ import CTA from "@/app/components/reusable/cta";
 // import Link from "next/link";
 // import Sidebar from "@/app/components/reusable/Sidebar";
 import Head from "next/head";
-import ResponsiveYouTube from "@/app/components/reusable/ResponsiveYouTube";
+// import ResponsiveYouTube from "@/app/components/reusable/ResponsiveYouTube";
 // import { Link } from "lucide-react";
 // import { getArticleSchema } from "@/app/components/reusable/articleSchema";
 // import HeadshotIcons from "@/app/components/headshot-icons";
@@ -94,28 +94,28 @@ export default function PracticeAreasSEO() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
-        <div className="md:w-1/3 w-1/2 lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <Image 
-        src="/practice-areas/SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments.jpg"
-        width={1000}
-        height={485} alt={"SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"} 
-        />
-        <ResponsiveYouTube videoId="otuPxxnH4q0" />
-
-        </div>
-        <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1>Boost Your Visibility in Google with Strategic SEO for Expert Witnesses</h1>
-            <h2>Get Found by the Right Attorneys—Consistently</h2>
-            <p>When your expertise provides clear and fact-based evidence for a legal case, it&apos;s critical that attorneys can find you fast. We ensure your name shows up at the top when lawyers search for experts with your credentials. We combine keyword strategy, local SEO, and on-page optimization to increase your visibility, while always ensuring full ADA compliance so your site is accessible to all users and avoids legal risk.</p>
+        <div className="w-full text-center px-4 mb-8 lg:mb-0">
+            <h1 className="mb-2">SEO for Expert Witnesses</h1>
+            
+            <p className="mb-2">Attorneys need to find you fast. We help expert witnesses rank higher with technical SEO, schema markup, and ADA-compliant websites that build visibility, trust, and accessibility—all without ads or gimmicks.</p>
             <a href="#schedule" className="btn-main">
               Get More Cases
             </a>
+            {/* <h2 className="mt-0 text-xl">Get Found by the Right Attorneys—Consistently</h2> */}
+            <div className="w-11/12 mx-auto mt-2">
+            <Image 
+        src="/practice-areas/SEO-Results-Experts.jpg"
+        width={1000}
+        height={485} alt={"SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"} 
+        priority
+        />
+        </div>
         </div>
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-200 text-black pt-[100px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
-        rowClassName="flex flex-col items-center"
+        rowClassName="flex flex-col"
         columnClassName="flex flex-wrap flex-col lg:flex-row items-start"
       >
          
@@ -124,7 +124,7 @@ export default function PracticeAreasSEO() {
         src="/practice-areas/Fast.png"
         width={100}
         height={100} alt={"SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"} 
-        className="mx-auto mb-4"
+        className="mx-auto mb-4 h-[100px] object-contain"
         />
         <h2 style={{margin:0}}>Fast</h2>
         {/* <h3 style={{margin:0}} className="text-md">Personalized Strategy & Support</h3> */}
@@ -135,7 +135,7 @@ export default function PracticeAreasSEO() {
         src="/practice-areas/Authority.png"
         width={100}
         height={100} alt={"SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"} 
-        className="mx-auto mb-4"
+        className="mx-auto mb-4 h-[100px] object-contain"
         />
         <h2 style={{margin:0}}>Authority</h2>
         {/* <h3 style={{margin:0}}>Personalized Strategy & Support</h3> */}
@@ -146,7 +146,7 @@ export default function PracticeAreasSEO() {
         src="/practice-areas/Personal-Service.png"
         width={100}
         height={100} alt={"SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"} 
-        className="mx-auto mb-4"
+        className="mx-auto mb-4 h-[100px] object-contain"
         />
         <h2 style={{margin:0}}>Tailored</h2>
         {/* <h3 style={{margin:0}}>Personalized Strategy & Support</h3> */}
@@ -165,8 +165,9 @@ export default function PracticeAreasSEO() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row-reverse lg:flex-row items-start"
       >
-         <div className="w-full text-center">
-            <h2 className="pb-20">Latino Web Studio Builds Visibility with Strategy and Precision</h2>
+         <div className="w-full text-center pb-8">
+            <h2 className="">Latino Web Studio Builds Visibility with Strategy and Precision</h2>
+            <div className="divider"></div>
          </div>
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
         <Image 
@@ -287,7 +288,7 @@ export default function PracticeAreasSEO() {
 </div>
 
 <div>
-      <h3 style={{ margin: "0px" }}>SEO Audits</h3>
+      <h3 className="text-xl" style={{ margin: "0px" }}>SEO Audits</h3>
       <p>
         Uncover issues affecting visibility, page speed, and indexability with in-depth technical audits.
       </p>
@@ -316,7 +317,7 @@ export default function PracticeAreasSEO() {
 </div>
 
 <div>
-      <h3 style={{ margin: "0px" }}>Schema Markup</h3>
+      <h3 className="text-xl" style={{ margin: "0px" }}>Schema Markup</h3>
       <p>
         Add structured data to boost search appearance and trust with attorney-specific rich snippets.
       </p>
@@ -345,7 +346,7 @@ export default function PracticeAreasSEO() {
 </div>
 
 <div>
-      <h3 style={{ margin: "0px" }}>ADA Compliance</h3>
+      <h3 className="text-xl" style={{ margin: "0px" }}>ADA Compliance</h3>
       <p>
         Ensure accessibility for all users while reducing legal risk and improving search performance.
       </p>
@@ -374,7 +375,7 @@ export default function PracticeAreasSEO() {
 </div>
 
 <div>
-      <h3 style={{ margin: "0px" }}>Mobile Optimization</h3>
+      <h3 className="text-xl" style={{ margin: "0px" }}>Mobile Optimization</h3>
       <p>
         Deliver lightning-fast experiences on phones—key for Google rankings and busy attorney users.
       </p>
@@ -403,7 +404,7 @@ export default function PracticeAreasSEO() {
 </div>
 
 <div>
-      <h3 style={{ margin: "0px" }}>Conversion Design</h3>
+      <h3 className="text-xl" style={{ margin: "0px" }}>Conversion Design</h3>
       <p>
         Guide attorneys to contact you faster with clear calls-to-action and persuasive layout choices.
       </p>
@@ -432,7 +433,7 @@ export default function PracticeAreasSEO() {
 </div>
 
 <div>
-      <h3 style={{ margin: "0px" }}>Ongoing Support</h3>
+      <h3 className="text-xl" style={{ margin: "0px" }}>Ongoing Support</h3>
       <p>
         Stay competitive with monthly updates, performance tracking, and SEO content improvements.
       </p>
