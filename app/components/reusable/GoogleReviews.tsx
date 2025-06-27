@@ -61,7 +61,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
               "X-Goog-Api-Key": apiKey,
               "X-Goog-FieldMask": "reviews",
             },
-          }
+          },
         );
 
         if (!response.ok) {

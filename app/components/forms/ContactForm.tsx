@@ -33,7 +33,7 @@ const ContactForm: React.FC = () => {
         return e.returnValue;
       }
     },
-    [isDirty]
+    [isDirty],
   ); // Add isDirty to dependency array if it's used inside
   useEffect(() => {
     window.addEventListener("beforeunload", handleBeforeUnload);
@@ -83,26 +83,29 @@ const ContactForm: React.FC = () => {
         toast.success("Message sent successfully!");
 
         // 🔽 SUBMIT TO HUBSPOT
-  await fetch("https://api.hsforms.com/submissions/v3/integration/submit/44436548/e010bd69-bab3-418e-8d8e-65b67a2b97ec", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      fields: [
-        { name: "firstname", value: data.user_name },
-        { name: "email", value: data.user_email },
-        { name: "phone", value: data.user_phone },
-        { name: "message", value: data.message },
-        { name: "submission_url", value: data.embed_url },
-        { name: "jobtitle", value: data.job_title }, // custom property in HubSpot
-      ],
-      context: {
-        pageUri: window.location.href,
-        pageName: document.title,
-      },
-    }),
-  });
+        await fetch(
+          "https://api.hsforms.com/submissions/v3/integration/submit/44436548/e010bd69-bab3-418e-8d8e-65b67a2b97ec",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              fields: [
+                { name: "firstname", value: data.user_name },
+                { name: "email", value: data.user_email },
+                { name: "phone", value: data.user_phone },
+                { name: "message", value: data.message },
+                { name: "submission_url", value: data.embed_url },
+                { name: "jobtitle", value: data.job_title }, // custom property in HubSpot
+              ],
+              context: {
+                pageUri: window.location.href,
+                pageName: document.title,
+              },
+            }),
+          },
+        );
 
         formRef.current.reset();
         // Redirect to thank-you page after success
@@ -129,92 +132,84 @@ const ContactForm: React.FC = () => {
           className="space-y-4"
         >
           <div className="flex flex-col md:flex-row gap-4">
-  {/* Name Field */}
-  <div className="relative w-full md:w-1/3">
-    <label htmlFor="user_name" className="block text-sm font-medium">
-      Name <span className="text-red-500">*</span>
-    </label>
-    <div className="relative">
-      <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
-      <Image
-        src="/forms/Form-Name.png"
-        alt="User Icon"
-        width={20}
-        height={20}
-        className="absolute left-2 top-3"
-      />
-      <input
-        type="text"
-        name="user_name"
-        className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
-        placeholder="Name"
-        required
-      />
-    </div>
-  </div>
+            {/* Name Field */}
+            <div className="relative w-full md:w-1/3">
+              <label htmlFor="user_name" className="block text-sm font-medium">
+                Name <span className="text-red-500">*</span>
+              </label>
+              <div className="relative">
+                <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
+                <Image
+                  src="/forms/Form-Name.png"
+                  alt="User Icon"
+                  width={20}
+                  height={20}
+                  className="absolute left-2 top-3"
+                />
+                <input
+                  type="text"
+                  name="user_name"
+                  className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+            </div>
 
-  {/* Email Field */}
-  <div className="relative w-full md:w-1/3">
-    <label htmlFor="user_email" className="block text-sm font-medium">
-      Email Address <span className="text-red-500">*</span>
-    </label>
-    <div className="relative">
-      <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
-      <Image
-        src="/forms/Form-Email.png"
-        alt="Email Icon"
-        width={20}
-        height={20}
-        className="absolute left-2 top-3"
-      />
-      <input
-        type="email"
-        name="user_email"
-        className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
-        placeholder="Email Address"
-        required
-      />
-    </div>
-  </div>
+            {/* Email Field */}
+            <div className="relative w-full md:w-1/3">
+              <label htmlFor="user_email" className="block text-sm font-medium">
+                Email Address <span className="text-red-500">*</span>
+              </label>
+              <div className="relative">
+                <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
+                <Image
+                  src="/forms/Form-Email.png"
+                  alt="Email Icon"
+                  width={20}
+                  height={20}
+                  className="absolute left-2 top-3"
+                />
+                <input
+                  type="email"
+                  name="user_email"
+                  className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+            </div>
 
-  {/* Phone Field */}
-  <div className="relative w-full md:w-1/3">
-    <label htmlFor="user_phone" className="block text-sm font-medium">
-      Phone <span className="text-red-500">*</span>
-    </label>
-    <div className="relative">
-      <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
-      <Image
-        src="/forms/Form-Phone.png"
-        alt="Phone Icon"
-        width={20}
-        height={20}
-        className="absolute left-2 top-3"
-      />
-      <input
-        type="tel"
-        name="user_phone"
-        className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
-        placeholder="Phone"
-        required
-        maxLength={14}
-        onChange={formatPhoneNumber}
-      />
-    </div>
-  </div>
-</div>
-
-
-         
-
-          
+            {/* Phone Field */}
+            <div className="relative w-full md:w-1/3">
+              <label htmlFor="user_phone" className="block text-sm font-medium">
+                Phone <span className="text-red-500">*</span>
+              </label>
+              <div className="relative">
+                <div className="absolute top-0 left-0 w-[35px] h-full rounded-tl-md rounded-bl-md"></div>
+                <Image
+                  src="/forms/Form-Phone.png"
+                  alt="Phone Icon"
+                  width={20}
+                  height={20}
+                  className="absolute left-2 top-3"
+                />
+                <input
+                  type="tel"
+                  name="user_phone"
+                  className="w-full p-3 pl-12 bg-white/90 text-black border border-white placeholder-gray rounded-md"
+                  placeholder="Phone"
+                  required
+                  maxLength={14}
+                  onChange={formatPhoneNumber}
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Message Field */}
           <div className="relative">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium"
-            >
+            <label htmlFor="message" className="block text-sm font-medium">
               Message <span className="text-red-500">*</span>
             </label>
             <div className="relative">
@@ -264,7 +259,7 @@ const ContactForm: React.FC = () => {
           </div>
 
           {/* Submit Button */}
-          <div className="text-center" style={{ }}>
+          <div className="text-center" style={{}}>
             <button
               type="submit"
               className="btn-main square"

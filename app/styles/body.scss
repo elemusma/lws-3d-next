@@ -1,19 +1,19 @@
 .bg-accent {
-    background:var(--accent-primary);
+  background: var(--accent-primary);
 
-    &-secondary {
-        background:var(--accent-secondary);
-    }
+  &-secondary {
+    background: var(--accent-secondary);
+  }
 }
 .grecaptcha-badge {
-    display: none !important;
+  display: none !important;
 }
 
 .divider {
-    background:var(--accent-primary);
-    height:2px;
-    width:250px;
-    margin:auto;
+  background: var(--accent-primary);
+  height: 2px;
+  width: 250px;
+  margin: auto;
 }
 // .bg-accent-secondary {
 //     background:var(--accent-secondary);

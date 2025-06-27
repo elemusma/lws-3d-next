@@ -10,15 +10,15 @@ h2 {
   }
 }
 .text-link {
-      color: var(--accent-secondary);
-    padding: 2px 5px;
-    box-shadow: inset 0 -5px 0 0 var(--accent-primary);
-    transition: all 0.25s ease-in-out;
-    text-decoration: none;
+  color: var(--accent-secondary);
+  padding: 2px 5px;
+  box-shadow: inset 0 -5px 0 0 var(--accent-primary);
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
 
-    &:hover {
-      box-shadow: inset 0 -55px 0 0 var(--accent-primary);
-    }
+  &:hover {
+    box-shadow: inset 0 -55px 0 0 var(--accent-primary);
+  }
 }
 .single-post {
   p a,
@@ -34,13 +34,18 @@ h2 {
       box-shadow: inset 0 -55px 0 0 var(--accent-primary);
     }
   }
-  h1, h2, h3, h4 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity, 1)); // text-gray-700
-      margin-top: 1.5rem;
-  margin-bottom: .75rem;
-}
-  p, ul, li {
+  h1,
+  h2,
+  h3,
+  h4 {
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity, 1)); // text-gray-700
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  p,
+  ul,
+  li {
     margin-bottom: 1rem;
     line-height: 1.625;
     --tw-text-opacity: 1;

@@ -2,19 +2,19 @@
 // $accent-primary-dark: darken($accent-primary, 10%); // Darkened color
 
 .btn-main {
-    background: var(--accent-tertiary);
-    transition:all .25s ease-in-out;
-    color:white !important;
-    text-decoration:none !important;
-    padding:15px 25px;
-    border-radius:45px;
-    display:inline-block;
-    margin:10px 0px;
+  background: var(--accent-tertiary);
+  transition: all 0.25s ease-in-out;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 15px 25px;
+  border-radius: 45px;
+  display: inline-block;
+  margin: 10px 0px;
 
-    // &:hover {
-    //     filter: brightness(90%);
-    // }
-    &:hover {
-        background: var(--accent-quaternary);
-    }
+  // &:hover {
+  //     filter: brightness(90%);
+  // }
+  &:hover {
+    background: var(--accent-quaternary);
+  }
 }

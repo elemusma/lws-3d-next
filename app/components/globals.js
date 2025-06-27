@@ -1,2 +1,2 @@
-export const Website = 'https://latinowebstudio.com';
-export const Company = 'Latino Web Studio';
+export const Website = "https://latinowebstudio.com";
+export const Company = "Latino Web Studio";

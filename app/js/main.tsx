@@ -16,7 +16,7 @@ function Main() {
       75,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      1000,
     );
     camera.position.setZ(30);
     camera.position.setX(-3);
@@ -64,7 +64,7 @@ function Main() {
 
     // Avatar
     const tadeoTexture = new THREE.TextureLoader().load(
-      "assets/Code-Examples.jpg"
+      "assets/Code-Examples.jpg",
     );
     const tadeoGeometry = new THREE.BoxGeometry(2, 2, 2);
     const tadeoMaterial = new THREE.MeshBasicMaterial({ map: tadeoTexture });
@@ -80,7 +80,7 @@ function Main() {
       new THREE.MeshStandardMaterial({
         map: moonTexture,
         normalMap: normalTexture,
-      })
+      }),
     );
     scene.add(moon);
 

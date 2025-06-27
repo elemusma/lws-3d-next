@@ -1,12 +1,12 @@
 @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-  .rotate-animation {
-    animation: rotate 45s linear infinite;
+  to {
+    transform: rotate(360deg);
   }
+}
+
+.rotate-animation {
+  animation: rotate 45s linear infinite;
+}

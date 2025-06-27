@@ -29,7 +29,7 @@ export default function Page() {
       total.toLocaleString("en-US", {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
-      })
+      }),
     );
   };
 

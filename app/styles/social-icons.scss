@@ -1,35 +1,34 @@
 .si {
-    svg {
-      height: 25px;
-      width: auto;
-      fill: white;
-      transition: all .25s ease-in-out; // Apply transition to all svg elements within .si
-    }
-  
-    a {
-      &:hover {
-        svg {
-          fill: black; // Change fill on hover
-        }
+  svg {
+    height: 25px;
+    width: auto;
+    fill: white;
+    transition: all 0.25s ease-in-out; // Apply transition to all svg elements within .si
+  }
+
+  a {
+    &:hover {
+      svg {
+        fill: black; // Change fill on hover
       }
     }
   }
-  
-  .svg-icon {
-    border: 1px solid white;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-right: 10px;
-    transition: all .25s ease-in-out; // Apply transition to .svg-icon and its descendant paths
-  
-    // Nested hover state for link hover effect
-    a:hover & {
-      background: var(--accent-primary);
-      border-color: var(--accent-primary);
-    }
+}
+
+.svg-icon {
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.25s ease-in-out; // Apply transition to .svg-icon and its descendant paths
+
+  // Nested hover state for link hover effect
+  a:hover & {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
   }
-  
+}

@@ -1,38 +1,38 @@
 @keyframes rotate-infinite {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .logo-bg {
-animation: rotate-infinite 35s linear infinite; /* Adjust the duration as needed */
-transform-origin:center;
+  animation: rotate-infinite 35s linear infinite; /* Adjust the duration as needed */
+  transform-origin: center;
 }
 
-@media only screen and (max-width:540px) {
-    .logo-container {
-        width: 45px !important;
-        height: 45px !important;
-    }
-    .logo-text {
-        font-size:0.8rem !important;
-    }
-    .logo-subtext {
-        font-size:.5rem !important;
-    }
-    .logo-bg {
-        width:45px;
-    }
-    .logo-bird {
-        width:27px;
-    }
-    .btn-nav {
-        font-size:12px;
-        width:100%!important;
-        height:unset!important;
-        padding:5px 10px!important;
-    }
+@media only screen and (max-width: 540px) {
+  .logo-container {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .logo-text {
+    font-size: 0.8rem !important;
+  }
+  .logo-subtext {
+    font-size: 0.5rem !important;
+  }
+  .logo-bg {
+    width: 45px;
+  }
+  .logo-bird {
+    width: 27px;
+  }
+  .btn-nav {
+    font-size: 12px;
+    width: 100% !important;
+    height: unset !important;
+    padding: 5px 10px !important;
+  }
 }

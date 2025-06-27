@@ -22,16 +22,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
-    description:
-      "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
+  title:
+    "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
+  description:
+    "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
   metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
   alternates: {
     canonical: "https://latinowebstudio.com", // ✅ correct canonical
   },
 
   openGraph: {
-    title: "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
+    title:
+      "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
       "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
     url: "https://latinowebstudio.com",
@@ -59,21 +61,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
-  <head>
-    <GoogleAnalytics />
-  </head>
-  <body
+      <head>
+        <GoogleAnalytics />
+      </head>
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Nav />
         {children}
         <Footer />
         <script
-  src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-  async
-  defer
-/>
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+          async
+          defer
+        />
       </body>
     </html>
   );

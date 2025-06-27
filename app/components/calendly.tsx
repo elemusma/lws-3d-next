@@ -19,7 +19,7 @@ function CalendlyWidget() {
       // Find the script in the document and remove it
       document
         .querySelectorAll(
-          'script[src="https://assets.calendly.com/assets/external/widget.js"]'
+          'script[src="https://assets.calendly.com/assets/external/widget.js"]',
         )
         .forEach((el) => el.remove());
     };

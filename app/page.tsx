@@ -17,7 +17,7 @@ export default function Home() {
   // const currentYear = new Date().getFullYear();
   useEffect(() => {
     const iframes = document.querySelectorAll(
-      ".video-container"
+      ".video-container",
     ) as NodeListOf<HTMLIFrameElement>;
     iframes.forEach((iframe) => {
       const aspectRatio = 560 / 315; // 16:9
@@ -26,51 +26,49 @@ export default function Home() {
   }, []);
   return (
     <>
-    <Head>
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Latino Web Studio – SEO & Web Design for Expert Witnesses",
-      "url": "https://latinowebstudio.com",
-      "description":
-        "Latino Web Studio helps expert witnesses get found by attorneys and get more cases through SEO, ADA-compliant websites, and fact-based content strategy.",
-      "inLanguage": "en",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "url": "https://latinowebstudio.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/ted-martinez-seo/"
-        ],
-        "founder": {
-          "@type": "Person",
-          "name": "Tadeo Martinez",
-          "jobTitle": "Founder",
-          "url": "https://latinowebstudio.com/about"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-303-927-8228",
-          "contactType": "Sales",
-          "areaServed": "US",
-          "availableLanguage": "English"
-        }
-      },
-      "about": {
-        "@type": "Thing",
-        "name": "SEO for Expert Witnesses"
-      }
-    }),
-  }}
-/>
-</Head>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Latino Web Studio – SEO & Web Design for Expert Witnesses",
+              url: "https://latinowebstudio.com",
+              description:
+                "Latino Web Studio helps expert witnesses get found by attorneys and get more cases through SEO, ADA-compliant websites, and fact-based content strategy.",
+              inLanguage: "en",
+              mainEntity: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                url: "https://latinowebstudio.com",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+                sameAs: ["https://www.linkedin.com/in/ted-martinez-seo/"],
+                founder: {
+                  "@type": "Person",
+                  name: "Tadeo Martinez",
+                  jobTitle: "Founder",
+                  url: "https://latinowebstudio.com/about",
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+1-303-927-8228",
+                  contactType: "Sales",
+                  areaServed: "US",
+                  availableLanguage: "English",
+                },
+              },
+              about: {
+                "@type": "Thing",
+                name: "SEO for Expert Witnesses",
+              },
+            }),
+          }}
+        />
+      </Head>
       <Main />
       <main>
         <section className="hero" style={{}}>
@@ -97,10 +95,12 @@ export default function Home() {
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 {/* <div className="lg:w-9/12 w-1/9"> */}
-                  <p style={{marginTop: 15, marginBottom: 15}}>
-                  We help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against you in deposition.
-                  </p>
-                  {/* <Login /> */}
+                <p style={{ marginTop: 15, marginBottom: 15 }}>
+                  We help expert witnesses attract more high-value cases by
+                  implementing a targeted, fact-based content strategy without
+                  risking damaging content being used against you in deposition.
+                </p>
+                {/* <Login /> */}
                 {/* </div> */}
                 <div>
                   <a href="#schedule" className="btn-main">
@@ -140,24 +140,76 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full pb-8 px-4 text-center">
-                <h2>Are you unsure how to write content that won&apos;t be used against you in court?</h2>
+                <h2>
+                  Are you unsure how to write content that won&apos;t be used
+                  against you in court?
+                </h2>
                 <p>Don&apos;t get eaten alive at deposition.</p>
               </div>
               <div className="lg:w-1/2 w-full px-4">
-                <ul style={{ textShadow: "0px 0px 3px white",WebkitTextStroke: "0.5px black" }}>
-                  <li><strong>Are you struggling to attract enough cases to be selective with your work?</strong></li>
-                  <li><strong>Are you struggling to get found by lawyers seeking expert witnesses?</strong></li>
-                  <li><strong>Is your current SEO strategy failing to attract high-value legal cases?</strong></li>
-                  <li><strong>Are inconsistent content updates costing you potential expert witness opportunities?</strong></li>
-                  
+                <ul
+                  style={{
+                    textShadow: "0px 0px 3px white",
+                    WebkitTextStroke: "0.5px black",
+                  }}
+                >
+                  <li>
+                    <strong>
+                      Are you struggling to attract enough cases to be selective
+                      with your work?
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Are you struggling to get found by lawyers seeking expert
+                      witnesses?
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Is your current SEO strategy failing to attract high-value
+                      legal cases?
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Are inconsistent content updates costing you potential
+                      expert witness opportunities?
+                    </strong>
+                  </li>
                 </ul>
               </div>
               <div className="lg:w-1/2 w-full px-4">
-              <ul style={{ textShadow: "0px 0px 3px white",WebkitTextStroke: "0.5px black" }}>
-                <li><strong>Are you struggling to produce enough content to consistently showcase your expertise?</strong></li>
-                  <li><strong>Are outdated website practices keeping you invisible to lawyers and insurers?</strong></li>
-                  <li><strong>Is the complexity of expert witness work preventing you from marketing yourself effectively?</strong></li>
-                  <li><strong>Is a lack of targeted messaging preventing you from positioning yourself as the go-to expert?</strong></li>
+                <ul
+                  style={{
+                    textShadow: "0px 0px 3px white",
+                    WebkitTextStroke: "0.5px black",
+                  }}
+                >
+                  <li>
+                    <strong>
+                      Are you struggling to produce enough content to
+                      consistently showcase your expertise?
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Are outdated website practices keeping you invisible to
+                      lawyers and insurers?
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Is the complexity of expert witness work preventing you
+                      from marketing yourself effectively?
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Is a lack of targeted messaging preventing you from
+                      positioning yourself as the go-to expert?
+                    </strong>
+                  </li>
                 </ul>
               </div>
               <div className="w-full pb-8 px-4 text-center">
@@ -191,10 +243,12 @@ export default function Home() {
               <div className="lg:w-3/4 md:w-full text-center pb-4">
                 <h2>Get Lawyers Contacting You on a Monthly Basis</h2>
                 <p>
-                  Mark had zero traffic to his website and no lawyers finding him. Now he has lawyers contacting him on a monthly basis and is working on his expert witness business full-time.
+                  Mark had zero traffic to his website and no lawyers finding
+                  him. Now he has lawyers contacting him on a monthly basis and
+                  is working on his expert witness business full-time.
                 </p>
               </div>
-              
+
               <div className="md:w-full w-full px-4">
                 <Image
                   src="/photos/SEO-Results.png"
@@ -227,10 +281,11 @@ export default function Home() {
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                Targeted, Fact-Based Expert Witness Content Strategy
+                  Targeted, Fact-Based Expert Witness Content Strategy
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                Be a trusted expert while preventing content from being used against you in deposition.
+                  Be a trusted expert while preventing content from being used
+                  against you in deposition.
                 </p>
               </div>
 
@@ -244,10 +299,11 @@ export default function Home() {
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                Optimized Expert Witness Articles &amp; White Papers
+                  Optimized Expert Witness Articles &amp; White Papers
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                Increases visibility to attract higher-value cases and establish authority.
+                  Increases visibility to attract higher-value cases and
+                  establish authority.
                 </p>
               </div>
 
@@ -261,10 +317,11 @@ export default function Home() {
                   className="h-24 w-auto object-contain"
                 />
                 <h3 className="mt-2 font-semibold">
-                Consistent Expert Witness Content Production Plan
+                  Consistent Expert Witness Content Production Plan
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                Ensures regular, relevant updates that keep your expertise top-of-mind for potential clients.
+                  Ensures regular, relevant updates that keep your expertise
+                  top-of-mind for potential clients.
                 </p>
               </div>
             </div>
@@ -297,7 +354,12 @@ export default function Home() {
               <div className="lg:w-1/2 w-11/12 lg:pt-8 pb-8 px-4">
                 <h2>What Makes Latino Web Studio Different?</h2>
                 <p>
-                  We help expert witnesses get more cases and get found by lawyers. You won&apos;t have to worry about being eaten alive in deposition because of something on your website. Every piece of content is unbiased and fact based. Learn what&apos;s stopping you from growing your expert witness practice and getting found by lawyers nationwide.
+                  We help expert witnesses get more cases and get found by
+                  lawyers. You won&apos;t have to worry about being eaten alive
+                  in deposition because of something on your website. Every
+                  piece of content is unbiased and fact based. Learn what&apos;s
+                  stopping you from growing your expert witness practice and
+                  getting found by lawyers nationwide.
                 </p>
                 <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
@@ -310,15 +372,15 @@ export default function Home() {
         </section>
 
         <ContentBlock
-                sectionClassName="text-black pt-[125px] pb-[100px]"
-                containerClassName="max-w-screen-lg mx-auto"
-                rowClassName="flex"
-                columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
-              >
-              <GoogleReviews
-          placeId="ChIJ_TB4z7-JbIcRsXgIetzV1uU"
-          apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
-        />
+          sectionClassName="text-black pt-[125px] pb-[100px]"
+          containerClassName="max-w-screen-lg mx-auto"
+          rowClassName="flex"
+          columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
+        >
+          <GoogleReviews
+            placeId="ChIJ_TB4z7-JbIcRsXgIetzV1uU"
+            apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
+          />
         </ContentBlock>
 
         <section
@@ -404,13 +466,7 @@ export default function Home() {
           </div>
         </section>
 
-<CTA />
-
-              
-         
-        
-
-        
+        <CTA />
 
         <section className="quote-section text-center">
           <p>

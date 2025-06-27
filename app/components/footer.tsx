@@ -29,7 +29,9 @@ function Footer() {
           <div className="flex flex-wrap justify-between -mx-4">
             <div className="lg:w-1/3 w-full px-4">
               <p className="pt-5">
-              We help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against you in deposition.
+                We help expert witnesses attract more high-value cases by
+                implementing a targeted, fact-based content strategy without
+                risking damaging content being used against you in deposition.
               </p>
               <SocialIcons />
             </div>

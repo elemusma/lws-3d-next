@@ -2,21 +2,22 @@
   // padding-bottom: 50px;
   min-height: 58.5vh; // Default mobile view
 
-  @media only screen and (min-width: 768px) { // Tailwind's 'md'
-      min-height: 46vh;
-      padding-top: 50px;
-      // min-height: calc(100vh - 288px);
+  @media only screen and (min-width: 768px) {
+    // Tailwind's 'md'
+    min-height: 46vh;
+    padding-top: 50px;
+    // min-height: calc(100vh - 288px);
   }
 
-  @media only screen and (min-width: 1024px) { // Tailwind's 'lg'
-      // min-height: 61.6vh;
-      // min-height: 72vh;
-      padding-top: 62.5px;
-      padding-bottom: 62.5px;
-      // min-height: calc(100vh - 186px);
+  @media only screen and (min-width: 1024px) {
+    // Tailwind's 'lg'
+    // min-height: 61.6vh;
+    // min-height: 72vh;
+    padding-top: 62.5px;
+    padding-bottom: 62.5px;
+    // min-height: calc(100vh - 186px);
   }
 }
-
 
 ul {
   padding-left: 30px;
@@ -44,7 +45,6 @@ ul {
     }
   }
 }
-
 
 // Mixin for applying animated gradient
 @mixin animated-gradient {
@@ -79,7 +79,8 @@ ul {
 
 // Define the animation keyframes
 @keyframes gradient-shift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -94,15 +95,15 @@ h1.animated-heading {
   // font-size: 2rem; // Larger font size for headings
 }
 
-@media only screen and (max-width:1280px) {
-iframe.calendly-inline-widget{
-height: 1160px!important;
-overflow-y: hidden;
-}
-// .quote-section {
-// padding-top: 400px;
-// }
-canvas {
-height: 125vh !important;
-}
+@media only screen and (max-width: 1280px) {
+  iframe.calendly-inline-widget {
+    height: 1160px !important;
+    overflow-y: hidden;
+  }
+  // .quote-section {
+  // padding-top: 400px;
+  // }
+  canvas {
+    height: 125vh !important;
+  }
 }
