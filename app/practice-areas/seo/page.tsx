@@ -17,14 +17,14 @@ import PricingTable from "@/app/components/reusable/PricingTable";
 
 export const metadata: Metadata = {
   title:
-    "SEO Services for Expert Witnesses - Get Found by Attorneys | Latino Web Studio",
+    "Search Engine Optimization (SEO) for Expert Witnesses - Get Found by Attorneys | Latino Web Studio",
   description:
-    "SEO services designed specifically for expert witnesses. Improve your visibility, load speed, and ADA compliance to get more attorney inquiries.",
+    "Search Engine Optimization designed specifically for expert witnesses. Improve your visibility, load speed, and ADA compliance to get more attorney inquiries.",
   openGraph: {
     title:
-      "SEO Services for Expert Witnesses - Get Found by Attorneys | Latino Web Studio",
+      "Search Engine Optimization (SEO) for Expert Witnesses - Get Found by Attorneys | Latino Web Studio",
     description:
-      "SEO services designed specifically for expert witnesses. Improve your visibility, load speed, and ADA compliance to get more attorney inquiries.",
+      "Search Engine Optimization designed specifically for expert witnesses. Improve your visibility, load speed, and ADA compliance to get more attorney inquiries.",
     url: "https://latinowebstudio.com/practice-areas/seo",
     type: "website",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "https://latinowebstudio.com/practice-areas/SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments.jpg",
         width: 1200,
         height: 630,
-        alt: "SEO Services for Expert Witnesses - Latino Web Studio",
+        alt: "Search Engine Optimization (SEO) for Expert Witnesses - Latino Web Studio",
       },
     ],
   },
@@ -48,10 +48,10 @@ export default function PracticeAreasSEO() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              serviceType: "SEO Services for Expert Witnesses",
-              name: "Boost Your Visibility in Google with Strategic SEO for Expert Witnesses",
+              serviceType: "Expert Witnesses Search Engine Optimization (SEO)",
+              name: "Search Engine Optimization (SEO) for Expert Witnesses",
               description:
-                "SEO services designed to help expert witnesses get found by attorneys. Includes technical SEO, ADA compliance, fast loading speeds, and content strategy.",
+                "Search engine optimization (SEO) for expert witnesses designed to help expert witnesses get found by attorneys. Includes technical SEO, ADA compliance, fast loading speeds, and content strategy.",
               provider: {
                 "@type": "Organization",
                 name: "Latino Web Studio",
@@ -71,9 +71,9 @@ export default function PracticeAreasSEO() {
               },
               url: "https://latinowebstudio.com/practice-areas/seo",
               image:
-                "https://latinowebstudio.com/practice-areas/SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments.jpg",
+                "https://latinowebstudio.com/practice-areas/SEO-Results-Experts.jpg",
               keywords:
-                "SEO for expert witnesses, legal SEO, attorney visibility, expert witness marketing",
+                "SEO for expert witnesses, legal SEO, attorney visibility, expert witness marketing, search engine optimization for experts",
               inLanguage: "en",
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
@@ -124,7 +124,7 @@ export default function PracticeAreasSEO() {
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
         <div className="w-full text-center px-4 mb-8 lg:mb-0">
-          <h1 className="mb-2">SEO for Expert Witnesses</h1>
+          <h1 className="mb-2">Search Engine Optimization (SEO) for Expert Witnesses</h1>
 
           <p className="mb-2">
             Attorneys need to find you fast. We help expert witnesses rank
