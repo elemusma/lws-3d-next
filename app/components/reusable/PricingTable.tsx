@@ -110,7 +110,7 @@ const PricingTable = () => {
                 rel="noopener noreferrer"
                 className="text-link absolute bottom-10"
               >
-                Sign Up here
+                Subscribe
               </a>
             </div>
           </div>
