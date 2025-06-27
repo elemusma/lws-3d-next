@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://latinowebstudio.com/practice-areas/SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments.jpg",
+        url: "https://latinowebstudio.com/practice-areas/Experts-Search-Engine-Optimization.jpg",
         width: 1200,
         height: 630,
         alt: "Search Engine Optimization (SEO) for Expert Witnesses - Latino Web Studio",
@@ -71,7 +71,7 @@ export default function PracticeAreasSEO() {
               },
               url: "https://latinowebstudio.com/practice-areas/seo",
               image:
-                "https://latinowebstudio.com/practice-areas/SEO-Results-Experts.jpg",
+                "https://latinowebstudio.com/practice-areas/Experts-Search-Engine-Optimization.jpg",
               keywords:
                 "SEO for expert witnesses, legal SEO, attorney visibility, expert witness marketing, search engine optimization for experts",
               inLanguage: "en",
@@ -138,9 +138,9 @@ export default function PracticeAreasSEO() {
           {/* <h2 className="mt-0 text-xl">Get Found by the Right Attorneys—Consistently</h2> */}
           <div className="w-11/12 mx-auto mt-2">
             <Image
-              src="/practice-areas/SEO-Results-Experts.jpg"
+              src="/practice-areas/Experts-Search-Engine-Optimization.jpg"
               width={1000}
-              height={485}
+              height={371}
               alt={
                 "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
               }
