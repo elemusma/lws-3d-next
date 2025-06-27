@@ -6,6 +6,7 @@ import CTA from "@/app/components/reusable/cta";
 // import Link from "next/link";
 // import Sidebar from "@/app/components/reusable/Sidebar";
 import Head from "next/head";
+import GoogleReviews from "@/app/components/reusable/GoogleReviews";
 // import ResponsiveYouTube from "@/app/components/reusable/ResponsiveYouTube";
 // import { Link } from "lucide-react";
 // import { getArticleSchema } from "@/app/components/reusable/articleSchema";
@@ -87,6 +88,7 @@ export default function PracticeAreasSEO() {
 
 </Head>
 
+{/* 9747469734196890752 */}
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
@@ -112,6 +114,7 @@ export default function PracticeAreasSEO() {
         </div>
         </div>
       </ContentBlock>
+      
       <ContentBlock
         sectionClassName="bg-gray-200 text-black pt-[100px] pb-[100px] blog single-post"
         containerClassName="max-w-screen-lg mx-auto"
@@ -445,6 +448,17 @@ export default function PracticeAreasSEO() {
             </a>
         </div>
       </ContentBlock>
+      <ContentBlock
+        sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
+        containerClassName="max-w-screen-lg mx-auto"
+        rowClassName="flex"
+        columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
+      >
+      <GoogleReviews
+  placeId="ChIJ_TB4z7-JbIcRsXgIetzV1uU"
+  apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
+/>
+</ContentBlock>
       <CTA />
     </>
   );

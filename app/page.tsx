@@ -9,6 +9,8 @@ import HeadshotIcons from "./components/headshot-icons";
 import Main from "./js/main";
 import Head from "next/head";
 import "./styles/body.scss";
+import ContentBlock from "./components/content-block";
+import GoogleReviews from "./components/reusable/GoogleReviews";
 // import ContentBlock from "./components/content-block";
 
 export default function Home() {
@@ -307,6 +309,18 @@ export default function Home() {
           </div>
         </section>
 
+<ContentBlock
+        sectionClassName="text-black pt-[125px] pb-[100px]"
+        containerClassName="max-w-screen-lg mx-auto"
+        rowClassName="flex"
+        columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
+      >
+      <GoogleReviews
+  placeId="ChIJ_TB4z7-JbIcRsXgIetzV1uU"
+  apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
+/>
+</ContentBlock>
+
         <section
           className=""
           style={{
@@ -389,8 +403,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+<CTA />
+
+              
          
-        <CTA />
+        
 
         
 
