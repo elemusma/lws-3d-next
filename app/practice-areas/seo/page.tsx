@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 // import Sidebar from "@/app/components/reusable/Sidebar";
 import Head from "next/head";
 import GoogleReviews from "@/app/components/reusable/GoogleReviews";
+import PricingTable from "@/app/components/reusable/PricingTable";
 // import ResponsiveYouTube from "@/app/components/reusable/ResponsiveYouTube";
 // import { Link } from "lucide-react";
 // import { getArticleSchema } from "@/app/components/reusable/articleSchema";
@@ -447,6 +448,14 @@ export default function PracticeAreasSEO() {
               Get More Cases
             </a>
         </div>
+      </ContentBlock>
+      <ContentBlock
+        sectionClassName="bg-white text-black py-[100px]"
+        containerClassName="max-w-screen-lg mx-auto"
+        rowClassName="flex"
+        columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
+      >
+      <PricingTable />
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
