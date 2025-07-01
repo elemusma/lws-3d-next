@@ -124,6 +124,14 @@ export default function GoogleSearchRankings() {
                     text: "Aim to review high-value pages quarterly and refresh outdated stats, legal references, or case examples. Keeping content current signals quality to Google.",
                   },
                 },
+                {
+                  "@type": "Question",
+                  name: "Can my website be penalized by Google?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes. If your site uses manipulative SEO tactics—like keyword stuffing, low-quality backlinks, or misleading content—Google may apply algorithmic or manual penalties that reduce your visibility in search results.",
+                  },
+                },
               ],
             }),
           }}
@@ -472,6 +480,26 @@ export default function GoogleSearchRankings() {
             expertise.
           </p>
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+            Avoiding Ranking Drops and Algorithm Penalties
+          </h2>
+          <p className="text-base text-gray-600 mb-4">
+            Google penalizes sites that violate its quality
+            guidelines—intentionally or not. Common causes include keyword
+            stuffing, using unrelated backlinks, duplicating content, or
+            manipulating users with misleading titles. These actions can result
+            in sudden drops in visibility or even manual actions that suppress
+            entire sections of your site from results.
+          </p>
+          <p className="text-base text-gray-600 mb-4">
+            Expert witnesses should be especially cautious about third-party SEO
+            vendors offering “guaranteed results” through shortcuts. Instead,
+            focus on long-term credibility signals: relevant backlinks,
+            authoritative content, and technically clean code. Latino Web Studio
+            audits client sites for compliance and removes or disavows harmful
+            links that might be dragging rankings down.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">
             Frequently Asked Questions About Google Search Rankings
           </h2>
 
@@ -518,6 +546,15 @@ export default function GoogleSearchRankings() {
             Aim to review high-value pages quarterly and refresh outdated stats,
             legal references, or case examples. Keeping content current signals
             quality to Google.
+          </p>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            Can my website be penalized by Google?
+          </h3>
+          <p className="text-base text-gray-600 mb-4">
+            Yes. If your site uses manipulative SEO tactics—like keyword
+            stuffing, low-quality backlinks, or misleading content—Google may
+            apply algorithmic or manual penalties that reduce your visibility in
+            search results.
           </p>
         </div>
         <Sidebar />
