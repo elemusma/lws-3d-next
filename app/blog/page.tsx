@@ -66,7 +66,7 @@ export default function NewsPage() {
                   June 30, 2025
                 </p>
                 <h2 className="text-3xl font-proxima-bold group-hover:text-white">
-                  Google Search Rankings
+                  Understanding and Improving Google Search Rankings in 2025
                 </h2>
                 <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
