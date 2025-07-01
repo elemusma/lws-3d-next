@@ -124,7 +124,9 @@ export default function PracticeAreasSEO() {
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
         <div className="w-full text-center px-4 mb-8 lg:mb-0">
-          <h1 className="mb-2">Search Engine Optimization (SEO) for Expert Witnesses</h1>
+          <h1 className="mb-2">
+            Search Engine Optimization (SEO) for Expert Witnesses
+          </h1>
 
           <p className="mb-2">
             Attorneys need to find you fast. We help expert witnesses rank

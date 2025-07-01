@@ -16,7 +16,7 @@ const Nav = () => {
                 <Logo />
               </Link>
             </div>
-            <div className="lg:w-1/2 w-1/6 px-4 flex justify-end items-center">
+            <div className="lg:w-5/12 w-1/6 px-4 flex justify-end items-center">
               <Link href="/practice-areas/seo" className="px-4">
                 <span style={{ textShadow: "1px 1px 1px white" }}>SEO</span>
               </Link>
@@ -28,7 +28,7 @@ const Nav = () => {
               </Link>
             </div>
             {/* end of column */}
-            <div className="lg:w-1/6 w-1/2 pr-4 flex justify-end">
+            <div className="lg:w-1/5 w-1/2 pr-4 flex justify-end">
               <a
                 href="#schedule"
                 className="p-1 flex items-center btn-main btn-nav justify-center"
