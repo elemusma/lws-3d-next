@@ -1,28 +1,6 @@
 "use client";
 import Head from "next/head";
 import { useState } from "react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "EBITDA Calculator - What Is Your Business Worth?",
-  description:
-    "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
-  openGraph: {
-    title: "EBITDA Calculator - What Is Your Business Worth?",
-    description:
-      "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
-    url: `https://latinowebstudio.com/ebitda-calculator`,
-    type: "website",
-    images: [
-      {
-        url: `https://latinowebstudio.com/photos/ebitda-calculator.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "EBITDA Calculator - What Is Your Business Worth?",
-      },
-    ],
-  },
-};
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -58,6 +36,27 @@ export default function Page() {
     <>
       {/* ✅ Dynamically set metadata in a Client Component */}
       <Head>
+        <title>EBITDA Calculator - What Is Your Business Worth?</title>
+        <meta
+          name="description"
+          content="Built by Tadeo Martinez. Investor. Entrepreneur. Programmer."
+        />
+        <meta
+          property="og:title"
+          content="EBITDA Calculator - What Is Your Business Worth?"
+        />
+        <meta
+          property="og:description"
+          content="Built by Tadeo Martinez. Investor. Entrepreneur. Programmer."
+        />
+        <meta
+          property="og:url"
+          content="https://latinowebstudio.com/ebitda-calculator"
+        />
+        <meta
+          property="og:image"
+          content="https://latinowebstudio.com/photos/ebitda-calculator.jpg"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
