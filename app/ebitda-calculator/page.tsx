@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 export default function Page() {
   const { formData, ebitda, handleInputChange, calculateEBITDA } =
     useEbitdaCalculator();
+    
   return (
     <>
       {/* ✅ Dynamically set metadata in a Client Component */}
