@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { useState } from "react";
+// import { useState } from "react";
 import type { Metadata } from "next";
+import { useEbitdaCalculator } from "./ebitdaCalculator";
 
 export const metadata: Metadata = {
   title: "EBITDA Calculator - What Is Your Business Worth?",
@@ -24,35 +25,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const [formData, setFormData] = useState({
-    netIncome: "",
-    interest: "",
-    taxes: "",
-    depreciation: "",
-    amortization: "",
-  });
-  const [ebitda, setEbitda] = useState("0.00");
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const calculateEBITDA = (e: React.FormEvent) => {
-    e.preventDefault();
-    const values = Object.values(formData).map((val) => parseFloat(val) || 0);
-    const total = values.reduce((acc, curr) => acc + curr, 0);
-
-    setEbitda(
-      total.toLocaleString("en-US", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      }),
-    );
-  };
-
+  const { formData, ebitda, handleInputChange, calculateEBITDA } =
+    useEbitdaCalculator();
   return (
     <>
       {/* ✅ Dynamically set metadata in a Client Component */}
