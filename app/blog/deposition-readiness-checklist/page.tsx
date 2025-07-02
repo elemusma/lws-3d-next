@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,6 +36,44 @@ export const metadata: Metadata = {
 export default function DepositionReadinessChecklist() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id":
+                  "https://latinowebstudio.com/blog/deposition-readiness-checklist",
+              },
+              headline:
+                "Deposition Preparation Content to Drive Legal Leads for Expert Witnesses",
+              description:
+                "As an expert witness you operate in a highly specialized market, where visibility and credibility directly impact case acquisition.",
+              image:
+                "https://latinowebstudio.com/blog/Deposition-Readiness-Checklists-01.png",
+              author: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-05-24",
+              dateModified: "2025-07-01",
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

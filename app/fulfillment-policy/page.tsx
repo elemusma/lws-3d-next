@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Mail, Phone } from "lucide-react";
 import CTA from "@/app/components/reusable/cta";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Fulfillment Policy | Latino Web Studio",
@@ -93,6 +94,113 @@ const policyData = {
 export default function FulfillmentPolicyPage() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Fulfillment Policy | Latino Web Studio",
+              description:
+                "Our fulfillment policy outlines how we deliver our services, including timelines, responsibilities, and refund terms, including a 14-day money-back guarantee.",
+              url: "https://latinowebstudio.com/fulfillment-policy",
+              publisher: {
+                "@type": "Organization",
+                name: "The Designer Developer, LLC, DBA Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/logo.png",
+                },
+              },
+              mainEntity: {
+                "@type": "CreativeWork",
+                name: "Fulfillment Policy",
+                description:
+                  "We are dedicated to providing high-quality web and software services tailored to meet your specific needs. This Fulfillment Policy outlines how we deliver our services, including timelines, responsibilities, and a 14‑day money‑back guarantee.",
+                hasPart: [
+                  {
+                    "@type": "CreativeWorkSection",
+                    name: "Service Fulfillment",
+                    hasPart: [
+                      {
+                        "@type": "CreativeWork",
+                        name: "Project Scope and Deliverables",
+                        description: "Upon agreeing … milestones.",
+                      },
+                      {
+                        "@type": "CreativeWork",
+                        name: "Client Collaboration",
+                        description: "Timely communication … timelines.",
+                      },
+                      {
+                        "@type": "CreativeWork",
+                        name: "Delivery Timelines",
+                        description:
+                          "Estimated completion timelines … circumstances.",
+                      },
+                      {
+                        "@type": "CreativeWork",
+                        name: "Testing and Quality Assurance",
+                        description:
+                          "All projects include testing … agreed scope.",
+                      },
+                    ],
+                  },
+                  {
+                    "@type": "CreativeWorkSection",
+                    name: "14‑Day Money‑Back Guarantee",
+                    hasPart: [
+                      {
+                        "@type": "CreativeWork",
+                        name: "Eligibility",
+                        description:
+                          "Clients may request a refund within 14 days … not been provided.",
+                      },
+                      {
+                        "@type": "CreativeWork",
+                        name: "Refund Process",
+                        description:
+                          "To initiate a refund request … once approved.",
+                      },
+                      {
+                        "@type": "CreativeWork",
+                        name: "Exclusions",
+                        description:
+                          "Refunds are not applicable … substantially fulfilled.",
+                      },
+                    ],
+                  },
+                  {
+                    "@type": "CreativeWorkSection",
+                    name: "Revisions and Adjustments",
+                    hasPart: [
+                      {
+                        "@type": "CreativeWork",
+                        name: "Revision Policy",
+                        description:
+                          "The number of revisions allowed … additional charges.",
+                      },
+                      {
+                        "@type": "CreativeWork",
+                        name: "Post‑Delivery Support",
+                        description:
+                          "Post‑delivery support or maintenance plans … project proposal.",
+                      },
+                    ],
+                  },
+                ],
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  email: "info@latinowebstudio.com",
+                  contactType: "customer support",
+                  telephone: "+1-303-927-8228",
+                },
+              },
+            }),
+          }}
+        />
+      </Head>
       <section className="pt-[100px] pb-[100px] bg-[#f7f7f7]">
         <div className="">
           <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">

@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -34,6 +35,44 @@ export const metadata: Metadata = {
 export default function WhyCourtExperienceNotGettingCases() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id":
+                  "https://latinowebstudio.com/blog/court-experience-no-cases",
+              },
+              headline:
+                "Why Your Court Experience Isn't Helping You Get More Cases (Yet)",
+              description:
+                "Despite having testified in numerous trials or depositions, many expert witnesses are finding that their courtroom experience isn't resulting in the volume of inquiries they expect.",
+              image:
+                "https://latinowebstudio.com/blog/Court-Experience-More-Cases-01.png",
+              author: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-06-03",
+              dateModified: "2025-07-01",
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

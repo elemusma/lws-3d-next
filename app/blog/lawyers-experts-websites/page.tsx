@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -34,6 +35,44 @@ export const metadata: Metadata = {
 export default function WhatLawyersWantOnExpertWitnessWebsite() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline:
+                "What Lawyers Want to See on Your Website Before They Call You",
+              description:
+                "For many attorneys, an expert witness's website is their first impression. This digital footprint is no longer optional—it's a core part of how legal professionals vet and contact experts.",
+              image:
+                "https://latinowebstudio.com/blog/What‑Lawyers‑Want‑to‑See‑on‑Your‑Website‑01.png",
+              author: {
+                "@type": "Person",
+                name: "Your Author Name",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-06-4",
+              dateModified: "2025-07-01",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id":
+                  "https://latinowebstudio.com/blog/lawyers-experts-websites",
+              },
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

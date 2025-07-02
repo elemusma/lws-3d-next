@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,6 +36,49 @@ export const metadata: Metadata = {
 export default function KeywordStuffing() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline:
+                "Keyword Stuffing in Content and URLs: Does It Still Work in 2025?",
+              alternativeHeadline:
+                "Why Keyword Stuffing Is No Longer an Effective SEO Tactic",
+              description:
+                "Keyword stuffing refers to the practice of overloading a webpage or URL with keywords in an attempt to manipulate search engine rankings. This article explores its effectiveness in 2025 and what SEO strategies expert witnesses should adopt instead.",
+              image: "https://latinowebstudio.com/blog/Keyword-Stuffing-01.png",
+              author: {
+                "@type": "Person",
+                name: "Tadeo Martinez",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              url: "https://latinowebstudio.com/blog/keyword-stuffing",
+              datePublished: "2025-07-01",
+              dateModified: "2025-06-06",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": "https://latinowebstudio.com/blog/keyword-stuffing",
+              },
+              keywords:
+                "keyword stuffing, SEO 2025, URL optimization, content SEO, legal SEO, expert witness SEO",
+              articleSection: "SEO and Digital Strategy",
+              wordCount: 1400,
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

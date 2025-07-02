@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -28,9 +29,45 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AdaTaxCredit() {
+export default function SEOExpertWitnesses() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: "SEO Strategies for Expert Witness",
+              description:
+                "To convert lawyer traffic into real case inquiries, expert witness websites must meet searchers where they are—through precise SEO architecture",
+              image:
+                "https://latinowebstudio.com/blog/seo-expert-witnesses/SEO-Expert-Witnesses-01.png",
+              author: {
+                "@type": "Person",
+                name: "Tadeo Martinez",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-06-20",
+              dateModified: "2025-07-01",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": "https://latinowebstudio.com/blog/seo-expert-witnesses",
+              },
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

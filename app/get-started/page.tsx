@@ -1,3 +1,4 @@
+import Head from "next/head";
 import CalendlyWidget from "../components/calendly";
 import Footer from "../components/footer";
 import Main from "../js/main";
@@ -5,6 +6,45 @@ import Main from "../js/main";
 export default function GetStarted() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Get Started | Latino Web Studio",
+              url: "https://latinowebstudio.com/get-started",
+              description:
+                "Schedule a call to explore how Latino Web Studio can help grow your business through web design, SEO, and automation.",
+              mainEntity: {
+                "@type": "Action",
+                name: "Schedule a Consultation",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://calendly.com/latino-web-studio/web-check-in",
+                  actionPlatform: [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform",
+                  ],
+                },
+                result: {
+                  "@type": "Event",
+                  name: "Free Consultation Call",
+                },
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/logo.png",
+                },
+              },
+            }),
+          }}
+        />
+      </Head>
       <Main />
       <section
         style={{ paddingTop: 150, paddingBottom: 100 }}

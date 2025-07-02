@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,6 +36,43 @@ export const metadata: Metadata = {
 export default function CitationsDirectories() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": "https://latinowebstudio.com/blog/citations-directories",
+              },
+              headline:
+                "The Expert Witness's Guide to High-Authority Directories",
+              description:
+                "In today's digital-first legal landscape, expert witnesses are often discovered not through word-of-mouth referrals, but through online directories and search results.",
+              image:
+                "https://latinowebstudio.com/blog/Expert-Witnesss-Directories-01.png",
+              author: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-05-28",
+              dateModified: "2025-07-01",
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

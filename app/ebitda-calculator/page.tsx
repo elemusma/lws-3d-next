@@ -1,7 +1,27 @@
-"use client"; // Now safe to use!
-
 import Head from "next/head";
 import { useState } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "EBITDA Calculator - What Is Your Business Worth?",
+  description:
+    "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
+  openGraph: {
+    title: "EBITDA Calculator - What Is Your Business Worth?",
+    description:
+      "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
+    url: `https://latinowebstudio.com/ebitda-calculator`,
+    type: "website",
+    images: [
+      {
+        url: `https://latinowebstudio.com/photos/ebitda-calculator.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "EBITDA Calculator - What Is Your Business Worth?",
+      },
+    ],
+  },
+};
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -37,26 +57,46 @@ export default function Page() {
     <>
       {/* ✅ Dynamically set metadata in a Client Component */}
       <Head>
-        <title>EBITDA Calculator - What Is Your Business Worth?</title>
-        <meta
-          name="description"
-          content="Built by Tadeo Martinez. Investor. Entrepreneur. Programmer."
-        />
-        <meta
-          property="og:title"
-          content="EBITDA Calculator - What Is Your Business Worth?"
-        />
-        <meta
-          property="og:description"
-          content="Built by Tadeo Martinez. Investor. Entrepreneur. Programmer."
-        />
-        <meta
-          property="og:url"
-          content="https://latinowebstudio.com/ebitda-calculator"
-        />
-        <meta
-          property="og:image"
-          content="https://latinowebstudio.com/photos/ebitda-calculator.jpg"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "EBITDA Calculator - What Is Your Business Worth?",
+              description:
+                "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
+              url: "https://latinowebstudio.com/ebitda-calculator",
+              mainEntity: {
+                "@type": "SoftwareApplication",
+                name: "EBITDA Calculator",
+                applicationCategory: "FinancialApplication",
+                operatingSystem: "All",
+                creator: {
+                  "@type": "Person",
+                  name: "Tadeo Martinez",
+                  url: "https://latinowebstudio.com/about",
+                },
+                offers: {
+                  "@type": "Offer",
+                  price: "0.00",
+                  priceCurrency: "USD",
+                },
+              },
+              author: {
+                "@type": "Person",
+                name: "Tadeo Martinez",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+            }),
+          }}
         />
       </Head>
       <div className="min-h-screen bg-gray-50 pt-[100px] py-12 px-4 sm:px-6 lg:px-8">

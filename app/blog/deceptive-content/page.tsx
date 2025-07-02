@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,6 +36,43 @@ export const metadata: Metadata = {
 export default function DeceptiveContent() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": "https://latinowebstudio.com/blog/deceptive-content",
+              },
+              headline:
+                "Deceptive Content - How to Protect Your Reputation as an Expert Witness and Avoid Costly Mistakes",
+              description:
+                "In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters.",
+              image:
+                "https://latinowebstudio.com/blog/deceptive-content-01.png",
+              author: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-07-01",
+              dateModified: "2025-07-01",
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
@@ -64,11 +102,13 @@ export default function DeceptiveContent() {
           <h3 className="text-xl font-semibold text-gray-800 mb-2">
             Threats to Expert Witness Credibility
           </h3>
+
           <Image
-            src="/blog/deceptive-content-01.png"
+            src="/blog/Deceptive-Content-Expert-Witness-01.png"
             width={2000}
             height={2000}
             alt={"Threats to Expert Witness Credibility"}
+            className="mb-4"
           />
           <p className="text-base text-gray-600 mb-4">
             Search engines, particularly Google, are refining their algorithms
@@ -152,10 +192,11 @@ export default function DeceptiveContent() {
             E-E-A-T Content Evaluation Pyramid
           </h3>
           <Image
-            src="/blog/deceptive-content-02.png"
+            src="/blog/Deceptive-Content-Expert-Witness-02.png"
             width={2000}
             height={2000}
             alt={"E-E-A-T Content Evaluation Pyramid"}
+            className="mb-4"
           />
           <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
             Keyword Strategy: Matching Attorney Search Intent with Precise
@@ -195,6 +236,7 @@ export default function DeceptiveContent() {
               href="https://search.google.com/search-console/about"
               target="_blank"
             >
+              {" "}
               Google Search Console
             </a>{" "}
             help refine these clusters, revealing keyword difficulty, volume,
@@ -240,10 +282,11 @@ export default function DeceptiveContent() {
             Integrated SEO Defense Strategy
           </h3>
           <Image
-            src="/blog/deceptive-content-03.png"
+            src="/blog/Deceptive-Content-Expert-Witness-03.png"
             width={2000}
             height={2000}
             alt={"Integrated SEO Defense Strategy"}
+            className="mb-4"
           />
           <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
             Protecting Authority and Visibility in a High-Stakes Environment
@@ -275,10 +318,11 @@ export default function DeceptiveContent() {
             Expert Witness SEO Strategy
           </h3>
           <Image
-            src="/blog/deceptive-content-04.png"
+            src="/blog/Deceptive-Content-Expert-Witness-04.png"
             width={2000}
             height={2000}
             alt={"Expert Witness SEO Strategy"}
+            className="mb-4"
           />
         </div>
         <Sidebar />

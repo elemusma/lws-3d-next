@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -33,6 +34,43 @@ export const metadata: Metadata = {
 export default function PeerReviewedExpertWitness() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: "Peer Review in Expert Witness Testimony",
+              description:
+                "Expert witnesses serve a critical role in legal proceedings by providing specialized knowledge that assists judges and juries in understanding complex issues.",
+              image:
+                "https://latinowebstudio.com/blog/Peer-Review-Expert-Witness-01.png",
+              author: {
+                "@type": "Person",
+                name: "Tadeo Martinez",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-06-29",
+              dateModified: "2025-07-01",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id":
+                  "https://latinowebstudio.com/blog/peer-reviewed-expert-witness",
+              },
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

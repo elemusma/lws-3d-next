@@ -7,6 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
+import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,6 +36,42 @@ export const metadata: Metadata = {
 export default function MobileResponsiveness() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: "Mobile Responsiveness for Expert Witness Websites",
+              description:
+                "If your website doesn't adapt to mobile screens, you're invisible to the majority of attorneys searching for your expertise.",
+              image:
+                "https://latinowebstudio.com/blog/Mobile-Responsiveness-Expert-Witness-Websites-01.png",
+              author: {
+                "@type": "Person",
+                name: "Your Author Name",
+                url: "https://latinowebstudio.com/about",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+                },
+              },
+              datePublished: "2025-06-14",
+              dateModified: "2025-07-01",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": "https://latinowebstudio.com/blog/mobile-responsiveness",
+              },
+            }),
+          }}
+        />
+      </Head>
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
