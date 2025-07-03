@@ -22,7 +22,8 @@ export default function GetStarted() {
                 name: "Schedule a Consultation",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://calendly.com/latino-web-studio/web-check-in",
+                  urlTemplate:
+                    "https://calendly.com/latino-web-studio/web-check-in",
                   actionPlatform: [
                     "http://schema.org/DesktopWebPlatform",
                     "http://schema.org/MobileWebPlatform",
