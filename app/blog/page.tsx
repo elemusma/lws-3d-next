@@ -58,6 +58,27 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link
+              href="/blog/keyword-cannibalization"
+              className="flex flex-wrap"
+            >
+              <div className="md:w-3/4 w-full px-4 py-10">
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  July 04, 2025
+                </p>
+                <h2 className="text-3xl font-proxima-bold group-hover:text-white">
+                  Keyword Cannibalization: What It Is, Why It Hurts Rankings,
+                  and How to Fix It
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          {/* end of news blog post */}
+          {/* start of news blog post */}
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link
               href="/blog/how-to-improve-page-speed"
               className="flex flex-wrap"
             >
