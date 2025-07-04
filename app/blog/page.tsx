@@ -66,7 +66,7 @@ export default function NewsPage() {
                   July 03, 2025
                 </p>
                 <h2 className="text-3xl font-proxima-bold group-hover:text-white">
-                  How to Improve Page Speed
+                  How to Improve Page Speed for Better SEO and User Experience
                 </h2>
                 <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
