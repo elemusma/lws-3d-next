@@ -277,7 +277,6 @@ export default function GoogleSearchRankings() {
             src="/blog/google-search-rankings-02.png"
             width={1536}
             height={1023}
-            priority
             alt={"On-Page SEO Strategy for Legal Professionals"}
             className="mb-4"
           />
@@ -352,7 +351,6 @@ export default function GoogleSearchRankings() {
             src="/blog/google-search-rankings-03.png"
             width={1296}
             height={671}
-            priority
             alt={"Top Backlink Strategies for SEO"}
             className="mb-4"
           />
@@ -456,7 +454,6 @@ export default function GoogleSearchRankings() {
             src="/blog/google-search-rankings-04.png"
             width={1272}
             height={582}
-            priority
             alt={"SEO Strategies"}
             className="mb-4"
           />
