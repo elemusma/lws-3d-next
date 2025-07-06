@@ -142,7 +142,7 @@ export default function HowtoImprovePageSpeed() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <div className="lg:w-3/4 w-full lg:pr-8">
+        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-4xl font-bold mb-6 text-gray-900">
             How to Improve Page Speed for Better SEO and User Experience
           </h1>

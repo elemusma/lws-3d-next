@@ -79,7 +79,7 @@ export default function EEAT() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <div className="lg:w-3/4 w-full lg:pr-8">
+        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">
             How Expert Witnesses Can Build Trust Online and Get Found by Lawyers
           </h1>

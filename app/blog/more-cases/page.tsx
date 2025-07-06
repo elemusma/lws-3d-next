@@ -79,7 +79,7 @@ export default function MoreCases() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <div className="lg:w-3/4 w-full lg:pr-8">
+        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
             Want More Cases? Here&apos;s How Lawyers Really Search for Experts
             Online

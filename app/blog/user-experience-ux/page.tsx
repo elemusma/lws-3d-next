@@ -82,7 +82,7 @@ export default function UserExperience() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <div className="lg:w-3/4 w-full lg:pr-8">
+        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <article>
             <h1 className="text-3xl font-bold text-gray-900 mb-6">
               Why Your Website Might Be Costing You Cases—and How UX Can Fix

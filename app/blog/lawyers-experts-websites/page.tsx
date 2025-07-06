@@ -80,7 +80,7 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <div className="lg:w-3/4 w-full lg:pr-8">
+        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">
             What Lawyers Want to See on Your Website Before They Call You
           </h1>

@@ -74,11 +74,11 @@ export default function WhatHowExpertWitnesses() {
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto lg:px-0 p-10"
+        containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
-        <div className="lg:w-3/4 w-full lg:pr-8">
+        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
             What is an Expert Witness and How to Become One
           </h1>
