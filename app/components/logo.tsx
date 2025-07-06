@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "@/app/styles/logo.scss"; // Import logo styles
 
 function Logo() {
   return (
@@ -33,7 +34,10 @@ function Logo() {
           className="relative logo-bird"
         />
       </div>
-      <div style={{ paddingLeft: 10, paddingRight: 10, marginTop: -5 }}>
+      <div
+        className="conditional-visible hidden md:block"
+        style={{ paddingLeft: 10, paddingRight: 10, marginTop: -5 }}
+      >
         <span
           className="text-accent d-block text-shadow logo-text"
           style={{ fontSize: "1.2rem", margin: 0, lineHeight: 1 }}
@@ -41,7 +45,7 @@ function Logo() {
           Latino Web Studio
         </span>
         <p
-          className="text-white d-block logo-subtext"
+          className="text-white block logo-subtext"
           style={{ margin: 0, fontSize: "70%", lineHeight: 1 }}
         >
           <em>Attorneys - Retainers - Cases</em>

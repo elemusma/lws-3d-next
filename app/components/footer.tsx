@@ -17,9 +17,11 @@ function Footer() {
           <div className="flex flex-wrap justify-between -mx-4">
             <div className="lg:w-1/3 w-full px-4">
               <div className="lg:w-full w-7/12">
-                <Link href="/">
-                  <Logo />
-                </Link>
+                <div className="do-not-hide">
+                  <Link href="/">
+                    <Logo />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
