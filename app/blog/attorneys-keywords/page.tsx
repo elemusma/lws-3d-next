@@ -7,7 +7,6 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,42 +35,39 @@ export const metadata: Metadata = {
 export default function LawyersHighIntent() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://latinowebstudio.com/blog/attorneys-keywords",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/attorneys-keywords",
+            },
+            headline:
+              "How to Write Articles with Keywords Lawyers Are Looking For",
+            description:
+              "When attorneys search for expert witnesses online, they aren't just typing generic phrases—they're using highly specific, case-related queries.",
+            image: "https://latinowebstudio.com/blog/Attorneys-Keywords-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              headline:
-                "How to Write Articles with Keywords Lawyers Are Looking For",
-              description:
-                "When attorneys search for expert witnesses online, they aren't just typing generic phrases—they're using highly specific, case-related queries.",
-              image:
-                "https://latinowebstudio.com/blog/Attorneys-Keywords-01.png",
-              author: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                url: "https://latinowebstudio.com",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
-              },
-              datePublished: "2025-06-01",
-              dateModified: "2025-07-01",
-            }),
-          }}
-        />
-      </Head>
+            },
+            datePublished: "2025-06-01",
+            dateModified: "2025-07-01",
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

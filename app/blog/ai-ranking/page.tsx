@@ -7,7 +7,6 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,41 +35,40 @@ export const metadata: Metadata = {
 export default function AIRankingExpertWitness() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://latinowebstudio.com/blog/ai-ranking",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/ai-ranking",
+            },
+            headline: "AI-Search Results Domination for Expert Witnesses",
+            description:
+              "Learn how expert witnesses can dominate AI-powered search results through structured content, schema markup, and E-E-A-T strategies.",
+            image:
+              "https://latinowebstudio.com/blog/AI-Expert-Witnesses-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/logo.png",
               },
-              headline: "AI-Search Results Domination for Expert Witnesses",
-              description:
-                "Learn how expert witnesses can dominate AI-powered search results through structured content, schema markup, and E-E-A-T strategies.",
-              image:
-                "https://latinowebstudio.com/blog/AI-Expert-Witnesses-01.png",
-              author: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                url: "https://latinowebstudio.com",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/logo.png",
-                },
-              },
-              datePublished: "2025-06-05",
-              dateModified: "2025-07-01",
-            }),
-          }}
-        />
-      </Head>
+            },
+            datePublished: "2025-06-05",
+            dateModified: "2025-07-01",
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,84 +35,82 @@ export const metadata: Metadata = {
 export default function WhatHowExpertWitnesses() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline:
-                "What Is Web Traffic? How to Turn Attorney Visits Into Cases",
-              description:
-                "Learn what web traffic means for expert witnesses and how to convert attorney visits into real case inquiries. Discover the metrics and tools that reveal attorney interest.",
-              image: "https://latinowebstudio.com/blog/web-traffic-01.png",
-              author: {
-                "@type": "Person",
-                name: "Tadeo Martinez",
-                url: "https://latinowebstudio.com/about",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "What Is Web Traffic? How to Turn Attorney Visits Into Cases",
+            description:
+              "Learn what web traffic means for expert witnesses and how to convert attorney visits into real case inquiries. Discover the metrics and tools that reveal attorney interest.",
+            image: "https://latinowebstudio.com/blog/web-traffic-01.png",
+            author: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+            },
+            datePublished: "2025-07-02",
+            dateModified: "2025-07-02",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/web-traffic",
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What does web traffic include for expert witnesses?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "All site visits, especially from attorneys reviewing your credentials, reading your CV, or evaluating your relevance for a case.",
                 },
               },
-              datePublished: "2025-07-02",
-              dateModified: "2025-07-02",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://latinowebstudio.com/blog/web-traffic",
+              {
+                "@type": "Question",
+                name: "Which web metrics show attorney interest?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Look at time spent on bio or practice areas, bounce rate, and how often visitors complete your contact form or call you.",
+                },
               },
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What does web traffic include for expert witnesses?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "All site visits, especially from attorneys reviewing your credentials, reading your CV, or evaluating your relevance for a case.",
-                  },
+              {
+                "@type": "Question",
+                name: "How do I know if attorneys are finding me?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Use analytics tools to track referral sources, keywords, and session recordings. Tools like GA4 can show if visitors are coming from law firm domains or legal directories.",
                 },
-                {
-                  "@type": "Question",
-                  name: "Which web metrics show attorney interest?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Look at time spent on bio or practice areas, bounce rate, and how often visitors complete your contact form or call you.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "How can I attract more attorney traffic?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Improve your search visibility, publish content attorneys would search for, and make your experience clear on every page they land on. Getting found by attorneys is exactly what Latino Web Studio specializes in.",
                 },
-                {
-                  "@type": "Question",
-                  name: "How do I know if attorneys are finding me?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Use analytics tools to track referral sources, keywords, and session recordings. Tools like GA4 can show if visitors are coming from law firm domains or legal directories.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How can I attract more attorney traffic?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Improve your search visibility, publish content attorneys would search for, and make your experience clear on every page they land on. Getting found by attorneys is exactly what Latino Web Studio specializes in.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

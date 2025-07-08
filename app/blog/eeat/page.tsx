@@ -7,7 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,41 +36,39 @@ export const metadata: Metadata = {
 export default function EEAT() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://latinowebstudio.com/blog/eeat",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/eeat",
+            },
+            headline:
+              "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers",
+            description:
+              "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
+            image: "https://latinowebstudio.com/blog/EEAT-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              headline:
-                "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers",
-              description:
-                "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
-              image: "https://latinowebstudio.com/blog/EEAT-01.png",
-              author: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                url: "https://latinowebstudio.com/about",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
-              },
-              datePublished: "2025-05-25",
-              dateModified: "2025-07-01",
-            }),
-          }}
-        />
-      </Head>
+            },
+            datePublished: "2025-05-25",
+            dateModified: "2025-07-01",
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

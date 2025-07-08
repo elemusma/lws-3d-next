@@ -34,6 +34,85 @@ export const metadata: Metadata = {
 export default function NewsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Web Design & SEO Marketing Tips for Expert Witnesses",
+            description:
+              "Explore expert marketing strategies for expert witnesses. Learn how to attract more legal clients, improve your online presence, and grow your expert witness business with Latino Web Studio.",
+            url: "https://latinowebstudio.com/blog",
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  url: "https://latinowebstudio.com/blog/keyword-cannibalization",
+                  name: "Keyword Cannibalization: What It Is, Why It Hurts Rankings, and How to Fix It",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  url: "https://latinowebstudio.com/blog/how-to-improve-page-speed",
+                  name: "How to Improve Page Speed for Better SEO and User Experience",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  url: "https://latinowebstudio.com/blog/web-traffic",
+                  name: "What Is Web Traffic? How to Turn Attorney Visits Into Cases",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 4,
+                  url: "https://latinowebstudio.com/blog/google-search-rankings",
+                  name: "Understanding and Improving Google Search Rankings in 2025",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 5,
+                  url: "https://latinowebstudio.com/blog/search-intent",
+                  name: "How Expert Witnesses Can Use Search Intent to Attract More Attorneys",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 6,
+                  url: "https://latinowebstudio.com/blog/mobile-responsiveness",
+                  name: "Mobile Responsiveness for Expert Witness Websites",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 7,
+                  url: "https://latinowebstudio.com/blog/user-experience-ux",
+                  name: "Why Your Website Might Be Costing You Cases—and How UX Can Fix That",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 8,
+                  url: "https://latinowebstudio.com/blog/keyword-stuffing",
+                  name: "Keyword Stuffing in Content and URLs: Does It Still Work in 2025?",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 9,
+                  url: "https://latinowebstudio.com/blog/more-cases",
+                  name: "Want More Cases? Here's How Lawyers Really Search for Experts Online",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 10,
+                  url: "https://latinowebstudio.com/blog/expert-witness-directories",
+                  name: "Expert Witness Directories: How They Work and Why Visibility Matters",
+                },
+              ],
+            },
+          }),
+        }}
+      />
+
       <Main />
       <ContentBlock
         sectionClassName="relative pt-[150px]"

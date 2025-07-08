@@ -7,7 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,107 +36,105 @@ export const metadata: Metadata = {
 export default function GoogleSearchRankings() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline:
-                "Google Search Rankings: How Expert Witnesses Can Improve Visibility in 2025",
-              articleSection: "SEO and Web Strategy for Legal Professionals",
-              description:
-                "Learn how expert witnesses can improve their Google search rankings using proven SEO, UX, and technical strategies. Get found by attorneys searching online in 2025.",
-              datePublished: "2025-06-30",
-              dateModified: "2025-07-01",
-              keywords:
-                "SEO for expert witnesses, Google search ranking, legal SEO, structured data, backlinks, technical SEO, mobile performance",
-              wordCount: 2000,
-              image:
-                "https://latinowebstudio.com/blog/google-search-rankings-01.png",
-              author: {
-                "@type": "Person",
-                name: "Tadeo Martinez",
-                url: "https://latinowebstudio.com/about",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "Google Search Rankings: How Expert Witnesses Can Improve Visibility in 2025",
+            articleSection: "SEO and Web Strategy for Legal Professionals",
+            description:
+              "Learn how expert witnesses can improve their Google search rankings using proven SEO, UX, and technical strategies. Get found by attorneys searching online in 2025.",
+            datePublished: "2025-06-30",
+            dateModified: "2025-07-01",
+            keywords:
+              "SEO for expert witnesses, Google search ranking, legal SEO, structured data, backlinks, technical SEO, mobile performance",
+            wordCount: 2000,
+            image:
+              "https://latinowebstudio.com/blog/google-search-rankings-01.png",
+            author: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/google-search-rankings",
+            },
+          }),
+        }}
+      />
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How long does it take to improve my search rankings?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Most websites see movement within 3 to 6 months of consistent SEO improvements. This includes on-page optimization, technical fixes, content updates, and backlink acquisition.",
                 },
               },
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id":
-                  "https://latinowebstudio.com/blog/google-search-rankings",
+              {
+                "@type": "Question",
+                name: "What are the most important ranking factors for expert witnesses?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Relevance of content, backlinks from credible sources, mobile usability, and user engagement are especially important for professionals targeting legal audiences.",
+                },
               },
-            }),
-          }}
-        />
-        {/* FAQPage Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "How long does it take to improve my search rankings?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Most websites see movement within 3 to 6 months of consistent SEO improvements. This includes on-page optimization, technical fixes, content updates, and backlink acquisition.",
-                  },
+              {
+                "@type": "Question",
+                name: "Can I rank well without paying for ads?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Organic rankings depend on content quality, structure, and technical health—not ad spend. A well-optimized site can compete with paid listings over time.",
                 },
-                {
-                  "@type": "Question",
-                  name: "What are the most important ranking factors for expert witnesses?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Relevance of content, backlinks from credible sources, mobile usability, and user engagement are especially important for professionals targeting legal audiences.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "Do expert directories help with SEO?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Being listed in reputable expert directories can generate backlinks and traffic, both of which support improved search rankings.",
                 },
-                {
-                  "@type": "Question",
-                  name: "Can I rank well without paying for ads?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes. Organic rankings depend on content quality, structure, and technical health—not ad spend. A well-optimized site can compete with paid listings over time.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "How often should I update my content?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Aim to review high-value pages quarterly and refresh outdated stats, legal references, or case examples. Keeping content current signals quality to Google.",
                 },
-                {
-                  "@type": "Question",
-                  name: "Do expert directories help with SEO?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes. Being listed in reputable expert directories can generate backlinks and traffic, both of which support improved search rankings.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "Can my website be penalized by Google?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. If your site uses manipulative SEO tactics—like keyword stuffing, low-quality backlinks, or misleading content—Google may apply algorithmic or manual penalties that reduce your visibility in search results.",
                 },
-                {
-                  "@type": "Question",
-                  name: "How often should I update my content?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Aim to review high-value pages quarterly and refresh outdated stats, legal references, or case examples. Keeping content current signals quality to Google.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Can my website be penalized by Google?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes. If your site uses manipulative SEO tactics—like keyword stuffing, low-quality backlinks, or misleading content—Google may apply algorithmic or manual penalties that reduce your visibility in search results.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

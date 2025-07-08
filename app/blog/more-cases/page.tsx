@@ -7,7 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,41 +36,39 @@ export const metadata: Metadata = {
 export default function MoreCases() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline:
-                "Want More Cases? Here's How Lawyers Really Search for Experts Online",
-              description:
-                "If you're an expert witness looking to grow your consulting business, the key to being found by attorneys often starts with understanding how they conduct online searches.",
-              image: "https://latinowebstudio.com/blog/More-Cases-01.png",
-              author: {
-                "@type": "Person",
-                name: "Your Author Name",
-                url: "https://latinowebstudio.com/about",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "Want More Cases? Here's How Lawyers Really Search for Experts Online",
+            description:
+              "If you're an expert witness looking to grow your consulting business, the key to being found by attorneys often starts with understanding how they conduct online searches.",
+            image: "https://latinowebstudio.com/blog/More-Cases-01.png",
+            author: {
+              "@type": "Person",
+              name: "Your Author Name",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
-              },
-              datePublished: "2025-06-05",
-              dateModified: "2025-07-01",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://latinowebstudio.com/blog/more-cases",
-              },
-            }),
-          }}
-        />
-      </Head>
+            },
+            datePublished: "2025-06-05",
+            dateModified: "2025-07-01",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/more-cases",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

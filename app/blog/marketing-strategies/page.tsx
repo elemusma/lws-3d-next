@@ -7,7 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,41 +36,39 @@ export const metadata: Metadata = {
 export default function MarketingStrategiesExpertWitnesses2025() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline: "Marketing Strategies for Expert Witnesses in 2025",
-              description:
-                "The digital landscape for expert witnesses is increasingly competitive, especially in legal search environments where only a few listings dominate first-page visibility.",
-              image:
-                "https://latinowebstudio.com/blog/marketing-strategies-01.png",
-              author: {
-                "@type": "Person",
-                name: "Your Author Name",
-                url: "https://latinowebstudio.com/about",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: "Marketing Strategies for Expert Witnesses in 2025",
+            description:
+              "The digital landscape for expert witnesses is increasingly competitive, especially in legal search environments where only a few listings dominate first-page visibility.",
+            image:
+              "https://latinowebstudio.com/blog/marketing-strategies-01.png",
+            author: {
+              "@type": "Person",
+              name: "Your Author Name",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
-              },
-              datePublished: "2025-05-31",
-              dateModified: "2025-07-01",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://latinowebstudio.com/blog/marketing-strategies",
-              },
-            }),
-          }}
-        />
-      </Head>
+            },
+            datePublished: "2025-05-31",
+            dateModified: "2025-07-01",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/marketing-strategies",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

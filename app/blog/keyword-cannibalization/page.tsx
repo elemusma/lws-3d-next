@@ -7,7 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,93 +36,91 @@ export const metadata: Metadata = {
 export default function KeywordCannibalization() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline:
-                "Keyword Cannibalization: What It Is, Why It Hurts Rankings, and How to Fix It",
-              articleSection: "Technical SEO",
-              description:
-                "Understand keyword cannibalization in SEO, how it affects rankings, and how expert witnesses and professionals can identify and fix it to improve site performance.",
-              datePublished: "2025-07-01",
-              dateModified: "2025-07-03",
-              keywords:
-                "keyword cannibalization, SEO cannibalization fix, technical SEO, duplicate content, SEO mistakes, expert witness SEO",
-              wordCount: 1072,
-              image:
-                "https://latinowebstudio.com/blog/keyword-cannibalization-01.png",
-              author: {
-                "@type": "Person",
-                name: "Tadeo Martinez",
-                url: "https://latinowebstudio.com/about",
-                sameAs: "https://www.linkedin.com/in/tadeomartinez",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "Keyword Cannibalization: What It Is, Why It Hurts Rankings, and How to Fix It",
+            articleSection: "Technical SEO",
+            description:
+              "Understand keyword cannibalization in SEO, how it affects rankings, and how expert witnesses and professionals can identify and fix it to improve site performance.",
+            datePublished: "2025-07-01",
+            dateModified: "2025-07-03",
+            keywords:
+              "keyword cannibalization, SEO cannibalization fix, technical SEO, duplicate content, SEO mistakes, expert witness SEO",
+            wordCount: 1072,
+            image:
+              "https://latinowebstudio.com/blog/keyword-cannibalization-01.png",
+            author: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+              url: "https://latinowebstudio.com/about",
+              sameAs: "https://www.linkedin.com/in/tadeomartinez",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
-              },
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id":
-                  "https://latinowebstudio.com/blog/keyword-cannibalization",
-              },
-              isAccessibleForFree: true,
-            }),
-          }}
-        />
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/keyword-cannibalization",
+            },
+            isAccessibleForFree: true,
+          }),
+        }}
+      />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "Why is keyword cannibalization bad?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "It splits ranking signals between pages, weakens authority, and confuses search engines, which lowers visibility and web traffic.",
-                  },
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Why is keyword cannibalization bad?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "It splits ranking signals between pages, weakens authority, and confuses search engines, which lowers visibility and web traffic.",
                 },
-                {
-                  "@type": "Question",
-                  name: "How to fix keyword cannibalization?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Consolidate similar content, apply 301 redirects, use canonical tags, de-optimize lower-priority pages, and strengthen internal linking.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "How to fix keyword cannibalization?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Consolidate similar content, apply 301 redirects, use canonical tags, de-optimize lower-priority pages, and strengthen internal linking.",
                 },
-                {
-                  "@type": "Question",
-                  name: "How to prevent keyword cannibalization?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Plan content carefully using keyword mapping and intent analysis. Avoid topic overlap and run regular audits to stay on track.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "How to prevent keyword cannibalization?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Plan content carefully using keyword mapping and intent analysis. Avoid topic overlap and run regular audits to stay on track.",
                 },
-                {
-                  "@type": "Question",
-                  name: "How to identify keyword cannibalization?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Use Google site search, Search Console, and SEO tools like Ahrefs or Semrush to spot multiple pages ranking for the same terms.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "How to identify keyword cannibalization?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Use Google site search, Search Console, and SEO tools like Ahrefs or Semrush to spot multiple pages ranking for the same terms.",
                 },
-              ],
-            }),
-          }}
-        />
-      </Head>
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"
@@ -132,8 +130,8 @@ export default function KeywordCannibalization() {
       >
         <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-4xl font-bold mb-6 text-gray-900">
-            Keyword Cannibalization: What It Is, Why It Hurts Rankings, and How
-            to Fix It
+            asds Keyword Cannibalization: What It Is, Why It Hurts Rankings, and
+            How to Fix It
           </h1>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">

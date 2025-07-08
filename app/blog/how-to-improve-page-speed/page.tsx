@@ -7,7 +7,7 @@ import CTA from "@/app/components/reusable/cta";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
+
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,105 +36,104 @@ export const metadata: Metadata = {
 export default function HowtoImprovePageSpeed() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline:
-                "How to Improve Page Speed for Better SEO and User Experience",
-              articleSection: "Technical SEO",
-              description:
-                "Discover how expert witnesses and professionals can improve website performance for SEO and usability. Learn tools, techniques, and best practices to increase page speed.",
-              datePublished: "2025-07-01",
-              dateModified: "2025-07-03",
-              keywords:
-                "page speed optimization, technical SEO, Core Web Vitals, mobile performance, expert witness SEO, fast websites, Lighthouse, PageSpeed Insights",
-              wordCount: 2000,
-              image: "https://latinowebstudio.com/blog/page-speed-01.png",
-              author: {
-                "@type": "Person",
-                name: "Tadeo Martinez",
-                url: "https://latinowebstudio.com/about",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "How to Improve Page Speed for Better SEO and User Experience",
+            articleSection: "Technical SEO",
+            description:
+              "Discover how expert witnesses and professionals can improve website performance for SEO and usability. Learn tools, techniques, and best practices to increase page speed.",
+            datePublished: "2025-07-01",
+            dateModified: "2025-07-03",
+            keywords:
+              "page speed optimization, technical SEO, Core Web Vitals, mobile performance, expert witness SEO, fast websites, Lighthouse, PageSpeed Insights",
+            wordCount: 2000,
+            image: "https://latinowebstudio.com/blog/page-speed-01.png",
+            author: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id":
+                "https://latinowebstudio.com/blog/how-to-improve-page-speed",
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Why is page speed important for SEO?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "It affects your rankings, bounce rate, and user satisfaction. Google prioritizes faster-loading pages because they deliver better user experiences.",
                 },
               },
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id":
-                  "https://latinowebstudio.com/blog/how-to-improve-page-speed",
+              {
+                "@type": "Question",
+                name: "What is TBT in page speed?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Total Blocking Time measures how long the main thread is blocked by scripts. High TBT indicates a sluggish, unresponsive site during load.",
+                },
               },
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "Why is page speed important for SEO?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "It affects your rankings, bounce rate, and user satisfaction. Google prioritizes faster-loading pages because they deliver better user experiences.",
-                  },
+              {
+                "@type": "Question",
+                name: "What is LCP in page speed?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Largest Contentful Paint measures the time it takes for the largest visible element to load. Keeping it under 2.5 seconds is ideal.",
                 },
-                {
-                  "@type": "Question",
-                  name: "What is TBT in page speed?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Total Blocking Time measures how long the main thread is blocked by scripts. High TBT indicates a sluggish, unresponsive site during load.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "What is FCP in page speed?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "First Contentful Paint shows how quickly the first visible element appears. A good FCP gives users immediate feedback that a page is loading.",
                 },
-                {
-                  "@type": "Question",
-                  name: "What is LCP in page speed?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Largest Contentful Paint measures the time it takes for the largest visible element to load. Keeping it under 2.5 seconds is ideal.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "What is CLS in page speed?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Cumulative Layout Shift tracks how much page elements move unexpectedly during load. Lower scores indicate more visual stability.",
                 },
-                {
-                  "@type": "Question",
-                  name: "What is FCP in page speed?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "First Contentful Paint shows how quickly the first visible element appears. A good FCP gives users immediate feedback that a page is loading.",
-                  },
+              },
+              {
+                "@type": "Question",
+                name: "How to increase page speed in WordPress?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Use a plugin like EWWW Image Optimizer, lazy load images, choose a fast hosting provider like Cloudways, and monitor performance using Google PageSpeed Insights.",
                 },
-                {
-                  "@type": "Question",
-                  name: "What is CLS in page speed?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Cumulative Layout Shift tracks how much page elements move unexpectedly during load. Lower scores indicate more visual stability.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How to increase page speed in WordPress?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Use a plugin like EWWW Image Optimizer, lazy load images, choose a fast hosting provider like Cloudways, and monitor performance using Google PageSpeed Insights.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog single-post"

@@ -57,48 +57,48 @@ export default function Page() {
           property="og:image"
           content="https://latinowebstudio.com/photos/ebitda-calculator.jpg"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "EBITDA Calculator - What Is Your Business Worth?",
-              description:
-                "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
-              url: "https://latinowebstudio.com/ebitda-calculator",
-              mainEntity: {
-                "@type": "SoftwareApplication",
-                name: "EBITDA Calculator",
-                applicationCategory: "FinancialApplication",
-                operatingSystem: "All",
-                creator: {
-                  "@type": "Person",
-                  name: "Tadeo Martinez",
-                  url: "https://latinowebstudio.com/about",
-                },
-                offers: {
-                  "@type": "Offer",
-                  price: "0.00",
-                  priceCurrency: "USD",
-                },
-              },
-              author: {
+      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "EBITDA Calculator - What Is Your Business Worth?",
+            description:
+              "An easy-to-use EBITDA calculator to estimate business value. Built by Tadeo Martinez.",
+            url: "https://latinowebstudio.com/ebitda-calculator",
+            mainEntity: {
+              "@type": "SoftwareApplication",
+              name: "EBITDA Calculator",
+              applicationCategory: "FinancialApplication",
+              operatingSystem: "All",
+              creator: {
                 "@type": "Person",
                 name: "Tadeo Martinez",
+                url: "https://latinowebstudio.com/about",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
+              offers: {
+                "@type": "Offer",
+                price: "0.00",
+                priceCurrency: "USD",
               },
-            }),
-          }}
-        />
-      </Head>
+            },
+            author: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+          }),
+        }}
+      />
       <div className="min-h-screen bg-gray-50 pt-[100px] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-screen-lg mx-auto">
           <div className="mb-4 text-center">

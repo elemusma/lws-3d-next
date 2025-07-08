@@ -7,7 +7,7 @@ import CTA from "./components/reusable/cta";
 // import Footer from "./components/footer";
 import HeadshotIcons from "./components/headshot-icons";
 import Main from "./js/main";
-import Head from "next/head";
+
 import "./styles/body.scss";
 import ContentBlock from "./components/content-block";
 import GoogleReviews from "./components/reusable/GoogleReviews";
@@ -26,49 +26,48 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "Latino Web Studio – SEO & Web Design for Expert Witnesses",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Latino Web Studio – SEO & Web Design for Expert Witnesses",
+            url: "https://latinowebstudio.com",
+            description:
+              "Latino Web Studio helps expert witnesses get found by attorneys and get more cases through SEO, ADA-compliant websites, and fact-based content strategy.",
+            inLanguage: "en",
+            mainEntity: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
               url: "https://latinowebstudio.com",
-              description:
-                "Latino Web Studio helps expert witnesses get found by attorneys and get more cases through SEO, ADA-compliant websites, and fact-based content strategy.",
-              inLanguage: "en",
-              mainEntity: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                url: "https://latinowebstudio.com",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
-                sameAs: ["https://www.linkedin.com/in/ted-martinez-seo/"],
-                founder: {
-                  "@type": "Person",
-                  name: "Tadeo Martinez",
-                  jobTitle: "Founder",
-                  url: "https://latinowebstudio.com/about",
-                },
-                contactPoint: {
-                  "@type": "ContactPoint",
-                  telephone: "+1-303-927-8228",
-                  contactType: "Sales",
-                  areaServed: "US",
-                  availableLanguage: "English",
-                },
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-              about: {
-                "@type": "Thing",
-                name: "SEO for Expert Witnesses",
+              sameAs: ["https://www.linkedin.com/in/ted-martinez-seo/"],
+              founder: {
+                "@type": "Person",
+                name: "Tadeo Martinez",
+                jobTitle: "Founder",
+                url: "https://latinowebstudio.com/about",
               },
-            }),
-          }}
-        />
-      </Head>
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+1-303-927-8228",
+                contactType: "Sales",
+                areaServed: "US",
+                availableLanguage: "English",
+              },
+            },
+            about: {
+              "@type": "Thing",
+              name: "SEO for Expert Witnesses",
+            },
+          }),
+        }}
+      />
+
       <Main />
       <main>
         <section className="hero" style={{}}>

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ContentBlock from "../components/content-block";
 import type { Metadata } from "next";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Practice Areas | Latino Web Studio – SEO & Web Design for Experts",
@@ -27,31 +26,30 @@ export const metadata: Metadata = {
 export default function PracticeAreasPage() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "Practice Areas | Latino Web Studio",
-              url: "https://latinowebstudio.com/practice-areas",
-              description:
-                "Explore Latino Web Studio's SEO and web design services for expert witnesses in law, medicine, engineering, and more.",
-              inLanguage: "en",
-              mainEntity: {
-                "@type": "Organization",
-                name: "Latino Web Studio",
-                url: "https://latinowebstudio.com",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                },
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Practice Areas | Latino Web Studio",
+            url: "https://latinowebstudio.com/practice-areas",
+            description:
+              "Explore Latino Web Studio's SEO and web design services for expert witnesses in law, medicine, engineering, and more.",
+            inLanguage: "en",
+            mainEntity: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
               },
-            }),
-          }}
-        />
-      </Head>
+            },
+          }),
+        }}
+      />
+
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
         containerClassName="max-w-screen-lg mx-auto"
