@@ -1,5 +1,6 @@
 "use client";
 // declare const grecaptcha: any;
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; // Import useRouter
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -122,6 +123,11 @@ const ContactForm: React.FC = () => {
     }
   };
 
+  const pathname = usePathname();
+  const submitButtonText =
+    pathname === "/practice-areas/ecommerce"
+      ? "Build a Custom eCommerce Platform"
+      : "Get More Cases";
   return (
     <div className="relative items-center justify-center bg-cover bg-center w-full">
       <div className="relative">
@@ -265,7 +271,7 @@ const ContactForm: React.FC = () => {
               className="btn-main square"
               disabled={loading}
             >
-              {loading ? "Sending..." : "Send us a Message"}
+              {loading ? "Sending..." : submitButtonText}
             </button>
           </div>
         </form>

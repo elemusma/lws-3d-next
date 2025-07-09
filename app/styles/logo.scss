@@ -4,15 +4,14 @@
 }
 
 @media (min-width: 768px) {
-  .conditional-visible {
-    display: block;
-  }
-
   .do-not-hide .conditional-visible {
     display: block !important;
   }
 
-  .conditional-visible:not(.do-not-hide *) {
-    display: none;
+  // .conditional-visible:not(.do-not-hide *) {
+  //   display: none;
+  // }
+  .conditional-visible {
+    display: block;
   }
 }

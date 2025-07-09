@@ -18,7 +18,7 @@ const SocialIcons = () => {
       </a>
       {/* YouTube */}
       <a
-        href="https://www.youtube.com/channel/UCzDAvtSdnoLEz_re0ABaANg"
+        href="https://www.youtube.com/@LatinoWebStudio"
         title="YouTube Channel Link"
         target="_blank"
         style={{ textDecoration: "none" }}
@@ -32,7 +32,7 @@ const SocialIcons = () => {
       </a>
       {/* LinkedIn */}
       <a
-        href="https://www.linkedin.com/in/etlm/"
+        href="https://www.linkedin.com/in/ted-martinez-seo/"
         title="LinkedIn Profile Link"
         target="_blank"
         style={{ textDecoration: "none" }}

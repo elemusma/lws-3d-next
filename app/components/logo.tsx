@@ -1,7 +1,17 @@
+"use client";
+
 import Image from "next/image";
-import "@/app/styles/logo.scss"; // Import logo styles
+import { usePathname } from "next/navigation";
+import "@/app/styles/logo.scss";
 
 function Logo() {
+  const pathname = usePathname();
+
+  const subtext =
+    pathname === "/practice-areas/ecommerce"
+      ? "B2C - B2B - eCommerce"
+      : "Attorneys - Retainers - Cases";
+
   return (
     <div
       className="flex items-center p-1 logo"
@@ -16,7 +26,7 @@ function Logo() {
       >
         <Image
           src="/assets/logo-bg.png"
-          alt="Logo - Latino Web Studio - Attorneys - Retainers - Cases - Helping Expert Witnesses"
+          alt="Logo Background"
           width={55}
           height={55}
           className="absolute logo-bg"
@@ -28,7 +38,7 @@ function Logo() {
         />
         <Image
           src="/assets/logo-bird.png"
-          alt="Logo - Latino Web Studio - Attorneys - Retainers - Cases - Helping Expert Witnesses"
+          alt="Logo Bird"
           width={40}
           height={40}
           className="relative logo-bird"
@@ -48,7 +58,7 @@ function Logo() {
           className="text-white block logo-subtext"
           style={{ margin: 0, fontSize: "70%", lineHeight: 1 }}
         >
-          <em>Attorneys - Retainers - Cases</em>
+          <em>{subtext}</em>
         </p>
       </div>
     </div>

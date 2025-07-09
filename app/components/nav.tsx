@@ -1,14 +1,23 @@
+"use client";
 import Link from "next/link";
 import "../styles/nav.scss";
 import "../styles/nav-mobile.scss";
 import Logo from "./logo";
 import MobileMenuToggle from "./mobileMenuToggle";
+import { usePathname } from "next/navigation";
+import NavItems from "./navItems";
 
 const Nav = () => {
+  const pathname = usePathname();
+
+  const buttonText =
+    pathname === "/practice-areas/ecommerce"
+      ? "Build Ecommerce"
+      : "Get More Cases";
   return (
     <>
       <nav
-        className="fixed inset-x-0 pt-3 pb-3 bg-white"
+        className="fixed inset-x-0 bg-white"
         style={{ zIndex: "100", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
       >
         <div className="max-w-screen-lg mx-auto px-4">
@@ -26,15 +35,16 @@ const Nav = () => {
               <MobileMenuToggle />
             </div>
             <div className="lg:w-5/12 w-1/6 px-4 justify-end items-center hidden lg:flex">
-              <Link href="/practice-areas/seo" className="px-4">
+              <NavItems />
+              {/* <Link href="/practice-areas/seo" className="px-4">
                 <span style={{ textShadow: "1px 1px 1px white" }}>SEO</span>
-              </Link>
-              <Link href="/about" className="px-4">
+              </Link> */}
+              {/* <Link href="/about" className="px-4">
                 <span style={{ textShadow: "1px 1px 1px white" }}>About</span>
               </Link>
               <Link href="/blog" className="px-4">
                 <span style={{ textShadow: "1px 1px 1px white" }}>Blog</span>
-              </Link>
+              </Link> */}
             </div>
             {/* end of column */}
             <div className="lg:w-1/5 w-7/12 pr-4 flex justify-end">
@@ -50,7 +60,7 @@ const Nav = () => {
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
-                Get More Cases
+                {buttonText}
               </a>
             </div>
           </div>
