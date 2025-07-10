@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="fixed inset-x-0 bg-white"
+        className="fixed inset-x-0 bg-white lg:pt-0 lg:pb-0 pt-2 pb-2"
         style={{ zIndex: "100", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
       >
         <div className="max-w-screen-lg mx-auto px-4">
@@ -47,7 +47,7 @@ const Nav = () => {
               </Link> */}
             </div>
             {/* end of column */}
-            <div className="lg:w-1/5 w-7/12 pr-4 flex justify-end">
+            <div className="lg:w-1/5 w-7/12 pr-4 flex justify-end items-center">
               <a
                 href="#schedule"
                 className="p-1 flex items-center btn-main btn-nav justify-center"
