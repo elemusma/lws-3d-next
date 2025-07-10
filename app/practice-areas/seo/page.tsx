@@ -36,6 +36,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/practice-areas/seo",
+  },
 };
 
 export default function PracticeAreasSEO() {
