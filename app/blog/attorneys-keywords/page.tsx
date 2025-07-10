@@ -30,6 +30,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/blog/attorneys-keywords",
+  },
 };
 
 export default function LawyersHighIntent() {

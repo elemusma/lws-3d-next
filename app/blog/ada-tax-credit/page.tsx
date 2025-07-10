@@ -27,6 +27,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/blog/ada-tax-credit",
+  },
 };
 
 export default function AdaTaxCredit() {

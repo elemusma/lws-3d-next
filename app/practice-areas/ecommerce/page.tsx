@@ -37,6 +37,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/practice-areas/ecommerce",
+  },
 };
 
 export default function PracticeAreasEcommerce() {

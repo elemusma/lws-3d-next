@@ -2,6 +2,24 @@ import Main from "@/app/js/main";
 import Link from "next/link";
 import "@/app/styles/blog.scss";
 import ContactForm from "@/app/components/forms/ContactForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "White Paper Requested | Latino Web Studio",
+  description:
+    "Thanks for requesting the white paper. Learn how to get more legal cases and be found by attorneys. Contact Ted for personalized support.",
+  alternates: {
+    canonical: "https://latinowebstudio.com/thank-you-white-paper",
+  },
+  openGraph: {
+    title: "White Paper Requested | Latino Web Studio",
+    description:
+      "Thanks for requesting the white paper. Learn how to get more legal cases and be found by attorneys. Contact Ted for personalized support.",
+    url: "https://latinowebstudio.com/thank-you-white-paper",
+    type: "website",
+    siteName: "Latino Web Studio",
+  },
+};
 
 export default function ThankYouWhitePaperPage() {
   return (

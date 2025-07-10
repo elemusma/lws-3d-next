@@ -1,6 +1,23 @@
 import CalendlyWidget from "../components/calendly";
 import Footer from "../components/footer";
 import Main from "../js/main";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get Started | Latino Web Studio",
+  description:
+    "Schedule a call to explore how Latino Web Studio can help grow your business through web design, SEO, and automation.",
+  alternates: {
+    canonical: "https://latinowebstudio.com/get-started",
+  },
+  openGraph: {
+    title: "Get Started | Latino Web Studio",
+    description:
+      "Schedule a call to explore how Latino Web Studio can help grow your business through web design, SEO, and automation.",
+    url: "https://latinowebstudio.com/get-started",
+    type: "website",
+  },
+};
 
 export default function GetStarted() {
   return (

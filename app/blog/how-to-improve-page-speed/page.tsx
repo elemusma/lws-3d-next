@@ -31,6 +31,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/blog/how-to-improve-page-speed",
+  },
 };
 
 export default function HowtoImprovePageSpeed() {

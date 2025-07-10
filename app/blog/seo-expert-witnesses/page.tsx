@@ -27,6 +27,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/blog/seo-expert-witnesses", // Replace with the actual canonical URL
+  },
 };
 
 export default function SEOExpertWitnesses() {

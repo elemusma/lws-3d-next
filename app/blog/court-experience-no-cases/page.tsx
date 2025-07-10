@@ -29,6 +29,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/blog/court-experience-no-cases",
+  },
 };
 
 export default function WhyCourtExperienceNotGettingCases() {

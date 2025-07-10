@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   title: "Fulfillment Policy | Latino Web Studio",
   description:
     "Our fulfillment policy outlines how we deliver our services, including timelines, responsibilities, and refund terms, including a 14-day money-back guarantee.",
+  alternates: {
+    canonical: "https://latinowebstudio.com/fulfillment-policy",
+  },
+  openGraph: {
+    title: "Fulfillment Policy | Latino Web Studio",
+    description:
+      "Our fulfillment policy outlines how we deliver our services, including timelines, responsibilities, and refund terms, including a 14-day money-back guarantee.",
+    url: "https://latinowebstudio.com/fulfillment-policy",
+    type: "website",
+    siteName: "Latino Web Studio",
+  },
 };
 
 const policyData = {

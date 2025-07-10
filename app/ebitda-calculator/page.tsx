@@ -41,6 +41,10 @@ export default function Page() {
           name="description"
           content="Built by Tadeo Martinez. Investor. Entrepreneur. Programmer."
         />
+        <link
+          rel="canonical"
+          href="https://latinowebstudio.com/ebitda-calculator"
+        />
         <meta
           property="og:title"
           content="EBITDA Calculator - What Is Your Business Worth?"

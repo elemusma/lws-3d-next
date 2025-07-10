@@ -29,6 +29,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/blog/peer-reviewed-expert-witness", // Replace with the actual canonical URL
+  },
 };
 
 export default function PeerReviewedExpertWitness() {

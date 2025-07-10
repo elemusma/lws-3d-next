@@ -1,5 +1,22 @@
 import CalendlyWidget from "@/app/components/calendly";
 import Main from "@/app/js/main";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Schedule a Call with Tadeo (Ted) Martinez | Latino Web Studio",
+  description:
+    "Book a call with Tadeo Martinez of Latino Web Studio to discuss your web design, SEO, or marketing strategy needs.",
+  alternates: {
+    canonical: "https://latinowebstudio.com/calendar",
+  },
+  openGraph: {
+    title: "Schedule a Call with Tadeo (Ted) Martinez | Latino Web Studio",
+    description:
+      "Book a call with Tadeo Martinez of Latino Web Studio to discuss your web design, SEO, or marketing strategy needs.",
+    url: "https://latinowebstudio.com/calendar",
+    type: "website",
+  },
+};
 
 export default function CalendarPage() {
   return (
