@@ -40,38 +40,43 @@ export default function WhatHowExpertWitnesses() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "What Is Web Traffic? How to Turn Attorney Visits Into Cases",
-            description:
-              "Learn what web traffic means for expert witnesses and how to convert attorney visits into real case inquiries. Discover the metrics and tools that reveal attorney interest.",
-            image: "https://latinowebstudio.com/blog/web-traffic-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-07-02",
-            dateModified: "2025-07-02",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/web-traffic",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "What Is Web Traffic? How to Turn Attorney Visits Into Cases",
+      "description": "Learn what web traffic means for expert witnesses and how to convert attorney visits into real case inquiries. Discover the metrics and tools that reveal attorney interest.",
+      "image": "https://latinowebstudio.com/blog/web-traffic-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-07-02",
+      "dateModified": "2025-07-02",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/web-traffic"
+      },
+      "inLanguage": "en",
+      "keywords": "web traffic explained, attorney lead generation, website analytics for experts, converting visits to cases, digital marketing for expert witnesses, legal SEO strategy",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

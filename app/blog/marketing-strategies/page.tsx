@@ -41,38 +41,43 @@ export default function MarketingStrategiesExpertWitnesses2025() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Marketing Strategies for Expert Witnesses in 2025",
-            description:
-              "The digital landscape for expert witnesses is increasingly competitive, especially in legal search environments where only a few listings dominate first-page visibility.",
-            image:
-              "https://latinowebstudio.com/blog/marketing-strategies-01.png",
-            author: {
-              "@type": "Person",
-              name: "Your Author Name",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-05-31",
-            dateModified: "2025-07-01",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/marketing-strategies",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Marketing Strategies for Expert Witnesses in 2025",
+      "description": "The digital landscape for expert witnesses is increasingly competitive, especially in legal search environments where only a few listings dominate first-page visibility.",
+      "image": "https://latinowebstudio.com/blog/marketing-strategies-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Your Author Name",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-05-31",
+      "dateModified": "2025-07-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/marketing-strategies"
+      },
+      "inLanguage": "en",
+      "keywords": "expert witness marketing, legal marketing strategies, SEO for experts, content marketing, online visibility for attorneys, digital lead generation",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

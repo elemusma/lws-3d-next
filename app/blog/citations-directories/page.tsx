@@ -40,39 +40,43 @@ export default function CitationsDirectories() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/citations-directories",
-            },
-            headline:
-              "The Expert Witness's Guide to High-Authority Directories",
-            description:
-              "In today's digital-first legal landscape, expert witnesses are often discovered not through word-of-mouth referrals, but through online directories and search results.",
-            image:
-              "https://latinowebstudio.com/blog/Expert-Witnesss-Directories-01.png",
-            author: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-05-28",
-            dateModified: "2025-07-01",
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/citations-directories"
+      },
+      "headline": "The Expert Witness's Guide to High-Authority Directories",
+      "description": "In today's digital-first legal landscape, expert witnesses are often discovered not through word-of-mouth referrals, but through online directories and search results.",
+      "image": "https://latinowebstudio.com/blog/Expert-Witnesss-Directories-01.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-05-28",
+      "dateModified": "2025-07-01",
+      "inLanguage": "en",
+      "keywords": "expert witness directories, legal directories, attorney marketing, online visibility for experts, expert witness SEO, citation strategy for lawyers",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Attorneys, Legal Professionals"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

@@ -40,42 +40,45 @@ export default function UserExperience() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline:
-              "Why Your Website Might Be Costing You Cases--and How UX Can Fix That",
-            articleSection: "Web Design and UX for Expert Witnesses",
-            description:
-              "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
-            dateModified: "2025-06-21",
-            keywords:
-              "UX for expert witnesses, legal web design, attorney website evaluation",
-            wordCount: 1240,
-            image: "https://latinowebstudio.com/blog/user-experience-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-06-18",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/user-experience-ux",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why Your Website Might Be Costing You Cases--and How UX Can Fix That",
+      "articleSection": "Web Design and UX for Expert Witnesses",
+      "description": "Attorneys reviewing expert witnesses often move fast. They scan, evaluate, and make judgments within seconds.",
+      "dateModified": "2025-06-21",
+      "keywords": "UX for expert witnesses, legal web design, attorney website evaluation",
+      "wordCount": 1240,
+      "image": "https://latinowebstudio.com/blog/user-experience-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-06-18",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/user-experience-ux"
+      },
+      "inLanguage": "en",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

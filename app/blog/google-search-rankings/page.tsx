@@ -41,43 +41,45 @@ export default function GoogleSearchRankings() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "Google Search Rankings: How Expert Witnesses Can Improve Visibility in 2025",
-            articleSection: "SEO and Web Strategy for Legal Professionals",
-            description:
-              "Learn how expert witnesses can improve their Google search rankings using proven SEO, UX, and technical strategies. Get found by attorneys searching online in 2025.",
-            datePublished: "2025-06-30",
-            dateModified: "2025-07-01",
-            keywords:
-              "SEO for expert witnesses, Google search ranking, legal SEO, structured data, backlinks, technical SEO, mobile performance",
-            wordCount: 2000,
-            image:
-              "https://latinowebstudio.com/blog/google-search-rankings-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/google-search-rankings",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Google Search Rankings: How Expert Witnesses Can Improve Visibility in 2025",
+      "articleSection": "SEO and Web Strategy for Legal Professionals",
+      "description": "Learn how expert witnesses can improve their Google search rankings using proven SEO, UX, and technical strategies. Get found by attorneys searching online in 2025.",
+      "datePublished": "2025-06-30",
+      "dateModified": "2025-07-01",
+      "keywords": "SEO for expert witnesses, Google search ranking, legal SEO, structured data, backlinks, technical SEO, mobile performance",
+      "wordCount": 2000,
+      "image": "https://latinowebstudio.com/blog/google-search-rankings-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/google-search-rankings"
+      },
+      "inLanguage": "en",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
       {/* FAQPage Schema */}
       <script
         type="application/ld+json"

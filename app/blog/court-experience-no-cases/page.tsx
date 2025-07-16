@@ -39,40 +39,43 @@ export default function WhyCourtExperienceNotGettingCases() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://latinowebstudio.com/blog/court-experience-no-cases",
-            },
-            headline:
-              "Why Your Court Experience Isn't Helping You Get More Cases (Yet)",
-            description:
-              "Despite having testified in numerous trials or depositions, many expert witnesses are finding that their courtroom experience isn't resulting in the volume of inquiries they expect.",
-            image:
-              "https://latinowebstudio.com/blog/Court-Experience-More-Cases-01.png",
-            author: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-06-03",
-            dateModified: "2025-07-01",
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/court-experience-no-cases"
+      },
+      "headline": "Why Your Court Experience Isn't Helping You Get More Cases (Yet)",
+      "description": "Despite having testified in numerous trials or depositions, many expert witnesses are finding that their courtroom experience isn't resulting in the volume of inquiries they expect.",
+      "image": "https://latinowebstudio.com/blog/Court-Experience-More-Cases-01.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-06-03",
+      "dateModified": "2025-07-01",
+      "inLanguage": "en",
+      "keywords": "expert witness marketing, courtroom experience SEO, legal marketing strategies, attract more cases, visibility for expert witnesses, attorney search behavior",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

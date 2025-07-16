@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Head>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -70,7 +70,6 @@ export default function AboutPage() {
             }),
           }}
         />
-      </Head>
 
       {/* Hero Section */}
       <ContentBlock

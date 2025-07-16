@@ -41,38 +41,43 @@ export default function SearchIntent() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "Search Intent for Expert Witnesses: Attract More Attorneys",
-            description:
-              "Learn how expert witnesses can use search intent to create content that ranks, builds trust, and attracts attorneys searching for your expertise.",
-            image: "https://latinowebstudio.com/blog/Search-Intent-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-06-14",
-            dateModified: "2025-07-01",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/search-intent",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Search Intent for Expert Witnesses: Attract More Attorneys",
+      "description": "Learn how expert witnesses can use search intent to create content that ranks, builds trust, and attracts attorneys searching for your expertise.",
+      "image": "https://latinowebstudio.com/blog/Search-Intent-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-06-14",
+      "dateModified": "2025-07-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/search-intent"
+      },
+      "inLanguage": "en",
+      "keywords": "search intent SEO, expert witness content strategy, attract attorneys online, legal marketing SEO, expert witness lead generation, content creation for experts",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       <div className="single-post">
         {/* Hero Section */}

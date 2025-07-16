@@ -39,39 +39,43 @@ export default function PeerReviewedExpertWitness() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Peer Review in Expert Witness Testimony",
-            description:
-              "Expert witnesses serve a critical role in legal proceedings by providing specialized knowledge that assists judges and juries in understanding complex issues.",
-            image:
-              "https://latinowebstudio.com/blog/Peer-Review-Expert-Witness-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-06-29",
-            dateModified: "2025-07-01",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://latinowebstudio.com/blog/peer-reviewed-expert-witness",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Peer Review in Expert Witness Testimony",
+      "description": "Expert witnesses serve a critical role in legal proceedings by providing specialized knowledge that assists judges and juries in understanding complex issues.",
+      "image": "https://latinowebstudio.com/blog/Peer-Review-Expert-Witness-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-06-29",
+      "dateModified": "2025-07-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/peer-reviewed-expert-witness"
+      },
+      "inLanguage": "en",
+      "keywords": "peer review, expert witness credibility, legal proceedings, courtroom testimony, legal marketing, expert witness best practices",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

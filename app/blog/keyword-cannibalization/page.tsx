@@ -41,45 +41,47 @@ export default function KeywordCannibalization() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "Keyword Cannibalization: What It Is, Why It Hurts Rankings, and How to Fix It",
-            articleSection: "Technical SEO",
-            description:
-              "Understand keyword cannibalization in SEO, how it affects rankings, and how expert witnesses and professionals can identify and fix it to improve site performance.",
-            datePublished: "2025-07-01",
-            dateModified: "2025-07-03",
-            keywords:
-              "keyword cannibalization, SEO cannibalization fix, technical SEO, duplicate content, SEO mistakes, expert witness SEO",
-            wordCount: 1072,
-            image:
-              "https://latinowebstudio.com/blog/keyword-cannibalization-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-              sameAs: "https://www.linkedin.com/in/tadeomartinez",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/keyword-cannibalization",
-            },
-            isAccessibleForFree: true,
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Keyword Cannibalization: What It Is, Why It Hurts Rankings, and How to Fix It",
+      "articleSection": "Technical SEO",
+      "description": "Understand keyword cannibalization in SEO, how it affects rankings, and how expert witnesses and professionals can identify and fix it to improve site performance.",
+      "datePublished": "2025-07-01",
+      "dateModified": "2025-07-03",
+      "keywords": "keyword cannibalization, SEO cannibalization fix, technical SEO, duplicate content, SEO mistakes, expert witness SEO",
+      "wordCount": 1072,
+      "image": "https://latinowebstudio.com/blog/keyword-cannibalization-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about",
+        "sameAs": "https://www.linkedin.com/in/tadeomartinez"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/keyword-cannibalization"
+      },
+      "isAccessibleForFree": true,
+      "inLanguage": "en",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       <script
         type="application/ld+json"

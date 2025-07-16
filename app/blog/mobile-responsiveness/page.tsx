@@ -41,38 +41,43 @@ export default function MobileResponsiveness() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Mobile Responsiveness for Expert Witness Websites",
-            description:
-              "If your website doesn't adapt to mobile screens, you're invisible to the majority of attorneys searching for your expertise.",
-            image:
-              "https://latinowebstudio.com/blog/Mobile-Responsiveness-Expert-Witness-Websites-01.png",
-            author: {
-              "@type": "Person",
-              name: "Your Author Name",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-06-14",
-            dateModified: "2025-07-01",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/mobile-responsiveness",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Mobile Responsiveness for Expert Witness Websites",
+      "description": "If your website doesn't adapt to mobile screens, you're invisible to the majority of attorneys searching for your expertise.",
+      "image": "https://latinowebstudio.com/blog/Mobile-Responsiveness-Expert-Witness-Websites-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Your Author Name",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-06-14",
+      "dateModified": "2025-07-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/mobile-responsiveness"
+      },
+      "inLanguage": "en",
+      "keywords": "mobile responsive websites, attorney SEO, expert witness SEO, mobile-first design, website optimization for lawyers, legal marketing strategies",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

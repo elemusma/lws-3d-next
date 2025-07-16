@@ -40,38 +40,43 @@ export default function AIRankingExpertWitness() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://latinowebstudio.com/blog/ai-ranking",
-            },
-            headline: "AI-Search Results Domination for Expert Witnesses",
-            description:
-              "Learn how expert witnesses can dominate AI-powered search results through structured content, schema markup, and E-E-A-T strategies.",
-            image:
-              "https://latinowebstudio.com/blog/AI-Expert-Witnesses-01.png",
-            author: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              url: "https://latinowebstudio.com",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/logo.png",
-              },
-            },
-            datePublished: "2025-06-05",
-            dateModified: "2025-07-01",
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/ai-ranking"
+      },
+      "headline": "AI-Search Results Domination for Expert Witnesses",
+      "description": "Learn how expert witnesses can dominate AI-powered search results through structured content, schema markup, and E-E-A-T strategies.",
+      "image": "https://latinowebstudio.com/blog/AI-Expert-Witnesses-01.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "url": "https://latinowebstudio.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/logo.png"
+        }
+      },
+      "datePublished": "2025-06-05",
+      "dateModified": "2025-07-01",
+      "inLanguage": "en",
+      "keywords": "AI search optimization, expert witness SEO, legal marketing strategies, structured data, E-E-A-T for SEO, AI-powered search visibility",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

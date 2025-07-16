@@ -42,40 +42,43 @@ export default function DepositionReadinessChecklist() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://latinowebstudio.com/blog/deposition-readiness-checklist",
-            },
-            headline:
-              "Deposition Preparation Content to Drive Legal Leads for Expert Witnesses",
-            description:
-              "As an expert witness you operate in a highly specialized market, where visibility and credibility directly impact case acquisition.",
-            image:
-              "https://latinowebstudio.com/blog/Deposition-Readiness-Checklists-01.png",
-            author: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-05-24",
-            dateModified: "2025-07-01",
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/deposition-readiness-checklist"
+      },
+      "headline": "Deposition Preparation Content to Drive Legal Leads for Expert Witnesses",
+      "description": "As an expert witness you operate in a highly specialized market, where visibility and credibility directly impact case acquisition.",
+      "image": "https://latinowebstudio.com/blog/Deposition-Readiness-Checklists-01.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-05-24",
+      "dateModified": "2025-07-01",
+      "inLanguage": "en",
+      "keywords": "deposition preparation, expert witness marketing, legal leads, content strategy for lawyers, SEO for legal experts, attorney visibility online",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock

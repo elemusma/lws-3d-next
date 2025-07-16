@@ -41,43 +41,45 @@ export default function HowtoImprovePageSpeed() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "How to Improve Page Speed for Better SEO and User Experience",
-            articleSection: "Technical SEO",
-            description:
-              "Discover how expert witnesses and professionals can improve website performance for SEO and usability. Learn tools, techniques, and best practices to increase page speed.",
-            datePublished: "2025-07-01",
-            dateModified: "2025-07-03",
-            keywords:
-              "page speed optimization, technical SEO, Core Web Vitals, mobile performance, expert witness SEO, fast websites, Lighthouse, PageSpeed Insights",
-            wordCount: 2000,
-            image: "https://latinowebstudio.com/blog/page-speed-01.png",
-            author: {
-              "@type": "Person",
-              name: "Tadeo Martinez",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://latinowebstudio.com/blog/how-to-improve-page-speed",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to Improve Page Speed for Better SEO and User Experience",
+      "articleSection": "Technical SEO",
+      "description": "Discover how expert witnesses and professionals can improve website performance for SEO and usability. Learn tools, techniques, and best practices to increase page speed.",
+      "datePublished": "2025-07-01",
+      "dateModified": "2025-07-03",
+      "keywords": "page speed optimization, technical SEO, Core Web Vitals, mobile performance, expert witness SEO, fast websites, Lighthouse, PageSpeed Insights",
+      "wordCount": 2000,
+      "image": "https://latinowebstudio.com/blog/page-speed-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Tadeo Martinez",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/how-to-improve-page-speed"
+      },
+      "inLanguage": "en",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
+      }
+    }),
+  }}
+/>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

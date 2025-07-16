@@ -40,40 +40,43 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
   return (
     <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "What Lawyers Want to See on Your Website Before They Call You",
-            description:
-              "For many attorneys, an expert witness's website is their first impression. This digital footprint is no longer optional—it's a core part of how legal professionals vet and contact experts.",
-            image:
-              "https://latinowebstudio.com/blog/What‑Lawyers‑Want‑to‑See‑on‑Your‑Website‑01.png",
-            author: {
-              "@type": "Person",
-              name: "Your Author Name",
-              url: "https://latinowebstudio.com/about",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Latino Web Studio",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-              },
-            },
-            datePublished: "2025-06-4",
-            dateModified: "2025-07-01",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://latinowebstudio.com/blog/lawyers-experts-websites",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "What Lawyers Want to See on Your Website Before They Call You",
+      "description": "For many attorneys, an expert witness's website is their first impression. This digital footprint is no longer optional—it's a core part of how legal professionals vet and contact experts.",
+      "image": "https://latinowebstudio.com/blog/What‑Lawyers‑Want‑to‑See‑on‑Your‑Website‑01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Your Author Name",
+        "url": "https://latinowebstudio.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Latino Web Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
+        }
+      },
+      "datePublished": "2025-06-04",
+      "dateModified": "2025-07-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://latinowebstudio.com/blog/lawyers-experts-websites"
+      },
+      "inLanguage": "en",
+      "keywords": "expert witness websites, what attorneys expect, legal marketing, website optimization for lawyers, online visibility, expert witness marketing tips",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Expert Witnesses, Attorneys, Legal Professionals"
+      }
+    }),
+  }}
+/>
+
 
       {/* Hero Section */}
       <ContentBlock
