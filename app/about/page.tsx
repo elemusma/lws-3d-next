@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 // import Link from "next/link";
 // import Sidebar from "@/app/components/reusable/Sidebar";
-import Head from "next/head";
 // import { getArticleSchema } from "@/app/components/reusable/articleSchema";
 import HeadshotIcons from "../components/headshot-icons";
 // import Link from "next/link";
