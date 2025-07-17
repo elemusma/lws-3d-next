@@ -41,43 +41,45 @@ export default function DeceptiveContent() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://latinowebstudio.com/blog/deceptive-content"
-      },
-      "headline": "Deceptive Content - How to Protect Your Reputation as an Expert Witness and Avoid Costly Mistakes",
-      "description": "In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters.",
-      "image": "https://latinowebstudio.com/blog/deceptive-content-01.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "url": "https://latinowebstudio.com/about"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        }
-      },
-      "datePublished": "2025-07-01",
-      "dateModified": "2025-07-01",
-      "inLanguage": "en",
-      "keywords": "expert witness content strategy, deceptive content risks, legal marketing, reputation protection, digital credibility for experts, attorney trust signals",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Expert Witnesses, Attorneys, Legal Professionals"
-      }
-    }),
-  }}
-/>
-
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/deceptive-content",
+            },
+            headline:
+              "Deceptive Content - How to Protect Your Reputation as an Expert Witness and Avoid Costly Mistakes",
+            description:
+              "In the digital age, online visibility is inseparable from professional credibility, particularly for expert witnesses involved in legal matters.",
+            image: "https://latinowebstudio.com/blog/deceptive-content-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            datePublished: "2025-07-01",
+            dateModified: "2025-07-01",
+            inLanguage: "en",
+            keywords:
+              "expert witness content strategy, deceptive content risks, legal marketing, reputation protection, digital credibility for experts, attorney trust signals",
+            audience: {
+              "@type": "Audience",
+              audienceType: "Expert Witnesses, Attorneys, Legal Professionals",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

@@ -41,43 +41,45 @@ export default function MoreCases() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Want More Cases? Here's How Lawyers Really Search for Experts Online",
-      "description": "If you're an expert witness looking to grow your consulting business, the key to being found by attorneys often starts with understanding how they conduct online searches.",
-      "image": "https://latinowebstudio.com/blog/More-Cases-01.png",
-      "author": {
-        "@type": "Person",
-        "name": "Your Author Name",
-        "url": "https://latinowebstudio.com/about"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        }
-      },
-      "datePublished": "2025-06-05",
-      "dateModified": "2025-07-01",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://latinowebstudio.com/blog/more-cases"
-      },
-      "inLanguage": "en",
-      "keywords": "how attorneys search for experts, expert witness SEO, legal marketing strategies, online visibility, digital marketing for experts, getting more legal cases",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
-      }
-    }),
-  }}
-/>
-
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "Want More Cases? Here's How Lawyers Really Search for Experts Online",
+            description:
+              "If you're an expert witness looking to grow your consulting business, the key to being found by attorneys often starts with understanding how they conduct online searches.",
+            image: "https://latinowebstudio.com/blog/More-Cases-01.png",
+            author: {
+              "@type": "Person",
+              name: "Your Author Name",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            datePublished: "2025-06-05",
+            dateModified: "2025-07-01",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/more-cases",
+            },
+            inLanguage: "en",
+            keywords:
+              "how attorneys search for experts, expert witness SEO, legal marketing strategies, online visibility, digital marketing for experts, getting more legal cases",
+            audience: {
+              "@type": "Audience",
+              audienceType: "Expert Witnesses, Legal Professionals, Attorneys",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

@@ -46,77 +46,77 @@ export default function PracticeAreasSEO() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      serviceType: "Expert Witnesses Search Engine Optimization (SEO)",
-      name: "Search Engine Optimization (SEO) for Expert Witnesses",
-      description:
-        "Search engine optimization (SEO) for expert witnesses designed to help expert witnesses get found by attorneys. Includes technical SEO, ADA compliance, fast loading speeds, and content strategy.",
-      url: "https://latinowebstudio.com/practice-areas/seo",
-      image:
-        "https://latinowebstudio.com/practice-areas/Experts-Search-Engine-Optimization.jpg",
-      keywords:
-        "SEO for expert witnesses, legal SEO, attorney visibility, expert witness marketing, search engine optimization for experts, lawyer SEO, website optimization, ADA compliance SEO, content marketing for experts",
-      inLanguage: "en",
-      areaServed: {
-        "@type": "Country",
-        name: "United States",
-      },
-      audience: {
-        "@type": "Audience",
-        audienceType: "Expert Witnesses, Legal Professionals, Attorneys, Law Firms",
-      },
-      provider: {
-        "@type": "Organization",
-        name: "Latino Web Studio",
-        url: "https://latinowebstudio.com",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-        },
-      },
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "SEO Service Packages",
-        itemListElement: [
-          {
-            "@type": "Offer",
-            name: "Starter Plan",
-            priceCurrency: "USD",
-            price: "1000",
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Expert Witnesses Search Engine Optimization (SEO)",
+            name: "Search Engine Optimization (SEO) for Expert Witnesses",
             description:
-              "4 articles, Google Analytics, Search Console, 750 word articles",
-            url: "https://buy.stripe.com/00gdST08wbWPbjq292",
-            availability: "https://schema.org/InStock",
-          },
-          {
-            "@type": "Offer",
-            name: "Intermediate Plan",
-            priceCurrency: "USD",
-            price: "1500",
-            description:
-              "Everything in Starter plus web design, hosting, domain, free website, 2 backlinks per year",
-            url: "https://buy.stripe.com/5kAdST1cA7Gz9bi5lf",
-            availability: "https://schema.org/InStock",
-          },
-          {
-            "@type": "Offer",
-            name: "Signature Plan",
-            priceCurrency: "USD",
-            price: "2000",
-            description: "Everything in Intermediate plus 10 articles",
-            url: "https://buy.stripe.com/3cs9CD3kI9OHevCfZU",
-            availability: "https://schema.org/InStock",
-          },
-        ],
-      },
-    }),
-  }}
-/>
-
+              "Search engine optimization (SEO) for expert witnesses designed to help expert witnesses get found by attorneys. Includes technical SEO, ADA compliance, fast loading speeds, and content strategy.",
+            url: "https://latinowebstudio.com/practice-areas/seo",
+            image:
+              "https://latinowebstudio.com/practice-areas/Experts-Search-Engine-Optimization.jpg",
+            keywords:
+              "SEO for expert witnesses, legal SEO, attorney visibility, expert witness marketing, search engine optimization for experts, lawyer SEO, website optimization, ADA compliance SEO, content marketing for experts",
+            inLanguage: "en",
+            areaServed: {
+              "@type": "Country",
+              name: "United States",
+            },
+            audience: {
+              "@type": "Audience",
+              audienceType:
+                "Expert Witnesses, Legal Professionals, Attorneys, Law Firms",
+            },
+            provider: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "SEO Service Packages",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  name: "Starter Plan",
+                  priceCurrency: "USD",
+                  price: "1000",
+                  description:
+                    "4 articles, Google Analytics, Search Console, 750 word articles",
+                  url: "https://buy.stripe.com/00gdST08wbWPbjq292",
+                  availability: "https://schema.org/InStock",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Intermediate Plan",
+                  priceCurrency: "USD",
+                  price: "1500",
+                  description:
+                    "Everything in Starter plus web design, hosting, domain, free website, 2 backlinks per year",
+                  url: "https://buy.stripe.com/5kAdST1cA7Gz9bi5lf",
+                  availability: "https://schema.org/InStock",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Signature Plan",
+                  priceCurrency: "USD",
+                  price: "2000",
+                  description: "Everything in Intermediate plus 10 articles",
+                  url: "https://buy.stripe.com/3cs9CD3kI9OHevCfZU",
+                  availability: "https://schema.org/InStock",
+                },
+              ],
+            },
+          }),
+        }}
+      />
 
       {/* 9747469734196890752 */}
       {/* Hero Section */}

@@ -40,43 +40,45 @@ export default function LawyersHighIntent() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://latinowebstudio.com/blog/attorneys-keywords"
-      },
-      "headline": "How to Write Articles with Keywords Lawyers Are Looking For",
-      "description": "When attorneys search for expert witnesses online, they aren't just typing generic phrases—they're using highly specific, case-related queries.",
-      "image": "https://latinowebstudio.com/blog/Attorneys-Keywords-01.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "url": "https://latinowebstudio.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        }
-      },
-      "datePublished": "2025-06-01",
-      "dateModified": "2025-07-01",
-      "inLanguage": "en",
-      "keywords": "SEO content strategy, legal SEO, keywords for attorneys, expert witness marketing, lawyer keyword research, content for legal professionals",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Expert Witnesses, Attorneys, Legal Professionals"
-      }
-    }),
-  }}
-/>
-
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/attorneys-keywords",
+            },
+            headline:
+              "How to Write Articles with Keywords Lawyers Are Looking For",
+            description:
+              "When attorneys search for expert witnesses online, they aren't just typing generic phrases—they're using highly specific, case-related queries.",
+            image: "https://latinowebstudio.com/blog/Attorneys-Keywords-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            datePublished: "2025-06-01",
+            dateModified: "2025-07-01",
+            inLanguage: "en",
+            keywords:
+              "SEO content strategy, legal SEO, keywords for attorneys, expert witness marketing, lawyer keyword research, content for legal professionals",
+            audience: {
+              "@type": "Audience",
+              audienceType: "Expert Witnesses, Attorneys, Legal Professionals",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

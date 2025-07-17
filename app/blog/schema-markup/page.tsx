@@ -41,43 +41,46 @@ export default function SchemaMarkup() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online",
-      "description": "Schema markup, a type of structured data vocabulary, plays a crucial role in how websites communicate with search engines.",
-      "image": "https://latinowebstudio.com/blog/Expert-Witnesses-Schema-Markup-01.png",
-      "author": {
-        "@type": "Person",
-        "name": "Tadeo Martinez",
-        "url": "https://latinowebstudio.com/about"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        }
-      },
-      "datePublished": "2025-06-28",
-      "dateModified": "2025-07-01",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://latinowebstudio.com/blog/schema-markup"
-      },
-      "inLanguage": "en",
-      "keywords": "schema markup for experts, structured data SEO, legal SEO strategies, expert witness SEO, search engine optimization, visibility for legal professionals",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
-      }
-    }),
-  }}
-/>
-
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline:
+              "How Expert Witnesses Can Use Schema Markup to Get Found by Attorneys Online",
+            description:
+              "Schema markup, a type of structured data vocabulary, plays a crucial role in how websites communicate with search engines.",
+            image:
+              "https://latinowebstudio.com/blog/Expert-Witnesses-Schema-Markup-01.png",
+            author: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            datePublished: "2025-06-28",
+            dateModified: "2025-07-01",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/schema-markup",
+            },
+            inLanguage: "en",
+            keywords:
+              "schema markup for experts, structured data SEO, legal SEO strategies, expert witness SEO, search engine optimization, visibility for legal professionals",
+            audience: {
+              "@type": "Audience",
+              audienceType: "Expert Witnesses, Legal Professionals, Attorneys",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

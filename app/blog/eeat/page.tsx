@@ -41,43 +41,45 @@ export default function EEAT() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://latinowebstudio.com/blog/eeat"
-      },
-      "headline": "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers",
-      "description": "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
-      "image": "https://latinowebstudio.com/blog/EEAT-01.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "url": "https://latinowebstudio.com/about"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        }
-      },
-      "datePublished": "2025-05-25",
-      "dateModified": "2025-07-01",
-      "inLanguage": "en",
-      "keywords": "E-E-A-T, trust-building for experts, expert witness marketing, online credibility, SEO for legal professionals, attorney search optimization",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
-      }
-    }),
-  }}
-/>
-
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://latinowebstudio.com/blog/eeat",
+            },
+            headline:
+              "How Expert Witnesses Can Build Trust Online and Get Found by Lawyers",
+            description:
+              "For expert witnesses, especially those operating within medical, forensic, or financial domains, demonstrating credibility online isn't just advantageous—it's essential.",
+            image: "https://latinowebstudio.com/blog/EEAT-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            datePublished: "2025-05-25",
+            dateModified: "2025-07-01",
+            inLanguage: "en",
+            keywords:
+              "E-E-A-T, trust-building for experts, expert witness marketing, online credibility, SEO for legal professionals, attorney search optimization",
+            audience: {
+              "@type": "Audience",
+              audienceType: "Expert Witnesses, Legal Professionals, Attorneys",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

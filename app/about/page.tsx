@@ -35,40 +35,39 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AboutPage",
-              mainEntity: {
-                "@type": "Person",
-                name: "Tadeo Martinez",
-                jobTitle: "Founder",
-                worksFor: {
-                  "@type": "Organization",
-                  name: "Latino Web Studio",
-                  url: "https://latinowebstudio.com",
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
-                  },
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            mainEntity: {
+              "@type": "Person",
+              name: "Tadeo Martinez",
+              jobTitle: "Founder",
+              worksFor: {
+                "@type": "Organization",
+                name: "Latino Web Studio",
+                url: "https://latinowebstudio.com",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
                 },
-                url: "https://latinowebstudio.com/about",
-                image:
-                  "https://latinowebstudio.com/assets/Mark-Tadeo-Latino-Web-Studio.jpg",
-                sameAs: [
-                  "https://www.linkedin.com/in/ted-martinez-seo/",
-                  "https://latinowebstudio.com",
-                ],
               },
-              description:
-                "Learn about Latino Web Studio and founder Tadeo Martinez—experts in SEO and web design for expert witnesses.",
               url: "https://latinowebstudio.com/about",
-            }),
-          }}
-        />
+              image:
+                "https://latinowebstudio.com/assets/Mark-Tadeo-Latino-Web-Studio.jpg",
+              sameAs: [
+                "https://www.linkedin.com/in/ted-martinez-seo/",
+                "https://latinowebstudio.com",
+              ],
+            },
+            description:
+              "Learn about Latino Web Studio and founder Tadeo Martinez—experts in SEO and web design for expert witnesses.",
+            url: "https://latinowebstudio.com/about",
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock

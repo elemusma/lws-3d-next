@@ -41,43 +41,47 @@ export default function ExpertWitnessDirectories() {
   return (
     <>
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://latinowebstudio.com/blog/expert-witness-directories"
-      },
-      "headline": "Expert Witness Directories: How They Work and Why Visibility Matters",
-      "description": "Legal professionals rely heavily on expert witness directories to identify, vet, and retain individuals with specialized knowledge relevant to their cases.",
-      "image": "https://latinowebstudio.com/blog/Expert-Witness-Directories-01.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "url": "https://latinowebstudio.com/about"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Latino Web Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://latinowebstudio.com/assets/LWS-Workspace.png"
-        }
-      },
-      "datePublished": "2025-06-04",
-      "dateModified": "2025-07-01",
-      "inLanguage": "en",
-      "keywords": "expert witness directories, online visibility for experts, legal directories, attorney lead generation, legal marketing strategies, SEO for expert witnesses",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Expert Witnesses, Legal Professionals, Attorneys"
-      }
-    }),
-  }}
-/>
-
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id":
+                "https://latinowebstudio.com/blog/expert-witness-directories",
+            },
+            headline:
+              "Expert Witness Directories: How They Work and Why Visibility Matters",
+            description:
+              "Legal professionals rely heavily on expert witness directories to identify, vet, and retain individuals with specialized knowledge relevant to their cases.",
+            image:
+              "https://latinowebstudio.com/blog/Expert-Witness-Directories-01.png",
+            author: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              url: "https://latinowebstudio.com/about",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Latino Web Studio",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://latinowebstudio.com/assets/LWS-Workspace.png",
+              },
+            },
+            datePublished: "2025-06-04",
+            dateModified: "2025-07-01",
+            inLanguage: "en",
+            keywords:
+              "expert witness directories, online visibility for experts, legal directories, attorney lead generation, legal marketing strategies, SEO for expert witnesses",
+            audience: {
+              "@type": "Audience",
+              audienceType: "Expert Witnesses, Legal Professionals, Attorneys",
+            },
+          }),
+        }}
+      />
 
       {/* Hero Section */}
       <ContentBlock
