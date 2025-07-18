@@ -143,8 +143,26 @@ export default function NewsPage() {
         <div className="lg:w-3/4 w-full lg:pr-10 mb-10 px-4">
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link href="/blog/content-strategy" className="flex flex-wrap">
+              <div className="w-full px-4 py-10">
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  July 17, 2025
+                </p>
+                <h2 className="text-3xl font-proxima-bold group-hover:text-white">
+                  Content Strategy for Expert Witnesses: Enhancing Visibility
+                  and Credibility Online
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          {/* end of news blog post */}
+          {/* start of news blog post */}
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/what-is-cache" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   July 16, 2025
                 </p>
@@ -164,7 +182,7 @@ export default function NewsPage() {
               href="/blog/keyword-cannibalization"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   July 04, 2025
                 </p>
@@ -185,7 +203,7 @@ export default function NewsPage() {
               href="/blog/how-to-improve-page-speed"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   July 03, 2025
                 </p>
@@ -202,7 +220,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/web-traffic" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   July 02, 2025
                 </p>
@@ -222,7 +240,7 @@ export default function NewsPage() {
               href="/blog/google-search-rankings"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 30, 2025
                 </p>
@@ -239,7 +257,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/search-intent" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 14, 2025
                 </p>
@@ -257,7 +275,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/mobile-responsiveness" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 13, 2025
                 </p>
@@ -274,7 +292,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/user-experience-ux" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 08, 2025
                 </p>
@@ -292,7 +310,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/keyword-stuffing" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 06, 2025
                 </p>
@@ -310,7 +328,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/more-cases" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 05, 2025
                 </p>
@@ -331,7 +349,7 @@ export default function NewsPage() {
               href="/blog/expert-witness-directories"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 04, 2025
                 </p>
@@ -352,7 +370,7 @@ export default function NewsPage() {
               href="/blog/court-experience-no-cases"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 03, 2025
                 </p>
@@ -373,7 +391,7 @@ export default function NewsPage() {
               href="/blog/lawyers-experts-websites"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 02, 2025
                 </p>
@@ -390,7 +408,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/attorneys-keywords" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   June 01, 2025
                 </p>
@@ -407,7 +425,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/marketing-strategies" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 31, 2025
                 </p>
@@ -424,7 +442,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/ai-ranking" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 30, 2025
                 </p>
@@ -442,7 +460,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/seo-expert-witnesses" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 29, 2025
                 </p>
@@ -462,7 +480,7 @@ export default function NewsPage() {
               href="/blog/deposition-readiness-checklist"
               className="flex flex-wrap items-stretch"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 28, 2025
                 </p>
@@ -479,7 +497,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/eeat" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 27, 2025
                 </p>
@@ -497,7 +515,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/deceptive-content" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 26, 2025
                 </p>
@@ -515,7 +533,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/schema-markup" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 25, 2025
                 </p>
@@ -532,7 +550,7 @@ export default function NewsPage() {
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/citations-directories" className="flex flex-wrap">
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 24, 2025
                 </p>
@@ -552,7 +570,7 @@ export default function NewsPage() {
               href="/blog/what-how-expert-witness"
               className="flex flex-wrap"
             >
-              <div className="md:w-3/4 w-full px-4 py-10">
+              <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 23, 2025
                 </p>
