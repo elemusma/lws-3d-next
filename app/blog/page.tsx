@@ -143,6 +143,23 @@ export default function NewsPage() {
         <div className="lg:w-3/4 w-full lg:pr-10 mb-10 px-4">
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link href="/blog/keyword-research" className="flex flex-wrap">
+              <div className="w-full px-4 py-10">
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  July 18, 2025
+                </p>
+                <h2 className="text-3xl font-proxima-bold group-hover:text-white">
+                  Keyword Research Strategies for Expert Witness Visibility
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          {/* end of news blog post */}
+          {/* start of news blog post */}
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link href="/blog/content-strategy" className="flex flex-wrap">
               <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
