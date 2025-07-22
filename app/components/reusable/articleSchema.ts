@@ -45,6 +45,6 @@ export const getArticleSchema = ({
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://latinowebstudio.com/blog/${slug}`,
+    "@id": `https://latinowebstudio.com/articles/${slug}`,
   },
 });

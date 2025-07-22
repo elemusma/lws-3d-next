@@ -130,6 +130,18 @@ export default function NavItems() {
                 SEO
               </Link>
             </li>
+            <li key={"/practice-areas/web-design"}>
+              <Link
+                href={"/practice-areas/web-design"}
+                className={`block px-4 py-2 ${
+                  pathname === "/practice-areas/web-design"
+                    ? "bg-white !text-[var(--neutral)] active"
+                    : ""
+                }`}
+              >
+                Web Design
+              </Link>
+            </li>
             <li key={"/practice-areas/ecommerce"}>
               <Link
                 href={"/practice-areas/ecommerce"}

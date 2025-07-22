@@ -73,7 +73,7 @@ export default function PracticeAreasPage() {
         sectionClassName="bg-gray-100 text-black pb-[50px]"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName=""
-        columnClassName="flex flex-wrap lg:flex-row"
+        columnClassName="flex flex-wrap lg:flex-row-reverse"
       >
         <div className="w-1/2 px-4 lg:pt-10 lg:pb-10">
           <h2 className="text-3xl font-bold mb-6">SEO</h2>
@@ -85,6 +85,33 @@ export default function PracticeAreasPage() {
           <div className="relative h-full">
             <Image
               src="/practice-areas/Experts-Search-Engine-Optimization.jpg"
+              width={1000}
+              height={371}
+              className="w-full h-full object-cover object-top lg:absolute top-0 left-0"
+              alt={
+                "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
+              }
+              priority
+            />
+          </div>
+        </div>
+      </ContentBlock>
+      <ContentBlock
+        sectionClassName="bg-gray-100 text-black pb-[50px]"
+        containerClassName="max-w-screen-lg mx-auto"
+        rowClassName=""
+        columnClassName="flex flex-wrap lg:flex-row"
+      >
+        <div className="w-1/2 px-4 lg:pt-10 lg:pb-10">
+          <h2 className="text-3xl font-bold mb-6">Web Design</h2>
+          <Link href="/practice-areas/web-design" className="btn-main mb-4">
+            Show Credibility &amp; Authoritativeness
+          </Link>
+        </div>
+        <div className="w-1/2 px-4 relative">
+          <div className="relative h-full">
+            <Image
+              src="/practice-areas/web-design.jpg"
               width={1000}
               height={371}
               className="w-full h-full object-cover object-top lg:absolute top-0 left-0"
