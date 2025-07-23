@@ -104,6 +104,16 @@ const MobileMenuToggle = () => {
               {/* <ServicesLinks onClick={handleClose} /> */}
             </ul>
             <Link
+              href="/practice-areas/web-design"
+              onClick={handleClose}
+              className="text-xl font-proxima-bold mb-0"
+            >
+              Web Design
+            </Link>
+            <ul className="list-none text-sm mt-0">
+              {/* <ServicesLinks onClick={handleClose} /> */}
+            </ul>
+            <Link
               href="/about"
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0"
@@ -114,11 +124,11 @@ const MobileMenuToggle = () => {
               {/* <IndustriesLinks onClick={handleClose} /> */}
             </ul>
             <Link
-              href="/blog"
+              href="/articles"
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0"
             >
-              Blog
+              Articles
             </Link>
             <div style={{ height: "25px" }}></div>
             <div className="lg:w-1/5 w-7/12 pr-4 flex justify-end">

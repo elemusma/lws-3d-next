@@ -91,7 +91,7 @@ export default function NavItems() {
             href="/practice-areas"
             className={`flex items-center gap-1 ${
               pathname.startsWith("/practice-areas")
-                ? "text-secondary font-bold active-with-children"
+                ? "text-secondary font-bold active with-children"
                 : ""
             }`}
             style={{}}
@@ -160,7 +160,9 @@ export default function NavItems() {
           <Link
             href="/about"
             className={`flex items-center gap-1 ${
-              pathname.startsWith("/about") ? "text-secondary font-bold" : ""
+              pathname.startsWith("/about")
+                ? "text-secondary font-bold active"
+                : ""
             }`}
             style={{}}
           >
@@ -169,13 +171,15 @@ export default function NavItems() {
         </li>
         <li className="main-title relative text-left">
           <Link
-            href="/blog"
+            href="/articles"
             className={`flex items-center gap-1 ${
-              pathname.startsWith("/blog") ? "text-secondary font-bold" : ""
+              pathname.startsWith("/articles")
+                ? "text-secondary font-bold active"
+                : ""
             }`}
             style={{}}
           >
-            Blog
+            Articles
           </Link>
         </li>
       </ul>

@@ -107,6 +107,65 @@ export default function PracticeAreasWebDesign() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Why is web design important for expert witnesses?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A well-designed website establishes credibility, builds trust, and helps expert witnesses showcase their qualifications and expertise to attorneys. It ensures your content is easy to find, your services are clearly communicated, and your site appears professional and authoritative—key factors in getting more case inquiries.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Will web design be replaced by AI?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AI tools can assist with parts of the web design process, like layout suggestions or content generation. However, for expert witnesses, a strategic, human-centered approach is critical. Your website must reflect your professional reputation, comply with legal industry nuances, and convert attorney visitors—tasks that still require expert web designers.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Are web design and web development the same?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. Web design focuses on the look, feel, and user experience of your site—layout, branding, and content structure. Web development brings those designs to life through coding and technical functionality. For expert witnesses, both are essential: design makes you look like the authority and expert in your field to lawyers, development ensures your website loads and works properly on every browser and that lawyers can reach out to you easily.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does web design impact content marketing for expert witnesses?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Good web design enhances how your content is consumed. A clean, responsive layout makes it easy for attorneys to find your case studies, CV, news exposure and blog articles. Strategic design boosts engagement, supports SEO, and drives inquiries—helping your content marketing efforts actually convert.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are web design principles, and why do they matter for expert witnesses?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Web design principles include clarity, simplicity, mobile responsiveness, accessibility, and visual hierarchy. For expert witnesses, these principles ensure your site is easy to navigate, visually trustworthy, and optimized to guide lawyers toward contacting you for their cases.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Which web design company is best for expert witnesses?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Latino Web Studio specializes in web design and SEO for expert witnesses. We understand the legal industry and how to position your expertise to attract attorneys. Our websites are built to increase visibility, trust, and case inquiries—so you get more of the right opportunities. All while making sure your marketing efforts cannot be used against you in deposition.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* 9747469734196890752 */}
       {/* Hero Section */}
@@ -555,6 +614,71 @@ export default function PracticeAreasWebDesign() {
         />
       </ContentBlock>
       <CTA />
+      <ContentBlock
+        sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px] single-post"
+        containerClassName="max-w-screen-lg mx-auto"
+        rowClassName="flex"
+        columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
+      >
+        <h2>Frequently Asked Questions</h2>
+        <h3>Why is web design important for expert witnesses?</h3>
+        <p>
+          A well-designed website establishes credibility, builds trust, and
+          helps expert witnesses showcase their qualifications and expertise to
+          attorneys. It ensures your content is easy to find, your services are
+          clearly communicated, and your site appears professional and
+          authoritative—key factors in getting more case inquiries.
+        </p>
+        <h3>Will web design be replaced by AI?</h3>
+        <p>
+          AI tools can assist with parts of the web design process, like layout
+          suggestions or content generation. However, for expert witnesses, a
+          strategic, human-centered approach is critical. Your website must
+          reflect your professional reputation, comply with legal industry
+          nuances, and convert attorney visitors—tasks that still require expert
+          web designers.
+        </p>
+        <h3>Are web design and web development the same?</h3>
+        <p>
+          No. Web design focuses on the look, feel, and user experience of your
+          site—layout, branding, and content structure. Web development brings
+          those designs to life through coding and technical functionality. For
+          expert witnesses, both are essential: design makes you look like the
+          authority and expert in your field to lawyers, development ensures
+          your website loads and works properly on every browser and that
+          lawyers can reach out to you easily.
+        </p>
+        <h3>
+          How does web design impact content marketing for expert witnesses?
+        </h3>
+        <p>
+          Good web design enhances how your content is consumed. A clean,
+          responsive layout makes it easy for attorneys to find your case
+          studies, CV, news exposure and blog articles. Strategic design boosts
+          engagement, supports SEO, and drives inquiries—helping your content
+          marketing efforts actually convert.
+        </p>
+        <h3>
+          What are web design principles, and why do they matter for expert
+          witnesses?
+        </h3>
+        <p>
+          Web design principles include clarity, simplicity, mobile
+          responsiveness, accessibility, and visual hierarchy. For expert
+          witnesses, these principles ensure your site is easy to navigate,
+          visually trustworthy, and optimized to guide lawyers toward contacting
+          you for their cases.
+        </p>
+        <h3>Which web design company is best for expert witnesses?</h3>
+        <p>
+          Latino Web Studio specializes in web design and SEO for expert
+          witnesses. We understand the legal industry and how to position your
+          expertise to attract attorneys. Our websites are built to increase
+          visibility, trust, and case inquiries—so you get more of the right
+          opportunities. All while making sure your marketing efforts cannot be
+          used against you in deposition.
+        </p>
+      </ContentBlock>
     </>
   );
 }

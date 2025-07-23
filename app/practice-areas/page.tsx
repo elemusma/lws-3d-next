@@ -2,6 +2,8 @@ import Link from "next/link";
 import ContentBlock from "../components/content-block";
 import type { Metadata } from "next";
 import Image from "next/image";
+import "@/app/styles/img.scss"; // Import styles for practice areas
+import Cta from "../components/reusable/cta";
 
 export const metadata: Metadata = {
   title: "Practice Areas | Latino Web Studio – SEO & eCommerce Development",
@@ -62,92 +64,112 @@ export default function PracticeAreasPage() {
       />
 
       <ContentBlock
-        sectionClassName="bg-gray-100 text-black pt-[125px] pb-[25px]"
+        sectionClassName="text-black pt-[125px] pb-[25px]"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
-        columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
+        columnClassName="text-center"
       >
-        <h1 className="text-3xl font-bold mb-6">Practice Areas</h1>
+        <h1 className="text-3xl font-bold mb-6">
+          What We Do to Help You Get Found by Attorneys
+        </h1>
+        <p>
+          We help expert witnesses get found by attorneys through strategic SEO
+          and professional web design.
+        </p>
       </ContentBlock>
       <ContentBlock
-        sectionClassName="bg-gray-100 text-black pb-[50px]"
+        sectionClassName="text-black pb-[50px]"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName=""
-        columnClassName="flex flex-wrap lg:flex-row-reverse"
+        columnClassName="flex flex-wrap items-center"
       >
-        <div className="w-1/2 px-4 lg:pt-10 lg:pb-10">
-          <h2 className="text-3xl font-bold mb-6">SEO</h2>
-          <Link href="/practice-areas/seo" className="btn-main mb-4">
-            Get Found Online
+        <div className="md:w-1/2 w-full px-4">
+          <div className="img-hover overflow-hidden">
+            <Link href="/practice-areas/seo">
+              <Image
+                src="/practice-areas/SEO-Attorney-Interest.jpg"
+                width={2560}
+                height={1134}
+                className="w-full h-auto mb-0"
+                alt={
+                  "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
+                }
+                priority
+              />
+            </Link>
+          </div>
+          <Link href="/practice-areas/seo">
+            <div className="gradient-background p-4 text-white relative">
+              <div className="h-[2px] bg-white w-100 mt-3 mb-4"></div>
+              <h2 className="text-3xl font-bold mb-0">SEO</h2>
+              <small>Get Found by Attorneys</small>
+              <span className="text-xl float-right">&rarr;</span>
+            </div>
           </Link>
         </div>
-        <div className="w-1/2 px-4 relative">
+        <div className="md:w-1/2 w-full px-4 relative md:top-[70px] md:pt-0 pt-10">
           <div className="relative h-full">
-            <Image
-              src="/practice-areas/Experts-Search-Engine-Optimization.jpg"
-              width={1000}
-              height={371}
-              className="w-full h-full object-cover object-top lg:absolute top-0 left-0"
-              alt={
-                "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
-              }
-              priority
-            />
+            <div className="img-hover overflow-hidden">
+              <Link href="/practice-areas/web-design">
+                <Image
+                  src="/practice-areas/web-design.jpg"
+                  width={1000}
+                  height={371}
+                  className="w-full h-auto mb-0"
+                  alt={
+                    "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
+                  }
+                  priority
+                />
+              </Link>
+            </div>
+            <Link href="/practice-areas/web-design">
+              <div className="gradient-background p-4 text-white">
+                <div className="h-[2px] bg-white w-100 mt-3 mb-4"></div>
+                <h2 className="text-3xl font-bold mb-0">Web Design</h2>
+                <small>Show Credibility &amp; Authoritativeness</small>
+                <span className="text-xl float-right">&rarr;</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-1/2 w-full px-4 relative md:pt-10 pt-10">
+          <div className="relative h-full">
+            <div className="img-hover overflow-hidden">
+              <Link href="/practice-areas/ecommerce">
+                <Image
+                  src="/practice-areas/ecommerce/e-commerce.jpg"
+                  width={1800}
+                  height={500}
+                  className="w-full h-[256px] object-cover mb-0"
+                  alt={
+                    "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
+                  }
+                  priority
+                />
+              </Link>
+            </div>
+            <Link href="/practice-areas/web-design">
+              <div className="gradient-background p-4 text-white">
+                <div className="h-[2px] bg-white w-100 mt-3 mb-4"></div>
+                <h2 className="text-3xl font-bold mb-0">eCommerce</h2>
+                <small>Build a Custom eCommerce Platform</small>
+                <span className="text-xl float-right">&rarr;</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-1/2 w-full px-4 relative p-20 text-center">
+          <div className="relative h-full">
+            <Link href="#schedule" className="btn-main">
+              Get More Cases and Get Found by Attorneys
+            </Link>
           </div>
         </div>
       </ContentBlock>
-      <ContentBlock
-        sectionClassName="bg-gray-100 text-black pb-[50px]"
-        containerClassName="max-w-screen-lg mx-auto"
-        rowClassName=""
-        columnClassName="flex flex-wrap lg:flex-row"
-      >
-        <div className="w-1/2 px-4 lg:pt-10 lg:pb-10">
-          <h2 className="text-3xl font-bold mb-6">Web Design</h2>
-          <Link href="/practice-areas/web-design" className="btn-main mb-4">
-            Show Credibility &amp; Authoritativeness
-          </Link>
-        </div>
-        <div className="w-1/2 px-4 relative">
-          <div className="relative h-full">
-            <Image
-              src="/practice-areas/web-design.jpg"
-              width={1000}
-              height={371}
-              className="w-full h-full object-cover object-top lg:absolute top-0 left-0"
-              alt={
-                "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
-              }
-              priority
-            />
-          </div>
-        </div>
-      </ContentBlock>
-      <ContentBlock
-        sectionClassName="bg-gray-100 text-black pb-[50px]"
-        containerClassName="max-w-screen-lg mx-auto"
-        rowClassName=""
-        columnClassName="flex flex-wrap lg:flex-row-reverse"
-      >
-        <div className="w-1/2 px-4 lg:pt-10 lg:pb-10">
-          <h2 className="text-3xl font-bold mb-6">eCommerce</h2>
-          <Link href="/practice-areas/ecommerce" className="btn-main mb-4">
-            Build a Custom eCommerce Platform
-          </Link>
-        </div>
-        <div className="w-1/2 px-4 relative">
-          <div className="relative h-full">
-            <Image
-              src="/practice-areas/ecommerce/e-commerce.jpg"
-              width={1800}
-              height={500}
-              className="w-full h-full object-cover object-top lg:absolute top-0 left-0"
-              alt={"Enterprise eCommerce Platforms for Retail &amp; Wholesale"}
-              priority
-            />
-          </div>
-        </div>
-      </ContentBlock>
+      <div className="bg-gray-100">
+        <Cta />
+      </div>
     </>
   );
 }

@@ -24,7 +24,7 @@ const PricingTableWebDesign = () => {
       border: "border-[#b5539f]",
       headerBg: "bg-[#b5539f]",
       headerColor: "text-black",
-      link: "#starter",
+      link: "https://buy.stripe.com/8x2dR8b7G3Bn9eH5kd7wA1a",
     },
     {
       title: "Intermediate",
@@ -49,7 +49,7 @@ const PricingTableWebDesign = () => {
       border: "border-[#fdb716]",
       headerBg: "bg-[#fdb716]",
       headerColor: "text-black",
-      link: "#intermediate",
+      link: "https://buy.stripe.com/8x28wO7Vu6Nz3UnaEx7wA1b",
     },
     {
       title: "Signature",
@@ -75,7 +75,7 @@ const PricingTableWebDesign = () => {
       border: "border-[#1f184a]",
       headerBg: "bg-[#1f184a]",
       headerColor: "text-white",
-      link: "#signature",
+      link: "https://buy.stripe.com/dRm7sKgs02xjduX9At7wA1c",
     },
   ];
 
