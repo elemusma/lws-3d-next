@@ -4,7 +4,7 @@ const PricingTable = () => {
   const plans = [
     {
       title: "Starter",
-      price: "$1,000.00",
+      price: "$1,250.00",
       description: "Included on Starter",
       features: [
         "4 articles",
@@ -32,9 +32,9 @@ const PricingTable = () => {
         "Web Hosting",
         "Domain Renewal",
         "Free Website",
-        "2 Backlinks per Year",
+        "CRM Implementation",
       ],
-      note: "Save $4,000",
+      note: "Save $3,000",
       color: "text-[#fdb716]",
       border: "border-[#fdb716]",
       headerBg: "bg-[#fdb716]",
@@ -45,7 +45,12 @@ const PricingTable = () => {
       title: "Signature",
       price: "$2,000.00",
       description: "Included on Premium",
-      features: ["Everything in Intermediate", "10 articles"],
+      features: [
+        "Everything in Intermediate",
+        "10 articles",
+        "Directory Cleanup & Optimization",
+        "Local & National News Feed Implementation",
+      ],
       note: "Save $7,500",
       color: "text-[#1f184a]",
       border: "border-[#1f184a]",
