@@ -158,7 +158,7 @@ export default function KeywordCannibalization() {
             search engines can&apos;t determine which page to prioritize,
             rankings for all involved pages can suffer.
           </p>
-          <h3 className="text-xl font-medium text-gray-800 mb-2">
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">
             Keyword Cannibalization Process
           </h3>
           <Image
