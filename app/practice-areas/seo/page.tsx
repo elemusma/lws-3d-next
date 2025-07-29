@@ -579,11 +579,11 @@ export default function PracticeAreasSEO() {
 
           <div>
             <h3 className="text-xl" style={{ margin: "0px" }}>
-              Conversion Design
+              Website Traffic
             </h3>
             <p>
-              Guide attorneys to contact you faster with clear calls-to-action
-              and persuasive layout choices.
+              Drive more website traffic from Google, AI, and the online
+              searches attorneys are doing.
             </p>
           </div>
         </div>
@@ -611,11 +611,11 @@ export default function PracticeAreasSEO() {
 
           <div>
             <h3 className="text-xl" style={{ margin: "0px" }}>
-              Ongoing Support
+              User Engagement
             </h3>
             <p>
-              Stay competitive with monthly updates, performance tracking, and
-              SEO content improvements.
+              Keep attorneys engaged from the first click and prevent them from
+              bouncing quickly.
             </p>
           </div>
         </div>
