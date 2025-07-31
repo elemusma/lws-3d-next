@@ -114,6 +114,26 @@ const MobileMenuToggle = () => {
               {/* <ServicesLinks onClick={handleClose} /> */}
             </ul>
             <Link
+              href="/practice-areas/ada-compliance"
+              onClick={handleClose}
+              className="text-xl font-proxima-bold mb-0"
+            >
+              ADA Compliance
+            </Link>
+            <ul className="list-none text-sm mt-0">
+              {/* <ServicesLinks onClick={handleClose} /> */}
+            </ul>
+            <Link
+              href="/practice-areas/ecommerce"
+              onClick={handleClose}
+              className="text-xl font-proxima-bold mb-0"
+            >
+              eCommerce
+            </Link>
+            <ul className="list-none text-sm mt-0">
+              {/* <ServicesLinks onClick={handleClose} /> */}
+            </ul>
+            <Link
               href="/about"
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0"

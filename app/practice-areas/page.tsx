@@ -8,11 +8,11 @@ import Cta from "../components/reusable/cta";
 export const metadata: Metadata = {
   title: "Practice Areas | Latino Web Studio – SEO & eCommerce Development",
   description:
-    "Explore our SEO and custom web development services for expert witnesses and enterprise eCommerce businesses. Scalable platforms and content strategies tailored to your goals.",
+    "Explore our SEO and ADA Compliant web design services for expert witnesses and enterprise eCommerce businesses. Scalable platforms and content strategies tailored to your goals.",
   openGraph: {
     title: "Practice Areas | Latino Web Studio – SEO & eCommerce Development",
     description:
-      "We build fast-loading websites, high-converting SEO strategies, and custom eCommerce platforms for expert witnesses and retail/wholesale businesses.",
+      "Explore our SEO and ADA Compliant web design services for expert witnesses and enterprise eCommerce businesses. Scalable platforms and content strategies tailored to your goals.",
     url: "https://latinowebstudio.com/practice-areas",
     type: "website",
     images: [
@@ -73,8 +73,9 @@ export default function PracticeAreasPage() {
           What We Do to Help You Get Found by Attorneys
         </h1>
         <p>
-          We help expert witnesses get found by attorneys through strategic SEO
-          and professional web design.
+          Explore our SEO and ADA Compliant web design services for expert
+          witnesses and enterprise eCommerce businesses. Scalable platforms and
+          content strategies tailored to your goals.
         </p>
       </ContentBlock>
       <ContentBlock
@@ -83,6 +84,7 @@ export default function PracticeAreasPage() {
         rowClassName=""
         columnClassName="flex flex-wrap items-center"
       >
+        {/* start of col */}
         <div className="md:w-1/2 w-full px-4">
           <div className="img-hover overflow-hidden">
             <Link href="/practice-areas/seo">
@@ -107,12 +109,14 @@ export default function PracticeAreasPage() {
             </div>
           </Link>
         </div>
+        {/* end of col */}
+        {/* start of col */}
         <div className="md:w-1/2 w-full px-4 relative md:top-[70px] md:pt-0 pt-10">
           <div className="relative h-full">
             <div className="img-hover overflow-hidden">
               <Link href="/practice-areas/web-design">
                 <Image
-                  src="/practice-areas/web-design.jpg"
+                  src="/practice-areas/Denver-Web-Design.jpg"
                   width={1000}
                   height={371}
                   className="w-full h-auto mb-0"
@@ -133,7 +137,37 @@ export default function PracticeAreasPage() {
             </Link>
           </div>
         </div>
-        <div className="md:w-1/2 w-full px-4 relative md:pt-10 pt-10">
+        {/* end of col */}
+        {/* start of col */}
+        <div className="md:w-1/2 w-full px-4 relative md:top-[30px] md:pt-0 pt-10">
+          <div className="relative h-full">
+            <div className="img-hover overflow-hidden">
+              <Link href="/practice-areas/web-design">
+                <Image
+                  src="/practice-areas/ADA-Compliance-SEO-Results-SEC-Randy.jpg"
+                  width={1000}
+                  height={371}
+                  className="w-full h-auto mb-0"
+                  alt={
+                    "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments ADA Compliance"
+                  }
+                  priority
+                />
+              </Link>
+            </div>
+            <Link href="/practice-areas/ada-compliance">
+              <div className="gradient-background p-4 text-white">
+                <div className="h-[2px] bg-white w-100 mt-3 mb-4"></div>
+                <h2 className="text-3xl font-bold mb-0">ADA Compliance</h2>
+                <small>Be the Inclusive Expert</small>
+                <span className="text-xl float-right">&rarr;</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+        {/* end of col */}
+        {/* start of col */}
+        <div className="md:w-1/2 w-full px-4 relative md:top-[100px] md:pt-10 pt-10">
           <div className="relative h-full">
             <div className="img-hover overflow-hidden">
               <Link href="/practice-areas/ecommerce">
@@ -142,9 +176,7 @@ export default function PracticeAreasPage() {
                   width={1800}
                   height={500}
                   className="w-full h-[256px] object-cover mb-0"
-                  alt={
-                    "SEO-Expert-Witness-Traffic-Increase-Lawyers-Retainers-Assignments"
-                  }
+                  alt={"SEO-Build a Custom eCommerce Platform"}
                   priority
                 />
               </Link>
@@ -159,7 +191,8 @@ export default function PracticeAreasPage() {
             </Link>
           </div>
         </div>
-        <div className="md:w-1/2 w-full px-4 relative p-20 text-center">
+        {/* end of col */}
+        <div className="w-full px-4 relative md:pt-[150px] pt-20 pb-20 px-20 text-center">
           <div className="relative h-full">
             <Link href="#schedule" className="btn-main">
               Get More Cases and Get Found by Attorneys

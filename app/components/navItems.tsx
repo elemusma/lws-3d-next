@@ -142,6 +142,18 @@ export default function NavItems() {
                 Web Design
               </Link>
             </li>
+            <li key={"/practice-areas/ada-compliance"}>
+              <Link
+                href={"/practice-areas/ada-compliance"}
+                className={`block px-4 py-2 ${
+                  pathname === "/practice-areas/ada-compliance"
+                    ? "bg-white !text-[var(--neutral)] active"
+                    : ""
+                }`}
+              >
+                ADA Compliance
+              </Link>
+            </li>
             <li key={"/practice-areas/ecommerce"}>
               <Link
                 href={"/practice-areas/ecommerce"}
