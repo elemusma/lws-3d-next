@@ -1,0 +1,18 @@
+.practice-area-col {
+  h2,
+  small,
+  span,
+  .border-line {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    h2,
+    small,
+    span {
+      color: var(--accent-primary);
+    }
+    .border-line {
+      background: var(--accent-primary);
+    }
+  }
+}

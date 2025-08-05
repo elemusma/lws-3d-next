@@ -11,6 +11,8 @@ import Main from "./js/main";
 import "./styles/body.scss";
 import ContentBlock from "./components/content-block";
 import GoogleReviews from "./components/reusable/GoogleReviews";
+import { Phone } from "./components/globals";
+
 // import ContentBlock from "./components/content-block";
 
 export default function Home() {
@@ -102,8 +104,8 @@ export default function Home() {
                 {/* <Login /> */}
                 {/* </div> */}
                 <div>
-                  <a href="#schedule" className="btn-main">
-                    Get More Cases
+                  <a href={`tel:+1${Phone}`} className="btn-main">
+                    Get More Cases - {Phone}
                   </a>
                 </div>
               </div>

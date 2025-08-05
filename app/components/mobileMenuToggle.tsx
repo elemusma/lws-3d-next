@@ -3,7 +3,7 @@ import Link from "next/link";
 // import { usePathname } from "next/navigation";
 import { useState } from "react";
 // import ButtonSquare from "./buttons/btn-square";
-import { Company } from "./globals";
+import { Company, Phone } from "./globals";
 import Logo from "./logo";
 // import AboutLinks from "./reusable/nav/aboutLinks";
 // import CareersLinks from "./reusable/nav/careersLinks";
@@ -151,9 +151,9 @@ const MobileMenuToggle = () => {
               Articles
             </Link>
             <div style={{ height: "25px" }}></div>
-            <div className="lg:w-1/5 w-7/12 pr-4 flex justify-end">
+            <div className="w-full pr-4 flex justify-end">
               <a
-                href="#schedule"
+                href={`tel:+1${Phone}`}
                 className="p-1 flex items-center btn-main btn-nav justify-center"
                 style={{
                   height: 63,
@@ -164,7 +164,7 @@ const MobileMenuToggle = () => {
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
-                Get More Cases
+                Get More Cases - {Phone}
               </a>
             </div>
             <div style={{ height: "25px" }}></div>
