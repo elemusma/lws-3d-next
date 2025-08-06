@@ -183,6 +183,19 @@ export default function NavItems() {
         </li>
         <li className="main-title relative text-left">
           <Link
+            href="/podcast"
+            className={`flex items-center gap-1 ${
+              pathname.startsWith("/podcast")
+                ? "text-secondary font-bold active"
+                : ""
+            }`}
+            style={{}}
+          >
+            Podcast
+          </Link>
+        </li>
+        <li className="main-title relative text-left">
+          <Link
             href="/articles"
             className={`flex items-center gap-1 ${
               pathname.startsWith("/articles")

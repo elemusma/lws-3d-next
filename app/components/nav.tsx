@@ -36,7 +36,7 @@ const Nav = () => {
               {/* <p>menu toggle here</p> */}
               <MobileMenuToggle />
             </div>
-            <div className="lg:w-5/12 w-1/6 px-4 justify-end items-center hidden lg:flex">
+            <div className="lg:w-5/12 w-1/6 justify-end items-center hidden lg:flex">
               <NavItems />
               {/* <Link href="/practice-areas/seo" className="px-4">
                 <span style={{ textShadow: "1px 1px 1px white" }}>SEO</span>

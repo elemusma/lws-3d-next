@@ -141,6 +141,16 @@ const MobileMenuToggle = () => {
               About
             </Link>
             <ul className="list-none text-sm mt-0">
+              {/* <ServicesLinks onClick={handleClose} /> */}
+            </ul>
+            <Link
+              href="/podcast"
+              onClick={handleClose}
+              className="text-xl font-proxima-bold mb-0"
+            >
+              Podcast
+            </Link>
+            <ul className="list-none text-sm mt-0">
               {/* <IndustriesLinks onClick={handleClose} /> */}
             </ul>
             <Link
