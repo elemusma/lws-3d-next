@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://latinowebstudio.com/podcast/Podcast-Attorneys-Experts.jpg",
+        url: "https://latinowebstudio.com/podcast/Podcast.jpg",
         width: 1200,
         height: 630,
         alt: "Inside the Attorney's Mind Podcast - Latino Web Studio",
@@ -59,7 +59,7 @@ export default function PracticeAreasADA() {
                 "A podcast helping expert witnesses understand how attorneys think. Each episode features real lawyers discussing how they choose and work with expert witnesses.",
               genre: ["Legal", "Education", "Professional Development"],
               image:
-                "https://latinowebstudio.com/podcast/Podcast-Attorneys-Experts.jpg",
+                "https://latinowebstudio.com/podcast/Podcast.jpg",
               creator: {
                 "@type": "Organization",
                 name: "Latino Web Studio",
@@ -193,10 +193,10 @@ export default function PracticeAreasADA() {
           </div>
           <div className="w-2/3 mx-auto mt-2">
             <Image
-              src="/podcast/Podcast-Attorneys-Experts.jpg"
+              src="/podcast/Podcast.jpg"
               width={1365}
               height={1024}
-              alt={"SEO-Results-SEC-Randy-ADA-Compliance"}
+              alt={"Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez with Steve Paul from SSP Vehicle Litigation Services"}
               priority
             />
           </div>
