@@ -58,8 +58,7 @@ export default function PracticeAreasADA() {
               description:
                 "A podcast helping expert witnesses understand how attorneys think. Each episode features real lawyers discussing how they choose and work with expert witnesses.",
               genre: ["Legal", "Education", "Professional Development"],
-              image:
-                "https://latinowebstudio.com/podcast/Podcast.jpg",
+              image: "https://latinowebstudio.com/podcast/Podcast.jpg",
               creator: {
                 "@type": "Organization",
                 name: "Latino Web Studio",
@@ -196,7 +195,9 @@ export default function PracticeAreasADA() {
               src="/podcast/Podcast.jpg"
               width={1365}
               height={1024}
-              alt={"Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez with Steve Paul from SSP Vehicle Litigation Services"}
+              alt={
+                "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez with Steve Paul from SSP Vehicle Litigation Services"
+              }
               priority
             />
           </div>
