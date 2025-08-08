@@ -334,7 +334,11 @@ export default function SearchEngines() {
             <Link href="https://latinowebstudio.com/blog/content-strategy">
               content strategies
             </Link>{" "}
-            that attract attorney search behavior.
+            that attract{" "}
+            <Link href="https://latinowebstudio.com/blog/search-intent">
+              attorney search behavior
+            </Link>
+            .
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-4">
@@ -347,11 +351,8 @@ export default function SearchEngines() {
             results.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            Staying ahead means designing for{" "}
-            <Link href="https://latinowebstudio.com/blog/search-intent">
-              user intent-rich queries
-            </Link>
-            , accessibility across devices, and AI-readable structures that
+            Staying ahead means designing for user intent-rich queries ,
+            accessibility across devices, and AI-readable structures that
             support featured placements or direct answers.
           </p>
 
