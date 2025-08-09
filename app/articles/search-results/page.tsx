@@ -182,7 +182,7 @@ export default function SearchIntent() {
           columnClassName="flex flex-col lg:flex-row items-start"
         >
           <div className="lg:w-3/4 w-full lg:pr-8 px-4">
-            <div className="prose prose-lg mx-auto max-w-3xl px-4 py-12 text-gray-900">
+            <div className="prose prose-lg mx-auto max-w-3xl px-4 text-gray-900">
               {" "}
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-6">
                 Search Results: How SERPs Work and How to Win Visibility
