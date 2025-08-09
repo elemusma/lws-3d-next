@@ -54,6 +54,11 @@ function Footer() {
               <Link className="block" target="_blank" href={`tel:+1${Phone}`}>
                 {Phone}
               </Link>
+              <span>Denver, CO 80210</span>
+              <div></div>
+              <a href="https://g.page/r/CbF4CHrc1dblEBM/review" target="_blank">
+                Leave a Google Review
+              </a>
             </div>
           </div>
         </div>
