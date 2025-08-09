@@ -116,6 +116,7 @@ export default function SearchIntent() {
               width={1900}
               height={1185}
               alt={"Search Intent Strategy for Expert Witnesses"}
+              className="mb-4"
             />
             <p>
               When someone types a question into a search engine, they&apos;re

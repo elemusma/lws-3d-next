@@ -213,6 +213,7 @@ export default function SearchIntent() {
                 width={1000}
                 height={667}
                 alt={"Search Results: How SERPs Work and How to Win Visibility"}
+                className="mb-4"
               />
               <p className="mb-4">
                 A modern SERP is not only a list of web pages. It can also
