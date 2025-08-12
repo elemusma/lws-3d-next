@@ -4,7 +4,7 @@ const PricingTable = () => {
   const plans = [
     {
       title: "Starter",
-      price: "$1,250.00",
+      price: "$1,500.00",
       description: "Included on Starter",
       features: [
         "4 articles",
@@ -23,7 +23,7 @@ const PricingTable = () => {
     },
     {
       title: "Intermediate",
-      price: "$1,500.00",
+      price: "$2,000.00",
       description: "Included on Intermediate",
       features: [
         "Everything in Starter",
@@ -43,7 +43,7 @@ const PricingTable = () => {
     },
     {
       title: "Signature",
-      price: "$2,000.00",
+      price: "$2,500.00",
       description: "Included on Premium",
       features: [
         "Everything in Intermediate",
