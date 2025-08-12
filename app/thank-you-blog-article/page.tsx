@@ -23,12 +23,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ThankYouBlogArticle({
+type Search = Record<string, string | string[] | undefined>;
+
+export default async function ThankYouBlogArticle({
   searchParams,
 }: {
-  searchParams: { name?: string };
+  // 👇 note Promise<...>
+  searchParams?: Promise<Search>;
 }) {
-  const name = searchParams?.name ?? "";
+  const sp = (await searchParams) ?? {};
+  const rawName = sp.name;
+  const name = Array.isArray(rawName) ? rawName[0] : rawName ?? "";
 
   // Delivery in 3 days
   const deliveryDate = new Date();
