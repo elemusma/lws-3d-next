@@ -1,22 +1,23 @@
 // import { Inspiration } from "next/font/google";
-import CalendlyWidget from "../components/calendly";
+// import CalendlyWidget from "../components/calendly";
 // import Footer from "../components/footer";
 import Main from "../js/main";
 import type { Metadata } from "next";
 import InspirationalQuote from "../components/quote";
+import ContactFormFreeBlogArticle from "../components/forms/ContactFormFreeBlogArticle";
 
 export const metadata: Metadata = {
-  title: "Get Started | Latino Web Studio",
+  title: "Free Blog Article | Latino Web Studio",
   description:
-    "Schedule a call to explore how Latino Web Studio can help grow your business through web design, SEO, and automation.",
+    "Get a professionally written article that showcases your expertise, boosts your visibility online, and helps attorneys find you for free.",
   alternates: {
     canonical: "https://latinowebstudio.com/get-started",
   },
   openGraph: {
-    title: "Get Started | Latino Web Studio",
+    title: "Free Blog Article | Latino Web Studio",
     description:
-      "Schedule a call to explore how Latino Web Studio can help grow your business through web design, SEO, and automation.",
-    url: "https://latinowebstudio.com/get-started",
+      "Get a professionally written article that showcases your expertise, boosts your visibility online, and helps attorneys find you for free.",
+    url: "https://latinowebstudio.com/free-blog-article",
     type: "website",
   },
 };
@@ -33,7 +34,7 @@ export default function GetStarted() {
             name: "Get Started | Latino Web Studio",
             url: "https://latinowebstudio.com/get-started",
             description:
-              "Schedule a call to explore how Latino Web Studio can help grow your business through web design, SEO, and automation.",
+              "Get a professionally written article that showcases your expertise, boosts your visibility online, and helps attorneys find you for free.",
             mainEntity: {
               "@type": "Action",
               name: "Schedule a Consultation",
@@ -65,26 +66,24 @@ export default function GetStarted() {
 
       <Main />
       <section
-        style={{ paddingTop: 150, paddingBottom: 100 }}
+        style={{ paddingTop: 85, paddingBottom: 100 }}
         className="relative"
         id="schedule"
       >
-        <div className="container mx-auto px-4">
-          <div
-            className="flex justify-center -mx-4"
-            style={{ flexWrap: "wrap" }}
-          >
-            <div className="px-4 text-center lg:w-1/2">
-              <h1>How to Get Started</h1>
-              <p>
-                Schedule a time below to discuss ideas to help you save time
-                while growing your business.
-              </p>
-            </div>
-            <div className="px-4 text-center w-full" id="calendar">
-              {/* <!-- Calendly inline widget begin --> */}
-              <CalendlyWidget />
-              {/* <!-- Calendly inline widget end --> */}
+        <div className="max-w-screen-lg mx-auto">
+          <div className="flex justify-center">
+            <div className="w-full">
+              <div className="px-4 text-center">
+                <h1>Get Free Blog Article</h1>
+                <p>
+                  Get a professionally written article that showcases your
+                  expertise, boosts your visibility online, and helps attorneys
+                  find you for free.
+                </p>
+              </div>
+              <div className="px-4 text-center w-full" id="calendar">
+                <ContactFormFreeBlogArticle />
+              </div>
             </div>
           </div>
         </div>

@@ -12,6 +12,8 @@ import "./styles/body.scss";
 import ContentBlock from "./components/content-block";
 import GoogleReviews from "./components/reusable/GoogleReviews";
 import { Phone } from "./components/globals";
+import InspirationalQuote from "./components/quote";
+import Link from "next/link";
 
 // import ContentBlock from "./components/content-block";
 
@@ -91,22 +93,42 @@ export default function Home() {
               <div className="w-full px-4 text-center">
                 <div className="lg:w-full w-full">
                   <h1 className="text-secondary animated-heading">
-                    Get More Cases - Get Found by Attorneys
+                    Get More Cases and Get Found by Attorneys Consistently
+                    Without Paying for More Directories
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 {/* <div className="lg:w-9/12 w-1/9"> */}
                 <p style={{ marginTop: 15, marginBottom: 15 }}>
-                  We help expert witnesses attract more high-value cases by
-                  implementing a targeted, fact-based content strategy without
-                  risking damaging content being used against you in deposition.
+                  Tadeo (Ted) Martinez helps expert witnesses attract more
+                  high-value cases by implementing a targeted, fact-based
+                  content strategy that gets you found online by attorneys
+                  without risking damaging content being used against you in
+                  deposition.
                 </p>
                 {/* <Login /> */}
                 {/* </div> */}
                 <div>
-                  <a href={`tel:+1${Phone}`} className="btn-main">
-                    Get More Cases - {Phone}
-                  </a>
+                  <Link
+                    href={`/free-blog-article`}
+                    className="btn-main mx-2 blog-article"
+                  >
+                    Get Free Blog Article
+                  </Link>
+                  <Link
+                    href={`/podcast`}
+                    className="btn-main secondary mx-2 podcast-guest-attorney"
+                  >
+                    Podcast Guest Attorney
+                  </Link>
+                  <div className="">
+                    <a
+                      href={`tel:+1${Phone}`}
+                      className="text-link inline-block"
+                    >
+                      {Phone}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -469,16 +491,7 @@ export default function Home() {
 
         <CTA />
 
-        <section className="quote-section text-center">
-          <p>
-            <strong>
-              If you are not willing to risk the unusual, you will have to
-              settle for the ordinary.
-            </strong>
-            <br />
-            <em>Jim Rohn</em>
-          </p>
-        </section>
+        <InspirationalQuote />
       </main>
     </>
   );

@@ -6,7 +6,7 @@ import Logo from "./logo";
 import MobileMenuToggle from "./mobileMenuToggle";
 // import { usePathname } from "next/navigation";
 import NavItems from "./navItems";
-import { Phone } from "@/app/components/globals";
+// import { Phone } from "@/app/components/globals";
 
 const Nav = () => {
   // const pathname = usePathname();
@@ -19,7 +19,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="fixed inset-x-0 bg-white lg:pt-0 lg:pb-0 pt-2 pb-2"
+        className="fixed inset-x-0 bg-white lg:pt-0 lg:pb-0 pt-1 pb-1"
         style={{ zIndex: "100", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
       >
         <div className="max-w-screen-lg mx-auto px-4">
@@ -49,9 +49,9 @@ const Nav = () => {
               </Link> */}
             </div>
             {/* end of column */}
-            <div className="lg:w-1/5 w-7/12 pr-4 flex justify-end items-center">
+            <div className="lg:w-3/12 w-7/12 pr-4 flex justify-end items-center">
               <a
-                href={`tel:+1${Phone}`}
+                href={`/free-blog-article`}
                 className="p-1 flex items-center btn-main btn-nav justify-center"
                 style={{
                   height: 63,
@@ -62,7 +62,7 @@ const Nav = () => {
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   className="w-[15px] h-[15px] mr-[10px]"
@@ -70,11 +70,9 @@ const Nav = () => {
                   focusable="false"
                   fill="white"
                 >
-                  {/* Font Awesome Free 6.4.2 by @fontawesome */}
                   <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                </svg>
-
-                {Phone}
+                </svg> */}
+                Get Free Blog Article
               </a>
             </div>
           </div>

@@ -42,8 +42,8 @@ function Footer() {
               <p className="pt-5">{submitButtonText}</p>
               <SocialIcons />
             </div>
-            <div className="lg:w-1/3 w-full px-4 pt-5">
-              <h2>Helpful Links</h2>
+            <div className="lg:w-1/3 w-full px-4">
+              <h2 className="mt-0">Helpful Links</h2>
               <Link
                 className="block"
                 target="_blank"

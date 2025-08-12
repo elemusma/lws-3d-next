@@ -4,17 +4,26 @@
 .btn-main {
   background: var(--accent-tertiary);
   transition: all 0.25s ease-in-out;
-  color: white !important;
+  color: white;
   text-decoration: none !important;
   padding: 15px 25px;
   border-radius: 45px;
   display: inline-block;
-  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   // &:hover {
   //     filter: brightness(90%);
   // }
   &:hover {
     background: var(--accent-quaternary);
+  }
+  &.secondary {
+    background: var(--accent-secondary);
+    // color: var(--accent-primary);
+    &:hover {
+      background: var(--accent-quaternary);
+      color: white;
+    }
   }
 }
