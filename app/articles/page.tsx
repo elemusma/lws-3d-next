@@ -558,13 +558,13 @@ export default function NewsPage() {
           {/* end of news blog post */}
           {/* start of news blog post */}
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/articles/ai-ranking" className="flex flex-wrap">
+            <Link href="/articles/ai-powered-search" className="flex flex-wrap">
               <div className="w-full px-4 py-10">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   May 30, 2025
                 </p>
                 <h2 className="text-3xl font-proxima-bold group-hover:text-white">
-                  AI Ranking for Expert Witnesses
+                  AI-Search Results Domination for Expert Witnesses
                 </h2>
                 <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
