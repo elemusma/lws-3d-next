@@ -33,7 +33,7 @@ export default async function ThankYouBlogArticle({
 }) {
   const sp = (await searchParams) ?? {};
   const rawName = sp.name;
-  const name = Array.isArray(rawName) ? rawName[0] : rawName ?? "";
+  const name = Array.isArray(rawName) ? rawName[0] : (rawName ?? "");
 
   // Delivery in 3 days
   const deliveryDate = new Date();

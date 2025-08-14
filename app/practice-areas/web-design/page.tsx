@@ -600,6 +600,17 @@ export default function PracticeAreasWebDesign() {
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
+        <div className="text-center">
+          <p>
+            See{" "}
+            <a
+              href="/practice-areas/hipaa-compliance#pricing"
+              className="text-link"
+            >
+              HIPAA-Compliant pricing
+            </a>
+          </p>
+        </div>
         <PricingTableWebDesign />
       </ContentBlock>
       <ContentBlock
