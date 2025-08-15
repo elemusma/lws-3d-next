@@ -268,7 +268,7 @@ export default function PracticeAreasADA() {
           </div>
         </ContentBlock>
         <ContentBlock
-          sectionClassName="text-black pt-[100px] pb-[100px]"
+          sectionClassName="text-black pt-[100px]"
           containerClassName="max-w-screen-lg mx-auto"
           rowClassName="flex flex-col items-center"
           columnClassName="flex flex-wrap items-center"
@@ -278,6 +278,14 @@ export default function PracticeAreasADA() {
               Connecting Experts to Attorneys — One Insight at a Time
             </h2>
             <div className="divider"></div>
+          </div>
+          <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+            <Image
+              src="/podcast/Podcast-01.jpg"
+              width={1000}
+              height={667}
+              alt={"Accessibility-First Design"}
+            />
           </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div
@@ -313,6 +321,22 @@ export default function PracticeAreasADA() {
               </p>
             </div>
           </div>
+        </ContentBlock>
+
+        <ContentBlock
+          sectionClassName="text-black pb-[100px]"
+          containerClassName="max-w-screen-lg mx-auto"
+          rowClassName="flex flex-col items-center"
+          columnClassName="flex flex-col flex-wrap lg:flex-row-reverse items-center"
+        >
+          <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 text-center">
+            <Image
+              src="/podcast/Podcast-02.jpg"
+              width={1000}
+              height={1333}
+              alt={"ADA-Inclusive-User-Experience"}
+            />
+          </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div
               style={{
@@ -347,6 +371,7 @@ export default function PracticeAreasADA() {
               </p>
             </div>
           </div>
+
           <div className="w-full text-center">
             <a href="#schedule" className="btn-main">
               Be Our Next Guest Attorney
