@@ -284,7 +284,7 @@ export default function PracticeAreasADA() {
               src="/podcast/Podcast-01.jpg"
               width={1000}
               height={667}
-              alt={"Accessibility-First Design"}
+              alt={"Connecting Experts to Attorneys — One Insight at a Time"}
             />
           </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
@@ -334,7 +334,7 @@ export default function PracticeAreasADA() {
               src="/podcast/Podcast-02.jpg"
               width={1000}
               height={1333}
-              alt={"ADA-Inclusive-User-Experience"}
+              alt={"Appearing as a guest positions you as a thought leader in your practice area"}
             />
           </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">

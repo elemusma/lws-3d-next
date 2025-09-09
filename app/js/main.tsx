@@ -59,12 +59,12 @@ function Main() {
     Array(200).fill(null).forEach(addStar);
 
     // Background
-    const spaceTexture = new THREE.TextureLoader().load("assets/sunset.jpg");
+    const spaceTexture = new THREE.TextureLoader().load("/podcast/Courtroom.jpg");
     scene.background = spaceTexture;
 
     // Avatar
     const tadeoTexture = new THREE.TextureLoader().load(
-      "assets/Code-Examples.jpg",
+      "/assets/Code-Examples.jpg",
     );
     const tadeoGeometry = new THREE.BoxGeometry(2, 2, 2);
     const tadeoMaterial = new THREE.MeshBasicMaterial({ map: tadeoTexture });
@@ -72,8 +72,8 @@ function Main() {
     // scene.add(tadeo);
 
     // Moon
-    const moonTexture = new THREE.TextureLoader().load("assets/moon.jpg");
-    const normalTexture = new THREE.TextureLoader().load("assets/normal.jpg");
+    const moonTexture = new THREE.TextureLoader().load("/assets/moon.jpg");
+    const normalTexture = new THREE.TextureLoader().load("/assets/normal.jpg");
 
     const moon = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),

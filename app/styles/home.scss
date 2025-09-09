@@ -89,7 +89,7 @@ ul {
 }
 
 // Apply the same animated gradient effect to an h1 outside the quote section
-h1.animated-heading {
+.animated-heading {
   @include animated-gradient; // Reuse the mixin for the h1
   // padding: 20px 0; // Additional styling specific to h1
   // font-size: 2rem; // Larger font size for headings
