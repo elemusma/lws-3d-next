@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title:
     "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
   description:
-    "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
+    "We help expert witnesses get more cases and get found by attorneys. Watch our interviews with litigation attorneys to find out what they think. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
   metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
   alternates: {
     canonical: "https://latinowebstudio.com", // ✅ correct canonical
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title:
       "Attorneys - Retainers - Cases - Helping Expert Witnesses - Latino Web Studio",
     description:
-      "We help expert witnesses get more cases and get found by attorneys. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
+      "We help expert witnesses get more cases and get found by attorneys. Watch our interviews with litigation attorneys to find out what they think. Are you unsure how to write content that won't be used against you in court? Don't get eaten alive at deposition.",
     url: "https://latinowebstudio.com",
     siteName: "Latino Web Studio",
     images: [

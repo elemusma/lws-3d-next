@@ -159,6 +159,129 @@ export default function Home() {
           </div>
         </section>
 
+        
+
+        <section className="relative py-20">
+          {/* Background Image */}
+          {/* <div className="absolute inset-0">
+            <Image
+              src="https://resources.latinowebstudio.com/wp-content/uploads/2023/10/Messaging.jpeg"
+              alt="Messaging Background"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+              priority
+            />
+            <div className="absolute inset-0 bg-white opacity-95"></div>
+          </div> */}
+
+          {/* Content Wrapper */}
+          <div className="w-full px-4 sm:px-6 lg:px-8 pb-[150px]">
+            <div className="flex flex-wrap justify-center items-center">
+              <div className="lg:w-3/4 md:w-full text-center pb-4">
+                <h2>Do You Know How Lawyers Think?</h2>
+                <p>
+                  Watch interview with plaintiff attorney Logan Quirk where he shares how he finds and vets experts witnesses and his experiences working with them.
+                </p>
+              </div>
+
+              <div className="md:w-3/4 w-full px-4">
+                <div className="relative w-full pb-[56.25%] h-0">
+  <iframe
+    className="absolute top-0 left-0 w-full h-full"
+    src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
+                {/* <Image
+                  src="/photos/SEO-Results.png"
+                  alt="Get Lawyers Contacting You on a Monthly Basis"
+                  width={2013}
+                  height={1194}
+                  className="object-contain"
+                /> */}
+              </div>
+              {/* <div className="md:w-1/2 w-full px-4">
+                <Image
+                  src="/photos/SEO-Results-01.jpg"
+                  alt="Clarify Your Message"
+                  width={2013}
+                  height={1194}
+                  className="object-contain"
+                />
+              </div> */}
+            </div>
+          </div>
+          <div className="relative z-10 container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+              {/* Card 1 */}
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/photos/Expert-Witness-Target-Fact-Based.png"
+                  alt="Targeted, Fact-Based Expert Witness Content Strategy"
+                  width={2013}
+                  height={1194}
+                  className="h-24 w-auto object-contain"
+                />
+                <h3 className="mt-2 font-semibold">
+                  Targeted, Fact-Based Expert Witness Content Strategy
+                </h3>
+                <p className="" style={{ fontSize: 18 }}>
+                  Be a trusted expert while preventing content from being used
+                  against you in deposition.
+                </p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/photos/Expert-Witness-White-Papers.png"
+                  alt="Optimized Expert Witness Articles &amp; White Papers"
+                  width={1169}
+                  height={1237}
+                  className="h-24 w-auto object-contain"
+                />
+                <h3 className="mt-2 font-semibold">
+                  Optimized Expert Witness Articles &amp; White Papers
+                </h3>
+                <p className="" style={{ fontSize: 18 }}>
+                  Increases visibility to attract higher-value cases and
+                  establish authority.
+                </p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/photos/Expert-Witness-Content-Strategy.png"
+                  alt="Consistent Expert Witness Content Production Plan"
+                  width={1446}
+                  height={1173}
+                  className="h-24 w-auto object-contain"
+                />
+                <h3 className="mt-2 font-semibold">
+                  Consistent Expert Witness Content Production Plan
+                </h3>
+                <p className="" style={{ fontSize: 18 }}>
+                  Ensures regular, relevant updates that keep your expertise
+                  top-of-mind for potential clients.
+                </p>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-10 flex justify-center">
+              <a href="#schedule" className="btn-main">
+                Get More Cases
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section style={{ paddingTop: 100, paddingBottom: 100 }}>
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
@@ -242,118 +365,6 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="relative py-20">
-          {/* Background Image */}
-          {/* <div className="absolute inset-0">
-            <Image
-              src="https://resources.latinowebstudio.com/wp-content/uploads/2023/10/Messaging.jpeg"
-              alt="Messaging Background"
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-              priority
-            />
-            <div className="absolute inset-0 bg-white opacity-95"></div>
-          </div> */}
-
-          {/* Content Wrapper */}
-          <div className="w-full px-4 sm:px-6 lg:px-8 pb-[150px]">
-            <div className="flex flex-wrap justify-center items-center">
-              <div className="lg:w-3/4 md:w-full text-center pb-4">
-                <h2>Get Lawyers Contacting You on a Monthly Basis</h2>
-                <p>
-                  Mark had zero traffic to his website and no lawyers finding
-                  him. Now he has lawyers contacting him on a monthly basis and
-                  is working on his expert witness business full-time.
-                </p>
-              </div>
-
-              <div className="md:w-full w-full px-4">
-                <Image
-                  src="/photos/SEO-Results.png"
-                  alt="Get Lawyers Contacting You on a Monthly Basis"
-                  width={2013}
-                  height={1194}
-                  className="object-contain"
-                />
-              </div>
-              {/* <div className="md:w-1/2 w-full px-4">
-                <Image
-                  src="/photos/SEO-Results-01.jpg"
-                  alt="Clarify Your Message"
-                  width={2013}
-                  height={1194}
-                  className="object-contain"
-                />
-              </div> */}
-            </div>
-          </div>
-          <div className="relative z-10 container mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-              {/* Card 1 */}
-              <div className="flex flex-col items-center">
-                <Image
-                  src="/photos/Expert-Witness-Target-Fact-Based.png"
-                  alt="Targeted, Fact-Based Expert Witness Content Strategy"
-                  width={2013}
-                  height={1194}
-                  className="h-24 w-auto object-contain"
-                />
-                <h3 className="mt-2 font-semibold">
-                  Targeted, Fact-Based Expert Witness Content Strategy
-                </h3>
-                <p className="" style={{ fontSize: 18 }}>
-                  Be a trusted expert while preventing content from being used
-                  against you in deposition.
-                </p>
-              </div>
-
-              {/* Card 2 */}
-              <div className="flex flex-col items-center">
-                <Image
-                  src="/photos/Expert-Witness-White-Papers.png"
-                  alt="Optimized Expert Witness Articles &amp; White Papers"
-                  width={1169}
-                  height={1237}
-                  className="h-24 w-auto object-contain"
-                />
-                <h3 className="mt-2 font-semibold">
-                  Optimized Expert Witness Articles &amp; White Papers
-                </h3>
-                <p className="" style={{ fontSize: 18 }}>
-                  Increases visibility to attract higher-value cases and
-                  establish authority.
-                </p>
-              </div>
-
-              {/* Card 3 */}
-              <div className="flex flex-col items-center">
-                <Image
-                  src="/photos/Expert-Witness-Content-Strategy.png"
-                  alt="Consistent Expert Witness Content Production Plan"
-                  width={1446}
-                  height={1173}
-                  className="h-24 w-auto object-contain"
-                />
-                <h3 className="mt-2 font-semibold">
-                  Consistent Expert Witness Content Production Plan
-                </h3>
-                <p className="" style={{ fontSize: 18 }}>
-                  Ensures regular, relevant updates that keep your expertise
-                  top-of-mind for potential clients.
-                </p>
-              </div>
-            </div>
-
-            {/* CTA Button */}
-            <div className="mt-10 flex justify-center">
-              <a href="#schedule" className="btn-main">
-                Get More Cases
-              </a>
             </div>
           </div>
         </section>

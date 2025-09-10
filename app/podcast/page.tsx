@@ -187,16 +187,16 @@ export default function PracticeAreasADA() {
               Be Our Next Guest Attorney
             </a>
             <div>
-              <small>First episode coming out soon.</small>
+              <small><a href="https://youtu.be/JYgZaXCTEZU?si=1bGhEbLWdTvFnJvz" target="_blank">Watch episode with Logan Quirk</a></small>
             </div>
           </div>
           <div className="w-2/3 mx-auto mt-2">
             <Image
-              src="/podcast/Podcast.jpg"
+              src="/podcast/Inside-The-Attorneys-Mind-Podcast.jpg"
               width={1365}
               height={1024}
               alt={
-                "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez with Steve Paul from SSP Vehicle Litigation Services"
+                "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
               }
               priority
             />

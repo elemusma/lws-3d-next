@@ -35,6 +35,30 @@ interface GoogleReviewsProps {
 }
 
 function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
+
+  // useEffect(() => {
+  //   const iframes = document.querySelectorAll('iframe');
+
+  //   iframes.forEach((iframe) => {
+  //     const aspectRatio = 560 / 315; // 16:9 aspect ratio
+  //     iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
+  //   });
+
+  //   // Optional: handle window resize
+  //   const handleResize = () => {
+  //     iframes.forEach((iframe) => {
+  //       const aspectRatio = 560 / 315;
+  //       iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
+  //     });
+  //   };
+
+  //   window.addEventListener('resize', handleResize);
+
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
+
   const [reviews, setReviews] = useState<Review[]>([]);
   const [expandedStates, setExpandedStates] = useState<{
     [key: number]: boolean;
@@ -110,7 +134,29 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
     return <div className="text-center text-red-500 p-4">{error}</div>;
   }
 
+  
+
   return (
+    <>
+    <div className="flex flex-col content-center items-center gap-2 px-4 pb-4">
+      <div className="md:w-3/4 w-full">
+    <div className="text-center px-4">
+      <h2>Happy Customers</h2>
+<div className="relative w-full pb-[56.25%] h-0">
+  <iframe
+    className="absolute top-0 left-0 w-full h-full"
+    src="https://www.youtube.com/embed/34a38A0dBgE?si=YAQOcKv5RmMrXbg6"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
+</div>
+</div>
+</div>
+
     <div className="flex flex-col flex-row md:flex-row gap-2 px-4">
       <div className="md:w-1/5 w-full text-center">
         <Logo />
@@ -122,7 +168,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
             />
           ))}
         </div>
-        59 Google Reviews
+        67 Google Reviews
         <a
           href="https://g.page/r/CbF4CHrc1dblEBM/review"
           target="_blank"
@@ -197,6 +243,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
         </Swiper>
       </div>
     </div>
+    </>
   );
 }
 
