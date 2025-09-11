@@ -3,19 +3,10 @@ import "@/app/styles/blog.scss";
 import Image from "next/image";
 import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/ctaPodcast";
-// import Link from "next/link";
-// import Sidebar from "@/app/components/reusable/Sidebar";
 
 import GoogleReviews from "@/app/components/reusable/GoogleReviews";
-// import PricingTable from "@/app/components/reusable/PricingTable";
-// import Link from "next/link";
 import Main from "../js/main";
-// import ResponsiveYouTube from "@/app/components/reusable/ResponsiveYouTube";
-// import { Link } from "lucide-react";
-// import { getArticleSchema } from "@/app/components/reusable/articleSchema";
-// import HeadshotIcons from "@/app/components/headshot-icons";
-
-// import Link from "next/link";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -31,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://latinowebstudio.com/podcast/Podcast.jpg",
+        url: "https://latinowebstudio.com/podcast/Inside-The-Attorneys-Mind-Podcast.jpg",
         width: 1200,
         height: 630,
         alt: "Inside the Attorney's Mind Podcast - Latino Web Studio",
@@ -167,15 +158,12 @@ export default function PracticeAreasADA() {
           sectionClassName="text-black pt-[5px] pb-[100px]"
           containerClassName="max-w-screen-lg mx-auto"
           rowClassName="flex flex-col items-center"
-          columnClassName="flex flex-wrap lg:flex-row-reverse lg:flex-row items-center"
+          columnClassName="w-full px-4"
         >
-          <div className="w-full px-4 mb-8 lg:mb-0 text-center">
-            {/* <h1 className="mb-0 text-xl">
-            🎙️ Inside the Attorney&apos;s Mind: A Podcast for Expert Witnesses
-          </h1> */}
-            <h2 className="text-3xl mt-0">
+          <div className="mb-8 lg:mb-0 text-center">
+            <h1 className="text-3xl mt-0">
               Inside the Attorney&apos;s Mind - Real Conversations
-            </h2>
+            </h1>
 
             <p className="mb-2 text-lg">
               This podcast was created to bridge the gap between expert
@@ -186,12 +174,23 @@ export default function PracticeAreasADA() {
             <a href="#schedule" className="btn-main">
               Be Our Next Guest Attorney
             </a>
-            <div>
+            {/* <div>
               <small><a href="https://youtu.be/JYgZaXCTEZU?si=1bGhEbLWdTvFnJvz" target="_blank">Watch episode with Logan Quirk</a></small>
-            </div>
+            </div> */}
           </div>
-          <div className="w-2/3 mx-auto mt-2">
-            <Image
+          <div className="md:w-2/3 w-full mx-auto mt-2">
+            <div className="relative w-full pb-[56.25%] h-0">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+            {/* <Image
               src="/podcast/Inside-The-Attorneys-Mind-Podcast.jpg"
               width={1365}
               height={1024}
@@ -199,7 +198,48 @@ export default function PracticeAreasADA() {
                 "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
               }
               priority
-            />
+            /> */}
+          </div>
+        </ContentBlock>
+        <ContentBlock
+          sectionClassName="text-black pt-[50px] pb-[100px]"
+          containerClassName="max-w-screen-lg mx-auto"
+          rowClassName="flex flex-col"
+          columnClassName="w-full px-4"
+        >
+          <div className="text-center">
+            <h2>Inside the Attorney&apos;s Mind Episodes</h2>
+            <p>
+              <small>More episodes coming soon:</small>
+            </p>
+          </div>
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link href="/podcast/quirkwins" className="flex flex-wrap">
+              <div className="w-5/12">
+                <Image
+                  src="/podcast/quirkwins.jpg"
+                  width={1365}
+                  height={1024}
+                  className="w-full h-100"
+                  alt={
+                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
+                  }
+                  priority
+                />
+              </div>
+              <div className="w-7/12 px-4 py-10">
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  Aug 18, 2025
+                </p>
+                <h2 className="text-xl font-proxima-bold group-hover:text-white">
+                  Guest Attorney: Logan Quirk, Quirk Accident and Injury
+                  Attorneys, APC
+                </h2>
+                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
           </div>
         </ContentBlock>
 
@@ -334,7 +374,9 @@ export default function PracticeAreasADA() {
               src="/podcast/Podcast-02.jpg"
               width={1000}
               height={1333}
-              alt={"Appearing as a guest positions you as a thought leader in your practice area"}
+              alt={
+                "Appearing as a guest positions you as a thought leader in your practice area"
+              }
             />
           </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">

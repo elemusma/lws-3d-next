@@ -35,7 +35,6 @@ interface GoogleReviewsProps {
 }
 
 function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
-
   // useEffect(() => {
   //   const iframes = document.querySelectorAll('iframe');
 
@@ -134,115 +133,113 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
     return <div className="text-center text-red-500 p-4">{error}</div>;
   }
 
-  
-
   return (
     <>
-    <div className="flex flex-col content-center items-center gap-2 px-4 pb-4">
-      <div className="md:w-3/4 w-full">
-    <div className="text-center px-4">
-      <h2>Happy Customers</h2>
-<div className="relative w-full pb-[56.25%] h-0">
-  <iframe
-    className="absolute top-0 left-0 w-full h-full"
-    src="https://www.youtube.com/embed/34a38A0dBgE?si=YAQOcKv5RmMrXbg6"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  />
-</div>
-</div>
-</div>
-</div>
-
-    <div className="flex flex-col flex-row md:flex-row gap-2 px-4">
-      <div className="md:w-1/5 w-full text-center">
-        <Logo />
-        <div className="flex justify-center my-4">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <Star
-              key={`full-${i}`}
-              className="w-4 h-4 fill-yellow-400 text-yellow-400"
-            />
-          ))}
+      <div className="flex flex-col content-center items-center gap-2 px-4 pb-4">
+        <div className="md:w-1/2 w-full">
+          <div className="text-center px-4">
+            <h2>Happy Customers</h2>
+            <div className="relative w-full pb-[56.25%] h-0">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/34a38A0dBgE?si=YAQOcKv5RmMrXbg6"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
-        67 Google Reviews
-        <a
-          href="https://g.page/r/CbF4CHrc1dblEBM/review"
-          target="_blank"
-          className="btn-main mb-4 md:mb-0"
-        >
-          Leave a Review
-        </a>
       </div>
 
-      <div className="md:w-4/5 w-full">
-        <Swiper
-          loop={true}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 2 },
-            1280: { slidesPerView: 3 },
-          }}
-          spaceBetween={30}
-          autoplay={true}
-          modules={[Navigation, Pagination, Autoplay]}
-        >
-          {reviews.map((review, index) => {
-            const text = review.text?.text || "No review text available";
-            const isLongText = text.length > 200;
-            const isExpanded = expandedStates[index] || false;
+      <div className="flex flex-col flex-row md:flex-row gap-2 px-4">
+        <div className="md:w-1/5 w-full text-center">
+          <Logo />
+          <div className="flex justify-center my-4">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <Star
+                key={`full-${i}`}
+                className="w-4 h-4 fill-yellow-400 text-yellow-400"
+              />
+            ))}
+          </div>
+          69 Google Reviews
+          <a
+            href="https://g.page/r/CbF4CHrc1dblEBM/review"
+            target="_blank"
+            className="btn-main mb-4 md:mb-0"
+          >
+            Leave a Review
+          </a>
+        </div>
 
-            return (
-              <SwiperSlide key={index} className="w-full">
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Image
-                      src={review.profile_photo_url || "/default-avatar.png"}
-                      alt={`${review.author_name}'s profile`}
-                      className="w-12 h-12 rounded-full object-cover"
-                      width={48}
-                      height={48}
-                    />
-                    <div>
-                      <h3 className="font-semibold">{review.author_name}</h3>
-                      <p className="text-sm text-gray-600">
-                        {review.relative_time_description}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex mb-3">
-                    {Array.from({ length: review.rating }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
+        <div className="md:w-4/5 w-full">
+          <Swiper
+            loop={true}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2 },
+              1280: { slidesPerView: 3 },
+            }}
+            spaceBetween={30}
+            autoplay={true}
+            modules={[Navigation, Pagination, Autoplay]}
+          >
+            {reviews.map((review, index) => {
+              const text = review.text?.text || "No review text available";
+              const isLongText = text.length > 200;
+              const isExpanded = expandedStates[index] || false;
+
+              return (
+                <SwiperSlide key={index} className="w-full">
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Image
+                        src={review.profile_photo_url || "/default-avatar.png"}
+                        alt={`${review.author_name}'s profile`}
+                        className="w-12 h-12 rounded-full object-cover"
+                        width={48}
+                        height={48}
                       />
-                    ))}
-                  </div>
+                      <div>
+                        <h3 className="font-semibold">{review.author_name}</h3>
+                        <p className="text-sm text-gray-600">
+                          {review.relative_time_description}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      {Array.from({ length: review.rating }).map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                        />
+                      ))}
+                    </div>
 
-                  <p className="text-sm text-gray-600">
-                    {isExpanded ? text : `${text.slice(0, 200)}...`}
-                    {isLongText && (
-                      <button
-                        onClick={() => toggleExpand(index)}
-                        className="ml-2"
-                      >
-                        <strong>
-                          {isExpanded ? "Read Less" : "Read More"}
-                        </strong>
-                      </button>
-                    )}
-                  </p>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+                    <p className="text-sm text-gray-600">
+                      {isExpanded ? text : `${text.slice(0, 200)}...`}
+                      {isLongText && (
+                        <button
+                          onClick={() => toggleExpand(index)}
+                          className="ml-2"
+                        >
+                          <strong>
+                            {isExpanded ? "Read Less" : "Read More"}
+                          </strong>
+                        </button>
+                      )}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
       </div>
-    </div>
     </>
   );
 }

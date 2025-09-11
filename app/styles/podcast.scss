@@ -54,23 +54,32 @@
 //   }
 // }
 
-
 nav {
-  display:none;
+  display: none;
 }
 
 @keyframes balance-swing {
-  0%   { transform: rotate(4deg); }
-  25%  { transform: rotate(-4deg); }
-  50%  { transform: rotate(2deg); }
-  75%  { transform: rotate(-2deg); }
-  100% { transform: rotate(4deg); }
+  0% {
+    transform: rotate(4deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
 }
 
 .scale-arm {
   animation: balance-swing 6s ease-in-out infinite;
   transform-origin: 50% 17%; /* Adjust based on where the crossbar pivots */
-  transform-box: fill-box;   /* Needed for correct transform-origin inside SVG */
+  transform-box: fill-box; /* Needed for correct transform-origin inside SVG */
 }
 
 /* Already have typewriter-heading */

@@ -26,8 +26,10 @@ export default function Sidebar() {
           height={150}
           alt={"Tadeo (Ted) Martinez with Latino Web Studio"}
         />
-        <p className="pt-4">Tadeo (Ted) Martinez</p>
-        <small>Web Design &amp; SEO Expert</small>
+        <p className="pt-4 !mb-0">Tadeo (Ted) Martinez</p>
+        <small className="pb-4 block">
+          Web Design &amp; SEO for Expert Witnesses
+        </small>
       </div>
 
       <div className="gradient-background pb-5 rounded-[45px]">

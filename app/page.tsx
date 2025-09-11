@@ -1,10 +1,7 @@
-// import GoogleReviews from "./components/google_reviews";
 "use client";
 import Image from "next/image";
 import { useEffect } from "react";
 import CTA from "./components/reusable/cta";
-// import CalendlyWidget from "./components/calendly";
-// import Footer from "./components/footer";
 import HeadshotIcons from "./components/headshot-icons";
 import Main from "./js/main";
 
@@ -14,8 +11,6 @@ import GoogleReviews from "./components/reusable/GoogleReviews";
 import { Phone } from "./components/globals";
 import InspirationalQuote from "./components/quote";
 import Link from "next/link";
-
-// import ContentBlock from "./components/content-block";
 
 export default function Home() {
   // const currentYear = new Date().getFullYear();
@@ -159,52 +154,39 @@ export default function Home() {
           </div>
         </section>
 
-        
-
         <section className="relative py-20">
-          {/* Background Image */}
-          {/* <div className="absolute inset-0">
-            <Image
-              src="https://resources.latinowebstudio.com/wp-content/uploads/2023/10/Messaging.jpeg"
-              alt="Messaging Background"
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-              priority
-            />
-            <div className="absolute inset-0 bg-white opacity-95"></div>
-          </div> */}
-
           {/* Content Wrapper */}
           <div className="w-full px-4 sm:px-6 lg:px-8 pb-[150px]">
             <div className="flex flex-wrap justify-center items-center">
               <div className="lg:w-3/4 md:w-full text-center pb-4">
                 <h2>Do You Know How Lawyers Think?</h2>
                 <p>
-                  Watch interview with plaintiff attorney Logan Quirk where he shares how he finds and vets experts witnesses and his experiences working with them.
+                  Watch interview with plaintiff attorney Logan Quirk where he
+                  shares how he finds and vets experts witnesses and his
+                  experiences working with them.
                 </p>
               </div>
 
               <div className="md:w-3/4 w-full px-4">
                 <div className="relative w-full pb-[56.25%] h-0">
-  <iframe
-    className="absolute top-0 left-0 w-full h-full"
-    src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  />
-</div>
-                {/* <Image
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              {/* <Image
                   src="/photos/SEO-Results.png"
                   alt="Get Lawyers Contacting You on a Monthly Basis"
                   width={2013}
                   height={1194}
                   className="object-contain"
                 /> */}
-              </div>
               {/* <div className="md:w-1/2 w-full px-4">
                 <Image
                   src="/photos/SEO-Results-01.jpg"

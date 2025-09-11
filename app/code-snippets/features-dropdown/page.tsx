@@ -5,15 +5,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Code Snippets - Featured Dropdown - Latino Web Studio",
-  description:
-    "Code snippet for features dropdown menu.",
+  description: "Code snippet for features dropdown menu.",
   alternates: {
     canonical: "https://latinowebstudio.com/get-started",
   },
   openGraph: {
     title: "Code Snippets - Featured Dropdown - Latino Web Studio",
-    description:
-      "Code snippet for features dropdown menu.",
+    description: "Code snippet for features dropdown menu.",
     url: "https://latinowebstudio.com/code-snippets/features-dropdown",
     type: "website",
   },
@@ -22,18 +20,17 @@ export const metadata: Metadata = {
 function FeatureDropdownPage() {
   return (
     <>
-    <Main />
-    <main>
-      <div className="pt-[50px]"></div>
-      <ContentBlock
-              sectionClassName="text-black pb-[100px] blog single-post"
-              containerClassName="max-w-screen-lg mx-auto"
-              rowClassName="flex flex-col items-center"
-              columnClassName="w-full"
-            >
-                <h2>HTML</h2>
-                <pre>
-
+      <Main />
+      <main>
+        <div className="pt-[50px]"></div>
+        <ContentBlock
+          sectionClassName="text-black pb-[100px] blog single-post"
+          containerClassName="max-w-screen-lg mx-auto"
+          rowClassName="flex flex-col items-center"
+          columnClassName="w-full"
+        >
+          <h2>HTML</h2>
+          <pre>
             {`    <div class="features-dropdown">
         <div class="dropdown-header">
             <h3 class="dropdown-title">All Research Methods in One Platform</h3>
@@ -187,11 +184,10 @@ function FeatureDropdownPage() {
             <a href="/demo" class="cta-button cta-secondary">Schedule Demo</a>
         </div>
 </div>`}
-
-      </pre>
-        <h2>CSS</h2>
-        <pre>
-{`.features-dropdown {
+          </pre>
+          <h2>CSS</h2>
+          <pre>
+            {`.features-dropdown {
     position: relative;
     top: 100%;
     left: 50%;
@@ -363,8 +359,8 @@ function FeatureDropdownPage() {
     }
 }
     `}
-    </pre>
-            </ContentBlock>
+          </pre>
+        </ContentBlock>
       </main>
     </>
   );

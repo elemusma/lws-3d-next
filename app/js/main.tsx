@@ -59,7 +59,9 @@ function Main() {
     Array(200).fill(null).forEach(addStar);
 
     // Background
-    const spaceTexture = new THREE.TextureLoader().load("/podcast/Courtroom.jpg");
+    const spaceTexture = new THREE.TextureLoader().load(
+      "/podcast/Courtroom.jpg",
+    );
     scene.background = spaceTexture;
 
     // Avatar
