@@ -1,4 +1,5 @@
 import ContentBlock from "@/app/components/content-block";
+import Image from "next/image";
 import "@/app/styles/blog.scss";
 // import Image from "next/image";
 
@@ -102,13 +103,101 @@ export default function PodcastEpisodeQuirkWins() {
       <div className="single-post">
         {/* Hero Section */}
         <ContentBlock
-          sectionClassName="bg-[#f7f7f7] text-black pt-[150px] pb-[100px] blog"
+          sectionClassName="bg-[#f7f7f7] text-black lg:pt-[150px] pt-[100px] pb-[100px] blog"
           containerClassName="max-w-screen-lg mx-auto"
           rowClassName="flex flex-col items-center"
           columnClassName="flex flex-col lg:flex-row items-start"
         >
           <div className="lg:w-3/4 w-full lg:pr-8 px-4">
             <div className="prose prose-lg mx-auto max-w-3xl px-4 text-gray-900">
+              <div className="relative w-full pb-[56.25%] h-0">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <h2 className="text-sm font-semibold mt-10 mb-4">
+                Connect with Logan:
+              </h2>
+              <div className="flex">
+                <a
+                  href="https://quirkwins.com/"
+                  target="_blank"
+                  className="mx-2"
+                >
+                  <Image
+                    src="/icons/icon-website.png"
+                    width={45}
+                    height={45}
+                    alt={"Logan Quirk - Quirk Wins website link"}
+                    priority
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/quirkaccidentattorneys/"
+                  title="Logan Quirk - Quirk Wins Instagram link"
+                  target="_blank"
+                  className="mx-2"
+                >
+                  <Image
+                    src="/icons/icon-instagram.png"
+                    width={45}
+                    height={45}
+                    alt={"Logan Quirk - Quirk Wins Instagram link"}
+                    priority
+                  />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@quirkwins"
+                  title="Logan Quirk - Quirk Wins TikTok link"
+                  target="_blank"
+                  className="mx-2"
+                >
+                  <Image
+                    src="/icons/icon-tiktok.png"
+                    width={45}
+                    height={45}
+                    alt={"Logan Quirk - Quirk Wins TikTok link"}
+                    priority
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/@QuirkWins"
+                  title="Logan Quirk - Quirk Wins YouTube link"
+                  target="_blank"
+                  className="mx-2"
+                >
+                  <Image
+                    src="/icons/icon-youtube.png"
+                    width={66}
+                    height={45}
+                    alt={"Logan Quirk - Quirk Wins YouTube link"}
+                    priority
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/loganquirk/"
+                  title="Logan Quirk - Quirk Wins LinkedIn link"
+                  target="_blank"
+                  className="mx-2"
+                >
+                  <Image
+                    src="/icons/icon-linkedin.png"
+                    width={45}
+                    height={45}
+                    alt={"Logan Quirk - Quirk Wins LinkedIn link"}
+                    priority
+                  />
+                </a>
+              </div>
+              <a href="#spotify" className="small">
+                Listen on Spotify
+              </a>
               <h1 className="text-3xl font-bold mb-6">
                 How Expert Witnesses Can Get More Cases: Advice from a
                 Litigation Attorney
@@ -127,15 +216,18 @@ export default function PodcastEpisodeQuirkWins() {
                 getting started, Logan&apos;s insights are going to be
                 incredibly helpful.
               </p>
-              <div className="relative w-full pb-[56.25%] h-0">
+
+              <div className="relative w-full pb-[56.25%] h-0" id="">
+                <div
+                  className="absolute top-[-75px]"
+                  style={{ pointerEvents: "none" }}
+                  id="spotify"
+                ></div>
                 <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-xl border-0"
+                  src="https://open.spotify.com/embed/episode/15iXrkLqqcQSGcST4ia6ky/video?utm_source=generator"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
                 />
               </div>
 
@@ -273,41 +365,6 @@ export default function PodcastEpisodeQuirkWins() {
                 may find evidence that brings more clarity to the case.
               </p>
 
-              <h2 className="text-2xl font-semibold mt-10 mb-4">
-                Connect with Logan:
-              </h2>
-              <p>
-                Website:{" "}
-                <a href="https://quirkwins.com/" target="_blank">
-                  https://quirkwins.com/
-                </a>
-                <br></br>
-                Instagram:{" "}
-                <a
-                  href="https://www.instagram.com/quirkaccidentattorneys/"
-                  target="_blank"
-                >
-                  https://www.instagram.com/quirkaccidentattorneys/
-                </a>
-                <br></br>
-                TikTok:{" "}
-                <a href="https://www.tiktok.com/@quirkwins" target="_blank">
-                  https://www.tiktok.com/@quirkwins
-                </a>
-                <br></br>
-                YouTube:{" "}
-                <a href="https://www.youtube.com/@QuirkWins" target="_blank">
-                  https://www.youtube.com/@QuirkWins
-                </a>
-                <br></br>
-                LinkedIn:{" "}
-                <a
-                  href="https://www.linkedin.com/in/loganquirk/"
-                  target="_blank"
-                >
-                  https://www.linkedin.com/in/loganquirk/
-                </a>
-              </p>
               <h2 className="text-2xl font-semibold mt-10 mb-4">
                 Do the Work and Be Confident
               </h2>

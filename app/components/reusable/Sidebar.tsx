@@ -5,7 +5,7 @@ import WhitePaper from "../forms/WhitePaper";
 
 export default function Sidebar() {
   return (
-    <aside className="lg:w-1/4 w-full sticky top-[8rem] lg:px-0 px-4">
+    <aside className="lg:w-1/4 w-full sticky top-[8rem] lg:pt-0 pt-10 lg:px-0 px-4">
       <div className="relative">
         <Image
           src="/assets/Get-More-Cases-Get-Found-by-Attorneys-White-Paper.jpg"
