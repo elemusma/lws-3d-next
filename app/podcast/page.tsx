@@ -214,8 +214,8 @@ export default function PracticeAreasADA() {
             </p>
           </div>
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/podcast/quirkwins" className="flex flex-wrap">
-              <div className="w-5/12">
+            <Link href="/podcast/quirkwins-pi-attorney" className="flex flex-wrap">
+              <div className="md:w-5/12 w-full">
                 <Image
                   src="/podcast/quirkwins.jpg"
                   width={1365}
@@ -227,7 +227,7 @@ export default function PracticeAreasADA() {
                   priority
                 />
               </div>
-              <div className="w-7/12 px-4 py-10">
+              <div className="md:w-7/12 w-full px-4 py-4">
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
                   Aug 18, 2025
                 </p>
