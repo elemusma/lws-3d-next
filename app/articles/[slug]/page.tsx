@@ -1,31 +1,27 @@
-// app/articles/[slug]/page.tsx
 import axios from "axios";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ContentBlock from "@/app/components/content-block";
 import Sidebar from "@/app/components/reusable/Sidebar";
 
-export async function generateMetadata({
-  params,
-}: {
+type ArticlePageProps = {
   params: { slug: string };
-}): Promise<Metadata> {
+};
+
+export async function generateMetadata(
+  { params }: ArticlePageProps
+): Promise<Metadata> {
   const res = await axios.get(
-    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`,
+    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
   );
 
   const post = res.data[0];
+  if (!post) return {};
 
-  if (!post) {
-    return {};
-  }
-
-  // Strip HTML tags from excerpt for description
   const description = post.excerpt?.rendered
     ? post.excerpt.rendered.replace(/<[^>]+>/g, "").slice(0, 160)
     : "";
 
-  // Try to grab featured image if available
   const ogImage =
     post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
     "https://latinowebstudio.com/default-og-image.jpg";
@@ -38,14 +34,7 @@ export async function generateMetadata({
       description,
       url: `https://latinowebstudio.com/articles/${params.slug}`,
       type: "article",
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: post.title.rendered,
-        },
-      ],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title.rendered }],
     },
     alternates: {
       canonical: `https://latinowebstudio.com/articles/${params.slug}`,
@@ -58,17 +47,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function ArticlePage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function ArticlePage({ params }: ArticlePageProps) {
   const res = await axios.get(
-    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}`,
+    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
   );
 
   const post = res.data[0];
-
   if (!post) return notFound();
 
   const schema = {
@@ -80,7 +64,7 @@ export default async function ArticlePage({
     dateModified: post.modified,
     author: {
       "@type": "Person",
-      name: "Latino Web Studio", // or dynamic author from WP
+      name: "Latino Web Studio",
     },
     image:
       post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
@@ -93,7 +77,6 @@ export default async function ArticlePage({
 
   return (
     <>
-      {/* Schema goes here */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

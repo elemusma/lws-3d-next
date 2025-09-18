@@ -1,20 +1,12 @@
-// app/articles/page.tsx
 import axios from "axios";
 import Link from "next/link";
 import { Metadata } from "next";
 import Main from "../js/main";
 import Sidebar from "../components/reusable/Sidebar";
 import ContentBlock from "../components/content-block";
-declare module "he";
 import he from "he";
 import CTA from "@/app/components/reusable/cta";
 import Image from "next/image";
-
-// function decodeEntities(encodedString: string) {
-//   const textarea = document.createElement("textarea");
-//   textarea.innerHTML = encodedString;
-//   return textarea.value;
-// }
 
 function stripHtml(html: string) {
   const withoutTags = html.replace(/<[^>]*>?/gm, "");
@@ -32,13 +24,6 @@ type WPPost = {
   };
 };
 
-// Helper to strip HTML
-// function stripHtml(html: string) {
-//   const withoutTags = html.replace(/<[^>]*>?/gm, "");
-//   return decodeEntities(withoutTags);
-// }
-
-// Define metadata specific to this page
 export const metadata: Metadata = {
   title:
     "Web Design & SEO Marketing Tips for Expert Witnesses - Latino Web Studio",
@@ -60,7 +45,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  // ✅ Add this block:
   alternates: {
     canonical: "https://latinowebstudio.com/articles",
   },
@@ -71,20 +55,16 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = "force-dynamic"; // optional: disables static caching for dev
-
-export default async function ArticlesPage({
-  searchParams,
-}: {
+type ArticlesPageProps = {
   searchParams?: { page?: string };
-}) {
+};
+
+export default async function ArticlesPage({ searchParams }: ArticlesPageProps) {
   const currentPage = parseInt(searchParams?.page || "1", 10);
-  // const params = await searchParams; // ⬅️ await here
-  // const currentPage = parseInt(params.page || "1", 10);
   const perPage = 10;
 
-  const res = await axios.get(
-    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?categories=117&page=${currentPage}&per_page=${perPage}&_embed`,
+  const res = await axios.get<WPPost[]>(
+    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?categories=117&page=${currentPage}&per_page=${perPage}&_embed`
   );
 
   const totalPages = parseInt(res.headers["x-wp-totalpages"] || "1", 10);
