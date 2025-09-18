@@ -5,10 +5,11 @@ import ContentBlock from "@/app/components/content-block";
 import Sidebar from "@/app/components/reusable/Sidebar";
 
 export async function generateMetadata(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
+  const { slug } = await params;
   const res = await axios.get(
-    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
+    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${slug}&_embed`
   );
 
   const post = res.data[0];
@@ -28,21 +29,22 @@ export async function generateMetadata(
     openGraph: {
       title: `${post.title.rendered} - Latino Web Studio`,
       description,
-      url: `https://latinowebstudio.com/articles/${params.slug}`,
+      url: `https://latinowebstudio.com/articles/${slug}`,
       type: "article",
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title.rendered }],
     },
     alternates: {
-      canonical: `https://latinowebstudio.com/articles/${params.slug}`,
+      canonical: `https://latinowebstudio.com/articles/${slug}`,
     },
   };
 }
 
 export default async function ArticlePage(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
+  const { slug } = await params;
   const res = await axios.get(
-    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
+    `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${slug}&_embed`
   );
 
   const post = res.data[0];
