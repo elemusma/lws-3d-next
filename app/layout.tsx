@@ -52,6 +52,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/assets/Favicon.ico", // Ensure this path is correct
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 };
 
 export default function RootLayout({

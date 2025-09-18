@@ -75,7 +75,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        console.log("Fetching Google Reviews...");
+        // console.log("Fetching Google Reviews...");
         const response = await fetch(
           `https://places.googleapis.com/v1/places/${placeId}?fields=reviews&key=${apiKey}`,
           {
@@ -92,7 +92,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
         }
 
         const data = await response.json();
-        console.log("Fetched data:", JSON.stringify(data, null, 2));
+        // console.log("Fetched data:", JSON.stringify(data, null, 2));
 
         if (data.reviews) {
           const formattedReviews = (

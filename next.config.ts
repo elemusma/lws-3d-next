@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
         destination: "/articles/:path*",
         permanent: true,
       },
+      {
+        source: "/podcast/quirkwins",
+        destination: "/podcast/quirkwins-pi-attorney",
+        permanent: true, // use true for 301, false for 307
+      },
+      {
+        source: "/blog/ai-ranking",
+        destination: "/blog/ai-powered-search",
+        permanent: true, // use true for 301, false for 307
+      },
     ];
   },
 };

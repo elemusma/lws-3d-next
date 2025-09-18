@@ -49,7 +49,7 @@ const Nav = () => {
               </Link> */}
             </div>
             {/* end of column */}
-            <div className="lg:w-3/12 w-7/12 pr-4 flex justify-end items-center">
+            <div className="lg:w-3/12 w-8/12 pr-4 flex justify-end items-center">
               <a
                 href={`/free-blog-article`}
                 className="p-1 flex items-center btn-main btn-nav justify-center"

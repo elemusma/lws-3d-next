@@ -94,11 +94,27 @@ const MobileMenuToggle = () => {
 
             {/* Navigation Menu */}
             <Link
+              href="/podcast"
+              onClick={handleClose}
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
+            >
+              Podcast
+              <span className="text-sm block">
+                Watch Interviews Litigation Attorneys
+              </span>
+            </Link>
+            <ul className="list-none text-sm mt-0">
+              {/* <IndustriesLinks onClick={handleClose} /> */}
+            </ul>
+            <Link
               href="/practice-areas/seo"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
-              SEO
+              Search Engine Optimization
+              <span className="text-sm block">
+                Be the expert that gets found
+              </span>
             </Link>
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
@@ -106,9 +122,12 @@ const MobileMenuToggle = () => {
             <Link
               href="/practice-areas/web-design"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
-              Web Design
+              Website Design
+              <span className="text-sm block">
+                Look like the authority in your field
+              </span>
             </Link>
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
@@ -116,9 +135,12 @@ const MobileMenuToggle = () => {
             <Link
               href="/practice-areas/hipaa-compliance"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
               HIPAA Compliance
+              <span className="text-sm block">
+                For experts in the medical field
+              </span>
             </Link>
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
@@ -126,7 +148,7 @@ const MobileMenuToggle = () => {
             <Link
               href="/practice-areas/ada-compliance"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
               ADA Compliance
             </Link>
@@ -136,7 +158,7 @@ const MobileMenuToggle = () => {
             <Link
               href="/practice-areas/ecommerce"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
               eCommerce
             </Link>
@@ -146,29 +168,20 @@ const MobileMenuToggle = () => {
             <Link
               href="/about"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
-              About
+              About Latino Web Studio
             </Link>
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
             </ul>
-            <Link
-              href="/podcast"
-              onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
-            >
-              Podcast
-            </Link>
-            <ul className="list-none text-sm mt-0">
-              {/* <IndustriesLinks onClick={handleClose} /> */}
-            </ul>
+
             <Link
               href="/articles"
               onClick={handleClose}
-              className="text-xl font-proxima-bold mb-0"
+              className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
-              Articles
+              Expert Articles
             </Link>
             <div style={{ height: "25px" }}></div>
             <div className="w-full pr-4 flex justify-end">
@@ -184,7 +197,7 @@ const MobileMenuToggle = () => {
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
-                Get More Cases - {Phone}
+                Get More Phone Calls
               </a>
             </div>
             <div style={{ height: "25px" }}></div>

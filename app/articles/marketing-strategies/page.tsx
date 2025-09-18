@@ -114,7 +114,7 @@ export default function MarketingStrategiesExpertWitnesses2025() {
             Expert Witness Marketing Pyramid
           </h3>
           <Image
-            src="/articles/marketing-strategies-01.png"
+            src="/articles/Marketing-Strategies-Expert-Witnesses-2025-01.png"
             width={2000}
             height={2000}
             alt={"Expert Witness Marketing Pyramid"}

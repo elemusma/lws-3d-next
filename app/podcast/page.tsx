@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PracticeAreasADA() {
+export default function PodcastPage() {
   return (
     <>
       <script
@@ -161,7 +161,7 @@ export default function PracticeAreasADA() {
           columnClassName="w-full px-4"
         >
           <div className="mb-8 lg:mb-0 text-center">
-            <h1 className="text-3xl mt-0">
+            <h1 className="md:text-3xl text-2xl mt-0">
               Inside the Attorney&apos;s Mind - Real Conversations
             </h1>
 
@@ -214,7 +214,10 @@ export default function PracticeAreasADA() {
             </p>
           </div>
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link href="/podcast/quirkwins-pi-attorney" className="flex flex-wrap">
+            <Link
+              href="/podcast/quirkwins-pi-attorney"
+              className="flex flex-wrap"
+            >
               <div className="md:w-5/12 w-full">
                 <Image
                   src="/podcast/quirkwins.jpg"

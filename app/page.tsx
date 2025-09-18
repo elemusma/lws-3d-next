@@ -72,50 +72,55 @@ export default function Home() {
         <section className="hero" style={{}}>
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap md:flex-row-reverse justify-center mx-4">
-              {/* <div className="lg:w-5/12 w-full px-4 lg:pb-0 pb-8">
-                <iframe
-                  className="video-container"
-                  width="100%"
-                  height="315"
-                  src="https://www.youtube.com/embed/FndI3gLrKa0?si=UHYc-3c1oUdQLuo2"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              </div> */}
-              <div className="w-full px-4 text-center">
+              <div className="lg:w-1/2 w-full md:px-4">
+                <div className="relative w-full pb-[56.25%] h-0">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+                <figcaption className="mt-2 text-center md:text-md text-sm text-black">
+                  Watch interview above with a litigation attorney.
+                </figcaption>
+              </div>
+
+              <div className="lg:w-1/2 w-full pb-4">
                 <div className="lg:w-full w-full">
-                  <h1 className="text-secondary animated-heading">
-                    Get More Cases and Get Found by Attorneys Consistently
-                    Without Paying for More Directories
+                  <h1 className="text-secondary animated-heading lg:text-5xl text-2xl mb-0">
+                    Get More Cases<br></br>Get Found by Attorneys
                   </h1>
+                  <h2 className="text-xl lg:my-2 my-1">
+                    Become the go-to expert
+                  </h2>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 {/* <div className="lg:w-9/12 w-1/9"> */}
-                <p style={{ marginTop: 15, marginBottom: 15 }}>
-                  Tadeo (Ted) Martinez helps expert witnesses attract more
-                  high-value cases by implementing a targeted, fact-based
-                  content strategy that gets you found online by attorneys
-                  without risking damaging content being used against you in
-                  deposition.
+                <p className="text-md mt-4 mb-4">
+                  I help expert witnesses show up on Google and AI results when
+                  attorneys search for experts like you online.
                 </p>
                 {/* <Login /> */}
                 {/* </div> */}
-                <div>
-                  <Link
-                    href={`/free-blog-article`}
-                    className="btn-main mx-2 blog-article"
-                  >
-                    Get Free Blog Article
-                  </Link>
-                  <Link
-                    href={`/podcast`}
-                    className="btn-main secondary mx-2 podcast-guest-attorney"
-                  >
-                    Podcast Guest Attorney
-                  </Link>
+                <div className="">
+                  <div className="">
+                    <Link
+                      href={`/free-blog-article`}
+                      className="btn-main mx-2 blog-article"
+                    >
+                      Get Free Blog Article
+                    </Link>
+                    <Link
+                      href={`/podcast`}
+                      className="btn-main secondary mx-2 podcast-guest-attorney"
+                    >
+                      Podcast Guest Attorney
+                    </Link>
+                  </div>
                   <div className="">
                     <a
                       href={`tel:+1${Phone}`}
@@ -136,19 +141,19 @@ export default function Home() {
         >
           <div className="container-fluid mx-auto px-4">
             <div className="flex flex-wrap justify-between -mx-4">
-              <div className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white">
-                <h2 className="h3" style={{}}>
+              <div className="lg:w-1/3 w-full pt-4 pb-4 px-4 lg:text-center text-white">
+                <h2 className="h3 mt-2 mb-2" style={{}}>
                   Lawyers Find You
                 </h2>
               </div>
               <div
-                className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white"
+                className="lg:w-1/3 w-full pt-4 pb-4 px-4 lg:text-center text-white"
                 style={{ backgroundColor: "var(--accent-quaternary)" }}
               >
-                <h2 className="h3">Receive a Retainer</h2>
+                <h2 className="h3 mt-2 mb-2">Receive a Retainer</h2>
               </div>
-              <div className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white">
-                <h2 className="h3">Bill Monthly</h2>
+              <div className="lg:w-1/3 w-full pt-4 pb-4 px-4 lg:text-center text-white">
+                <h2 className="h3 mt-2 mb-2">Bill Monthly</h2>
               </div>
             </div>
           </div>
