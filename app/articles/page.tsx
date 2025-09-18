@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Sidebar from "../components/reusable/Sidebar";
 import he from "he";
+import Main from "../js/main";
 
 type Post = {
   id: number;
@@ -91,7 +92,10 @@ export default async function ArticlesPage(props: {
   const pagination = getPagination(currentPage, totalPages);
 
   return (
-    <div className="max-w-screen-lg mx-auto pt-[150px] p-6">
+    <>
+    <Main />
+    <main>
+    <div className="max-w-screen-lg mx-auto px-4">
       <h1 className="text-3xl font-bold mb-6">
         Website Design & Search Engine Optimization Articles
       </h1>
@@ -200,5 +204,7 @@ export default async function ArticlesPage(props: {
         <Sidebar />
       </div>
     </div>
+    </main>
+    </>
   );
 }
