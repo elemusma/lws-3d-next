@@ -8,6 +8,33 @@ import Image from "next/image";
 import Sidebar from "../components/reusable/Sidebar";
 import he from "he";
 import Main from "../js/main";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Website Design and Search Engine Optimization Articles - Latino Web Studio",
+  description:
+    "A resource for expert witnesses and anyone wanting to learn more about how to get more clients and phone calls from your website.",
+  openGraph: {
+    title:
+      "Website Design and Search Engine Optimization Articles - Latino Web Studio",
+    description:
+      "A resource for expert witnesses and anyone wanting to learn more about how to get more clients and phone calls from your website.",
+    url: "https://latinowebstudio.com/articles",
+    type: "website",
+    images: [
+      {
+        url: "https://latinowebstudio.com/podcast/Inside-The-Attorneys-Mind-Podcast.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Inside the Attorney's Mind Podcast - Latino Web Studio",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://latinowebstudio.com/articles",
+  },
+};
 
 type Post = {
   id: number;
