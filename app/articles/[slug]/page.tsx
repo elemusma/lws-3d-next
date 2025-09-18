@@ -1,15 +1,11 @@
-import axios from "axios";
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import axios from "axios";
 import ContentBlock from "@/app/components/content-block";
 import Sidebar from "@/app/components/reusable/Sidebar";
 
-type ArticlePageProps = {
-  params: { slug: string };
-};
-
 export async function generateMetadata(
-  { params }: ArticlePageProps
+  { params }: { params: { slug: string } }
 ): Promise<Metadata> {
   const res = await axios.get(
     `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
@@ -39,15 +35,12 @@ export async function generateMetadata(
     alternates: {
       canonical: `https://latinowebstudio.com/articles/${params.slug}`,
     },
-    robots: {
-      index: true,
-      follow: true,
-      nocache: false,
-    },
   };
 }
 
-export default async function ArticlePage({ params }: ArticlePageProps) {
+export default async function ArticlePage(
+  { params }: { params: { slug: string } }
+) {
   const res = await axios.get(
     `https://resources.latinowebstudio.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
   );
@@ -55,47 +48,21 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const post = res.data[0];
   if (!post) return notFound();
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title.rendered,
-    description: post.excerpt.rendered.replace(/<[^>]+>/g, ""),
-    datePublished: post.date,
-    dateModified: post.modified,
-    author: {
-      "@type": "Person",
-      name: "Latino Web Studio",
-    },
-    image:
-      post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-      "https://latinowebstudio.com/default-og.jpg",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://latinowebstudio.com/articles/${params.slug}`,
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-      <ContentBlock
-        sectionClassName="bg-[#f7f7f7] text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
-        rowClassName="flex flex-col items-center"
-        columnClassName="flex flex-col lg:flex-row items-start"
-      >
-        <div className="lg:w-3/4 w-full lg:pr-8 px-4">
-          <h1 className="text-4xl font-bold mb-4">{post.title.rendered}</h1>
-          <article
-            className="prose max-w-none"
-            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-          />
-        </div>
-        <Sidebar />
-      </ContentBlock>
-    </>
+    <ContentBlock
+      sectionClassName="bg-[#f7f7f7] text-black pt-[100px] pb-[100px] blog single-post"
+      containerClassName="max-w-screen-lg mx-auto"
+      rowClassName="flex flex-col items-center"
+      columnClassName="flex flex-col lg:flex-row items-start"
+    >
+      <div className="lg:w-3/4 w-full lg:pr-8 px-4">
+        <h1 className="text-4xl font-bold mb-4">{post.title.rendered}</h1>
+        <article
+          className="prose max-w-none"
+          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+        />
+      </div>
+      <Sidebar />
+    </ContentBlock>
   );
 }
