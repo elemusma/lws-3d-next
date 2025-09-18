@@ -76,10 +76,11 @@ export const dynamic = "force-dynamic"; // optional: disables static caching for
 export default async function ArticlesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string }>;
+  searchParams?: { page?: string };
 }) {
-  const params = await searchParams; // ⬅️ await here
-  const currentPage = parseInt(params.page || "1", 10);
+  const currentPage = parseInt(searchParams?.page || "1", 10);
+  // const params = await searchParams; // ⬅️ await here
+  // const currentPage = parseInt(params.page || "1", 10);
   const perPage = 10;
 
   const res = await axios.get(

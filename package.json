@@ -8,7 +8,9 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "check": "npm run lint && npm run type-check"
   },
   "dependencies": {
     "@googleapis/mybusinessaccountmanagement": "^3.0.10",
