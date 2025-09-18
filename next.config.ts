@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "latinowebstudio.com",
+      },
+      {
+        protocol: "https",
         hostname: "lh3.googleusercontent.com",
       },
     ],
