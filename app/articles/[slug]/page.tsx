@@ -2,7 +2,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+// import Image from "next/image";
+import Sidebar from "@/app/components/reusable/Sidebar";
+// import { useEffect } from "react";
+import ResponsiveEmbeds from '@/app/components/reusable/responsiveEmbeds';
+import "@/app/styles/blog.scss";
+import CTA from "@/app/components/reusable/cta";
+import Main from "@/app/js/main";
 
 // Define the WordPress post type
 interface WordPressPost {
@@ -92,9 +98,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   }
 
   return (
-    <article className="container mx-auto px-4 py-8 max-w-4xl">
+    <>
+    <Main />
+    <main className="pt-[80px]">
+      <div className="bg-white">
+    <article className="max-w-screen-lg mx-auto pt-[50px] px-4 py-8 single-post bg-white">
       {/* Featured Image */}
-      {post._embedded?.["wp:featuredmedia"]?.[0] && (
+      {/* {post._embedded?.["wp:featuredmedia"]?.[0] && (
         <div className="mb-8">
           <Image
             src={post._embedded["wp:featuredmedia"][0].source_url}
@@ -103,9 +113,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               post.title.rendered
             }
             className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+            width="100"
+            height="100"
           />
         </div>
-      )}
+      )} */}
+
+<div className="flex flex-wrap">
+        <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
 
       {/* Article Header */}
       <header className="mb-8">
@@ -124,6 +139,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-a:hover:text-blue-800"
         dangerouslySetInnerHTML={{ __html: post.content.rendered }}
       />
+
+        </div>
+        <Sidebar />
+        </div>
 
       {/* Back to Articles Link */}
       <div className="mt-12 pt-8 border-t border-gray-200">
@@ -147,6 +166,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           Back to Articles
         </Link>
       </div>
+      <ResponsiveEmbeds />
     </article>
+    </div>
+    <CTA />
+    </main>
+    </>
   );
 }

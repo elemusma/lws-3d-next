@@ -6,7 +6,8 @@ import CTA from "@/app/components/reusable/cta";
 // import Link from "next/link";
 // import Sidebar from "@/app/components/reusable/Sidebar";
 // import { getArticleSchema } from "@/app/components/reusable/articleSchema";
-import HeadshotIcons from "../components/headshot-icons";
+// import HeadshotIcons from "../components/headshot-icons";
+import CTAButtons from "../components/reusable/CTAButtons";
 // import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -71,13 +72,19 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <ContentBlock
-        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] blog single-post"
+        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
         <div className="md:w-1/3 w-1/2 lg:w-1/2 px-4 mb-8 lg:mb-0">
-          <HeadshotIcons />
+        <Image
+            src="/assets/Mark-Tadeo-Latino-Web-Studio.jpg"
+            width={1000}
+            height={1333}
+            alt={"Mark (and Cooper) and Tadeo (Cuba) from Latino Web Studio"}
+          />
+          {/* <HeadshotIcons /> */}
         </div>
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <h1>About Latino Web Studio</h1>
@@ -94,17 +101,18 @@ export default function AboutPage() {
             sound, professionally written articles that resonate with attorneys
             and withstand courtroom scrutiny.
           </p>
+          <CTAButtons />
         </div>
       </ContentBlock>
       <ContentBlock
-        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] blog single-post"
+        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row items-start"
       >
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <Image
-            src="/assets/Mark-Tadeo-Latino-Web-Studio.jpg"
+            src="/podcast/LWS-Podcast-01.jpg"
             width={1000}
             height={1333}
             alt={"Mark (and Cooper) and Tadeo (Cuba) from Latino Web Studio"}
@@ -122,28 +130,32 @@ export default function AboutPage() {
           </p>
           <p>
             We offer all-inclusive packages that cover:
-            <ul>
+          </p>
+          <ul>
               <li>Custom website design optimized for attorneys</li>
               <li>Secure and professionally formatted content</li>
               <li>SEO strategies tailored for expert witness services</li>
               <li>Ongoing website maintenance and analytics</li>
             </ul>
-          </p>
         </div>
       </ContentBlock>
       <ContentBlock
-        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] blog single-post"
+        sectionClassName="bg-gray-100 text-black pt-[150px] pb-[100px] single-post"
         containerClassName="max-w-screen-lg mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <Image
-            src="/assets/Luis-Tadeo-Helping-Experts.jpg"
+            src="/podcast/Latino-Web-Studio-Tadeo-Ted-Martinez.jpg"
             width={1000}
             height={1333}
-            alt={"Mark (and Cooper) and Tadeo (Cuba) from Latino Web Studio"}
+            alt={"Tadeo (Cuba) from Latino Web Studio"}
           />
+          <figcaption>Tadeo (Ted) Martinez has over 10 years of experience in helping experts and professionals get found online and grow their practice.</figcaption>
+          <div className="text-center">
+          <CTAButtons />
+          </div>
         </div>
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <h2>Helping Experts Get Found</h2>
@@ -161,9 +173,7 @@ export default function AboutPage() {
             If you&apos;re ready to turn your expertise into more opportunities
             without wasting time on guesswork, let&apos;s talk.
           </p>
-          <a href="#schedule" className="btn-main">
-            Get More Cases
-          </a>
+          
         </div>
       </ContentBlock>
       <CTA />

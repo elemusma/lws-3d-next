@@ -24,64 +24,97 @@ export default function NavItems() {
   const pathname = usePathname(); // Get the current route
 
   useEffect(() => {
-    // Prevent multiple initializations
-    if (menuRef.current) return;
-    menuRef.current = true;
+  if (menuRef.current) return;
+  menuRef.current = true;
 
-    const handleDropdowns = () => {
-      const menuItems = document.querySelectorAll(".menu-item-has-children");
+  const menuItems = document.querySelectorAll<HTMLElement>('.menu-item-has-children');
 
-      menuItems.forEach((item) => {
-        const subMenu = item.querySelector(".sub-menu") as HTMLElement;
+  menuItems.forEach((item) => {
+    const link = item.querySelector('a');
+    const subMenu = item.querySelector('.sub-menu') as HTMLElement;
 
-        // if (window.matchMedia("(min-width: 1200px)").matches) {
-        // Remove any existing listeners first
-        const mouseoverHandler = () => {
-          console.log("Mouseover triggered"); // Debugging
-          if (subMenu && !subMenu.classList.contains("active-sub-menu")) {
-            subMenu.classList.add("active-sub-menu");
+    if (!link || !subMenu) return;
 
-            // Calculate dynamic height based on children
-            let totalHeight = 0;
-            const children = subMenu.querySelectorAll("li");
-            children.forEach((child) => {
-              totalHeight += (child as HTMLElement).offsetHeight;
-            });
+    // ✅ Accessibility attributes
+    link.setAttribute('role', 'button');
+    link.setAttribute('tabindex', '0');
+    link.setAttribute('aria-haspopup', 'true');
+    link.setAttribute('aria-expanded', 'false');
 
-            subMenu.style.height = `${totalHeight}px`;
-          }
-        };
-
-        const mouseoutHandler = () => {
-          if (subMenu?.classList.contains("active-sub-menu")) {
-            subMenu.classList.remove("active-sub-menu");
-            subMenu.style.height = "0px";
-          }
-        };
-
-        item.addEventListener("mouseover", mouseoverHandler);
-        item.addEventListener("mouseout", mouseoutHandler);
-
-        // Cleanup function to remove event listeners
-        return () => {
-          item.removeEventListener("mouseover", mouseoverHandler);
-          item.removeEventListener("mouseout", mouseoutHandler);
-        };
-        // }
-      });
+    // ✅ Mouse events
+    const mouseoverHandler = () => {
+      if (!subMenu.classList.contains('active-sub-menu')) {
+        subMenu.classList.add('active-sub-menu');
+        let totalHeight = 0;
+        subMenu.querySelectorAll('li').forEach((child) => {
+          totalHeight += (child as HTMLElement).offsetHeight;
+        });
+        subMenu.style.height = `${totalHeight}px`;
+        link.setAttribute('aria-expanded', 'true');
+      }
     };
 
-    // Initial setup
-    handleDropdowns();
+    const mouseoutHandler = () => {
+      subMenu.classList.remove('active-sub-menu');
+      subMenu.style.height = '0px';
+      link.setAttribute('aria-expanded', 'false');
+    };
 
-    // Re-run on window resize
-    window.addEventListener("resize", handleDropdowns);
+    item.addEventListener('mouseover', mouseoverHandler);
+    item.addEventListener('mouseout', mouseoutHandler);
+
+   const pressedOnceMap = new WeakMap<HTMLElement, boolean>();
+
+const keyboardHandler = (e: KeyboardEvent) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    const target = e.currentTarget as HTMLElement;
+
+    const isOpen = subMenu.classList.contains('active-sub-menu');
+    const pressedOnce = pressedOnceMap.get(target) || false;
+
+    if (!isOpen || !pressedOnce) {
+      e.preventDefault(); // Prevent navigation on first press
+
+      // Open the submenu
+      let totalHeight = 0;
+      subMenu.querySelectorAll('li').forEach((child) => {
+        totalHeight += (child as HTMLElement).offsetHeight;
+      });
+
+      subMenu.classList.add('active-sub-menu');
+      subMenu.style.height = `${totalHeight}px`;
+      link.setAttribute('aria-expanded', 'true');
+
+      // Mark that the key has been pressed once
+      pressedOnceMap.set(target, true);
+    } else {
+      // Let navigation happen naturally
+      // (no preventDefault)
+    }
+  }
+};
+
+
+    link.addEventListener('keydown', keyboardHandler);
+
+    // ✅ Collapse submenu when focus leaves menu item
+    item.addEventListener('focusout', function (e) {
+      if (!item.contains(e.relatedTarget as Node)) {
+        subMenu.classList.remove('active-sub-menu');
+        subMenu.style.height = '0px';
+        link.setAttribute('aria-expanded', 'false');
+      }
+    });
 
     // Cleanup
     return () => {
-      window.removeEventListener("resize", handleDropdowns);
+      item.removeEventListener('mouseover', mouseoverHandler);
+      item.removeEventListener('mouseout', mouseoutHandler);
+      link.removeEventListener('keydown', keyboardHandler);
     };
-  }, []);
+  });
+}, []);
+
 
   return (
     <>
@@ -180,19 +213,7 @@ export default function NavItems() {
             </li>
           </ul>
         </li>
-        <li className="main-title relative text-left">
-          <Link
-            href="/about"
-            className={`flex items-center gap-1 ${
-              pathname.startsWith("/about")
-                ? "text-secondary font-bold active"
-                : ""
-            }`}
-            style={{}}
-          >
-            About
-          </Link>
-        </li>
+        
         <li className="main-title relative text-left">
           <Link
             href="/podcast"
@@ -217,6 +238,19 @@ export default function NavItems() {
             style={{}}
           >
             Articles
+          </Link>
+        </li>
+        <li className="main-title relative text-left">
+          <Link
+            href="/about"
+            className={`flex items-center gap-1 ${
+              pathname.startsWith("/about")
+                ? "text-secondary font-bold active"
+                : ""
+            }`}
+            style={{}}
+          >
+            About
           </Link>
         </li>
       </ul>

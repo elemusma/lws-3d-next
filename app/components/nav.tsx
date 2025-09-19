@@ -22,7 +22,7 @@ const Nav = () => {
         className="fixed inset-x-0 bg-white lg:pt-0 lg:pb-0 pt-1 pb-1"
         style={{ zIndex: "100", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
       >
-        <div className="max-w-screen-lg mx-auto px-4">
+        <div className="container mx-auto px-4">
           <div className="flex justify-between -mx-4">
             <div className="lg:w-1/4 w-3/4 pl-4 flex items-center">
               <Link href="/">

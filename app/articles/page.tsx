@@ -8,6 +8,7 @@ import Image from "next/image";
 import Sidebar from "../components/reusable/Sidebar";
 import he from "he";
 import Main from "../js/main";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -122,7 +123,7 @@ export default async function ArticlesPage(props: {
     <>
     <Main />
     <main>
-    <div className="max-w-screen-lg mx-auto px-4">
+    <div className="container mx-auto px-4">
       <h1 className="text-3xl font-bold mb-6">
         Website Design & Search Engine Optimization Articles
       </h1>

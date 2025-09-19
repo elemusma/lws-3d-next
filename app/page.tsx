@@ -8,9 +8,10 @@ import Main from "./js/main";
 import "./styles/body.scss";
 import ContentBlock from "./components/content-block";
 import GoogleReviews from "./components/reusable/GoogleReviews";
-import { Phone } from "./components/globals";
+// import { Phone } from "./components/globals";
 import InspirationalQuote from "./components/quote";
-import Link from "next/link";
+// import Link from "next/link";
+import CTAButtons from "./components/reusable/CTAButtons";
 
 export default function Home() {
   // const currentYear = new Date().getFullYear();
@@ -106,30 +107,7 @@ export default function Home() {
                 </p>
                 {/* <Login /> */}
                 {/* </div> */}
-                <div className="">
-                  <div className="">
-                    <Link
-                      href={`/free-blog-article`}
-                      className="btn-main mx-2 blog-article"
-                    >
-                      Get Free Blog Article
-                    </Link>
-                    <Link
-                      href={`/podcast`}
-                      className="btn-main secondary mx-2 podcast-guest-attorney"
-                    >
-                      Podcast Guest Attorney
-                    </Link>
-                  </div>
-                  <div className="">
-                    <a
-                      href={`tel:+1${Phone}`}
-                      className="text-link inline-block"
-                    >
-                      {Phone}
-                    </a>
-                  </div>
-                </div>
+                <CTAButtons />
               </div>
             </div>
           </div>
