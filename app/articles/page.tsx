@@ -145,14 +145,13 @@ export default async function ArticlesPage(props: {
                   href={`/articles/${post.slug}`}
                   className="flex flex-wrap"
                 >
-                  <div className="md:w-5/12 w-full">
+                  <div className="md:w-5/12 w-full relative">
                     {/* Featured Image */}
                     <Image
                       src={ogImage}
                       alt={post.title.rendered}
                       className="w-full h-full object-cover"
-                      width="800"
-                      height="400"
+                      fill
                     />
                   </div>
                   <div className="md:w-7/12 w-full px-4 py-4">
@@ -167,7 +166,7 @@ export default async function ArticlesPage(props: {
                     </p>
                     {/* Title */}
                     <h2
-                      className="text-xl font-semibold"
+                      className="text-xl font-semibold mt-1"
                       dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                     />
 
@@ -178,7 +177,7 @@ export default async function ArticlesPage(props: {
                     </p>
 
                     {/* Link */}
-                    <span>Read more →</span>
+                    <span className="mb-4 inline-block">Read more →</span>
                   </div>
                 </Link>
               </div>
