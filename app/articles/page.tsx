@@ -139,39 +139,41 @@ export default async function ArticlesPage(props: {
             return (
               <div
                 key={post.id}
-                className="mb-8 news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4"
+                className="mb-8 news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4 min-h-[112px]"
               >
                 <Link
                   href={`/articles/${post.slug}`}
                   className="flex flex-wrap"
                 >
-                  <div className="md:w-5/12 w-full relative">
+                  <div className="md:w-5/12 w-4/12 relative">
                     {/* Featured Image */}
                     <Image
                       src={ogImage}
                       alt={post.title.rendered}
-                      className="w-full h-full object-cover"
+                      className="lg:absolute w-full h-full min-h-[112px] object-cover"
                       fill
+                      priority={false}
+                      loading="lazy"
                     />
                   </div>
-                  <div className="md:w-7/12 w-full px-4 py-4">
+                  <div className="md:w-7/12 w-8/12 px-4 py-4">
                     {/* Date */}
-                    <p className="mt-4 mb-2 text-gray-800 text-sm">
+                    {/* <p className="mt-4 mb-2 text-gray-800 text-sm">
                       {" "}
                       {new Date(post.date).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "long",
                         day: "numeric",
                       })}{" "}
-                    </p>
+                    </p> */}
                     {/* Title */}
                     <h2
-                      className="text-xl font-semibold mt-1"
+                      className="md:text-xl text-base font-semibold mt-1"
                       dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                     />
 
                     {/* Excerpt */}
-                    <p className="text-gray-700 mt-2 text-base">
+                    <p className="text-gray-700 mt-2 text-base md:block hidden">
                       {stripHtmlAndDecode(post.excerpt.rendered).slice(0, 125)}
                       ...
                     </p>
