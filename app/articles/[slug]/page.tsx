@@ -74,7 +74,7 @@ function formatDate(dateString: string): string {
 export async function generateMetadata({
   params,
 }: ArticlePageProps): Promise<Metadata> {
-  const { slug } = await params; // Await the params Promise
+  const { slug } = await params; // ✅ Await here
   const post = await fetchWordPressPost(slug);
 
   if (!post) {
@@ -86,8 +86,28 @@ export async function generateMetadata({
   return {
     title: `${post.title.rendered} | Latino Web Studio`,
     description: post.excerpt.rendered.replace(/<[^>]*>/g, "").trim(),
+    openGraph: {
+      title: `${post.title.rendered} | Latino Web Studio`,
+      description: post.excerpt.rendered.replace(/<[^>]*>/g, "").trim(),
+      url: `https://latinowebstudio.com/articles/${slug}`,
+      type: "article",
+      images: [
+        {
+          url:
+            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ??
+            "https://latinowebstudio.com/default-og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: post.title.rendered,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://latinowebstudio.com/articles/${slug}`,
+    },
   };
 }
+
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params; // Await the params Promise

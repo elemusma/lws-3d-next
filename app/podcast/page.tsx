@@ -182,7 +182,7 @@ export default function PodcastPage() {
             <div className="relative w-full pb-[56.25%] h-0">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+                src="https://www.youtube.com/embed/g9FMGRbvRuY?si=4CguQnmbAi30C3ov"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -215,6 +215,36 @@ export default function PodcastPage() {
           </div>
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link
+              href="/podcast/ian-pain-pros-attorney"
+              className="flex flex-wrap"
+            >
+              <div className="md:w-5/12 w-full">
+                <Image
+                  src="/podcast/ian-pain-pros-attorney.jpg"
+                  width={1365}
+                  height={1024}
+                  className="w-full h-100 mb-0"
+                  alt={
+                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
+                  }
+                  priority
+                />
+              </div>
+              <div className="md:w-7/12 w-full px-4 py-4">
+                <h2 className="text-xl font-proxima-bold group-hover:text-white">
+                  Guest Attorney: Ian Grady, Pain Pros Injury Attorneys
+                </h2>
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  In a recent conversation with trial attorney Ian Grady, we explored the realities of how lawyers choose experts, what marketing approaches help (or hurt) credibility, why responsible AI use is unavoidable, and why collaboration is powerful.
+                </p>
+                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link
               href="/podcast/quirkwins-pi-attorney"
               className="flex flex-wrap"
             >
@@ -223,7 +253,7 @@ export default function PodcastPage() {
                   src="/podcast/quirkwins.jpg"
                   width={1365}
                   height={1024}
-                  className="w-full h-100"
+                  className="w-full h-100 mb-0"
                   alt={
                     "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
                   }
@@ -231,14 +261,14 @@ export default function PodcastPage() {
                 />
               </div>
               <div className="md:w-7/12 w-full px-4 py-4">
-                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  Aug 18, 2025
-                </p>
                 <h2 className="text-xl font-proxima-bold group-hover:text-white">
                   Guest Attorney: Logan Quirk, Quirk Accident and Injury
                   Attorneys, APC
                 </h2>
-                <p className="mt-0 text-gray-700 text-sm group-hover:text-white">
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  We got into how marketing can help or hurt an expert witness. Logan emphasized that marketing is fine—but it has to be done right. &quot;I&apos;ve seen brochures used against treating physicians,&quot; he said.
+                </p>
+                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
                 </p>
               </div>

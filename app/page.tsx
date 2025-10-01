@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/JYgZaXCTEZU?si=EvaB-TTr7v3Jpwl_"
+                    src="https://www.youtube.com/embed/g9FMGRbvRuY?si=4CguQnmbAi30C3ov"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -144,13 +144,26 @@ export default function Home() {
               <div className="lg:w-3/4 md:w-full text-center pb-4">
                 <h2>Do You Know How Lawyers Think?</h2>
                 <p>
-                  Watch interview with plaintiff attorney Logan Quirk where he
-                  shares how he finds and vets experts witnesses and his
+                  Watch interviews with plaintiff attorneys where they
+                  share how they find and vet expert witnesses and their
                   experiences working with them.
                 </p>
               </div>
 
-              <div className="md:w-3/4 w-full px-4">
+              <div className="lg:w-5/12 w-full px-4 pb-4">
+                <div className="relative w-full pb-[56.25%] h-0">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/g9FMGRbvRuY?si=4CguQnmbAi30C3ov"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <div className="lg:w-5/12 w-full px-4 pb-4">
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
@@ -163,6 +176,11 @@ export default function Home() {
                   />
                 </div>
               </div>
+              <div className="w-full text-center">
+                <p><small>More episodes coming soon.</small></p>
+                <CTAButtons />
+              </div>
+
               {/* <Image
                   src="/photos/SEO-Results.png"
                   alt="Get Lawyers Contacting You on a Monthly Basis"
@@ -239,11 +257,14 @@ export default function Home() {
             </div>
 
             {/* CTA Button */}
-            <div className="mt-10 flex justify-center">
+            <div className="text-center">
+            <CTAButtons />
+            </div>
+            {/* <div className="mt-10 flex justify-center">
               <a href="#schedule" className="btn-main">
                 Get More Cases
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -324,11 +345,12 @@ export default function Home() {
                 </ul>
               </div>
               <div className="w-full pb-8 px-4 text-center">
-                <div style={{ marginTop: 15 }}>
+                <CTAButtons />
+                {/* <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
                     Get More Cases
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -360,11 +382,14 @@ export default function Home() {
                   stopping you from growing your expert witness practice and
                   getting found by lawyers nationwide.
                 </p>
-                <div style={{ marginTop: 15 }}>
+                <div className="text-center">
+                <CTAButtons />
+                </div>
+                {/* <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
                     Get More Cases
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

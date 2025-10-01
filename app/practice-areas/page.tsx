@@ -146,7 +146,7 @@ export default function PracticeAreasPage() {
           <div className="md:w-5/12 w-full px-4 relative md:top-[30px] md:pt-0 pt-10 practice-area-col z-10">
             <div className="relative h-full">
               <div className="img-hover overflow-hidden">
-                <Link href="/practice-areas/web-design">
+                <Link href="/practice-areas/ada-compliance">
                   <Image
                     src="/practice-areas/ADA-Compliance-SEO-Results-SEC-Randy.jpg"
                     width={1000}
@@ -185,7 +185,7 @@ export default function PracticeAreasPage() {
                   />
                 </Link>
               </div>
-              <Link href="/practice-areas/web-design">
+              <Link href="/practice-areas/ecommerce">
                 <div className="gradient-background p-4 text-white">
                   <div className="h-[2px] bg-white w-100 mt-3 mb-4 border-line"></div>
                   <h2 className="text-3xl font-bold mb-0">eCommerce</h2>
