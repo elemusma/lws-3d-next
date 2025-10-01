@@ -14,14 +14,14 @@ import CTAButtons from "@/app/components/reusable/CTAButtons";
 
 export const metadata: Metadata = {
   title:
-    "How Expert Witnesses Can Get More Cases: Advice from a Personal Injury Attorney - Latino Web Studio",
+    "Ian Grady with Pain Pros Injury Attorneys - Advice from a Litigation Attorney",
   description:
-    "Expert witness marketing tips from Logan Quirk, a personal injury attorney. Learn how attorneys find and evaluate expert witnesses, common mistakes, and how to stand out.",
+    "In a recent conversation with trial attorney Ian Grady, we explored the realities of how lawyers choose experts, what marketing approaches help (or hurt) credibility, why responsible AI use is unavoidable, and why collaboration is a powerful — yet underutilized — strategy for experts.",
   openGraph: {
     title:
-      "How Expert Witnesses Can Get More Cases: Advice from a Personal Injury Attorney - Latino Web Studio",
+      "Ian Grady with Pain Pros Injury Attorneys - Advice from a Litigation Attorney",
     description:
-      "Expert witness marketing tips from Logan Quirk, a personal injury attorney. Learn how attorneys find and evaluate expert witnesses, common mistakes, and how to stand out.",
+      "In a recent conversation with trial attorney Ian Grady, we explored the realities of how lawyers choose experts, what marketing approaches help (or hurt) credibility, why responsible AI use is unavoidable, and why collaboration is a powerful — yet underutilized — strategy for experts.",
     url: `https://latinowebstudio.com/podcast/ian-pain-pros-attorney/`,
     type: "article",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: `https://latinowebstudio.com/podcast/ian-pain-pros-attorney.jpg`,
         width: 1200,
         height: 630,
-        alt: "Logan Quirk Podcast Episode - Latino Web Studio",
+        alt: "Ian Grady Podcast Episode - Latino Web Studio",
       },
     ],
   },
@@ -47,15 +47,15 @@ export default function PodcastEpisodeIanPainPros() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "PodcastEpisode",
-            name: "How Expert Witnesses Can Get More Cases: Advice from a Personal Injury Attorney",
+            name: "Ian Grady with Pain Pros Injury Attorneys - Advice from a Litigation Attorney",
             description:
-              "Logan Quirk shares insider advice on how expert witnesses can market themselves, avoid career pitfalls, and earn more legal cases.",
+              "In a recent conversation with trial attorney Ian Grady, we explored the realities of how lawyers choose experts, what marketing approaches help (or hurt) credibility, why responsible AI use is unavoidable, and why collaboration is a powerful — yet underutilized — strategy for experts.",
             url: "https://latinowebstudio.com/podcast/ian-pain-pros-attorney/",
             datePublished: "2025-08-09",
             dateModified: "2025-08-09",
             isPartOf: {
               "@type": "PodcastSeries",
-              name: "Quirk Wins Podcast",
+              name: "Ian Grady Guest in Podcast",
             },
             image: "https://latinowebstudio.com/podcast/ian-pain-pros-attorney.jpg",
             author: {
@@ -81,19 +81,19 @@ export default function PodcastEpisodeIanPainPros() {
             potentialAction: {
               "@type": "ListenAction",
               target: [
-                "https://www.youtube.com/watch?v=JYgZaXCTEZU",
+                "https://www.youtube.com/watch?v=g9FMGRbvRuY",
                 "https://latinowebstudio.com/podcast/ian-pain-pros-attorney/",
               ],
             },
             performer: {
               "@type": "Person",
-              name: "Logan Quirk",
+              name: "Ian Grady",
               sameAs: [
-                "https://quirkwins.com/",
-                "https://www.instagram.com/quirkaccidentattorneys/",
-                "https://www.tiktok.com/@quirkwins",
-                "https://www.youtube.com/@QuirkWins",
-                "https://www.linkedin.com/in/loganquirk/",
+                "https://painpros.com/",
+                "https://www.instagram.com/paid4painpros/",
+                "https://www.tiktok.com/@painpros",
+                "https://www.youtube.com/@painpros/",
+                "https://www.linkedin.com/in/iangradyesq/",
               ],
             },
           }),
