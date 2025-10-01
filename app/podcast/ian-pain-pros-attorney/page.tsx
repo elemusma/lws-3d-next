@@ -103,7 +103,7 @@ export default function PodcastEpisodeIanPainPros() {
       <div className="single-post">
         {/* Hero Section */}
         <ContentBlock
-          sectionClassName="bg-[#f7f7f7] text-black lg:pt-[150px] pt-[100px] pb-[100px] blog"
+          sectionClassName="bg-[#f7f7f7] text-black lg:pt-[150px] pt-[100px] pb-[100px]"
           containerClassName="max-w-screen-lg mx-auto"
           rowClassName="flex flex-col items-center"
           columnClassName="flex flex-col lg:flex-row items-start"
