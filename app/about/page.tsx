@@ -31,6 +31,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+    // ✅ Add this block:
+  alternates: {
+    canonical: "https://latinowebstudio.com/about",
+  },
 };
 
 export default function AboutPage() {

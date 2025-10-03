@@ -10,19 +10,27 @@ export const metadata: Metadata = {
   title: "Free Blog Article | Latino Web Studio",
   description:
     "Get a professionally written article that showcases your expertise, boosts your visibility online, and helps attorneys find you for free.",
-  alternates: {
-    canonical: "https://latinowebstudio.com/get-started",
-  },
   openGraph: {
     title: "Free Blog Article | Latino Web Studio",
     description:
       "Get a professionally written article that showcases your expertise, boosts your visibility online, and helps attorneys find you for free.",
     url: "https://latinowebstudio.com/free-blog-article",
     type: "website",
+    images: [
+      {
+        url: "https://latinowebstudio.com/podcast/Inside-The-Attorneys-Mind-Podcast.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Inside the Attorney's Mind Podcast - Latino Web Studio",
+      },
+    ],
+  },
+    alternates: {
+    canonical: "https://latinowebstudio.com/free-blog-article",
   },
 };
 
-export default function GetStarted() {
+export default function FreeBlogArticle() {
   return (
     <>
       <script
@@ -31,8 +39,8 @@ export default function GetStarted() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Get Started | Latino Web Studio",
-            url: "https://latinowebstudio.com/get-started",
+            name: "Free Blog Article | Latino Web Studio",
+            url: "https://latinowebstudio.com/free-blog-article",
             description:
               "Get a professionally written article that showcases your expertise, boosts your visibility online, and helps attorneys find you for free.",
             mainEntity: {
