@@ -144,9 +144,9 @@ export default function Home() {
               <div className="lg:w-3/4 md:w-full text-center pb-4">
                 <h2>Do You Know How Lawyers Think?</h2>
                 <p>
-                  Watch interviews with plaintiff attorneys where they
-                  share how they find and vet expert witnesses and their
-                  experiences working with them.
+                  Watch interviews with plaintiff attorneys where they share how
+                  they find and vet expert witnesses and their experiences
+                  working with them.
                 </p>
               </div>
 
@@ -177,7 +177,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full text-center">
-                <p><small>More episodes coming soon.</small></p>
+                <p>
+                  <small>More episodes coming soon.</small>
+                </p>
                 <CTAButtons />
               </div>
 
@@ -258,7 +260,7 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="text-center">
-            <CTAButtons />
+              <CTAButtons />
             </div>
             {/* <div className="mt-10 flex justify-center">
               <a href="#schedule" className="btn-main">
@@ -383,7 +385,7 @@ export default function Home() {
                   getting found by lawyers nationwide.
                 </p>
                 <div className="text-center">
-                <CTAButtons />
+                  <CTAButtons />
                 </div>
                 {/* <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">

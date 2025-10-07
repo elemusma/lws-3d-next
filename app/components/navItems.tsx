@@ -24,97 +24,97 @@ export default function NavItems() {
   const pathname = usePathname(); // Get the current route
 
   useEffect(() => {
-  if (menuRef.current) return;
-  menuRef.current = true;
+    if (menuRef.current) return;
+    menuRef.current = true;
 
-  const menuItems = document.querySelectorAll<HTMLElement>('.menu-item-has-children');
+    const menuItems = document.querySelectorAll<HTMLElement>(
+      ".menu-item-has-children",
+    );
 
-  menuItems.forEach((item) => {
-    const link = item.querySelector('a');
-    const subMenu = item.querySelector('.sub-menu') as HTMLElement;
+    menuItems.forEach((item) => {
+      const link = item.querySelector("a");
+      const subMenu = item.querySelector(".sub-menu") as HTMLElement;
 
-    if (!link || !subMenu) return;
+      if (!link || !subMenu) return;
 
-    // ✅ Accessibility attributes
-    link.setAttribute('role', 'button');
-    link.setAttribute('tabindex', '0');
-    link.setAttribute('aria-haspopup', 'true');
-    link.setAttribute('aria-expanded', 'false');
+      // ✅ Accessibility attributes
+      link.setAttribute("role", "button");
+      link.setAttribute("tabindex", "0");
+      link.setAttribute("aria-haspopup", "true");
+      link.setAttribute("aria-expanded", "false");
 
-    // ✅ Mouse events
-    const mouseoverHandler = () => {
-      if (!subMenu.classList.contains('active-sub-menu')) {
-        subMenu.classList.add('active-sub-menu');
-        let totalHeight = 0;
-        subMenu.querySelectorAll('li').forEach((child) => {
-          totalHeight += (child as HTMLElement).offsetHeight;
-        });
-        subMenu.style.height = `${totalHeight}px`;
-        link.setAttribute('aria-expanded', 'true');
-      }
-    };
+      // ✅ Mouse events
+      const mouseoverHandler = () => {
+        if (!subMenu.classList.contains("active-sub-menu")) {
+          subMenu.classList.add("active-sub-menu");
+          let totalHeight = 0;
+          subMenu.querySelectorAll("li").forEach((child) => {
+            totalHeight += (child as HTMLElement).offsetHeight;
+          });
+          subMenu.style.height = `${totalHeight}px`;
+          link.setAttribute("aria-expanded", "true");
+        }
+      };
 
-    const mouseoutHandler = () => {
-      subMenu.classList.remove('active-sub-menu');
-      subMenu.style.height = '0px';
-      link.setAttribute('aria-expanded', 'false');
-    };
+      const mouseoutHandler = () => {
+        subMenu.classList.remove("active-sub-menu");
+        subMenu.style.height = "0px";
+        link.setAttribute("aria-expanded", "false");
+      };
 
-    item.addEventListener('mouseover', mouseoverHandler);
-    item.addEventListener('mouseout', mouseoutHandler);
+      item.addEventListener("mouseover", mouseoverHandler);
+      item.addEventListener("mouseout", mouseoutHandler);
 
-   const pressedOnceMap = new WeakMap<HTMLElement, boolean>();
+      const pressedOnceMap = new WeakMap<HTMLElement, boolean>();
 
-const keyboardHandler = (e: KeyboardEvent) => {
-  if (e.key === 'Enter' || e.key === ' ') {
-    const target = e.currentTarget as HTMLElement;
+      const keyboardHandler = (e: KeyboardEvent) => {
+        if (e.key === "Enter" || e.key === " ") {
+          const target = e.currentTarget as HTMLElement;
 
-    const isOpen = subMenu.classList.contains('active-sub-menu');
-    const pressedOnce = pressedOnceMap.get(target) || false;
+          const isOpen = subMenu.classList.contains("active-sub-menu");
+          const pressedOnce = pressedOnceMap.get(target) || false;
 
-    if (!isOpen || !pressedOnce) {
-      e.preventDefault(); // Prevent navigation on first press
+          if (!isOpen || !pressedOnce) {
+            e.preventDefault(); // Prevent navigation on first press
 
-      // Open the submenu
-      let totalHeight = 0;
-      subMenu.querySelectorAll('li').forEach((child) => {
-        totalHeight += (child as HTMLElement).offsetHeight;
+            // Open the submenu
+            let totalHeight = 0;
+            subMenu.querySelectorAll("li").forEach((child) => {
+              totalHeight += (child as HTMLElement).offsetHeight;
+            });
+
+            subMenu.classList.add("active-sub-menu");
+            subMenu.style.height = `${totalHeight}px`;
+            link.setAttribute("aria-expanded", "true");
+
+            // Mark that the key has been pressed once
+            pressedOnceMap.set(target, true);
+          } else {
+            // Let navigation happen naturally
+            // (no preventDefault)
+          }
+        }
+      };
+
+      link.addEventListener("keydown", keyboardHandler);
+
+      // ✅ Collapse submenu when focus leaves menu item
+      item.addEventListener("focusout", function (e) {
+        if (!item.contains(e.relatedTarget as Node)) {
+          subMenu.classList.remove("active-sub-menu");
+          subMenu.style.height = "0px";
+          link.setAttribute("aria-expanded", "false");
+        }
       });
 
-      subMenu.classList.add('active-sub-menu');
-      subMenu.style.height = `${totalHeight}px`;
-      link.setAttribute('aria-expanded', 'true');
-
-      // Mark that the key has been pressed once
-      pressedOnceMap.set(target, true);
-    } else {
-      // Let navigation happen naturally
-      // (no preventDefault)
-    }
-  }
-};
-
-
-    link.addEventListener('keydown', keyboardHandler);
-
-    // ✅ Collapse submenu when focus leaves menu item
-    item.addEventListener('focusout', function (e) {
-      if (!item.contains(e.relatedTarget as Node)) {
-        subMenu.classList.remove('active-sub-menu');
-        subMenu.style.height = '0px';
-        link.setAttribute('aria-expanded', 'false');
-      }
+      // Cleanup
+      return () => {
+        item.removeEventListener("mouseover", mouseoverHandler);
+        item.removeEventListener("mouseout", mouseoutHandler);
+        link.removeEventListener("keydown", keyboardHandler);
+      };
     });
-
-    // Cleanup
-    return () => {
-      item.removeEventListener('mouseover', mouseoverHandler);
-      item.removeEventListener('mouseout', mouseoutHandler);
-      link.removeEventListener('keydown', keyboardHandler);
-    };
-  });
-}, []);
-
+  }, []);
 
   return (
     <>
@@ -213,7 +213,7 @@ const keyboardHandler = (e: KeyboardEvent) => {
             </li>
           </ul>
         </li>
-        
+
         <li className="main-title relative text-left">
           <Link
             href="/podcast"

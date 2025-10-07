@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-    alternates: {
+  alternates: {
     canonical: "https://latinowebstudio.com/free-blog-article",
   },
 };

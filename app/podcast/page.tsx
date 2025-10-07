@@ -215,6 +215,40 @@ export default function PodcastPage() {
           </div>
           <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
             <Link
+              href="/podcast/karen-elevation-law"
+              className="flex flex-wrap"
+            >
+              <div className="md:w-5/12 w-full">
+                <Image
+                  src="/podcast/Karen-Elevation-Law.jpg"
+                  width={1365}
+                  height={1024}
+                  className="w-full h-100 mb-0"
+                  alt={
+                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Immigration attorneys."
+                  }
+                  priority
+                />
+              </div>
+              <div className="md:w-7/12 w-full px-4 py-4">
+                <h2 className="text-xl font-proxima-bold group-hover:text-white">
+                  Guest Attorney: Karen McCarthy with Elevation Law
+                </h2>
+                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
+                  Karen tackled one of the most persistent myths: that
+                  immigrants can simply &quot;get in line&quot; and fix their
+                  status. In reality, immigration laws are highly complex.
+                  &quot;It&apos;s not as easy as just paying a fee and filing a
+                  form,&quot; Karen explained.
+                </p>
+                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
+                  READ MORE
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
+            <Link
               href="/podcast/ian-pain-pros-attorney"
               className="flex flex-wrap"
             >
@@ -235,7 +269,11 @@ export default function PodcastPage() {
                   Guest Attorney: Ian Grady, Pain Pros Injury Attorneys
                 </h2>
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  In a recent conversation with trial attorney Ian Grady, we explored the realities of how lawyers choose experts, what marketing approaches help (or hurt) credibility, why responsible AI use is unavoidable, and why collaboration is powerful.
+                  In a recent conversation with trial attorney Ian Grady, we
+                  explored the realities of how lawyers choose experts, what
+                  marketing approaches help (or hurt) credibility, why
+                  responsible AI use is unavoidable, and why collaboration is
+                  powerful.
                 </p>
                 <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
@@ -266,7 +304,10 @@ export default function PodcastPage() {
                   Attorneys, APC
                 </h2>
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  We got into how marketing can help or hurt an expert witness. Logan emphasized that marketing is fine—but it has to be done right. &quot;I&apos;ve seen brochures used against treating physicians,&quot; he said.
+                  We got into how marketing can help or hurt an expert witness.
+                  Logan emphasized that marketing is fine—but it has to be done
+                  right. &quot;I&apos;ve seen brochures used against treating
+                  physicians,&quot; he said.
                 </p>
                 <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
                   READ MORE

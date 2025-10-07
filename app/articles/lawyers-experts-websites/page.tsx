@@ -91,7 +91,8 @@ export default function WhatLawyersWantOnExpertWitnessWebsite() {
       >
         <div className="lg:w-3/4 w-full lg:pr-8 px-4">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">
-            How Lawyers Choose an Expert and What They Want to See on Your Website Before They Call You
+            How Lawyers Choose an Expert and What They Want to See on Your
+            Website Before They Call You
           </h1>
 
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">

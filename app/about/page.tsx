@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-    // ✅ Add this block:
+  // ✅ Add this block:
   alternates: {
     canonical: "https://latinowebstudio.com/about",
   },
@@ -82,7 +82,7 @@ export default function AboutPage() {
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
         <div className="md:w-1/3 w-1/2 lg:w-1/2 px-4 mb-8 lg:mb-0">
-        <Image
+          <Image
             src="/assets/Mark-Tadeo-Latino-Web-Studio.jpg"
             width={1000}
             height={1333}
@@ -132,15 +132,13 @@ export default function AboutPage() {
             firms—not through ads, but by being found organically via his
             website.
           </p>
-          <p>
-            We offer all-inclusive packages that cover:
-          </p>
+          <p>We offer all-inclusive packages that cover:</p>
           <ul>
-              <li>Custom website design optimized for attorneys</li>
-              <li>Secure and professionally formatted content</li>
-              <li>SEO strategies tailored for expert witness services</li>
-              <li>Ongoing website maintenance and analytics</li>
-            </ul>
+            <li>Custom website design optimized for attorneys</li>
+            <li>Secure and professionally formatted content</li>
+            <li>SEO strategies tailored for expert witness services</li>
+            <li>Ongoing website maintenance and analytics</li>
+          </ul>
         </div>
       </ContentBlock>
       <ContentBlock
@@ -156,9 +154,12 @@ export default function AboutPage() {
             height={1333}
             alt={"Tadeo (Cuba) from Latino Web Studio"}
           />
-          <figcaption>Tadeo (Ted) Martinez has over 10 years of experience in helping experts and professionals get found online and grow their practice.</figcaption>
+          <figcaption>
+            Tadeo (Ted) Martinez has over 10 years of experience in helping
+            experts and professionals get found online and grow their practice.
+          </figcaption>
           <div className="text-center">
-          <CTAButtons />
+            <CTAButtons />
           </div>
         </div>
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
@@ -177,7 +178,6 @@ export default function AboutPage() {
             If you&apos;re ready to turn your expertise into more opportunities
             without wasting time on guesswork, let&apos;s talk.
           </p>
-          
         </div>
       </ContentBlock>
       <CTA />

@@ -121,44 +121,44 @@ export default async function ArticlesPage(props: {
 
   return (
     <>
-    <Main />
-    <main>
-    <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-6">
-        Website Design & Search Engine Optimization Articles
-      </h1>
+      <Main />
+      <main>
+        <div className="container mx-auto px-4">
+          <h1 className="text-3xl font-bold mb-6">
+            Website Design & Search Engine Optimization Articles
+          </h1>
 
-      {/* List of posts */}
-      <div className="flex flex-wrap">
-        <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
-          {posts.map((post) => {
-            const ogImage =
-              post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-              "https://latinowebstudio.com/default-og-image.jpg"; // fallback
+          {/* List of posts */}
+          <div className="flex flex-wrap">
+            <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
+              {posts.map((post) => {
+                const ogImage =
+                  post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+                  "https://latinowebstudio.com/default-og-image.jpg"; // fallback
 
-            return (
-              <div
-                key={post.id}
-                className="mb-8 news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4 min-h-[112px]"
-              >
-                <Link
-                  href={`/articles/${post.slug}`}
-                  className="flex flex-wrap"
-                >
-                  <div className="md:w-5/12 w-4/12 relative">
-                    {/* Featured Image */}
-                    <Image
-                      src={ogImage}
-                      alt={post.title.rendered}
-                      className="lg:absolute w-full h-full min-h-[112px] object-cover"
-                      fill
-                      priority={false}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="md:w-7/12 w-8/12 px-4 py-4">
-                    {/* Date */}
-                    {/* <p className="mt-4 mb-2 text-gray-800 text-sm">
+                return (
+                  <div
+                    key={post.id}
+                    className="mb-8 news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4 min-h-[112px]"
+                  >
+                    <Link
+                      href={`/articles/${post.slug}`}
+                      className="flex flex-wrap"
+                    >
+                      <div className="md:w-5/12 w-4/12 relative">
+                        {/* Featured Image */}
+                        <Image
+                          src={ogImage}
+                          alt={post.title.rendered}
+                          className="lg:absolute w-full h-full min-h-[112px] object-cover"
+                          fill
+                          priority={false}
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="md:w-7/12 w-8/12 px-4 py-4">
+                        {/* Date */}
+                        {/* <p className="mt-4 mb-2 text-gray-800 text-sm">
                       {" "}
                       {new Date(post.date).toLocaleDateString("en-US", {
                         year: "numeric",
@@ -166,74 +166,79 @@ export default async function ArticlesPage(props: {
                         day: "numeric",
                       })}{" "}
                     </p> */}
-                    {/* Title */}
-                    <h2
-                      className="md:text-xl text-base font-semibold mt-1"
-                      dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                    />
+                        {/* Title */}
+                        <h2
+                          className="md:text-xl text-base font-semibold mt-1"
+                          dangerouslySetInnerHTML={{
+                            __html: post.title.rendered,
+                          }}
+                        />
 
-                    {/* Excerpt */}
-                    <p className="text-gray-700 mt-2 text-base md:block hidden">
-                      {stripHtmlAndDecode(post.excerpt.rendered).slice(0, 125)}
-                      ...
-                    </p>
+                        {/* Excerpt */}
+                        <p className="text-gray-700 mt-2 text-base md:block hidden">
+                          {stripHtmlAndDecode(post.excerpt.rendered).slice(
+                            0,
+                            125,
+                          )}
+                          ...
+                        </p>
 
-                    {/* Link */}
-                    <span className="mb-4 inline-block">Read more →</span>
+                        {/* Link */}
+                        <span className="mb-4 inline-block">Read more →</span>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
+                );
+              })}
+
+              {/* Condensed Pagination with Prev/Next */}
+              <div className="flex flex-wrap justify-center gap-2 mt-8 items-center">
+                {/* Previous button */}
+                {currentPage > 1 && (
+                  <Link
+                    href={`/articles?page=${currentPage - 1}`}
+                    className="px-3 py-2 rounded bg-gray-100 border text-black hover:bg-gray-300 transition-all duration-200 ease-in-out"
+                  >
+                    Previous
+                  </Link>
+                )}
+
+                {/* Page numbers with ellipses */}
+                {pagination.map((item, idx) =>
+                  item === "..." ? (
+                    <span key={idx} className="px-3 py-2">
+                      ...
+                    </span>
+                  ) : (
+                    <Link
+                      key={idx}
+                      href={`/articles?page=${item}`}
+                      className={`px-3 py-2 rounded ${
+                        item === currentPage
+                          ? "bg-[var(--accent-primary)] text-black font-bold transition-all duration-200 ease-in-out"
+                          : "text-black hover:bg-[var(--accent-secondary)] hover:text-white transition-all duration-200 ease-in-out"
+                      }`}
+                    >
+                      {item}
+                    </Link>
+                  ),
+                )}
+
+                {/* Next button */}
+                {currentPage < totalPages && (
+                  <Link
+                    href={`/articles?page=${currentPage + 1}`}
+                    className="px-3 py-2 rounded bg-gray-100 border text-black hover:bg-gray-300 transition-all duration-200 ease-in-out"
+                  >
+                    Next
+                  </Link>
+                )}
               </div>
-            );
-          })}
-
-          {/* Condensed Pagination with Prev/Next */}
-          <div className="flex flex-wrap justify-center gap-2 mt-8 items-center">
-            {/* Previous button */}
-            {currentPage > 1 && (
-              <Link
-                href={`/articles?page=${currentPage - 1}`}
-                className="px-3 py-2 rounded bg-gray-100 border text-black hover:bg-gray-300 transition-all duration-200 ease-in-out"
-              >
-                Previous
-              </Link>
-            )}
-
-            {/* Page numbers with ellipses */}
-            {pagination.map((item, idx) =>
-              item === "..." ? (
-                <span key={idx} className="px-3 py-2">
-                  ...
-                </span>
-              ) : (
-                <Link
-                  key={idx}
-                  href={`/articles?page=${item}`}
-                  className={`px-3 py-2 rounded ${
-                    item === currentPage
-                      ? "bg-[var(--accent-primary)] text-black font-bold transition-all duration-200 ease-in-out"
-                      : "text-black hover:bg-[var(--accent-secondary)] hover:text-white transition-all duration-200 ease-in-out"
-                  }`}
-                >
-                  {item}
-                </Link>
-              ),
-            )}
-
-            {/* Next button */}
-            {currentPage < totalPages && (
-              <Link
-                href={`/articles?page=${currentPage + 1}`}
-                className="px-3 py-2 rounded bg-gray-100 border text-black hover:bg-gray-300 transition-all duration-200 ease-in-out"
-              >
-                Next
-              </Link>
-            )}
+            </div>
+            <Sidebar />
           </div>
         </div>
-        <Sidebar />
-      </div>
-    </div>
-    </main>
+      </main>
     </>
   );
 }

@@ -165,7 +165,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
               />
             ))}
           </div>
-          69 Google Reviews
+          70 Google Reviews
           <a
             href="https://g.page/r/CbF4CHrc1dblEBM/review"
             target="_blank"
@@ -195,7 +195,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
 
               return (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="bg-white rounded-lg shadow-md p-6">
+                  <div className="bg-white rounded-lg shadow-md px-6 pb-6">
                     <div className="flex items-center gap-4 mb-4">
                       <Image
                         src={review.profile_photo_url || "/default-avatar.png"}
@@ -205,7 +205,9 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
                         height={48}
                       />
                       <div>
-                        <h3 className="font-semibold">{review.author_name}</h3>
+                        <h3 className="font-semibold text-sm">
+                          {review.author_name}
+                        </h3>
                         <p className="text-sm text-gray-600">
                           {review.relative_time_description}
                         </p>

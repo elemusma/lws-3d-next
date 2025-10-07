@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 // import Image from "next/image";
 import Sidebar from "@/app/components/reusable/Sidebar";
 // import { useEffect } from "react";
-import ResponsiveEmbeds from '@/app/components/reusable/responsiveEmbeds';
+import ResponsiveEmbeds from "@/app/components/reusable/responsiveEmbeds";
 import "@/app/styles/blog.scss";
 import CTA from "@/app/components/reusable/cta";
 import Main from "@/app/js/main";
@@ -108,7 +108,6 @@ export async function generateMetadata({
   };
 }
 
-
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params; // Await the params Promise
   const post = await fetchWordPressPost(slug);
@@ -119,12 +118,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <>
-    <Main />
-    <main className="pt-[80px]">
-      <div className="bg-white">
-    <article className="max-w-screen-lg mx-auto pt-[50px] px-4 py-8 single-post bg-white">
-      {/* Featured Image */}
-      {/* {post._embedded?.["wp:featuredmedia"]?.[0] && (
+      <Main />
+      <main className="pt-[80px]">
+        <div className="bg-white">
+          <article className="max-w-screen-lg mx-auto pt-[50px] px-4 py-8 single-post bg-white">
+            {/* Featured Image */}
+            {/* {post._embedded?.["wp:featuredmedia"]?.[0] && (
         <div className="mb-8">
           <Image
             src={post._embedded["wp:featuredmedia"][0].source_url}
@@ -139,58 +138,56 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </div>
       )} */}
 
-<div className="flex flex-wrap">
-        <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
+            <div className="flex flex-wrap">
+              <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
+                {/* Article Header */}
+                <header className="mb-8">
+                  <h1
+                    className="text-3xl md:text-4xl font-bold mb-4"
+                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                  />
 
-      {/* Article Header */}
-      <header className="mb-8">
-        <h1
-          className="text-3xl md:text-4xl font-bold mb-4"
-          dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-        />
+                  <time className="text-gray-600 text-lg">
+                    Published on {formatDate(post.date)}
+                  </time>
+                </header>
 
-        <time className="text-gray-600 text-lg">
-          Published on {formatDate(post.date)}
-        </time>
-      </header>
+                {/* Article Content */}
+                <div
+                  className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-a:hover:text-blue-800"
+                  dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+                />
+              </div>
+              <Sidebar />
+            </div>
 
-      {/* Article Content */}
-      <div
-        className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-a:hover:text-blue-800"
-        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-      />
-
+            {/* Back to Articles Link */}
+            <div className="mt-12 pt-8 border-t border-gray-200">
+              <Link
+                href="/articles"
+                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+              >
+                <svg
+                  className="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                  />
+                </svg>
+                Back to Articles
+              </Link>
+            </div>
+            <ResponsiveEmbeds />
+          </article>
         </div>
-        <Sidebar />
-        </div>
-
-      {/* Back to Articles Link */}
-      <div className="mt-12 pt-8 border-t border-gray-200">
-        <Link
-          href="/articles"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
-        >
-          <svg
-            className="w-4 h-4 mr-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          Back to Articles
-        </Link>
-      </div>
-      <ResponsiveEmbeds />
-    </article>
-    </div>
-    <CTA />
-    </main>
+        <CTA />
+      </main>
     </>
   );
 }
