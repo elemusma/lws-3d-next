@@ -221,10 +221,6 @@ export default function DeceptiveContent() {
             <a href="https://discoveryengineering.net/" target="_blank">
               expert witness for arc flash fire accident
             </a>
-            &quot; or &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              expert witness for snowsports related injuries
-            </a>
             .&quot;
           </p>
           <p className="text-base text-gray-600 mb-4">

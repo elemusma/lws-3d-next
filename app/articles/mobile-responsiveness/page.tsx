@@ -189,13 +189,15 @@ export default function MobileResponsiveness() {
               keywords lawyers
             </Link>{" "}
             actually use, such as &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              skiing accidents expert witness
+            <a
+              href="https://discoveryengineering.net/practice-areas/cellular-and-gps-data-analysis-for-litigation/"
+              target="_blank"
+            >
+              GPS metadata testimony
             </a>
-            &quot;, &quot;GPS metadata testimony&quot;, or &quot;electrical
-            injury litigation expert&quot;. Responsive design ensures these
-            terms are present and readable across all devices, without harming
-            layout or performance.
+            &quot;, or &quot;electrical injury litigation expert&quot;.
+            Responsive design ensures these terms are present and readable
+            across all devices, without harming layout or performance.
           </p>
           <p className="text-base leading-relaxed text-gray-600 mb-4">
             By combining mobile-optimized content with technical SEO and clear

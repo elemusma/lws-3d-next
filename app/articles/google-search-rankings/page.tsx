@@ -217,8 +217,8 @@ export default function GoogleSearchRankings() {
             (like mobile responsiveness), and the intent behind the search. Each
             category contributes differently depending on the nature of the
             query. A transactional query like &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              hire ski and snowboard expert
+            <a href="https://www.mirandamortgagedenver.com/" target="_blank">
+              where to find a mortgage lender in Denver, CO
             </a>
             &quot; favors clear services and contact paths. An informational
             query like &quot;

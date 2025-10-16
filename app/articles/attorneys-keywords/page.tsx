@@ -172,17 +172,21 @@ export default function LawyersHighIntent() {
             relevance and authority of the entire cluster.
           </p>
           <p className="mb-4 text-base text-gray-700">
-            For instance, a pillar page titled &quot;Expert Witnesses in
-            Recreational Injury Litigation&quot; might link to cluster articles
-            such as &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              How Snowsport Experts Analyze Ski Lift Accidents
+            For example, a pillar page titled &quot;Electrical Engineering
+            Expert Witness in Rideshare GPS and Telecommunications
+            Disputes&quot; might link to supporting articles like
+            <a
+              href="https://discoveryengineering.net/blog/rideshare-sexual-assault-cases/"
+              target="_blank"
+            >
+              &quot;Rideshare Sexual Assault Cases: The Role of GPS and App Data
+              in Litigation&quot;
             </a>
-            &quot; or &quot;The Role of Expert Testimony in Snowboard Terrain
-            Park Injuries.&quot; This kind of interlinking builds topical
-            authority and helps search engines understand the full scope of
-            Randy&apos;s expertise, while also guiding attorneys through related
-            areas of litigation.
+            or &quot;Cell Tower Data and Wireless Communications in Uber and
+            Lyft Litigation.&quot; This type of strategic interlinking not only
+            builds topical authority and enhances SEO but also helps attorneys
+            quickly understand your expertise in resolving disputes involving
+            location tracking, signal loss, and telecom infrastructure.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2 text-gray-800">

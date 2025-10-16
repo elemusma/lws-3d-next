@@ -226,10 +226,10 @@ export default function SearchIntent() {
               <li>
                 <strong>Example</strong>: &quot;
                 <a
-                  href="https://snowsportsexpert.com/practice-areas/ski-area-risk-management-operations-consulting/"
+                  href="https://www.mirandamortgagedenver.com/loan-programs/fha-loans/"
                   target="_blank"
                 >
-                  skiing accident reconstruction expert witness
+                  FHA mortgage lender in Denver, CO
                 </a>
                 &quot;
               </li>

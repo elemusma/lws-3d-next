@@ -232,10 +232,6 @@ export default function KeywordMapping() {
             <a href="https://vehicleexpertwitness.net/" target="_blank">
               vehicle or automotive expert witness
             </a>
-            &quot; or &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              skiing or snowboarding expert witness
-            </a>
             &quot;. Look for both core topics and long-tail variations attorneys
             might search for.
           </p>

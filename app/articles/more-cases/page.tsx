@@ -180,10 +180,13 @@ export default function MoreCases() {
             actual expertise, with terminology that matches attorneys&apos;
             queries. Think about what a lawyer typing into Google might search:
             &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              ski lift mechanics expert witness
+            <a
+              href="https://vehicleexpertwitness.net/practice-areas/accident-mechanical-failure-investigations/"
+              target="_blank"
+            >
+              mechanical failure investigations expert witness
             </a>
-            &quot; or &quot;avalanche liability testimony.&quot;
+            .
           </p>
           <p className="text-base text-gray-700 mb-4">
             When your website content matches real-world legal search behavior,
@@ -305,10 +308,10 @@ export default function MoreCases() {
             relevance.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            Expert witnesses in niche areas—like snowsports, industrial safety,
-            or accident reconstruction—stand to gain the most from strategic
-            visibility. That means investing in content quality, technical SEO,
-            user experience, and lawyer-oriented messaging.
+            Expert witnesses in niche areas—like electrical engineering,
+            industrial safety, or accident reconstruction—stand to gain the most
+            from strategic visibility. That means investing in content quality,
+            technical SEO, user experience, and lawyer-oriented messaging.
           </p>
           <p className="text-base text-gray-700 mb-4">
             Latino Web Studio specializes in helping expert witnesses translate

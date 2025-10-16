@@ -137,10 +137,6 @@ export default function ExpertWitnessDirectories() {
             <a href="https://discoveryengineering.net/" target="_blank">
               electrical engineer
             </a>
-            , or{" "}
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              snowsports expert
-            </a>
             , these platforms allow for proximity-based queries that narrow down
             suitable candidates. The names and affiliations of experts often
             emerge from reviews of case documents, CVs, and published articles,

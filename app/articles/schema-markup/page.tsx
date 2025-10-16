@@ -172,13 +172,13 @@ export default function SchemaMarkup() {
             Local Business / Organization Schema
           </h3>
           <p className="mb-4 text-gray-700">
-            If the expert witness operates from a fixed location, LocalBusiness
-            schema should be implemented. This includes the expert&apos;s
-            address, business hours, geographic coordinates, and phone number.
-            It supports local SEO and ensures you appear in location-based
+            If the business operates from a fixed location, LocalBusiness schema
+            should be implemented. This includes the business&apos; address,
+            business hours, geographic coordinates, and phone number. It
+            supports local SEO and ensures you appear in location-based
             searches, such as “
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              ski accident reconstruction expert near me
+            <a href="/practice-areas/seo" target="_blank">
+              SEO services in Denver, CO
             </a>
             .”
           </p>

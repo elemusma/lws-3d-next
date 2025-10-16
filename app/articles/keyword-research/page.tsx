@@ -267,9 +267,11 @@ export default function KeywordResearch() {
             Strategies for discovering keyword ideas include analyzing
             competitor websites, exploring related attorney forums, and using
             autocomplete suggestions from Google. For example, searching &quot;
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              what does a ski, snowboard, sledding, and snow tubing expert
-              witness do
+            <a
+              href="https://vehicleexpertwitness.net/articles/ase-master-certified-technician/"
+              target="_blank"
+            >
+              what does an ASE Master Certified Technician do
             </a>
             &quot; could reveal nuanced topics attorneys are interested in.
             These real search patterns feed directly into content creation

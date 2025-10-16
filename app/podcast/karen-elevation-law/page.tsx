@@ -199,12 +199,12 @@ export default function PodcastEpisodeKarenElevationLaw() {
               </h2>
               <p>
                 Karen tackled one of the most persistent myths: that immigrants
-                can simply &quot;get in line&quot; and fix their status. In reality,
-                immigration laws are highly complex. &quot;It&apos;s not as easy
-                as just paying a fee and filing a form,&quot; Karen explained.
-                Many people, even without criminal records, face insurmountable
-                legal barriers—despite contributing to their communities and
-                paying taxes.
+                can simply &quot;get in line&quot; and fix their status. In
+                reality, immigration laws are highly complex. &quot;It&apos;s
+                not as easy as just paying a fee and filing a form,&quot; Karen
+                explained. Many people, even without criminal records, face
+                insurmountable legal barriers—despite contributing to their
+                communities and paying taxes.
               </p>
 
               <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -225,8 +225,8 @@ export default function PodcastEpisodeKarenElevationLaw() {
               <p>
                 Another danger lies in misinformation and bad actors.
                 Non-lawyers posing as immigration experts—often called
-                &quot;notarios&quot;—mislead families, costing them thousands and
-                jeopardizing their legal standing. Karen emphasized the
+                &quot;notarios&quot;—mislead families, costing them thousands
+                and jeopardizing their legal standing. Karen emphasized the
                 importance of working with a licensed immigration attorney who
                 specializes in the field.
               </p>

@@ -724,8 +724,8 @@ export default function PracticeAreasSEO() {
             forensic eletrical and telecom expert
           </a>{" "}
           or{" "}
-          <a href="https://snowsportsexpert.com/" target="_blank">
-            skiing and snowsport expert
+          <a href="https://vehicleexpertwitness.net/" target="_blank">
+            vehicle litigation expert
           </a>
           —your profile appears at the top of the results.
         </p>

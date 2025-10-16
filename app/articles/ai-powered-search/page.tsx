@@ -148,11 +148,6 @@ export default function AIRankingExpertWitness() {
               What qualifies an electrical engineer expert for testimony in
               electrocution or equipment failure cases?
             </a>
-            ” or “
-            <a href="https://snowsportsexpert.com/" target="_blank">
-              How is a snowsports expert witness with ASTM F27 knowledge used in
-              ski area safety or injury litigation?
-            </a>
             ”
           </p>
           <p className="text-base text-gray-600 mb-4">

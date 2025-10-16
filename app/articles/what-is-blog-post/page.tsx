@@ -171,8 +171,8 @@ export default function WhatIsBlogPost() {
           <p className="mb-4 text-base text-gray-700">
             The blog is the overarching platform; a blog post is a single
             contribution. A blog may cover multiple services or case types,
-            while each post dives deep into a specific aspect—such as snowsports
-            injury, liability and standards or{" "}
+            while each post dives deep into a specific aspect—such as satellite
+            systems, liability and standards or{" "}
             <a href="https://discoveryengineering.net/blog/" target="_blank">
               forensic electrical and telecom engineer.
             </a>
@@ -234,11 +234,10 @@ export default function WhatIsBlogPost() {
           <p className="mb-4 text-base text-gray-700">
             Common post types include how-to guides (&quot;
             <a
-              href="https://snowsportsexpert.com/articles/premise-liability-ski-areas/"
+              href="https://www.mirandamortgagedenver.com/blog/rental-properties-loans/"
               target="_blank"
             >
-              How Does Premise Liability Contribute to Negligence Claims at Ski
-              Areas?
+              How Do Rental Properties Work in a Mortgage Loan?
             </a>
             &quot;), listicles (&quot;
             <a
