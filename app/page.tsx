@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/g9FMGRbvRuY?si=4CguQnmbAi30C3ov"
+                    src="https://www.youtube.com/embed/jiJ5CkHSKL0?si=poaE7o6YjptZXhZX"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
