@@ -236,10 +236,10 @@ export default function PodcastPage() {
                   Kentucky
                 </h2>
                 <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                Louisville, Kentucky trial attorney
-                Brian, shares the critical factors attorneys consider when
-                evaluating expert witnesses online, what makes a professional website, and how experts can market themselves without compromising
-                credibility.
+                  Louisville, Kentucky trial attorney Brian, shares the critical
+                  factors attorneys consider when evaluating expert witnesses
+                  online, what makes a professional website, and how experts can
+                  market themselves without compromising credibility.
                 </p>
                 <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
                   READ MORE
