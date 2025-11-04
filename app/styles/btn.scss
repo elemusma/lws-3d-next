@@ -1,10 +1,7 @@
-// $accent-primary: #FFC80F; // Base color
-// $accent-primary-dark: darken($accent-primary, 10%); // Darkened color
-
 .btn-main {
   background: var(--accent-tertiary);
   transition: all 0.25s ease-in-out;
-  color: white;
+  color: white !important;
   text-decoration: none !important;
   padding: 15px 25px;
   border-radius: 45px;

@@ -40,7 +40,7 @@ const PricingTableWebDesign = () => {
       headerColor: "text-black",
       buttonBg: "bg-[#b5539f]",
       buttonHover: "hover:bg-[#9a4587]",
-      link: "https://buy.stripe.com/8x2dR8b7G3Bn9eH5kd7wA1a",
+      link: "https://buy.stripe.com/fZu3cufnW2xj2Qj9At7wA1j",
     },
     {
       title: "Intermediate",

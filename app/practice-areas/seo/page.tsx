@@ -199,7 +199,7 @@ export default function PracticeAreasSEO() {
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
@@ -236,7 +236,7 @@ export default function PracticeAreasSEO() {
 
       <ContentBlock
         sectionClassName="bg-gray-200 text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col"
         columnClassName="flex flex-wrap flex-col lg:flex-row items-start"
       >
@@ -302,7 +302,7 @@ export default function PracticeAreasSEO() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row-reverse lg:flex-row items-start"
       >
@@ -359,7 +359,7 @@ export default function PracticeAreasSEO() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row items-start"
       >
@@ -414,7 +414,7 @@ export default function PracticeAreasSEO() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-200 text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row items-start"
       >
@@ -427,6 +427,7 @@ export default function PracticeAreasSEO() {
             cases or is it mostly solicitation calls?
           </p>
         </div>
+        <div className="w-full flex flex-wrap px-10">
         <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
           <div
             style={{
@@ -619,6 +620,7 @@ export default function PracticeAreasSEO() {
             </p>
           </div>
         </div>
+        </div>
         <div className="w-full text-center">
           <a href="#schedule" className="btn-main">
             Get More Cases
@@ -627,7 +629,7 @@ export default function PracticeAreasSEO() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-white text-black py-[100px]"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
@@ -635,7 +637,7 @@ export default function PracticeAreasSEO() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
@@ -647,7 +649,7 @@ export default function PracticeAreasSEO() {
       <CTA />
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px] single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
