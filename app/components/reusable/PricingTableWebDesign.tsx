@@ -21,9 +21,9 @@ const PricingTableWebDesign = () => {
       typicalValue: "$8,425",
       description: "Included in Starter",
       features: [
-        { name: "4 weeks timeline", value: null },
+        { name: "6 weeks timeline", value: null },
         { name: "SSL Certificate", value: "$75" },
-        { name: "Attorney-Focused Copy", value: "$1,750" },
+        { name: "Ideal Client Focused Copy", value: "$1,750" },
         { name: "On-Page SEO optimization", value: "$1,000" },
         { name: "Mobile Optimization", value: "$500" },
         { name: "Google Analytics Setup", value: "$200" },
@@ -48,9 +48,9 @@ const PricingTableWebDesign = () => {
       typicalValue: "$13,425",
       description: "Included in Intermediate",
       features: [
-        { name: "8 weeks timeline", value: null },
+        { name: "10 weeks timeline", value: null },
         { name: "SSL Certificate", value: "$75" },
-        { name: "Attorney-Focused Copy", value: "$2,000" },
+        { name: "Ideal Client Focused Copy", value: "$2,000" },
         { name: "On-Page SEO optimization", value: "$1,200" },
         { name: "Mobile Optimization", value: "$500" },
         { name: "Google Analytics Setup", value: "$200" },
@@ -68,7 +68,7 @@ const PricingTableWebDesign = () => {
       headerColor: "text-black",
       buttonBg: "bg-[#fdb716]",
       buttonHover: "hover:bg-[#e0a614]",
-      link: "https://buy.stripe.com/8x28wO7Vu6Nz3UnaEx7wA1b",
+      link: "https://buy.stripe.com/fZueVcejS3Bn1MfeUN7wA1o",
     },
     {
       title: "Signature",
@@ -76,9 +76,9 @@ const PricingTableWebDesign = () => {
       typicalValue: "$20,925",
       description: "Included in Signature",
       features: [
-        { name: "12 weeks timeline", value: null },
+        { name: "14 weeks timeline", value: null },
         { name: "SSL Certificate", value: "$75" },
-        { name: "Attorney-Focused Copy", value: "$2,500" },
+        { name: "Ideal Client Focused Copy", value: "$2,500" },
         { name: "On-Page SEO optimization", value: "$1,500" },
         { name: "Mobile Optimization", value: "$500" },
         { name: "Google Analytics Setup", value: "$200" },
@@ -90,14 +90,14 @@ const PricingTableWebDesign = () => {
         { name: "Directory Cleanup & Optimization", value: "$650" },
         { name: "30 Pages Including Homepage", value: "$9,500" },
       ],
-      note: "Want a free website? Ask about our SEO bundle",
+      note: "For Experts with 20+ Years Experience",
       color: "text-[#1f184a]",
       border: "border-[#1f184a]",
       headerBg: "bg-[#1f184a]",
       headerColor: "text-white",
       buttonBg: "bg-[#1f184a]",
       buttonHover: "hover:bg-[#15102e]",
-      link: "https://buy.stripe.com/dRm7sKgs02xjduX9At7wA1c",
+      link: "https://buy.stripe.com/8x2cN45Nm7RD2Qj6oh7wA1n",
     },
   ];
 
@@ -172,7 +172,7 @@ const PricingTableWebDesign = () => {
               )}
 
               {plan.note && (
-                <p className="text-red-500 font-bold text-xl mb-4">
+                <p className="text-red-500 font-bold text-base mb-4">
                   {plan.note}
                 </p>
               )}
@@ -204,6 +204,7 @@ const PricingTableWebDesign = () => {
                 >
                   {expandedCards[index] ? "Hide" : "Show"} Value Breakdown
                 </button>
+                <p style={{fontSize:"14px"}}>Half Now. Half at Completion.</p>
               </div>
 
               {/* Subscribe Link */}
@@ -213,7 +214,7 @@ const PricingTableWebDesign = () => {
                 rel="noopener noreferrer"
                 className={`${plan.buttonBg} ${plan.buttonHover} text-white px-6 py-3 rounded-lg text-center font-semibold transition-colors block`}
               >
-                Subscribe Now
+                Make First Payment
               </a>
             </div>
           </div>

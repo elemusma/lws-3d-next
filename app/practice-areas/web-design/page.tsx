@@ -171,7 +171,7 @@ export default function PracticeAreasWebDesign() {
       {/* Hero Section */}
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col lg:flex-row-reverse lg:flex-row items-start"
       >
@@ -206,7 +206,7 @@ export default function PracticeAreasWebDesign() {
 
       <ContentBlock
         sectionClassName="bg-gray-200 text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col"
         columnClassName="flex flex-wrap flex-col lg:flex-row items-start"
       >
@@ -272,7 +272,7 @@ export default function PracticeAreasWebDesign() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row-reverse lg:flex-row items-center"
       >
@@ -328,7 +328,7 @@ export default function PracticeAreasWebDesign() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row items-center"
       >
@@ -382,7 +382,7 @@ export default function PracticeAreasWebDesign() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-200 text-black pt-[100px] pb-[100px] blog single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex flex-col items-center"
         columnClassName="flex flex-col flex-wrap lg:flex-row items-start"
       >
@@ -596,7 +596,7 @@ export default function PracticeAreasWebDesign() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-white text-black py-[100px]"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
@@ -615,7 +615,7 @@ export default function PracticeAreasWebDesign() {
       </ContentBlock>
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px]"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
@@ -627,7 +627,7 @@ export default function PracticeAreasWebDesign() {
       <CTA />
       <ContentBlock
         sectionClassName="bg-gray-100 text-black pt-[125px] pb-[100px] single-post"
-        containerClassName="max-w-screen-lg mx-auto"
+        containerClassName="max-w-screen-xl mx-auto"
         rowClassName="flex"
         columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
       >
