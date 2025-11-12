@@ -10,7 +10,7 @@ function Logo() {
   const subtext =
     pathname === "/practice-areas/ecommerce"
       ? "B2C - B2B - eCommerce"
-      : "Attorneys - Retainers - Cases";
+      : "Online Presence - Name Recognition";
 
   return (
     <div
