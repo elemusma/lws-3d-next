@@ -6,6 +6,7 @@ import "@/app/styles/img.scss"; // Import styles for practice areas
 import Cta from "../components/reusable/cta";
 import Main from "../js/main";
 import "@/app/styles/practice-areas.scss"; // Import styles for practice areas
+import CTAButtons from "../components/reusable/CTAButtons";
 
 export const metadata: Metadata = {
   title: "Practice Areas | Latino Web Studio – SEO & eCommerce Development",
@@ -198,9 +199,10 @@ export default function PracticeAreasPage() {
           {/* end of col */}
           <div className="w-full px-4 relative md:pt-[150px] pt-20 pb-20 px-20 text-center">
             <div className="relative h-full">
-              <Link href="#schedule" className="btn-main">
+              <CTAButtons />
+              {/* <Link href="#schedule" className="btn-main">
                 Get More Cases and Get Found by Attorneys
-              </Link>
+              </Link> */}
             </div>
           </div>
         </ContentBlock>

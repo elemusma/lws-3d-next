@@ -175,7 +175,7 @@ export default function NavItems() {
                 Web Design
               </Link>
             </li>
-            <li key={"/practice-areas/hipaa-compliance"}>
+            {/* <li key={"/practice-areas/hipaa-compliance"}>
               <Link
                 href={"/practice-areas/hipaa-compliance"}
                 className={`block px-4 py-2 ${
@@ -186,8 +186,8 @@ export default function NavItems() {
               >
                 HIPAA Compliance
               </Link>
-            </li>
-            <li key={"/practice-areas/ada-compliance"}>
+            </li> */}
+            {/* <li key={"/practice-areas/ada-compliance"}>
               <Link
                 href={"/practice-areas/ada-compliance"}
                 className={`block px-4 py-2 ${
@@ -198,8 +198,8 @@ export default function NavItems() {
               >
                 ADA Compliance
               </Link>
-            </li>
-            <li key={"/practice-areas/ecommerce"}>
+            </li> */}
+            {/* <li key={"/practice-areas/ecommerce"}>
               <Link
                 href={"/practice-areas/ecommerce"}
                 className={`block px-4 py-2 ${
@@ -210,7 +210,7 @@ export default function NavItems() {
               >
                 eCommerce
               </Link>
-            </li>
+            </li> */}
           </ul>
         </li>
 
@@ -251,6 +251,19 @@ export default function NavItems() {
             style={{}}
           >
             About
+          </Link>
+        </li>
+        <li className="main-title relative text-left">
+          <Link
+            href="/contact"
+            className={`flex items-center gap-1 ${
+              pathname.startsWith("/contact")
+                ? "text-secondary font-bold active"
+                : ""
+            }`}
+            style={{}}
+          >
+            Contact
           </Link>
         </li>
       </ul>

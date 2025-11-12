@@ -127,7 +127,7 @@ const ContactForm: React.FC = () => {
   const submitButtonText =
     pathname === "/practice-areas/ecommerce"
       ? "Build a Custom eCommerce Platform"
-      : "Get More Cases and Get Found by Attorneys";
+      : "Get More Clients by Getting Found";
   return (
     <div className="relative items-center justify-center bg-cover bg-center w-full">
       <div className="relative">
