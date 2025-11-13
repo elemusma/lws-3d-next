@@ -439,7 +439,7 @@ export default function Home() {
                   >
                     1.
                   </span>
-                  <span className="text-white">Get More Cases</span>
+                  <span className="text-white">Give Ted a Call</span>
                 </h2>
               </div>
               <div
@@ -462,7 +462,7 @@ export default function Home() {
                   >
                     2.
                   </span>
-                  <span>Tell Us Your Expertise</span>
+                  <span>Tell Ted About You</span>
                 </h2>
               </div>
               <div

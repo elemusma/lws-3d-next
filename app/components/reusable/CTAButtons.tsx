@@ -7,10 +7,10 @@ function CTAButtons() {
       <div className="r">
         <div className="">
           <Link
-            href={`/free-blog-article`}
+            href={`#schedule`}
             className="btn-main mx-2 blog-article"
           >
-            Get Free Blog Article
+            Get More Leads
           </Link>
           <Link
             href={`/podcast`}

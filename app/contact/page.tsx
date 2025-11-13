@@ -20,8 +20,8 @@ export default function ContactPage() {
               </div>
               <div className="px-4 text-center lg:w-3/4 w-full" id="calendar">
               <p>
-                  Send a message to help you get started
-                  with your website or start an SEO strategy that results in
+                  If you need help getting more clients send a message to help you get started
+                  with your website or start an SEO strategy that gets you ranking in Google and AI resulting in
                   more phone calls, texts and emails. Prefer to call?{" "}
               <Link href="tel:+13039278228" className="text-link">
                 303.927.8228
