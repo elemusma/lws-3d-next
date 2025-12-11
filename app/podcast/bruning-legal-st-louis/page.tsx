@@ -157,7 +157,7 @@ export default function PodcastEpisodePatrick() {
                   className="mx-2"
                 >
                   <Image
-                    src="/icons/icon-x.png"
+                    src="/icons/icon-X.png"
                     width={45}
                     height={45}
                     alt={
