@@ -19,6 +19,7 @@ interface SignatureData {
   profileImage1: string;
   profileImage2: string;
   cvLink: string;
+  disclaimer: string;
 }
 
 const defaultData: SignatureData = {
@@ -38,6 +39,7 @@ const defaultData: SignatureData = {
   profileImage1: 'https://testdrivetech.com/wp-content/uploads/2025/11/Steve-on-Box-Truck-Engine-Hood-Open.jpg',
   profileImage2: 'https://testdrivetech.com/wp-content/uploads/2025/11/Steve-Classic-Car-Inspections.jpg',
   cvLink: 'https://vehicleexpertwitness.net/cv/',
+  disclaimer:'Your privacy is important to us. This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, you are hereby notified that any dissemination, distribution, or copying of this email or its contents is strictly prohibited. If you have received this email in error, please notify the sender immediately and delete this email from your system.',
 };
 
 export default function SignatureCopyTool() {
@@ -161,6 +163,7 @@ export default function SignatureCopyTool() {
                 </table>
                 <span style="display:block;text-align:left">
                   <a href="${data.cvLink}" style="border-width:6px 12px;border-style:solid;border-color:rgb(151,0,0);display:inline-block;background-color:rgb(151,0,0);color:rgb(255,255,255);font-weight:700;text-decoration:none;text-align:center;line-height:40px;font-size:12px;border-radius:3px" target="_blank">Download My Curriculum Vitae (CV)</a>
+                  <p style="font-size:11px;margin-top:15px;">${data.disclaimer}</p>
                 </span>
               </td>
             </tr>
@@ -208,7 +211,7 @@ export default function SignatureCopyTool() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Edit Section */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-lg shadow-md p-6 md:order-1 order-2">
             <h2 className="text-xl font-semibold mb-4 text-gray-900">Edit Information</h2>
             <div className="space-y-4">
               <div>
@@ -357,24 +360,26 @@ export default function SignatureCopyTool() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Disclaimer Text</label>
+                <textarea
+                  value={data.disclaimer}
+                  onChange={(e) => handleInputChange('disclaimer', e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
+                  style={{height: '150px'}}
+                />
+              </div>
             </div>
           </div>
 
           {/* Preview & Copy Section */}
-          <div className="flex flex-col gap-4">
-            <div className="bg-white rounded-lg shadow-md p-6 flex-1">
-              <h2 className="text-xl font-semibold mb-4 text-gray-900">Preview</h2>
-              <div className="border border-gray-200 rounded-md p-4 bg-white overflow-auto max-h-100">
-                <div dangerouslySetInnerHTML={{ __html: generateHTML() }} />
-              </div>
-            </div>
-
+          <div className="flex flex-col gap-4 md:order-2 order-1">
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-lg font-semibold mb-4 text-gray-900">How to Use</h3>
               <ol className="text-sm text-gray-700 space-y-2 list-decimal list-inside mb-4">
                 <li>Click the &quot;Copy Signature&quot; button below</li>
                 <li>Go to Google Workspace Settings → Signature</li>
-                <li>Click in the signature box and paste (Ctrl+V or Cmd+V)</li>
+                <li>Click in the signature box, press Enter twice and paste (Ctrl+V or Cmd+V)</li>
                 <li>Click Save</li>
               </ol>
               <button
@@ -387,6 +392,12 @@ export default function SignatureCopyTool() {
               >
                 {copied ? '✓ Copied to Clipboard!' : 'Copy Signature'}
               </button>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-6 flex-1">
+              <h2 className="text-xl font-semibold mb-4 text-gray-900">Preview</h2>
+              <div className="border border-gray-200 rounded-md p-4 bg-white overflow-auto max-h-100">
+                <div dangerouslySetInnerHTML={{ __html: generateHTML() }} />
+              </div>
             </div>
           </div>
         </div>
