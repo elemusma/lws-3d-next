@@ -6,7 +6,8 @@ import CTA from "@/app/components/reusable/ctaPodcast";
 
 import GoogleReviews from "@/app/components/reusable/GoogleReviews";
 import Main from "../js/main";
-import Link from "next/link";
+// import Link from "next/link";
+import NewsPostCard from "../components/podcastCard";
 
 export const metadata: Metadata = {
   title:
@@ -155,30 +156,29 @@ export default function PodcastPage() {
       <Main />
       <main>
         <ContentBlock
-          sectionClassName="text-black pt-[5px] pb-[100px]"
+          sectionClassName="text-black pt-[5px]"
           containerClassName="max-w-screen-lg mx-auto"
           rowClassName="flex flex-col items-center"
           columnClassName="w-full px-4"
         >
           <div className="mb-8 lg:mb-0 text-center">
             <h1 className="md:text-3xl text-2xl mt-0">
-              Inside the Attorney&apos;s Mind - Real Conversations
+              Inside the Attorney&apos;s Mind
             </h1>
+            <h2 className="m-0 text-sm">Interviews with Litigation Attorneys</h2>
 
-            <p className="mb-2 text-lg">
+            {/* <p className="mb-2 text-lg">
               This podcast was created to bridge the gap between expert
               witnesses and the attorneys who hire them. In each episode, we sit
               down with practicing lawyers to explore how they evaluate, select,
               and work with expert witnesses in real cases.
-            </p>
-            <a href="#schedule" className="btn-main">
+            </p> */}
+            {/* <a href="#schedule" className="btn-main">
               Be Our Next Guest Attorney
-            </a>
-            {/* <div>
-              <small><a href="https://youtu.be/JYgZaXCTEZU?si=1bGhEbLWdTvFnJvz" target="_blank">Watch episode with Logan Quirk</a></small>
-            </div> */}
+            </a> */}
+            
           </div>
-          <div className="md:w-2/3 w-full mx-auto mt-2">
+          {/* <div className="md:w-2/3 w-full mx-auto mt-2">
             <div className="relative w-full pb-[56.25%] h-0">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
@@ -190,165 +190,69 @@ export default function PodcastPage() {
                 allowFullScreen
               />
             </div>
-            {/* <Image
-              src="/podcast/Inside-The-Attorneys-Mind-Podcast.jpg"
-              width={1365}
-              height={1024}
-              alt={
-                "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
-              }
-              priority
-            /> */}
-          </div>
+          </div> */}
         </ContentBlock>
         <ContentBlock
-          sectionClassName="text-black pt-[50px] pb-[100px]"
-          containerClassName="max-w-screen-lg mx-auto"
+          sectionClassName="text-black pb-[100px]"
+          containerClassName="max-w-screen-xl mx-auto"
           rowClassName="flex flex-col"
-          columnClassName="w-full px-4"
+          columnClassName="w-full px-4 flex flex-wrap"
         >
-          <div className="text-center">
+          {/* <div className="text-center">
             <h2>Inside the Attorney&apos;s Mind Episodes</h2>
             <p>
               <small>More episodes coming soon:</small>
             </p>
+          </div> */}
+          <NewsPostCard
+  href="/podcast/bruning-legal-st-louis"
+  imageSrc="/podcast/bruning-legal-st-louis.jpg"
+  imageAlt="Inside the Attorney's Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
+  title="Bruning Legal in St. Louis, MO"
+  description="What attorneys look for when hiring experts, how professional websites and credibility impact hiring decisions."
+  priority
+/>
+          <NewsPostCard
+  href="/podcast/dettman-law-louisville"
+  imageSrc="/podcast/Dettman-Law-Louisville.jpg"
+  imageAlt="Inside the Attorney's Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
+  title="Dettman Law in Louisville, KY"
+  description="Trial attorney Brian, shares the critical factors attorneys consider when evaluating expert witnesses online."
+  priority
+/>
+          <NewsPostCard
+  href="/podcast/karen-elevation-law"
+  imageSrc="/podcast/Karen-Elevation-Law.jpg"
+  imageAlt="Inside the Attorney's Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
+  title="Elevation Law in Denver, CO"
+  description="Karen tackled one of the most persistent myths: that immigrants can simply &quot;get in line&quot; and fix their status."
+  priority
+/>
+          <NewsPostCard
+  href="/podcast/ian-pain-pros-attorney"
+  imageSrc="/podcast/ian-pain-pros-attorney.jpg"
+  imageAlt="Inside the Attorney's Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
+  title="Pain Pros Injury in Atlanta, GA"
+  description="What marketing approaches help (or hurt) credibility, responsible AI use, and why collaboration is powerful."
+  priority
+/>
+          <NewsPostCard
+  href="/podcast/quirkwins-pi-attorney"
+  imageSrc="/podcast/quirkwins.jpg"
+  imageAlt="Inside the Attorney's Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
+  title="Quirkwins in Los Angeles, CA"
+  description="Marketing is fine-but it has to be done right. &quot;I&apos;ve seen brochures used against treating physicians,&quot; he said."
+  priority
+/>
+          
+          <div className="lg:w-1/2 w-full text-center">
+            <a href="#schedule" className="btn-main">
+              Be Our Next Guest Attorney
+            </a>
           </div>
-          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link
-              href="/podcast/dettman-law-louisville"
-              className="flex flex-wrap"
-            >
-              <div className="md:w-5/12 w-full">
-                <Image
-                  src="/podcast/Dettman-Law-Louisville.jpg"
-                  width={1365}
-                  height={1024}
-                  className="w-full h-100 mb-0"
-                  alt={
-                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
-                  }
-                  priority
-                />
-              </div>
-              <div className="md:w-7/12 w-full px-4 py-4">
-                <h2 className="text-xl font-proxima-bold group-hover:text-white">
-                  Guest Attorney: Brian Dettman with Dettman Law in Louisville,
-                  Kentucky
-                </h2>
-                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  Louisville, Kentucky trial attorney Brian, shares the critical
-                  factors attorneys consider when evaluating expert witnesses
-                  online, what makes a professional website, and how experts can
-                  market themselves without compromising credibility.
-                </p>
-                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
-                  READ MORE
-                </p>
-              </div>
-            </Link>
-          </div>
-          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link
-              href="/podcast/karen-elevation-law"
-              className="flex flex-wrap"
-            >
-              <div className="md:w-5/12 w-full">
-                <Image
-                  src="/podcast/Karen-Elevation-Law.jpg"
-                  width={1365}
-                  height={1024}
-                  className="w-full h-100 mb-0"
-                  alt={
-                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Immigration attorneys."
-                  }
-                  priority
-                />
-              </div>
-              <div className="md:w-7/12 w-full px-4 py-4">
-                <h2 className="text-xl font-proxima-bold group-hover:text-white">
-                  Guest Attorney: Karen McCarthy with Elevation Law
-                </h2>
-                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  Karen tackled one of the most persistent myths: that
-                  immigrants can simply &quot;get in line&quot; and fix their
-                  status. In reality, immigration laws are highly complex.
-                  &quot;It&apos;s not as easy as just paying a fee and filing a
-                  form,&quot; Karen explained.
-                </p>
-                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
-                  READ MORE
-                </p>
-              </div>
-            </Link>
-          </div>
-          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link
-              href="/podcast/ian-pain-pros-attorney"
-              className="flex flex-wrap"
-            >
-              <div className="md:w-5/12 w-full">
-                <Image
-                  src="/podcast/ian-pain-pros-attorney.jpg"
-                  width={1365}
-                  height={1024}
-                  className="w-full h-100 mb-0"
-                  alt={
-                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
-                  }
-                  priority
-                />
-              </div>
-              <div className="md:w-7/12 w-full px-4 py-4">
-                <h2 className="text-xl font-proxima-bold group-hover:text-white">
-                  Guest Attorney: Ian Grady, Pain Pros Injury Attorneys
-                </h2>
-                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  In a recent conversation with trial attorney Ian Grady, we
-                  explored the realities of how lawyers choose experts, what
-                  marketing approaches help (or hurt) credibility, why
-                  responsible AI use is unavoidable, and why collaboration is
-                  powerful.
-                </p>
-                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
-                  READ MORE
-                </p>
-              </div>
-            </Link>
-          </div>
-          <div className="news-blog-post bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group mb-4">
-            <Link
-              href="/podcast/quirkwins-pi-attorney"
-              className="flex flex-wrap"
-            >
-              <div className="md:w-5/12 w-full">
-                <Image
-                  src="/podcast/quirkwins.jpg"
-                  width={1365}
-                  height={1024}
-                  className="w-full h-100 mb-0"
-                  alt={
-                    "Inside the Attorney&apos;s Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Litigation attorneys to find out how they find and vet expert witnesses."
-                  }
-                  priority
-                />
-              </div>
-              <div className="md:w-7/12 w-full px-4 py-4">
-                <h2 className="text-xl font-proxima-bold group-hover:text-white">
-                  Guest Attorney: Logan Quirk, Quirk Accident and Injury
-                  Attorneys, APC
-                </h2>
-                <p className="mb-0 text-gray-700 text-sm group-hover:text-white">
-                  We got into how marketing can help or hurt an expert witness.
-                  Logan emphasized that marketing is fine—but it has to be done
-                  right. &quot;I&apos;ve seen brochures used against treating
-                  physicians,&quot; he said.
-                </p>
-                <p className="mt-4 text-gray-700 text-sm group-hover:text-white">
-                  READ MORE
-                </p>
-              </div>
-            </Link>
-          </div>
+          
+          
+          
         </ContentBlock>
 
         <ContentBlock
@@ -372,7 +276,7 @@ export default function PodcastPage() {
             <p className="text-black">
               Get in front of expert witnesses who want to learn directly from
               attorneys. Your insights help them serve the legal system more
-              effectively — and remember who shared the knowledge.
+              effectively and remember who shared the knowledge.
             </p>
           </div>
           <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 text-center">
@@ -423,7 +327,7 @@ export default function PodcastPage() {
         >
           <div className="w-full text-center pb-8">
             <h2 className="">
-              Connecting Experts to Attorneys — One Insight at a Time
+              Connecting Experts to Attorneys - One Insight at a Time
             </h2>
             <div className="divider"></div>
           </div>
@@ -448,7 +352,7 @@ export default function PodcastPage() {
               <h3 style={{ marginBottom: "0px" }}>Attorney-Driven Insights</h3>
               <p>
                 Each episode features real attorneys discussing what they look
-                for in expert witnesses — giving you firsthand access to their
+                for in expert witnesses, giving you firsthand access to their
                 thought process and expectations.
               </p>
             </div>
@@ -464,7 +368,7 @@ export default function PodcastPage() {
               <h3 style={{ marginBottom: "0px" }}>Strategic Exposure</h3>
               <p>
                 Guest attorneys get featured on Spotify, Apple Podcasts, and our
-                website — with links to their firm, boosting visibility and
+                website, with links to their firm, boosting visibility and
                 brand awareness with expert audiences.
               </p>
             </div>
@@ -500,7 +404,7 @@ export default function PodcastPage() {
               <h3 style={{ marginBottom: "0px" }}>Professional Credibility</h3>
               <p>
                 Appearing as a guest positions you as a thought leader in your
-                practice area — showcasing your experience to a niche,
+                practice area, showcasing your experience to a niche,
                 professional audience of expert witnesses and fellow attorneys.
               </p>
             </div>
@@ -559,8 +463,8 @@ export default function PodcastPage() {
 
             <h3>Who is my audience?</h3>
             <p>
-              My audience is made up of expert witnesses — doctors, engineers,
-              forensic professionals, and other specialists — who want to work
+              My audience is made up of expert witnesses who are doctors, engineers,
+              forensic professionals, and other specialists who want to work
               with more attorneys and better understand how to position
               themselves for legal work.
             </p>
@@ -569,7 +473,7 @@ export default function PodcastPage() {
             <p>
               Because attorneys know better than anyone what makes a strong
               expert witness. Your perspective is valuable and can help shape
-              how experts show up in cases — which benefits the entire legal
+              how experts show up in cases which benefits the entire legal
               process.
             </p>
 
@@ -583,8 +487,7 @@ export default function PodcastPage() {
 
             <h3>What kind of questions will be asked?</h3>
             <p>
-              We&apos;ll ask about your experience working with expert witnesses
-              — what makes one stand out, what red flags you look for, and how
+              We&apos;ll ask about your experience working with expert witnesses, what makes one stand out, what red flags you look for, and how
               experts can improve their communication, reports, or testimony.
             </p>
             <h3>How long is the podcast episode?</h3>
@@ -595,12 +498,12 @@ export default function PodcastPage() {
             <h3>Do I need to prepare anything?</h3>
             <p>
               No major prep is required. We&apos;ll send over a few suggested
-              questions ahead of time so you feel ready — it&apos;s a relaxed,
+              questions ahead of time so you feel ready. It&apos;s a relaxed,
               interview-style conversation.
             </p>
             <h3>Will I get to share my firm or contact info?</h3>
             <p>
-              Yes — we&apos;ll mention your name, firm, and include a link to
+              Yes, we&apos;ll mention your name, firm, and include a link to
               your website in the episode description. Think of it as a small
               but meaningful way to give back to the legal community and gain
               some organic exposure.

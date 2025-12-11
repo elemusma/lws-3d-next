@@ -16,7 +16,7 @@ function CTAButtons() {
             href={`/podcast`}
             className="btn-main secondary mx-2 podcast-guest-attorney"
           >
-            Podcast Guest Attorney
+            Be Podcast Guest
           </Link>
         </div>
         <div className="">

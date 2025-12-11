@@ -17,7 +17,7 @@ export default function Sidebar() {
         <div className="h-[25px]"></div>
         <WhitePaper />
       </div>
-      <div className="text-center pt-4">
+      {/* <div className="text-center pt-4">
         <h2 className="sr-only">About the Author</h2>
         <Image
           src="/assets/Headshot_1.png"
@@ -30,7 +30,7 @@ export default function Sidebar() {
         <small className="pb-4 block">
           Web Design &amp; SEO for Expert Witnesses
         </small>
-      </div>
+      </div> */}
 
       <div className="gradient-background pb-5 rounded-[45px]">
         <div className="flex flex-wrap justify-center">
