@@ -205,7 +205,7 @@ export default function PodcastPage() {
             </p>
           </div> */}
           <NewsPostCard
-  href="/podcast/bruning-legal-st-louis"
+  href="/podcast/bruning-law"
   imageSrc="/podcast/bruning-legal-st-louis.jpg"
   imageAlt="Inside the Attorney's Mind - Real Conversations - Tadeo (Ted) Martinez Interviewing Personal Injury Attorneys."
   title="Bruning Legal in St. Louis, MO"
