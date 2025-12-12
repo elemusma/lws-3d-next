@@ -78,7 +78,7 @@ export default function PodcastEpisodePatrick() {
       />
       <div className="single-post">
         <ContentBlock
-          sectionClassName="bg-[#f7f7f7] text-black lg:pt-[150px] pt-[100px] pb-[100px]"
+          sectionClassName="bg-[#f7f7f7] text-black pt-[100px] pb-[100px]"
           containerClassName="max-w-screen-lg mx-auto"
           rowClassName="flex flex-col items-center"
           columnClassName="flex flex-col lg:flex-row items-start"
@@ -134,6 +134,22 @@ export default function PodcastEpisodePatrick() {
                   />
                 </a>
                 <a
+                  href="https://www.instagram.com/bruninglawfirm/"
+                  title="Patrick Hinrichs - Bruning Law Firm LinkedIn link"
+                  target="_blank"
+                  className="mx-2"
+                >
+                  <Image
+                    src="/icons/icon-instagram.png"
+                    width={45}
+                    height={45}
+                    alt={
+                      "Patrick Hinrichs - Bruning Law Firm Instagram link"
+                    }
+                    priority
+                  />
+                </a>
+                <a
                   href="https://www.facebook.com/bruninglegal"
                   title="Patrick Hinrichs - Bruning Law Firm LinkedIn link"
                   target="_blank"
@@ -150,7 +166,7 @@ export default function PodcastEpisodePatrick() {
                   />
                 </a>
                 
-                <a
+                {/* <a
                   href="https://x.com/BruningLegal"
                   title="Patrick Hinrichs - Bruning Law Firm LinkedIn link"
                   target="_blank"
@@ -165,7 +181,7 @@ export default function PodcastEpisodePatrick() {
                     }
                     priority
                   />
-                </a>
+                </a> */}
                 <a
                   href="https://www.youtube.com/@thebruninglawfirm"
                   title="Patrick Hinrichs - Bruning Law Firm LinkedIn link"
@@ -185,7 +201,7 @@ export default function PodcastEpisodePatrick() {
               </div>
 
               <h1 className="text-3xl font-bold mb-6">
-                How Attorneys Really Evaluate Expert Witnesses
+                How Plaintiff Litigation Attorneys Evaluate Expert Witnesses
               </h1>
 
               <p className="mb-4">
