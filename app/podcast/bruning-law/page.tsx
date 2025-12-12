@@ -8,18 +8,18 @@ import Sidebar from "@/app/components/reusable/Sidebar";
 import CTAButtons from "@/app/components/reusable/CTAButtons";
 
 export const metadata: Metadata = {
-  title: "Patrick Hinrichs - Expert Witness Selection & Personal Injury Law",
+  title: "Patrick Hinrichs with Bruning Law - How Plaintiff Litigation Attorneys Evaluate Expert Witnesses",
   description:
     "A conversation with personal injury attorney Patrick Hinrichs from Bruning Law Firm about how attorneys evaluate expert witnesses, what attorneys actually look for on expert websites, and how overusing the same expert can damage your credibility.",
   openGraph: {
-    title: "Patrick Hinrichs - Expert Witness Selection & Personal Injury Law",
+    title: "Patrick Hinrichs with Bruning Law  - How Plaintiff Litigation Attorneys Evaluate Expert Witnesses",
     description:
       "A conversation with personal injury attorney Patrick Hinrichs from Bruning Law Firm about how attorneys evaluate expert witnesses, what attorneys actually look for on expert websites, and how overusing the same expert can damage your credibility.",
-    url: "https://latinowebstudio.com/podcast/patrick-Hinrichs-bruning-law",
+    url: "https://latinowebstudio.com/podcast/bruning-law",
     type: "article",
     images: [
       {
-        url: "https://latinowebstudio.com/podcast/Patrick-Hinrichs-Bruning-Law.jpg",
+        url: "https://latinowebstudio.com/podcast/bruning-legal-st-louis.jpg",
         width: 1200,
         height: 630,
         alt: "Patrick Hinrichs Podcast Episode - Latino Web Studio",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://latinowebstudio.com/podcast/patrick-Hinrichs-bruning-law/",
+    canonical: "https://latinowebstudio.com/podcast/bruning-law/",
   },
 };
 
@@ -43,7 +43,7 @@ export default function PodcastEpisodePatrick() {
             name: "Patrick Hinrichs - Expert Witness Selection & Personal Injury Law",
             description:
               "A conversation with personal injury attorney Patrick Hinrichs about how attorneys evaluate expert witnesses, what makes an effective website for experts, the dangers of overusing the same expert, and how to build credibility in litigation.",
-            url: "https://latinowebstudio.com/podcast/patrick-Hinrichs-bruning-law/",
+            url: "https://latinowebstudio.com/podcast/bruning-law/",
             datePublished: "2025-11-15",
             dateModified: "2025-11-15",
             isPartOf: {
@@ -51,7 +51,7 @@ export default function PodcastEpisodePatrick() {
               name: "Expert Witness Marketing Podcast",
             },
             image:
-              "https://latinowebstudio.com/podcast/Patrick-Hinrichs-Bruning-Law.jpg",
+              "https://latinowebstudio.com/podcast/bruning-legal-st-louis.jpg",
             author: {
               "@type": "Person",
               name: "Tadeo Martinez",
@@ -68,7 +68,7 @@ export default function PodcastEpisodePatrick() {
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id":
-                "https://latinowebstudio.com/podcast/patrick-Hinrichs-bruning-law/",
+                "https://latinowebstudio.com/podcast/bruning-law/",
             },
             inLanguage: "en",
             keywords:
