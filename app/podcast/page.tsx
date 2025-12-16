@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://latinowebstudio.com/podcast/Inside-The-Attorneys-Mind-Podcast.jpg",
+        url: "https://latinowebstudio.com/podcast/bruning-legal-st-louis.jpg",
         width: 1200,
         height: 630,
         alt: "Inside the Attorney's Mind Podcast - Latino Web Studio",
