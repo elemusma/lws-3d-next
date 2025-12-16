@@ -25,7 +25,7 @@ export default function NewsPostCard({
   priority = false,
 }: NewsPostCardProps) {
   return (
-    <div className="lg:w-1/4 md:w-1/3 w-1/2 news-blog-post p-[15px] mb-4">
+    <div className="lg:w-1/4 md:w-1/3 w-5/6 news-blog-post p-[15px] mb-4">
       <Link
         href={href}
         className="flex flex-wrap bg-[#f7f7f7] hover:bg-[var(--accent-primary)] transition-all duration-300 ease-in-out group"

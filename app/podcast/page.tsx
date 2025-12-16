@@ -196,7 +196,7 @@ export default function PodcastPage() {
           sectionClassName="text-black pb-[100px]"
           containerClassName="max-w-screen-xl mx-auto"
           rowClassName="flex flex-col"
-          columnClassName="w-full px-4 flex flex-wrap"
+          columnClassName="w-full px-4 flex flex-wrap justify-center"
         >
           {/* <div className="text-center">
             <h2>Inside the Attorney&apos;s Mind Episodes</h2>
