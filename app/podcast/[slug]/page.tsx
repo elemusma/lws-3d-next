@@ -130,7 +130,7 @@ export default async function PodcastEpisodePage({ params }: PodcastPageProps) {
   return (
     <>
       <Main />
-      <main className="pt-[80px]">
+      <main className="lg:pt-[80px] md:pt-8 pt-2">
         <div className="bg-white">
           <article className="max-w-screen-xl mx-auto pt-[50px] px-4 py-8 single-post bg-white">
             <div className="flex flex-wrap">
