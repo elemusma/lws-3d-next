@@ -140,49 +140,51 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
           <div className="text-center px-4">
             <h2>Happy Customers</h2>
             <div className="relative w-full pb-[56.25%] h-0">
+              <video
+                className="absolute top-0 left-0 w-full h-full"
+                controls
+                poster="https://resources.latinowebstudio.com/wp-content/uploads/2025/12/Mark-McFarland-Testimonial-Poster.jpg"
+                src="https://resources.latinowebstudio.com/wp-content/uploads/2025/12/Mark-McFarland.mp4"
+              />
+            </div>
+            {/* <div className="relative w-full pb-[56.25%] h-0">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/34a38A0dBgE?si=YAQOcKv5RmMrXbg6"
+                src="https://www.youtube.com/embed/34a38A0dBgE?rel=0&modestbranding=1"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
+      <div className="h-8"></div>
 
-      <div className="flex flex-col flex-row md:flex-row gap-2 px-4">
-        <div className="md:w-1/5 w-full text-center">
+      <div className="flex-row md:flex-row gap-2 px-4">
+        <div className="lg:w-1/4 w-full text-center mx-auto">
           <Logo />
           <div className="flex justify-center my-4">
-            {Array.from({ length: 6 }).map((_, i) => (
+            {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={`full-${i}`}
-                className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                className="w-6 h-6 fill-yellow-400 text-yellow-400"
               />
             ))}
           </div>
-          70 Google Reviews
-          <a
-            href="https://g.page/r/CbF4CHrc1dblEBM/review"
-            target="_blank"
-            className="btn-main mb-4 md:mb-0"
-          >
-            Leave a Review
-          </a>
+          72 Google Reviews
         </div>
 
-        <div className="md:w-4/5 w-full">
+        <div className="w-full pt-8 pb-8">
           <Swiper
             loop={true}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 2 },
-              1280: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
             }}
             spaceBetween={30}
             autoplay={true}
@@ -240,6 +242,15 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
               );
             })}
           </Swiper>
+        </div>
+        <div className="text-center">
+          <a
+            href="https://g.page/r/CbF4CHrc1dblEBM/review"
+            target="_blank"
+            className="btn-main mb-4 md:mb-0"
+          >
+            Leave a Google Review
+          </a>
         </div>
       </div>
     </>

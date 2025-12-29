@@ -6,10 +6,7 @@ function CTAButtons() {
     <>
       <div className="r">
         <div className="">
-          <Link
-            href={`#schedule`}
-            className="btn-main mx-2 blog-article"
-          >
+          <Link href={`#schedule`} className="btn-main mx-2 blog-article">
             Get More Leads
           </Link>
           <Link

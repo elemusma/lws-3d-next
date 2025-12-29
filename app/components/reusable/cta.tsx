@@ -18,16 +18,20 @@ export default function Cta({ title, description }: CtaProps) {
           style={{ flexWrap: "wrap" }}
         >
           <div className="px-4 text-center w-full pb-10">
-              <h2>{title || "Improve Your Online Presence, Name Recognition & Branding"}</h2>
+            <h2>
+              {title ||
+                "Improve Your Online Presence, Name Recognition & Branding"}
+            </h2>
             <div className="lg:w-3/4 w-full mx-auto">
               {description || (
                 <p>
-                  If you need help getting more clients send a message to help you get started
-                  with your website or start an SEO strategy that gets you ranking in Google and AI resulting in
-                  more phone calls, texts and emails. Prefer to call?{" "}
-              <Link href="tel:+13039278228" className="text-link">
-                303.927.8228
-              </Link>
+                  If you need help getting more clients send a message to help
+                  you get started with your website or start an SEO strategy
+                  that gets you ranking in Google and AI resulting in more phone
+                  calls, texts and emails. Prefer to call?{" "}
+                  <Link href="tel:+13039278228" className="text-link">
+                    303.927.8228
+                  </Link>
                 </p>
               )}
             </div>

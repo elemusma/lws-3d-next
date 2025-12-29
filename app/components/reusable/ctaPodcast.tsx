@@ -18,7 +18,7 @@ export default function CtaPodcast({ title, description }: CtaProps) {
           style={{ flexWrap: "wrap" }}
         >
           <div className="px-4 text-center w-full pb-10">
-            <div className="lg:w-1/2 w-full mx-auto">
+            <div className="lg:w-3/4 w-full mx-auto">
               <h2>{title || "Share Your Voice. Be a Guest on the Podcast."}</h2>
               {description || (
                 <p>
@@ -34,7 +34,7 @@ export default function CtaPodcast({ title, description }: CtaProps) {
             </div>
           </div>
           <div
-            className="lg:w-1/2 w-full px-4 text-center w-full"
+            className="lg:w-3/4 w-full px-4 text-center w-full"
             id="calendar"
           >
             <ContactFormPodcast />

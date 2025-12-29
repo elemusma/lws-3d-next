@@ -428,198 +428,198 @@ export default function PracticeAreasSEO() {
           </p>
         </div>
         <div className="w-full flex flex-wrap px-10">
-        <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
-          <div
-            style={{
-              fontWeight: "bold",
-              position: "absolute",
-              left: "-15px",
-              top: "5px",
-              color: "var(--accent-secondary)",
-              background: "var(--accent-primary)",
-              borderRadius: "50%",
-              width: "20px",
-              height: "20px",
-              fontSize: "12px",
-              paddingBottom: "2.5px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            &#123; &#125;
-          </div>
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
+            <div
+              style={{
+                fontWeight: "bold",
+                position: "absolute",
+                left: "-15px",
+                top: "5px",
+                color: "var(--accent-secondary)",
+                background: "var(--accent-primary)",
+                borderRadius: "50%",
+                width: "20px",
+                height: "20px",
+                fontSize: "12px",
+                paddingBottom: "2.5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              &#123; &#125;
+            </div>
 
-          <div>
-            <h3 className="text-xl" style={{ margin: "0px" }}>
-              SEO Audits
-            </h3>
-            <p>
-              Uncover issues affecting visibility, page speed, and indexability
-              with in-depth technical audits.
-            </p>
+            <div>
+              <h3 className="text-xl" style={{ margin: "0px" }}>
+                SEO Audits
+              </h3>
+              <p>
+                Uncover issues affecting visibility, page speed, and
+                indexability with in-depth technical audits.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
-          <div
-            style={{
-              fontWeight: "bold",
-              position: "absolute",
-              left: "-15px",
-              top: "5px",
-              color: "var(--accent-secondary)",
-              background: "var(--accent-primary)",
-              borderRadius: "50%",
-              width: "20px",
-              height: "20px",
-              fontSize: "12px",
-              paddingBottom: "2.5px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            &#123; &#125;
-          </div>
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
+            <div
+              style={{
+                fontWeight: "bold",
+                position: "absolute",
+                left: "-15px",
+                top: "5px",
+                color: "var(--accent-secondary)",
+                background: "var(--accent-primary)",
+                borderRadius: "50%",
+                width: "20px",
+                height: "20px",
+                fontSize: "12px",
+                paddingBottom: "2.5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              &#123; &#125;
+            </div>
 
-          <div>
-            <h3 className="text-xl" style={{ margin: "0px" }}>
-              Schema Markup
-            </h3>
-            <p>
-              Add structured data to boost search appearance and trust with
-              attorney-specific rich snippets.
-            </p>
+            <div>
+              <h3 className="text-xl" style={{ margin: "0px" }}>
+                Schema Markup
+              </h3>
+              <p>
+                Add structured data to boost search appearance and trust with
+                attorney-specific rich snippets.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
-          <div
-            style={{
-              fontWeight: "bold",
-              position: "absolute",
-              left: "-15px",
-              top: "5px",
-              color: "var(--accent-secondary)",
-              background: "var(--accent-primary)",
-              borderRadius: "50%",
-              width: "20px",
-              height: "20px",
-              fontSize: "12px",
-              paddingBottom: "2.5px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            &#123; &#125;
-          </div>
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
+            <div
+              style={{
+                fontWeight: "bold",
+                position: "absolute",
+                left: "-15px",
+                top: "5px",
+                color: "var(--accent-secondary)",
+                background: "var(--accent-primary)",
+                borderRadius: "50%",
+                width: "20px",
+                height: "20px",
+                fontSize: "12px",
+                paddingBottom: "2.5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              &#123; &#125;
+            </div>
 
-          <div>
-            <h3 className="text-xl" style={{ margin: "0px" }}>
-              ADA Compliance
-            </h3>
-            <p>
-              Ensure accessibility for all users while reducing legal risk and
-              improving search performance.
-            </p>
+            <div>
+              <h3 className="text-xl" style={{ margin: "0px" }}>
+                ADA Compliance
+              </h3>
+              <p>
+                Ensure accessibility for all users while reducing legal risk and
+                improving search performance.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
-          <div
-            style={{
-              fontWeight: "bold",
-              position: "absolute",
-              left: "-15px",
-              top: "5px",
-              color: "var(--accent-secondary)",
-              background: "var(--accent-primary)",
-              borderRadius: "50%",
-              width: "20px",
-              height: "20px",
-              fontSize: "12px",
-              paddingBottom: "2.5px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            &#123; &#125;
-          </div>
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
+            <div
+              style={{
+                fontWeight: "bold",
+                position: "absolute",
+                left: "-15px",
+                top: "5px",
+                color: "var(--accent-secondary)",
+                background: "var(--accent-primary)",
+                borderRadius: "50%",
+                width: "20px",
+                height: "20px",
+                fontSize: "12px",
+                paddingBottom: "2.5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              &#123; &#125;
+            </div>
 
-          <div>
-            <h3 className="text-xl" style={{ margin: "0px" }}>
-              Mobile Optimization
-            </h3>
-            <p>
-              Deliver lightning-fast experiences on phones—key for Google
-              rankings and busy attorney users.
-            </p>
+            <div>
+              <h3 className="text-xl" style={{ margin: "0px" }}>
+                Mobile Optimization
+              </h3>
+              <p>
+                Deliver lightning-fast experiences on phones—key for Google
+                rankings and busy attorney users.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
-          <div
-            style={{
-              fontWeight: "bold",
-              position: "absolute",
-              left: "-15px",
-              top: "5px",
-              color: "var(--accent-secondary)",
-              background: "var(--accent-primary)",
-              borderRadius: "50%",
-              width: "20px",
-              height: "20px",
-              fontSize: "12px",
-              paddingBottom: "2.5px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            &#123; &#125;
-          </div>
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
+            <div
+              style={{
+                fontWeight: "bold",
+                position: "absolute",
+                left: "-15px",
+                top: "5px",
+                color: "var(--accent-secondary)",
+                background: "var(--accent-primary)",
+                borderRadius: "50%",
+                width: "20px",
+                height: "20px",
+                fontSize: "12px",
+                paddingBottom: "2.5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              &#123; &#125;
+            </div>
 
-          <div>
-            <h3 className="text-xl" style={{ margin: "0px" }}>
-              Website Traffic
-            </h3>
-            <p>
-              Drive more website traffic from Google, AI, and the online
-              searches attorneys are doing.
-            </p>
+            <div>
+              <h3 className="text-xl" style={{ margin: "0px" }}>
+                Website Traffic
+              </h3>
+              <p>
+                Drive more website traffic from Google, AI, and the online
+                searches attorneys are doing.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
-          <div
-            style={{
-              fontWeight: "bold",
-              position: "absolute",
-              left: "-15px",
-              top: "5px",
-              color: "var(--accent-secondary)",
-              background: "var(--accent-primary)",
-              borderRadius: "50%",
-              width: "20px",
-              height: "20px",
-              fontSize: "12px",
-              paddingBottom: "2.5px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            &#123; &#125;
-          </div>
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 relative">
+            <div
+              style={{
+                fontWeight: "bold",
+                position: "absolute",
+                left: "-15px",
+                top: "5px",
+                color: "var(--accent-secondary)",
+                background: "var(--accent-primary)",
+                borderRadius: "50%",
+                width: "20px",
+                height: "20px",
+                fontSize: "12px",
+                paddingBottom: "2.5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              &#123; &#125;
+            </div>
 
-          <div>
-            <h3 className="text-xl" style={{ margin: "0px" }}>
-              User Engagement
-            </h3>
-            <p>
-              Keep attorneys engaged from the first click and prevent them from
-              bouncing quickly.
-            </p>
+            <div>
+              <h3 className="text-xl" style={{ margin: "0px" }}>
+                User Engagement
+              </h3>
+              <p>
+                Keep attorneys engaged from the first click and prevent them
+                from bouncing quickly.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="w-full text-center">
           <a href="#schedule" className="btn-main">

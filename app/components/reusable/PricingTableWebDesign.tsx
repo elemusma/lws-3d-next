@@ -205,7 +205,9 @@ const PricingTableWebDesign = () => {
                 >
                   {expandedCards[index] ? "Hide" : "Show"} Value Breakdown
                 </button>
-                <p style={{fontSize:"14px"}}>Half Now. Half at Completion.</p>
+                <p style={{ fontSize: "14px" }}>
+                  Half Now. Half at Completion.
+                </p>
               </div>
 
               {/* Subscribe Link */}

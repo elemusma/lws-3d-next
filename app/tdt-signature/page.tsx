@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 interface SignatureData {
   name: string;
@@ -23,23 +23,27 @@ interface SignatureData {
 }
 
 const defaultData: SignatureData = {
-  name: 'Steven Paul',
-  title: 'Principal Vehicle Expert Witness & Litigation Consultant',
-  company: 'TDT Vehicle Inspection Appraisal Services | SSP Vehicle Litigation Services',
-  phone1: '+1-314-886-8378',
-  phone2: '+1-618-960-4696',
-  email: 'steve@testdrivetech.com',
-  website1: 'https://www.testdrivetech.com',
-  website1Text: 'www.testdrivetech.com',
-  website2: 'https://www.vehicleexpertwitness.net',
-  website2Text: 'www.vehicleexpertwitness.net',
-  address: '18500 Burnside Rd, Carlyle, Illinois 62231',
-  linkedinUrl: 'https://www.linkedin.com/in/stevenscottpaul/',
-  facebookUrl: 'https://www.facebook.com/testdrivetech/',
-  profileImage1: 'https://testdrivetech.com/wp-content/uploads/2025/11/Steve-on-Box-Truck-Engine-Hood-Open.jpg',
-  profileImage2: 'https://testdrivetech.com/wp-content/uploads/2025/11/Steve-Classic-Car-Inspections.jpg',
-  cvLink: 'https://vehicleexpertwitness.net/cv/',
-  disclaimer:'Your privacy is important to us. This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, you are hereby notified that any dissemination, distribution, or copying of this email or its contents is strictly prohibited. If you have received this email in error, please notify the sender immediately and delete this email from your system.',
+  name: "Steven Paul",
+  title: "Principal Vehicle Expert Witness & Litigation Consultant",
+  company:
+    "TDT Vehicle Inspection Appraisal Services | SSP Vehicle Litigation Services",
+  phone1: "+1-314-886-8378",
+  phone2: "+1-618-960-4696",
+  email: "steve@testdrivetech.com",
+  website1: "https://www.testdrivetech.com",
+  website1Text: "www.testdrivetech.com",
+  website2: "https://www.vehicleexpertwitness.net",
+  website2Text: "www.vehicleexpertwitness.net",
+  address: "18500 Burnside Rd, Carlyle, Illinois 62231",
+  linkedinUrl: "https://www.linkedin.com/in/stevenscottpaul/",
+  facebookUrl: "https://www.facebook.com/testdrivetech/",
+  profileImage1:
+    "https://testdrivetech.com/wp-content/uploads/2025/11/Steve-on-Box-Truck-Engine-Hood-Open.jpg",
+  profileImage2:
+    "https://testdrivetech.com/wp-content/uploads/2025/11/Steve-Classic-Car-Inspections.jpg",
+  cvLink: "https://vehicleexpertwitness.net/cv/",
+  disclaimer:
+    "Your privacy is important to us. This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, you are hereby notified that any dissemination, distribution, or copying of this email or its contents is strictly prohibited. If you have received this email in error, please notify the sender immediately and delete this email from your system.",
 };
 
 export default function SignatureCopyTool() {
@@ -178,195 +182,258 @@ export default function SignatureCopyTool() {
   const copyToClipboard = async () => {
     try {
       const html = generateHTML();
-      const blob = new Blob([html], { type: 'text/html' });
-      const data = [new ClipboardItem({ 'text/html': blob })];
+      const blob = new Blob([html], { type: "text/html" });
+      const data = [new ClipboardItem({ "text/html": blob })];
       await navigator.clipboard.write(data);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      console.error('Failed to copy:', err);
+      console.error("Failed to copy:", err);
       // Fallback for browsers that don't support HTML copying
       try {
         await navigator.clipboard.writeText(generateHTML());
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       } catch (fallbackErr) {
-        console.error('Fallback copy also failed:', fallbackErr);
+        console.error("Fallback copy also failed:", fallbackErr);
       }
     }
   };
 
   const handleInputChange = (field: keyof SignatureData, value: string) => {
-    setData(prev => ({
+    setData((prev) => ({
       ...prev,
-      [field]: value
+      [field]: value,
     }));
   };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 pt-[100px] px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-2 text-gray-900">Email Signature Generator</h1>
-        <p className="text-gray-600 mb-8">Customize your signature and copy the formatted HTML for Google Workspace</p>
+        <h1 className="text-3xl font-bold mb-2 text-gray-900">
+          Email Signature Generator
+        </h1>
+        <p className="text-gray-600 mb-8">
+          Customize your signature and copy the formatted HTML for Google
+          Workspace
+        </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Edit Section */}
           <div className="bg-white rounded-lg shadow-md p-6 md:order-1 order-2">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900">Edit Information</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">
+              Edit Information
+            </h2>
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Name
+                </label>
                 <input
                   type="text"
                   value={data.name}
-                  onChange={(e) => handleInputChange('name', e.target.value)}
+                  onChange={(e) => handleInputChange("name", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Title</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Title
+                </label>
                 <input
                   type="text"
                   value={data.title}
-                  onChange={(e) => handleInputChange('title', e.target.value)}
+                  onChange={(e) => handleInputChange("title", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Company
+                </label>
                 <input
                   type="text"
                   value={data.company}
-                  onChange={(e) => handleInputChange('company', e.target.value)}
+                  onChange={(e) => handleInputChange("company", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Profile Image 1 URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Profile Image 1 URL
+                </label>
                 <input
                   type="text"
                   value={data.profileImage1}
-                  onChange={(e) => handleInputChange('profileImage1', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("profileImage1", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Profile Image 2 URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Profile Image 2 URL
+                </label>
                 <input
                   type="text"
                   value={data.profileImage2}
-                  onChange={(e) => handleInputChange('profileImage2', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("profileImage2", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone 1</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Phone 1
+                  </label>
                   <input
                     type="text"
                     value={data.phone1}
-                    onChange={(e) => handleInputChange('phone1', e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange("phone1", e.target.value)
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone 2</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Phone 2
+                  </label>
                   <input
                     type="text"
                     value={data.phone2}
-                    onChange={(e) => handleInputChange('phone2', e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange("phone2", e.target.value)
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Email
+                </label>
                 <input
                   type="text"
                   value={data.email}
-                  onChange={(e) => handleInputChange('email', e.target.value)}
+                  onChange={(e) => handleInputChange("email", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Website 1 URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Website 1 URL
+                </label>
                 <input
                   type="text"
                   value={data.website1}
-                  onChange={(e) => handleInputChange('website1', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("website1", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Website 1 Display Text</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Website 1 Display Text
+                </label>
                 <input
                   type="text"
                   value={data.website1Text}
-                  onChange={(e) => handleInputChange('website1Text', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("website1Text", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Website 2 URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Website 2 URL
+                </label>
                 <input
                   type="text"
                   value={data.website2}
-                  onChange={(e) => handleInputChange('website2', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("website2", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Website 2 Display Text</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Website 2 Display Text
+                </label>
                 <input
                   type="text"
                   value={data.website2Text}
-                  onChange={(e) => handleInputChange('website2Text', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("website2Text", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Address
+                </label>
                 <input
                   type="text"
                   value={data.address}
-                  onChange={(e) => handleInputChange('address', e.target.value)}
+                  onChange={(e) => handleInputChange("address", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">LinkedIn URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  LinkedIn URL
+                </label>
                 <input
                   type="text"
                   value={data.linkedinUrl}
-                  onChange={(e) => handleInputChange('linkedinUrl', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("linkedinUrl", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Facebook URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Facebook URL
+                </label>
                 <input
                   type="text"
                   value={data.facebookUrl}
-                  onChange={(e) => handleInputChange('facebookUrl', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("facebookUrl", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">CV Download Link</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  CV Download Link
+                </label>
                 <input
                   type="text"
                   value={data.cvLink}
-                  onChange={(e) => handleInputChange('cvLink', e.target.value)}
+                  onChange={(e) => handleInputChange("cvLink", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Disclaimer Text</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Disclaimer Text
+                </label>
                 <textarea
                   value={data.disclaimer}
-                  onChange={(e) => handleInputChange('disclaimer', e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("disclaimer", e.target.value)
+                  }
                   className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 text-sm"
-                  style={{height: '150px'}}
+                  style={{ height: "150px" }}
                 />
               </div>
             </div>
@@ -375,26 +442,33 @@ export default function SignatureCopyTool() {
           {/* Preview & Copy Section */}
           <div className="flex flex-col gap-4 md:order-2 order-1">
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-semibold mb-4 text-gray-900">How to Use</h3>
+              <h3 className="text-lg font-semibold mb-4 text-gray-900">
+                How to Use
+              </h3>
               <ol className="text-sm text-gray-700 space-y-2 list-decimal list-inside mb-4">
                 <li>Click the &quot;Copy Signature&quot; button below</li>
                 <li>Go to Google Workspace Settings → Signature</li>
-                <li>Click in the signature box, press Enter twice and paste (Ctrl+V or Cmd+V)</li>
+                <li>
+                  Click in the signature box, press Enter twice and paste
+                  (Ctrl+V or Cmd+V)
+                </li>
                 <li>Click Save</li>
               </ol>
               <button
                 onClick={copyToClipboard}
                 className={`w-full py-3 px-4 rounded-md font-semibold transition-all duration-300 ${
                   copied
-                    ? 'bg-green-500 text-white'
-                    : 'bg-accent text-white hover:bg-[var(--accent-secondary)]'
+                    ? "bg-green-500 text-white"
+                    : "bg-accent text-white hover:bg-[var(--accent-secondary)]"
                 }`}
               >
-                {copied ? '✓ Copied to Clipboard!' : 'Copy Signature'}
+                {copied ? "✓ Copied to Clipboard!" : "Copy Signature"}
               </button>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 flex-1">
-              <h2 className="text-xl font-semibold mb-4 text-gray-900">Preview</h2>
+              <h2 className="text-xl font-semibold mb-4 text-gray-900">
+                Preview
+              </h2>
               <div className="border border-gray-200 rounded-md p-4 bg-white overflow-auto max-h-100">
                 <div dangerouslySetInnerHTML={{ __html: generateHTML() }} />
               </div>

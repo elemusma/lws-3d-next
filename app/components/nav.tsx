@@ -4,7 +4,7 @@ import "../styles/nav.scss";
 import "../styles/nav-mobile.scss";
 import Logo from "./logo";
 import MobileMenuToggle from "./mobileMenuToggle";
-import {Phone} from "@/app/components/globals";
+import { Phone } from "@/app/components/globals";
 // import { usePathname } from "next/navigation";
 import NavItems from "./navItems";
 // import { Phone } from "@/app/components/globals";
@@ -53,7 +53,6 @@ const Nav = () => {
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
-                
                 {Phone}
               </a>
             </div>

@@ -2,7 +2,9 @@
 import React, { useState } from "react";
 
 const PricingTableSEO = () => {
-  const [expandedCards, setExpandedCards] = useState<Record<number, boolean>>({});
+  const [expandedCards, setExpandedCards] = useState<Record<number, boolean>>(
+    {},
+  );
 
   const toggleExpanded = (index: number) => {
     setExpandedCards((prev) => ({
@@ -47,7 +49,10 @@ const PricingTableSEO = () => {
       features: [
         { name: "Everything in Starter", value: "$1,500" },
         { name: "16 SEO Articles", value: "$2,400" },
-        { name: "Backlink Strategy & Outreach (1,000 emails/mo)", value: "$600" },
+        {
+          name: "Backlink Strategy & Outreach (1,000 emails/mo)",
+          value: "$600",
+        },
         { name: "Competitive Analysis", value: "$300" },
         { name: "More Aggressive Keyword Research", value: "$300" },
       ],
@@ -88,9 +93,13 @@ const PricingTableSEO = () => {
     const [main, decimal] = price.split(".");
     return (
       <div className="flex items-baseline justify-start gap-2">
-        <div className={`text-3xl font-bold ${color} flex items-start relative`}>
+        <div
+          className={`text-3xl font-bold ${color} flex items-start relative`}
+        >
           <span>{main}</span>
-          <sup className="text-sm align-super absolute top-1 -right-5">.{decimal}</sup>
+          <sup className="text-sm align-super absolute top-1 -right-5">
+            .{decimal}
+          </sup>
         </div>
       </div>
     );
@@ -100,22 +109,34 @@ const PricingTableSEO = () => {
     <div className="p-4">
       <div className="grid md:grid-cols-3 gap-6 items-start">
         {plans.map((plan, index) => (
-          <div key={index} className={`border-4 ${plan.border} rounded-lg overflow-hidden flex flex-col h-full`}>
+          <div
+            key={index}
+            className={`border-4 ${plan.border} rounded-lg overflow-hidden flex flex-col h-full`}
+          >
             <div className={`${plan.headerBg} p-4`}>
-              <h2 className={`text-4xl font-bold mt-1 ${plan.headerColor}`}>{plan.title}</h2>
+              <h2 className={`text-4xl font-bold mt-1 ${plan.headerColor}`}>
+                {plan.title}
+              </h2>
             </div>
 
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-lg font-semibold my-2">{plan.description}</h3>
               <ul className="mb-4 pl-0 flex-grow">
                 {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-start justify-between gap-2 before:content-none text-sm">
+                  <li
+                    key={i}
+                    className="flex items-start justify-between gap-2 before:content-none text-sm"
+                  >
                     <div className="flex items-start gap-2 flex-grow">
-                      <span className={`text-xl ${plan.color} flex-shrink-0`}>✔</span>
+                      <span className={`text-xl ${plan.color} flex-shrink-0`}>
+                        ✔
+                      </span>
                       <span>{feature.name}</span>
                     </div>
                     {expandedCards[index] && feature.value && (
-                      <span className="text-sm text-gray-500 flex-shrink-0 ml-2">{feature.value}</span>
+                      <span className="text-sm text-gray-500 flex-shrink-0 ml-2">
+                        {feature.value}
+                      </span>
                     )}
                   </li>
                 ))}
@@ -139,7 +160,9 @@ const PricingTableSEO = () => {
               <div className="pricing">
                 <div className="mb-2">
                   <div className="flex items-center gap-3 mb-1">
-                    <span className="text-xl text-gray-400 line-through">{plan.typicalValue}</span>
+                    <span className="text-xl text-gray-400 line-through">
+                      {plan.typicalValue}
+                    </span>
                     <span className="text-sm font-semibold text-green-600 bg-green-50 px-2 py-1 rounded">
                       {plan.note}
                     </span>
