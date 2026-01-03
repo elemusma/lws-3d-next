@@ -20,7 +20,7 @@ const PricingTableSEO = () => {
       typicalValue: "$3,000",
       description: "Included in Starter",
       features: [
-        { name: "8 SEO Articles (750-1000 words)", value: "$1,200" },
+        { name: "4 SEO Articles (750-1000 words)", value: "$1,200" },
         { name: "Internal & Outbound Linking", value: "$200" },
         { name: "Image Optimization + Embeds", value: "$200" },
         { name: "Copyright-Free Images/Videos", value: "$150" },
@@ -48,7 +48,7 @@ const PricingTableSEO = () => {
       description: "Included in Intermediate",
       features: [
         { name: "Everything in Starter", value: "$1,500" },
-        { name: "16 SEO Articles", value: "$2,400" },
+        { name: "10 SEO Articles", value: "$2,400" },
         {
           name: "Backlink Strategy & Outreach (1,000 emails/mo)",
           value: "$600",
@@ -72,7 +72,7 @@ const PricingTableSEO = () => {
       description: "Included in Signature",
       features: [
         { name: "Everything in Intermediate", value: "$3,000" },
-        { name: "25 SEO Articles", value: "$3,750" },
+        { name: "18 SEO Articles", value: "$3,750" },
         { name: "Directory Cleanup & Optimization", value: "$500" },
         { name: "News Feed Implementation", value: "$300" },
         { name: "Unlimited CRM Workflows", value: "$1,000" },
