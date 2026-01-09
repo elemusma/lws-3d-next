@@ -119,7 +119,7 @@ export default function NavItems() {
   return (
     <>
       <ul className="flex justify-end items-center main-menu m-0">
-        <li className="menu-item-has-children main-title relative text-left">
+        {/* <li className="menu-item-has-children main-title relative text-left">
           <Link
             href="/practice-areas"
             className={`flex items-center gap-1 ${
@@ -175,45 +175,36 @@ export default function NavItems() {
                 Web Design
               </Link>
             </li>
-            {/* <li key={"/practice-areas/hipaa-compliance"}>
-              <Link
-                href={"/practice-areas/hipaa-compliance"}
-                className={`block px-4 py-2 ${
-                  pathname === "/practice-areas/hipaa-compliance"
-                    ? "bg-white !text-[var(--neutral)] active"
-                    : ""
-                }`}
-              >
-                HIPAA Compliance
-              </Link>
-            </li> */}
-            {/* <li key={"/practice-areas/ada-compliance"}>
-              <Link
-                href={"/practice-areas/ada-compliance"}
-                className={`block px-4 py-2 ${
-                  pathname === "/practice-areas/ada-compliance"
-                    ? "bg-white !text-[var(--neutral)] active"
-                    : ""
-                }`}
-              >
-                ADA Compliance
-              </Link>
-            </li> */}
-            {/* <li key={"/practice-areas/ecommerce"}>
-              <Link
-                href={"/practice-areas/ecommerce"}
-                className={`block px-4 py-2 ${
-                  pathname === "/practice-areas/ecommerce"
-                    ? "bg-white !text-[var(--neutral)] active"
-                    : ""
-                }`}
-              >
-                eCommerce
-              </Link>
-            </li> */}
+            
           </ul>
-        </li>
+        </li> */}
 
+        <li className="main-title relative text-left">
+          <Link
+            href="/practice-areas/seo"
+            className={`flex items-center gap-1 ${
+              pathname.startsWith("/practice-areas/seo")
+                ? "text-secondary font-bold active"
+                : ""
+            }`}
+            style={{}}
+          >
+            SEO
+          </Link>
+        </li>
+        <li className="main-title relative text-left">
+          <Link
+            href="/practice-areas/web-design"
+            className={`flex items-center gap-1 ${
+              pathname.startsWith("/practice-areas/web-design")
+                ? "text-secondary font-bold active"
+                : ""
+            }`}
+            style={{}}
+          >
+            Web Design
+          </Link>
+        </li>
         <li className="main-title relative text-left">
           <Link
             href="/podcast"

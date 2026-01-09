@@ -93,15 +93,15 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <h1>About Latino Web Studio</h1>
           <p>
-            Located at the heart of Denver, CO. At Latino Web Studio, we specialize in helping expert witnesses get
+            Located at the heart of Denver, CO. At Latino Web Studio, I specialize in helping expert witnesses get
             found by attorneys and win more cases through strategic website
             design, high-quality SEO, and impactful content creation.
           </p>
           <p>
-            Our mission is simple: to elevate your online presence so you can
-            focus on what matters most—your expert work. We understand the
+            My mission is simple: to elevate your online presence so you can
+            focus on what matters most—your expert work. I understand the
             unique challenges expert witnesses face. Unlike generic marketing
-            agencies, we go beyond surface-level SEO. We create academically
+            agencies, I go beyond surface-level SEO. I create academically
             sound, professionally written articles that resonate with attorneys
             and withstand courtroom scrutiny.
           </p>
@@ -125,14 +125,14 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <h2>Over a Decade of Experience</h2>
           <p>
-            Tadeo (Ted) started in web design and SEO over a decade ago (2016)
+            Ted Martinez started in web design and SEO over a decade ago (2016)
             and has since built a reputation for delivering measurable results.
-            One of our clients, Mark, a full-time expert witness, went from
+            Mark, an <a href="https://discoveryengineering.net/" target="_blank">electrical engineer expert witness</a>, went from
             being overlooked to getting national cases from high-profile
             firms—not through ads, but by being found organically via his
             website.
           </p>
-          <p>We offer all-inclusive packages that cover:</p>
+          <p>I offer all-inclusive packages that cover:</p>
           <ul>
             <li>Custom website design optimized for attorneys</li>
             <li>Secure and professionally formatted content</li>
@@ -155,8 +155,8 @@ export default function AboutPage() {
             alt={"Tadeo (Cuba) from Latino Web Studio"}
           />
           <figcaption>
-            Tadeo (Ted) Martinez has over 10 years of experience in helping
-            experts and professionals get found online and grow their practice.
+            Tadeo (Ted) Martinez has over ten years of experience in digital marketing. I started helping
+            experts and professionals get found online and grow their practice with Latino Web Studio two years ago.
           </figcaption>
           <div className="text-center">
             <CTAButtons />
@@ -165,14 +165,14 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <h2>Helping Experts Get Found</h2>
           <p>
-            And if you already have a web team, we can seamlessly collaborate
+            And if you already have a web team, I can seamlessly collaborate
             with them to boost your content quality and visibility.
           </p>
           <p>
-            Our clients appreciate our approach: real value upfront, no fluff,
-            no pressure. We know you get countless spammy offers. That&apos;s
-            why we start by doing the work—like writing a free, research-based
-            article—so you can judge the quality for yourself.
+            My clients appreciate our approach: real value upfront, no fluff,
+            no pressure. I know you get countless spammy offers. That&apos;s
+            why I start by doing the work—like writing a free, research-based
+            article—so you can judge the quality for yourself or by creating a free homepage design.
           </p>
           <p>
             If you&apos;re ready to turn your expertise into more opportunities

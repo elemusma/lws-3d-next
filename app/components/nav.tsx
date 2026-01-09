@@ -25,7 +25,7 @@ const Nav = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex justify-between -mx-4">
-            <div className="lg:w-1/4 w-3/4 pl-4 flex items-center">
+            <div className="lg:w-1/3 w-3/4 pl-4 flex items-center">
               <Link href="/">
                 <Logo />
               </Link>
@@ -36,11 +36,11 @@ const Nav = () => {
             >
               <MobileMenuToggle />
             </div>
-            <div className="lg:w-5/12 w-1/6 justify-end items-center hidden lg:flex">
+            <div className="lg:w-8/12 w-1/6 justify-end items-center hidden lg:flex">
               <NavItems />
             </div>
             {/* end of column */}
-            <div className="lg:w-3/12 w-8/12 pr-4 flex justify-end items-center">
+            <div className="lg:w-1/6 w-8/12 pr-4 flex justify-end items-center">
               <a
                 href={`tel:+${Phone}`}
                 className="p-1 flex items-center btn-main btn-nav justify-center"

@@ -102,7 +102,7 @@ export default function Home() {
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 {/* <div className="lg:w-9/12 w-1/9"> */}
                 <p className="text-md mt-4 mb-4">
-                  I create content that makes attorneys find you when they're actively searching for an expert like you. Show up in Google and AI results.
+                  I create content that makes attorneys find you when they&apos;re actively searching for an expert like you. Show up in Google and AI results.
                 </p>
                 {/* <Login /> */}
                 {/* </div> */}

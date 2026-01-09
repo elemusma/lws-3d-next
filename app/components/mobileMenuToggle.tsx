@@ -3,7 +3,7 @@ import Link from "next/link";
 // import { usePathname } from "next/navigation";
 import { useState } from "react";
 // import ButtonSquare from "./buttons/btn-square";
-import { Company, Phone } from "./globals";
+import { Company } from "./globals";
 import Logo from "./logo";
 // import AboutLinks from "./reusable/nav/aboutLinks";
 // import CareersLinks from "./reusable/nav/careersLinks";
@@ -14,6 +14,7 @@ import Logo from "./logo";
 // import SocialIcons from "./social-icons";
 import "@/app/styles/popup.scss"; // Import mobile styles
 import Sidebar from "./reusable/Sidebar";
+import CTAButtons from "./reusable/CTAButtons";
 
 const MobileMenuToggle = () => {
   //   const pathname = usePathname(); // Get the current route
@@ -64,7 +65,7 @@ const MobileMenuToggle = () => {
             </span>
 
             {/* Logo Section */}
-            <div style={{ width: "100%", maxWidth: "205px" }} id="logoMain">
+            <div style={{ width: "100%", maxWidth: "275px" }} id="logoMain">
               <Link
                 href="/"
                 title={`Homepage link for ${Company}`}
@@ -100,7 +101,7 @@ const MobileMenuToggle = () => {
             >
               Podcast
               <span className="text-sm block">
-                Watch Interviews Litigation Attorneys
+                Watch Interviews with Litigation Attorneys
               </span>
             </Link>
             <ul className="list-none text-sm mt-0">
@@ -132,7 +133,7 @@ const MobileMenuToggle = () => {
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
             </ul>
-            <Link
+            {/* <Link
               href="/practice-areas/hipaa-compliance"
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0 p-2 inline-block"
@@ -141,17 +142,17 @@ const MobileMenuToggle = () => {
               <span className="text-sm block">
                 For experts in the medical field
               </span>
-            </Link>
+            </Link> */}
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
             </ul>
-            <Link
+            {/* <Link
               href="/practice-areas/ada-compliance"
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
               ADA Compliance
-            </Link>
+            </Link> */}
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
             </ul>
@@ -170,7 +171,7 @@ const MobileMenuToggle = () => {
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
-              About Latino Web Studio
+              About
             </Link>
             <ul className="list-none text-sm mt-0">
               {/* <ServicesLinks onClick={handleClose} /> */}
@@ -181,11 +182,12 @@ const MobileMenuToggle = () => {
               onClick={handleClose}
               className="text-xl font-proxima-bold mb-0 p-2 inline-block"
             >
-              Expert Articles
+              Articles
             </Link>
             <div style={{ height: "25px" }}></div>
-            <div className="w-full pr-4 flex justify-end">
-              <a
+            <div className="w-full pr-4 flex justify-start">
+              <CTAButtons />
+              {/* <a
                 href={`tel:+1${Phone}`}
                 className="p-1 flex items-center btn-main btn-nav justify-center"
                 style={{
@@ -198,7 +200,7 @@ const MobileMenuToggle = () => {
                 }}
               >
                 Get More Phone Calls
-              </a>
+              </a> */}
             </div>
             <div style={{ height: "25px" }}></div>
             <Sidebar />

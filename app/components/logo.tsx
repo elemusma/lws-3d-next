@@ -50,7 +50,7 @@ function Logo() {
       >
         <span
           className="text-accent d-block text-shadow logo-text"
-          style={{ fontSize: "1.2rem", margin: 0, lineHeight: 1 }}
+          style={{ fontSize: "1.1rem", margin: 0, lineHeight: 1 }}
         >
           Latino Web Studio
         </span>

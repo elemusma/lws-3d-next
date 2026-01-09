@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import CTA from "@/app/components/reusable/cta";
 import GoogleReviews from "@/app/components/reusable/GoogleReviews";
 import PricingTableWebDesign from "@/app/components/reusable/PricingTableWebDesign";
+import CTAButtons from "@/app/components/reusable/CTAButtons";
 
 export const metadata: Metadata = {
   title:
@@ -186,13 +187,14 @@ export default function PracticeAreasWebDesign() {
             your credibility, highlight your experience, and make it easy for
             lawyers to contact you. Become the expert lawyers choose.
           </p>
-          <a href="#schedule" className="btn-main">
+          <CTAButtons />
+          {/* <a href="#schedule" className="btn-main">
             Get More Cases
-          </a>
+          </a> */}
           {/* <h2 className="mt-0 text-xl">Get Found by the Right Attorneys—Consistently</h2> */}
           <div className="w-11/12 mx-auto mt-2">
             <Image
-              src="/practice-areas/web-design.jpg"
+              src="/practice-areas/web-design-above-the-fold.jpg"
               width={1500}
               height={802}
               alt={
@@ -265,9 +267,10 @@ export default function PracticeAreasWebDesign() {
           </p>
         </div>
         <div className="w-full text-center">
-          <a href="#schedule" className="btn-main">
+          <CTAButtons />
+          {/* <a href="#schedule" className="btn-main">
             Get More Cases
-          </a>
+          </a> */}
         </div>
       </ContentBlock>
       <ContentBlock
@@ -375,9 +378,10 @@ export default function PracticeAreasWebDesign() {
         </div>
 
         <div className="w-full text-center pt-8">
-          <a href="#schedule" className="btn-main">
+          <CTAButtons />
+          {/* <a href="#schedule" className="btn-main">
             Get More Cases
-          </a>
+          </a> */}
         </div>
       </ContentBlock>
       <ContentBlock

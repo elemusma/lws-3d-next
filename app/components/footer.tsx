@@ -12,8 +12,8 @@ function Footer() {
   const pathname = usePathname();
   const submitButtonText =
     pathname === "/practice-areas/ecommerce"
-      ? `We build scalable eCommerce platforms with custom user roles, pricing logic, and workflows tailored to how your business operates in ${currentYear}.`
-      : `We help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against you in deposition in ${currentYear}.`;
+      ? `I build scalable eCommerce platforms with custom user roles, pricing logic, and workflows tailored to how your business operates in ${currentYear}.`
+      : `I help expert witnesses attract more high-value cases by implementing a targeted, fact-based content strategy without risking damaging content being used against you in deposition in ${currentYear}.`;
   return (
     <>
       <footer
