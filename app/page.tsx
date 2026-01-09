@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/UfeZREBCJaE?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/W70us93i4IY?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -102,8 +102,7 @@ export default function Home() {
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 {/* <div className="lg:w-9/12 w-1/9"> */}
                 <p className="text-md mt-4 mb-4">
-                  I help expert witnesses show up on Google and AI results when
-                  attorneys search for experts like you online.
+                  I create content that makes attorneys find you when they're actively searching for an expert like you. Show up in Google and AI results.
                 </p>
                 {/* <Login /> */}
                 {/* </div> */}
@@ -154,7 +153,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/qqMiXvD0MKw?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/UfeZREBCJaE?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -167,7 +166,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/jiJ5CkHSKL0?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/qqMiXvD0MKw?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
