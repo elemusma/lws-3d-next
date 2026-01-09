@@ -133,9 +133,13 @@ export default async function PodcastPage(props: {
       <Main />
       <main>
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold mb-6 text-center">
+          <div className="text-center">
+
+          <h1 className="text-3xl font-bold mb-0 text-center">
             Inside the Attorney&apos;s Mind Podcast
           </h1>
+          <p><a href="https://www.youtube.com/playlist?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md" target="_blank" title="Interviews with litigation attorneys">Watch on YouTube</a></p>
+          </div>
 
           {/* List of posts */}
           <div className="flex flex-wrap">

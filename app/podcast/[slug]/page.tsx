@@ -130,15 +130,15 @@ export default async function PodcastEpisodePage({ params }: PodcastPageProps) {
   return (
     <>``
       <Main />
-      <main className="lg:pt-[80px] md:pt-8 pt-2">
+      <main className="lg:pt-[40px] md:pt-8 pt-2">
         <div className="bg-white">
           <article className="max-w-screen-xl mx-auto pt-[50px] px-4 py-8 single-post bg-white">
             <div className="flex flex-wrap">
               <div className="lg:w-3/4 w-full lg:pr-10 mb-10">
                 {/* Episode Header */}
-                <header className="mb-8">
+                <header className="mb-0">
                   <h1
-                    className="text-3xl md:text-4xl font-bold mb-4"
+                    className="text-3xl md:text-4xl font-bold !mt-0 mb-4"
                     dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                   />
 

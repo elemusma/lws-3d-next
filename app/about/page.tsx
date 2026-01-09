@@ -93,7 +93,7 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <h1>About Latino Web Studio</h1>
           <p>
-            At Latino Web Studio, we specialize in helping expert witnesses get
+            Located at the heart of Denver, CO. At Latino Web Studio, we specialize in helping expert witnesses get
             found by attorneys and win more cases through strategic website
             design, high-quality SEO, and impactful content creation.
           </p>

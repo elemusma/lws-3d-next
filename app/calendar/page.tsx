@@ -15,6 +15,14 @@ export const metadata: Metadata = {
       "Book a call with Tadeo Martinez of Latino Web Studio to discuss your web design, SEO, or marketing strategy needs.",
     url: "https://latinowebstudio.com/calendar",
     type: "website",
+    images: [
+      {
+        url: "https://latinowebstudio.com/podcast/Inside-The-Attorneys-Mind-Podcast.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tadeo Martinez - Latino Web Studio",
+      },
+    ],
   },
 };
 
