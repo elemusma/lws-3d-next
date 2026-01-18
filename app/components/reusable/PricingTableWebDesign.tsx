@@ -17,7 +17,7 @@ const PricingTableWebDesign = () => {
   const plans = [
     {
       title: "Starter",
-      price: "$3,000.00",
+      price: "$5,000.00",
       typicalValue: "$7,500",
       description: "Included in Starter",
       features: [
@@ -45,7 +45,7 @@ const PricingTableWebDesign = () => {
     },
     {
       title: "Intermediate",
-      price: "$6,000.00",
+      price: "$8,000.00",
       typicalValue: "$13,425",
       description: "Included in Intermediate",
       features: [
@@ -73,7 +73,7 @@ const PricingTableWebDesign = () => {
     },
     {
       title: "Signature",
-      price: "$9,000.00",
+      price: "$11,000.00",
       typicalValue: "$20,925",
       description: "Included in Signature",
       features: [
