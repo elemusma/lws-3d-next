@@ -98,7 +98,7 @@ const PricingTableWebDesign = () => {
       headerColor: "text-white",
       buttonBg: "bg-[#1f184a]",
       buttonHover: "hover:bg-[#15102e]",
-      link: "hhttps://buy.stripe.com/7sYcN42Ba8VHcqTeUN7wA1x",
+      link: "https://buy.stripe.com/7sYcN42Ba8VHcqTeUN7wA1x",
     },
   ];
 
