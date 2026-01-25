@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/W70us93i4IY?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/C_RSfS8xE30?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -153,7 +153,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/UfeZREBCJaE?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/W70us93i4IY?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -166,7 +166,7 @@ export default function Home() {
                 <div className="relative w-full pb-[56.25%] h-0">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/qqMiXvD0MKw?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/UfeZREBCJaE?list=PL8V1pLWolwwUEMH7MC0_cMQhmqiTGv6Md&rel=0&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
