@@ -9,6 +9,7 @@ import ResponsiveEmbeds from "@/app/components/reusable/responsiveEmbeds";
 import "@/app/styles/blog.scss";
 import CTA from "@/app/components/reusable/cta";
 import Main from "@/app/js/main";
+import CTAButtons from "@/app/components/reusable/CTAButtons";
 
 // Define the WordPress post type
 interface WordPressPost {
@@ -152,11 +153,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   </time>
                 </header>
 
+                <CTAButtons />
+
                 {/* Article Content */}
                 <div
                   className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-a:hover:text-blue-800"
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 />
+                <CTAButtons />
               </div>
               <Sidebar />
             </div>
