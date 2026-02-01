@@ -402,6 +402,14 @@ export default function Home() {
           rowClassName="flex"
           columnClassName="w-full px-4 mb-8 lg:mb-0 reviews"
         >
+          <div className="relative w-full pb-[56.25%] h-0">
+              <video
+                className="absolute top-0 left-0 w-full h-full"
+                controls
+                poster="https://resources.latinowebstudio.com/wp-content/uploads/2025/12/Mark-McFarland-Testimonial-Poster.jpg"
+                src="https://resources.latinowebstudio.com/wp-content/uploads/2025/12/Mark-McFarland.mp4"
+              />
+            </div>
           <GoogleReviews
             placeId="ChIJ_TB4z7-JbIcRsXgIetzV1uU"
             apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}

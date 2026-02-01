@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Logo from "../logo";
+// import Logo from "../logo";
 import "@/app/styles/reviews.scss";
 
 interface Review {
@@ -35,28 +35,6 @@ interface GoogleReviewsProps {
 }
 
 function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
-  // useEffect(() => {
-  //   const iframes = document.querySelectorAll('iframe');
-
-  //   iframes.forEach((iframe) => {
-  //     const aspectRatio = 560 / 315; // 16:9 aspect ratio
-  //     iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
-  //   });
-
-  //   // Optional: handle window resize
-  //   const handleResize = () => {
-  //     iframes.forEach((iframe) => {
-  //       const aspectRatio = 560 / 315;
-  //       iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
-  //     });
-  //   };
-
-  //   window.addEventListener('resize', handleResize);
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
 
   const [reviews, setReviews] = useState<Review[]>([]);
   const [expandedStates, setExpandedStates] = useState<{
@@ -135,37 +113,17 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
 
   return (
     <>
-      <div className="flex flex-col content-center items-center gap-2 px-4 pb-4">
+      <div className="flex flex-col content-center items-center gap-2 px-4">
         <div className="md:w-1/2 w-full">
           <div className="text-center px-4">
-            <h2>Happy Customers</h2>
-            <div className="relative w-full pb-[56.25%] h-0">
-              <video
-                className="absolute top-0 left-0 w-full h-full"
-                controls
-                poster="https://resources.latinowebstudio.com/wp-content/uploads/2025/12/Mark-McFarland-Testimonial-Poster.jpg"
-                src="https://resources.latinowebstudio.com/wp-content/uploads/2025/12/Mark-McFarland.mp4"
-              />
-            </div>
-            {/* <div className="relative w-full pb-[56.25%] h-0">
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/34a38A0dBgE?rel=0&modestbranding=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            </div> */}
+            <h2 className="m-0">Excellent</h2>
           </div>
         </div>
       </div>
-      <div className="h-8"></div>
 
       <div className="flex-row md:flex-row gap-2 px-4">
         <div className="lg:w-1/4 w-full text-center mx-auto">
-          <Logo />
+          {/* <Logo /> */}
           <div className="flex justify-center my-4">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
@@ -174,7 +132,7 @@ function GoogleReviews({ placeId, apiKey, maxReviews }: GoogleReviewsProps) {
               />
             ))}
           </div>
-          72 Google Reviews
+          73 Google Reviews
         </div>
 
         <div className="w-full pt-8 pb-8">
