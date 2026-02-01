@@ -1,7 +1,31 @@
-"use client";
 import GoogleReviews from "@/app/components/reusable/GoogleReviews";
+import type { Metadata } from "next";
 import Image from "next/image";
 // import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Inside the Attorney's Mind - Podcast Program | Latino Web Studio",
+  description:
+    "Join the Inside the Attorney's Mind podcast where expert witnesses learn what attorneys truly look for. Discover how to stand out and become an indispensable partner to the attorneys who hire you. Learn about our episode structure, technical requirements, and conversation topics.",
+  openGraph: {
+    title: "Inside the Attorney's Mind - Podcast Program | Latino Web Studio",
+    description:
+      "Join the Inside the Attorney's Mind podcast where expert witnesses learn what attorneys truly look for. Discover how to stand out and become an indispensable partner to the attorneys who hire you.",
+    url: `https://latinowebstudio.com/podcast/program/`,
+    type: "website",
+    images: [
+      {
+        url: `https://latinowebstudio.com/assets/Program-Podcast-01.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Inside the Attorney's Mind Podcast Program - Latino Web Studio",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://latinowebstudio.com/podcast/program",
+  },
+};
 
 export default function PodcastProgram() {
   return (
