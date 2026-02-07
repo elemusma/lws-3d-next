@@ -150,7 +150,7 @@ export default async function ArticlesPage(props: {
                         <Image
                           src={ogImage}
                           alt={post.title.rendered}
-                          className="lg:absolute w-full h-full min-h-[112px] object-cover"
+                          className="lg:absolute w-full h-full min-h-[112px] object-cover object-top"
                           fill
                           priority={false}
                           loading="lazy"
